@@ -122,3 +122,49 @@ In [6]: token.mint(to='stu', amount=100000)
 In [7]: token.balance_of(wallet_id='stu')
 Out[7]: 100000
 ```
+
+
+## FAQs
+
+### `pip install contracting` is not installing on my computer!
+
+If you're using a Mac, you can run into the problem that the C libraries required for Contracting are not getting compiled and the package fails to install.
+
+To fix this:
+
+1. Upgrade XCode
+   
+```bash
+sudo brew update
+sudo brew upgrade
+```
+
+2. Upgrade all software and restart your computer
+
+```bash
+sudo softwareupdate --install --all
+```
+
+3. Run
+
+```bash
+    xcode-select --install
+```
+4. Run next command again.
+   
+```bash
+   pip install contracting
+```
+5. Run
+   
+```bash
+open /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg
+```
+if this does not work.
+
+6. Install the package and run next command again. 
+
+```bash  
+pip install contracting
+```
+It should work now.
