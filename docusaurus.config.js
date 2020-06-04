@@ -116,6 +116,7 @@ module.exports = {
           editUrl:
             'https://github.com/facebook/docusaurus/edit/master/website/blog/',
         },
+        themes: ['@docusaurus/theme-live-codeblock'],
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },

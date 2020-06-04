@@ -6,43 +6,31 @@ sidebar_label: What is the Smart Contract
 
 
 Contracting is a system that brings the ease of Python into the complex world of smart contracts and distributed systems. Here's how it looks:
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
 
-<Tabs
-  defaultValue="js"
-  values={[
-    { label: 'JavaScript', value: 'js', },
-    { label: 'Python', value: 'py', },
-    { label: 'Java', value: 'java', },
-  ]
-}>
-<TabItem value="js">
 
-```js
-function helloWorld() {
-  console.log('Hello, world!');
-}
-```
-
-</TabItem>
-<TabItem value="py">
 
 ```py
-def hello_world():
-  print 'Hello, world!'
+balances = Hash()
+owner = Variable()
+
+@construct
+def seed():
+    owner.set(ctx.caller)
+    balances[ctx.caller] = 1_000_000
+
+@export
+def transfer(amount, to):
+    sender = ctx.signer
+    assert balances[sender] >= amount, 'Not enough coins to send!'
+
+    balances[sender] -= amount
+
+    if balances[to] is None:
+        balances[to] = amount
+    else:
+        balances[to] += amount
+
+@export
+def balance(account):
+    return balances[account]
 ```
-
-</TabItem>
-<TabItem value="java">
-
-```java
-class HelloWorld {
-  public static void main(String args[]) {
-    System.out.println("Hello, World");
-  }
-}
-```
-
-</TabItem>
-</Tabs>
