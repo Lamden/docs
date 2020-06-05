@@ -116,6 +116,10 @@ module.exports = {
           editUrl:
             'https://github.com/facebook/docusaurus/edit/master/website/blog/',
         },
+        
+        plugins: ['@docusaurus/plugin-ideal-image'],
+
+
         themes: ['@docusaurus/theme-live-codeblock'],
         theme: {
           customCss: require.resolve('./src/css/custom.css'),

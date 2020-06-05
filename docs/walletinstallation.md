@@ -3,6 +3,9 @@ id: walletinstallation
 title: Lamden Wallet Installation
 sidebar_label: Lamden Wallet Installation
 ---
+
+
+
 There are two ways how to install the wallet, first of them to install in the Chrome as an extension from the web store, and second one as a cloning the repository from GitHub and build locally and after that upload to the Chrome as an extension.
 
 ## Chrome web store link
@@ -15,7 +18,7 @@ https://chrome.google.com/webstore/search/lamden
 
 Follow the instructions to install it.
 
-![](.../static/img/wallet/chrome_wallet_installation.gif)
+![](.../../../static/img/wallet/chrome_wallet_installation.gif)
 
 ## Installation from the Repository
 
