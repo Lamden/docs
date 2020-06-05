@@ -4,7 +4,11 @@ title: Getting Started
 sidebar_label: Getting Started
 ---
 
+
+
+
 ## Development Environment preparation
+
 ### Contracting installation 
 
 import Tabs from '@theme/Tabs';
@@ -40,9 +44,6 @@ Start Rocks Server
 ```bash
 rocks serve &
 ```
-
-
-
 
   </TabItem>
   <TabItem value="mac">
@@ -148,12 +149,12 @@ sudo softwareupdate --install --all
 3. Run
 
 ```bash
-    xcode-select --install
+xcode-select --install
 ```
 4. Run next command again.
    
 ```bash
-   pip install contracting
+pip install contracting
 ```
 5. Run
    
@@ -168,3 +169,15 @@ if this does not work.
 pip install contracting
 ```
 It should work now.
+
+
+### Testing the Installation
+
+In Jupyter notebook or IPython console execute next command
+
+```py
+In [1]: from contracting.client import ContractingClient
+In [2]: client = ContractingClient()
+In [3]: client.get_contracts()
+Out[3]: ['submission'] 
+```
