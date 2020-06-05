@@ -15,7 +15,7 @@ https://chrome.google.com/webstore/search/lamden
 
 Follow the instructions to install it.
 
-![](.../../../static/img/wallet/chrome_wallet_installation.gif)
+![](.../static/img/wallet/chrome_wallet_installation.gif)
 
 ## Installation from the Repository
 
@@ -27,11 +27,11 @@ git clone https://github.com/Lamden/wallet.git
 ```
 Type in the terminal copied command
 
-![image](..\img\wallet\1._Step_wallet.png)
+![image](../static/img/wallet/1._Step_wallet.png)
 
 After cloning repository you will see the next screen
 
-![image](../img/wallet/2._Step_-_wallet.png)
+![image](../static/img/wallet/2._Step_-_wallet.png)
 
 Open folder wallet and you will see all contents of the folder
 
@@ -39,7 +39,7 @@ Open folder wallet and you will see all contents of the folder
 cd wallet
 ```
 
-![image](../img/wallet/3._Step-wallet.png)
+![image](../static/img/wallet/3._Step-wallet.png)
 
 
 
@@ -56,7 +56,7 @@ npm run build
 ```
 When build is finished you will see that folder `build` was created.
 
-![image](../img/wallet/4._Step_-_wallet.png)
+![image](../static/img/wallet/4._Step_-_wallet.png)
 
 
 ### Load the extension in Chrome & Opera
@@ -68,7 +68,7 @@ When build is finished you will see that folder `build` was created.
 1. Open Firefox browser and navigate to `about:debugging`
 2. Click "Load Temporary Add-on" and from the file browser, choose `wallet/build/manifest.json`
 
-![](../img/../static/img/wallet/wallet_installation_firefox.gif)
+![](../static/img/wallet/wallet_installation_firefox.gif)
 
 ### Load the extension in Brave
 1. Open Brave broswer and navigate to `brave://extensions/`
