@@ -6,7 +6,8 @@ module.exports = {
       ],
    'Smart Contracting':
     [
-     'contracting_and_smart_contract',
+      'ide_smart_contract',
+      'contracting_and_smart_contract',
      'what_is_the_smart_contract',
      'basics_smart_contracts',
      'sm_advanced_stuff',
