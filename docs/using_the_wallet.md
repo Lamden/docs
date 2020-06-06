@@ -14,6 +14,9 @@ Current Doco: none
 ## Adding/Deleting a keypair
 ## Editing keypair info
 ### Changing nickname
+You can change the name of the wallet by following next instruction.
+
+![](img/wallet/../../../static/img/wallet/Rename_Wallet.gif)
 ### Purging transactions
 ### Copy public key
 
@@ -28,18 +31,18 @@ Current Doco: none
             1.  Step by step explanation
             2.  What is the backup warning for?
             3.  Dismissing the warning
-        2.  Restore
+## Restore
             1.  Step by step explanation
-        3.  IDE
+## IDE
             1.  How to create a new blank contract
             2.  How to open an existing contract from the Lamden network
             3.  How to check contract for errors
             4.  How to submit contract the the network
-        4.  Changing/Adding Lamden Blockchain networks
+        1.  Changing/Adding Lamden Blockchain networks
             1.  Types of networks (mainnet, testnet, mockchain)
             2.  Explain dTAU for testnet and mTAU for mockchain
             3.  Adding a new dev network
-        5.  Deleting Wallet and wallet information
+        2.  Deleting Wallet and wallet information
             1.  Removing extension
             2.  Deleting all storage info
 1. Creating a web dapp (javascript)
