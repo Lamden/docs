@@ -3,6 +3,7 @@ id: using_the_wallet
 title: Using the Wallet
 sidebar_label: Using the Wallet
 ---
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ## Wallet and interacting with the wallet
 
@@ -16,35 +17,66 @@ Current Doco: none
 ### Changing nickname
 You can change the name of the wallet by following next instruction.
 
-![](img/wallet/../../../static/img/wallet/Rename_Wallet.gif)
+![](/img/wallet/Rename_Wallet.gif)
 ### Purging transactions
 ### Copy public key
 
 ## Sending Transactions
-            1.  What is a transaction on Lamden
-                1. Data Types to choose (text, address, number etc)
-            2.  How to send “TAU”
-                1.  What is the currency contract
-                2.  What is the transfer method
-                3.  What are the args you need
-        1.  Backup
-            1.  Step by step explanation
-            2.  What is the backup warning for?
-            3.  Dismissing the warning
+
+### What is a transaction on Lamden
+### Data Types to choose (text, address, number etc)
+### How to send “TAU”
+### What is the currency contract
+### What is the transfer method
+### What are the args you need
+
+## Backup
+### Step by step explanation
+![](/img/wallet/backup_keystore.gif)
+
+## What is the backup warning for?
+
+The backup is stored and you got a tiny icon near item menu 'Backup Wallet'.
+
+It informs you to make backup your wallet regularly. 
+
+`You have added Keys since your last backup so it is HIGHLY recommended that you create another backup.`
+
+
+
+![](/img/wallet/backup_warning.gif)
+
+
+### Dismissing the warning
+
+You can click on the icon at the end of the warning and dismiss it.
+
 ## Restore
-            1.  Step by step explanation
+         
+![](/lamden/static/img/wallet/restore_wallet.gif)
+
 ## IDE
-            1.  How to create a new blank contract
-            2.  How to open an existing contract from the Lamden network
-            3.  How to check contract for errors
-            4.  How to submit contract the the network
-        1.  Changing/Adding Lamden Blockchain networks
+
+### How to create a new blank contract
+### How to open an existing contract from the Lamden network
+### How to check contract for errors
+### How to submit contract the the network
+### Changing/Adding Lamden Blockchain networks
             1.  Types of networks (mainnet, testnet, mockchain)
             2.  Explain dTAU for testnet and mTAU for mockchain
             3.  Adding a new dev network
-        2.  Deleting Wallet and wallet information
-            1.  Removing extension
-            2.  Deleting all storage info
+
+
+## Deleting Wallet and wallet information
+
+### Removing extension
+
+You can easily remove extension from the browser. 
+![](/lamden/static/img/wallet/remove_wallet.gif)
+
+### Deleting all storage info
+
+
 1. Creating a web dapp (javascript)
     1.  Interfacing with the Lamden Wallet from a webpage
         1.  All messages from the webpage must be JSON encoded for security

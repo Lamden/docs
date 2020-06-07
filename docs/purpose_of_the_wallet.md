@@ -14,7 +14,7 @@ There are some general rules about creating password.
 
 1. Don't use words or phrases from dictionaries. 
 2. Don't use as password your birthdate or your's relatives.
-3. Don't stick written notes on the display of your laptop.
+3. Don't stick written notes with a password on the display of your laptop.
 
 While creating a wallet in Lamden you need to enter at least 10 symbols, among them should be:
 
@@ -37,11 +37,18 @@ You can follow the next instruction how to create a wallet in Lamden
 In Lamden wallet you can backup the keys and store them anywhere offline. 
 
 ### What is a Keystore file
-By using Keystore file you can restore you access to the walle in case you forget the password. 
+By using Keystore file you can restore you access to the wallet in case you forget the password. 
 
 You can backup your Keystore file by using next instruction.
 
 ![](/img/wallet/backup_keystore.gif)
+
+### Restoring keys
+
+To restore the key is pretty easy. All you need to have it is a keystore file that your backed up before and a password. 
+
+The instruction how to do it as follows:
+![](/lamden/static/img/wallet/restore_wallet.gif)
 
 ### Encrypted file made up of your Lamden Wallet keypairs
 
