@@ -1,16 +1,16 @@
 module.exports = {
-  title: 'My Site',
-  tagline: 'The tagline of my site',
-  url: 'https://your-docusaurus-test-site.com',
+  title: 'Lamden Documentation Website',
+  tagline: 'All you need for your next dApp',
+  url: 'lamden.io',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'Lamden', // Usually your GitHub org/user name.
+  projectName: 'https://github.com/Lamden/whitepaper', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'My Site',
+      title: 'Lamden',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'Lamden Logo',
         src: 'img/logo.svg',
       },
       links: [
@@ -21,26 +21,32 @@ module.exports = {
           position: 'left',
         },
         {
-          to: 'docs/walletinstallation',
-          activeBasePath: 'docs',
-          label: 'Wallet',
-          position: 'left',
+          to: 'smart_contracting',
+          activeBasePath: 'pages',
+          label: 'Smart Contracting',
+          position: 'right',
         },
         {
-          to: 'docs/mockchain',
-          activeBasePath: 'docs',
-          label: 'Blockchain',
-          position: 'left',
-        },
-        {
-          to: 'docs/nodes',
-          activeBasePath: 'docs',
+          to: 'nodes',
+          activeBasePath: 'pages',
           label: 'Nodes',
-          position: 'left',
+          position: 'right',
+        },
+        {
+          to: 'wallet',
+          activeBasePath: 'pages',
+          label: 'Wallet',
+          position: 'right',
         },
 
+        {
+          to: 'blockchain',
+          activeBasePath: 'pages',
+          label: 'Blockchain',
+          position: 'right',
+        },
 
-        {to: 'blog', label: 'Blog', position: 'left'},
+        {to: 'https://blog.lamden.io/', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/facebook/docusaurus',
           label: 'GitHub',
@@ -58,27 +64,26 @@ module.exports = {
               label: 'Style Guide',
               to: 'docs/',
             },
-            {
-              label: 'Second Doc',
-              to: 'docs/doc2/',
-            },
+           
           ],
         },
         {
           title: 'Community',
           items: [
+            
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              label: 'Telegram',
+              href: 'https://t.me/lamdenchat',
             },
             {
               label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              href: 'https://twitter.com/lamdentau',
             },
+            {
+              label: 'Reddit',
+              href: 'https://reddit.com/lamden',
+            },
+            
           ],
         },
         {
@@ -86,16 +91,16 @@ module.exports = {
           items: [
             {
               label: 'Blog',
-              to: 'blog',
+              to: 'https://blog.lamden.io/',
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/lamden',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Lamden USA LLC.`,
     },
   },
   presets: [

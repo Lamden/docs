@@ -38,10 +38,15 @@ You can change the name of the wallet by following next instruction.
 
 The backup is stored and you got a tiny icon near item menu 'Backup Wallet'.
 
-It informs you to make backup your wallet regularly. 
+It warns you to make backup your wallet regularly. 
 
-`You have added Keys since your last backup so it is HIGHLY recommended that you create another backup.`
 
+<div class="alert alert--warning" role="alert">
+  <button aria-label="Close" class="close" type="button">
+    <span aria-hidden="true">×</span>
+  </button>
+  `You have added Keys since your last backup so it is HIGHLY recommended that you create another backup.`
+</div>
 
 
 ![](/img/wallet/backup_warning.gif)
@@ -52,8 +57,10 @@ It informs you to make backup your wallet regularly.
 You can click on the icon at the end of the warning and dismiss it.
 
 ## Restore
-         
-![](/lamden/static/img/wallet/restore_wallet.gif)
+To restore your wallet you need to have a password that you used for creating keystore. 
+Keep that password in a safe place. For example, you can use LastPass.
+
+![](/img/wallet/restore_wallet.gif)
 
 ## IDE
 
@@ -72,7 +79,7 @@ You can click on the icon at the end of the warning and dismiss it.
 ### Removing extension
 
 You can easily remove extension from the browser. 
-![](/lamden/static/img/wallet/remove_wallet.gif)
+![](/img/wallet/remove_wallet.gif)
 
 ### Deleting all storage info
 
