@@ -52,12 +52,7 @@ module.exports = {
           label: 'Lamden World',
           position: 'left',
         },
-        {
-          to: 'test',
-          activeBasePath: 'pages',
-          label: 'Lamden World',
-          position: 'left',
-        },
+        
         {to: 'https://blog.lamden.io/', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/facebook/docusaurus',
