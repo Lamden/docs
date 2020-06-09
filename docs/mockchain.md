@@ -27,9 +27,9 @@ On a real blockchain, you have an asynchronous waiting period between submitting
 
 branch dependencies are subject to change*
 
-[RocksDb](https://github.com/facebook/rocksdb)
+*[RocksDb](https://github.com/facebook/rocksdb)*
 
-[PyMongo](https://github.com/mongodb/mongo-python-driver)
+*[PyMongo](https://github.com/mongodb/mongo-python-driver)*
 
 [Lamden Cilantro Enterprise](https://github.com/Lamden/cilantro-enterprise) *branch rel_gov_debug
 
@@ -40,23 +40,26 @@ branch dependencies are subject to change*
 ### Run Servers
 Start RockDB
 linux:
-```
+
+```bash
  rocks serve & and MongoDB () servers
 ```
 Start MongoDB
 [Check OS specific instructions MongoDB](https://docs.mongodb.com/manual/installation/#mongodb-community-edition-installation-tutorials)
 ### Install Mockchain
-```
-git clone https://github.com/Lamden/mockchain.git
-cd mockchain
+
+```bash
+git clone https://github.com/Lamden/mockchain.git && cd mockchain
 ```
 
 ### Run Server
-```
+
+```bash
 python3 -m mockchain
 ```
-specific port
-```
+assign specific port
+
+```bash
 python3 -m mockchain --port <INT> --vk <HEX_STRING>
 ```
 
