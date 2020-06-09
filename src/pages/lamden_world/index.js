@@ -65,8 +65,8 @@ function Home() {
         <div className="container">
           <div className="row">
             <div className={classnames('col col--5 col--offset-1')}>
-            <h1 className="hero__title">Nodes</h1>
-          <p className="hero__subtitle">Setup your Lamden node</p>
+            <h1 className="hero__title">Lamden World</h1>
+          <p className="hero__subtitle">Create your Universe</p>
               <div className={styles.buttons}>
               <Link
               className={classnames(
@@ -84,13 +84,24 @@ function Home() {
                 'button button--secondary button--lg',
                 styles.getStarted, 
               )}
-              to={useBaseUrl('https://github.com/Lamden/cilantro-enterprise')}>
+              to={useBaseUrl('https://github.com/Lamden/')}>
               GitHub
             </Link>
+            &nbsp;  &nbsp;
+            <Link
+              className={classnames(
+                'button button--secondary button--lg',
+                styles.getStarted, 
+              )}
+              to={useBaseUrl('http://misc.blicky.net/lamden/')}>
+              Play
+            </Link>
+
+
               </div>
             </div>
             <div className={classnames('col col--5')}>
-              <img className={styles.heroImg} src="img/undraw_connection_b38q.svg" />
+              <img className={styles.heroImg} src="img/undraw_video_game_night_8h8m.svg" />
             </div>
           </div>
         </div>

@@ -61,18 +61,31 @@ function Home() {
     <Layout
       title={`Hello from ${siteConfig.title}`}
       description="Description will go into a meta tag in <head />">
+     
       <header className={classnames('hero hero--primary', styles.heroBanner)}>
         <div className="container">
+        
           <h1 className="hero__title">Blockchain</h1>
           <p className="hero__subtitle">Lamden Blockchain</p>
           <div className={styles.buttons}>
             <Link
               className={classnames(
                 'button button--secondary button--lg',
-                styles.getStarted,
+                styles.getStarted, 
               )}
               to={useBaseUrl('docs/mockchain')}>
-              Get Started
+            Documentation
+            </Link>
+
+            &nbsp;  &nbsp;
+
+            <Link
+              className={classnames(
+                'button button--secondary button--lg',
+                styles.getStarted, 
+              )}
+              to={useBaseUrl('https://github.com/Lamden/cilantro-enterprise')}>
+              GitHub
             </Link>
           </div>
         </div>

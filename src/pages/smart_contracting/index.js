@@ -61,21 +61,37 @@ function Home() {
     <Layout
       title={`Hello from ${siteConfig.title}`}
       description="Description will go into a meta tag in <head />">
-      <header className={classnames('hero hero--primary', styles.heroBanner)}>
+     <header className={classnames('hero', styles.heroBanner)}>
         <div className="container">
-         
+          <div className="row">
+            <div className={classnames('col col--5 col--offset-1')}>
           <h1 className="hero__title">Smart Contracting</h1>
           <p className="hero__subtitle">Don't Limit your Fantasy</p>
-          
-          <div className={styles.buttons}>
-            <Link
+              <div className={styles.buttons}>
+              <Link
               className={classnames(
                 'button button--secondary button--lg',
                 styles.getStarted, 
               )}
               to={useBaseUrl('docs/ide_smart_contract')}>
-              Get Started
+            Documentation
             </Link>
+
+            &nbsp;  &nbsp;
+
+            <Link
+              className={classnames(
+                'button button--secondary button--lg',
+                styles.getStarted, 
+              )}
+              to={useBaseUrl('https://github.com/Lamden/contracting')}>
+              GitHub
+            </Link>
+              </div>
+            </div>
+            <div className={classnames('col col--5')}>
+              <img className={styles.heroImg} src="img/undraw_process_e90d.svg" />
+            </div>
           </div>
         </div>
       </header>

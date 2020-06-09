@@ -83,6 +83,7 @@ You can easily remove extension from the browser.
 
 ### Deleting all storage info
 
+Along with removing the lamden wallet extension from the chrome all data is removed from the local storage as well. So you can be sure that all sensitive information deleted.
 
 1. Creating a web dapp (javascript)
     1.  Interfacing with the Lamden Wallet from a webpage
