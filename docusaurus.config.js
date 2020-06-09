@@ -1,7 +1,7 @@
 module.exports = {
   title: 'Lamden Documentation Website',
   tagline: 'All you need for your next dApp',
-  url: 'lamden.io',
+  url: 'https://lamden.io',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
   organizationName: 'Lamden', // Usually your GitHub org/user name.
