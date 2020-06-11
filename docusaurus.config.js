@@ -1,6 +1,7 @@
+
 module.exports = {
  
-  plugins: [path.resolve(__dirname, '/@wino/docusaurus-gist-embed')],
+ 
 
   title: 'Lamden Documentation Website',
   tagline: 'All you need for your next dApp',
@@ -131,10 +132,16 @@ module.exports = {
           editUrl:
             'https://github.com/facebook/docusaurus/edit/master/website/blog/',
         },
+
+
+        
         
         plugins: ['@docusaurus/plugin-ideal-image'],
-        plugins:['@wino/docusaurus-gist-embed'],
-
+        plugins:['@docusaurus/docusaurus-gist-embed'],
+        
+        
+        
+        
         themes: ['@docusaurus/theme-live-codeblock'],
         theme: {
           customCss: require.resolve('./src/css/custom.css'),

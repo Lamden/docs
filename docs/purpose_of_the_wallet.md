@@ -62,9 +62,39 @@ You will find the list of accounts to restore.
 
 ![](/img/wallet/restore_wallet.gif)
 
-### Encrypted file made up of your Lamden Wallet keypairs
+###  Smart contract IDE
+In the Lamden wallet there is an IDE that your can use for development the smart contract.
 
-### Encrypted with a very strong password
+#### Create Lamden Smart contracts
+
+1. Open the wallet 
+2. Click `Smart Contracts`
+3. At the right part of the screen, click on the `+` to add a new smart contract.
+4. On the next screen, select one of the options `Blank Contract` or `Example Contract`. 
+
+If you select  `Blank Contract`, the area for writing a contract will be empty.
+In other cases, if you select `Example Contract,` you will see smart-contract with like an example for reference.
+
+More detailed information you can get following the  [link](/docs/using_the_wallet#ide)
+
+### “Lint” for python syntax and “contracting” specific errors
+The embedded IDE in the wallet support the python syntax and helps to catch the errors by using `contracting` methods.
+
+### Test Lamden Smart contracts
+#### Test Methods
+Lamden platform allows very flexible methods for testing smart contracts. 
+
+Among available methods you can choose to test directly on the test networks by deploying the smart contract through IDE in Lamden wallet. 
+
+Another available method to deploy a local Python server such as `Sanic Server`.
+
+More detailed instruction you can find here by following the **[link](/docs/basics_smart_contracts.md)**
+
+You can test smart contracts on different Blockchain networks by submission them through IDE.
+
+More information about blockchain networks you can read following the **[link](/docs/using_the_wallet#types-of-networks-mainnet-testnet-mockchain)**
+
+
 
 ## Allows approving and whitelisting of dapps that can access your keys
 ### Approving a dapp (via popup)

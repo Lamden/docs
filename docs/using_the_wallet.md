@@ -81,8 +81,8 @@ You can change the name of the wallet by following the next instruction.
 1. Open the Lamden extension in the browser
 2. Click on the `Holdings`
 3. Select the wallet.
-4. Click on the `Options.`
-5. Click on the button `Copy Key to Clipboard.`
+4. Click on the `Options`.
+5. Click on the button `Copy Key to Clipboard`.
 
 Now you can send on the copied address funds from your accounts, or you can give the Address to somebody and ask them to send funds in the future.
 
@@ -99,13 +99,13 @@ The arguments include all necessary data to track the event related to the trans
 
 To transfer TAU, you need to take into account the next fields:
 
-- `The Wallet to sent from:` once you select a source account in the wallet, this field is populating automatically.
+- `The Wallet to sent from`: once you select a source account in the wallet, this field is populating automatically.
   
 - `Stamp Limit:` by default, this field has value '15000'.
   
 - `Enter Contract Name`: since you are transferring money, it has value 'currency.'
 
-#### The field `Function name:` has next values to select:
+#### The field `Function name`: has next values to select:
 
 - `transfer`
 - `balance of`
@@ -223,9 +223,21 @@ It warns you to make a backup of your wallet regularly.
 You can click on the icon at the end of the warning and dismiss it.
 
 ## Restore
-To restore your wallet, you need to have a password that you used for creating Keystore. 
 
 
+1. Open the wallet
+2. In the left sidebar click `Restore Wallet`.
+3. In the right part of the screen click `Restore Wallet`.
+
+For restoring the wallets you need to have a keystore file that your save while making backup of wallets. 
+
+4. Click on the link `Click here to choose a file` or drag and drop a file in the area `Drop File Here`.
+5. Click on the `Confirm Keystore`
+6. On the next screen enter the password that you used for storing the keystore.
+7. Select the accounts that you would like to restore by marking the checkbox
+8. Click `Restore Wallets`
+
+Your wallets will be restored
 
 ![](/img/wallet/restore_wallet.gif)
 
@@ -240,10 +252,10 @@ Using embedded IDE in the Lamden wallet, you can view existed contracts on the n
 1. Open the wallet 
 2. Click `Smart Contracts`
 3. At the right part of the screen, click on the `+` to add a new smart contract.
-4. On the next screen, select one of the options `Blank Contract` or `Example Contract`. 
+4. On the next screen, select `Blank Contract`. 
 
-If you select  `Blank Contract`, the area for writing a contract will be empty.
-In other cases, if you select `Example Contract,` you will see smart-contract with like an example for reference.
+In option  `Blank Contract`, the area for writing a contract will be empty.
+In other cases, if you select `Example Contract,` you will see smart-contract with an example for reference.
 
 ### How to open an existing contract from the Lamden network
 
@@ -324,3 +336,33 @@ In the section `Add Network`, you enter the next parameters.
 Click `Add Network`.
 
 ## Deleting Wallet and wallet information
+If you don't have a backup of the wallet the deletion of wallet is irreversible process. Before deletion be sure that you have made a backup of the wallet and/or you don't have any assets on the account.
+
+1. Open the wallet
+2. Click on `Holdings`
+3. From the list of accounts in right part of the screen click on the account that you would like to delete.
+4. Click on `Options`.
+5. On the next screen select `Delete Wallet`
+6. Enter the password to validate wallet deletion.
+7. Confirm Wallet Deletion
+
+![](/img/wallet/wallet_deletion.gif)
+
+### Removing extension
+
+You can easily remove extension from the browser. 
+
+In the Chrome
+
+1. Click on the options. 
+2. Select More Tools -> Extensions
+3. Find Lamden Wallet extension.
+4. Click on button `Remove`.
+5. Confirm the deletion of the extension by clicking `Remove` one more time.
+Now the extension is removed from the browser.
+
+![](/img/wallet/remove_wallet.gif)
+
+### Deleting all storage info
+
+Along with removing the lamden wallet extension from the chrome all data is removed from the local storage as well. So you can be sure that all sensitive information deleted.

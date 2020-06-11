@@ -5,6 +5,11 @@ sidebar_label: Basics
 ---
  import embedGist from '@wino/docusaurus-gist-embed'
 
+const siteConfig = {
+  // …
+  markdownPlugins: [embedGist],
+  // …
+}
   
 
 ### How to create a contract
@@ -38,6 +43,8 @@ pip3 install sanic
 ``` 
 
 In your IDE creat file contracting_server.py
+
+{gist JeffWScott/7157af4600468cd755d557349de5d2e8/raw/9debfe6f9af01ef0277a49ce93ddf3142bd81486}
 
 ```python
 # server/contracting_server.py
