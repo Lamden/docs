@@ -9,31 +9,101 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 Github: [https://github.com/Lamden/wallet](https://github.com/Lamden/wallet)
 
-Current Doco: none
-
 ###  Locking and Unlocking
-### Adding/Deleting a keypair
-### Editing keypair info
-### Changing nickname
-You can change the name of the wallet by following next instruction.
+Unlocking: 
+If the wallet is locked, you will be required to enter your password before using it. Once you enter your password, the wallet will unlock.
+
+The wallet will stay unlocked if you close the browser tab. It remains active in the background of the browser so that dApps can interact with it.
+
+Locking:
+There are two ways to lock the wallet.
+
+Explicitly: Click the "Sign out & Lock" menu item on the left-side menu
+
+Implicitly: Closing down your browser (not just the tab)
+
+### Adding/Deleting a wallet
+
+There are three types of accounts that you can add to the wallet
+
+1. Create New
+2. Add Existing
+3. Add Address that you will track only.
+
+To create a new account 
+
+1. Open the Lamden extension in the browser
+2. Click on the `Holdings`
+3. At the right screen, select `Add Wallet.`
+4. Select `Create New`
+5. Enter Wallet Nickname (Optional)
+6. Click Save
+
+To add Existing account 
+
+1. Open the Lamden extension in the browser
+2. Click on the `Holdings`
+3. At the right screen, select `Add Wallet.`
+4. Select `Add Existing Account`
+5.  Enter Private Key
+6.  Enter Wallet Nickname (Optional)
+7.  Click Save
+
+To add Track Address 
+
+1. Open the Lamden extension in the browser
+2. Click on the `Holdings`
+3. At the right screen, select `Add Wallet.`
+4. Select `Add Track Address`
+5.  Enter Private Key
+6.  Enter Wallet Nickname (Optional)
+7.  Click Save
+
+### Editing wallet info
+
+#### Changing nickname
+
+You can change the name of the wallet by following the next instruction.
+
+1. Open the Lamden extension in the browser
+2. Click on the `Holdings`
+3. Click on the wallet that you would like to change a nickname.
+4. Click on the options.
+5. Select `Edit Wallet Nickname.`
+6. Change `Nickname`.
+7. Click Save.
+8. Click Back.
 
 ![](/img/wallet/Rename_Wallet.gif)
 
-### Copy public key
+### Copy Account Address
+
+1. Open the Lamden extension in the browser
+2. Click on the `Holdings`
+3. Select the wallet.
+4. Click on the `Options.`
+5. Click on the button `Copy Key to Clipboard.`
+
+Now you can send on the copied address funds from your accounts, or you can give the Address to somebody and ask them to send funds in the future.
 
 ## Sending Transactions
 
 ### What is a transaction on Lamden
 
+The transaction is a result of a smart working contract that was called by function internally or externally.
+
+Technically the transaction in Lamden is a record stored in the database with specific arguments.
+The arguments include all necessary data to track the event related to the transaction. 
+
 ### Data Types to choose (text, address, number etc)
 
-In order to transfer TAU you need to take into account next fields:
+To transfer TAU, you need to take into account the next fields:
 
-- `The Wallet to sent from:` this field populating automatically once you select a a source account in the wallet.
+- `The Wallet to sent from:` once you select a source account in the wallet, this field is populating automatically.
   
-- `Stamp Limit:` by default thi field has value '15000'.
+- `Stamp Limit:` by default, this field has value '15000'.
   
-- `Enter Contract Name`: since you are transfering money it has value 'currency'.
+- `Enter Contract Name`: since you are transferring money, it has value 'currency.'
 
 #### The field `Function name:` has next values to select:
 
@@ -44,31 +114,49 @@ In order to transfer TAU you need to take into account next fields:
 - `approve`
 - `transfer from`
 
-
 ### How to send “TAU”
+1. Open wallet 
+2. Click on the `Holdings`
+3. At the right part of the screen click on `SENT TX`
+4. Select `The Wallet to send From` 
+5. Leave fields populated by default: `Stamp Limit` `Enter Contact Name`, `Function Name`.
+
+To send transactions to enter `Transaction Arguments`.
+
+In the field, `Amount` enter any amount that you are going to send and `To(text)-account address` the Address of recipient.
+
+Click `Next`
+
+On the next screen, click `Confirm Transaction` and click Ok. 
+
+Click `Home`.
 
 ![](/img/wallet/send_tx_and_check_balance.gif)
 
 ### What is the currency contract
 
-Currency contract allows to process cryptocurrency transferring between accounts.
+Currency contract allows processing cryptocurrency transferring between accounts.
 
+That smart-contract checks the balance on your account, and if you have enough funds, the amount that you set will be sent to the recipient.
+
+The code of the contract you can see by this link
+
+**[Currency.py](https://github.com/Lamden/cilantro/blob/dev/cilantro_ee/contracts/genesis/currency.s.py)**
 
 ### What is the transfer method
 
 Transfer method has two arguments
 
 - `Amount(decimal)`
-- `To (txt)` - where address of recipient should be
+- `To (txt)` - where Address of recipient should be
 
 ### What are the args you need
 
-To send transaction you need to enter only two arguments `Amount(decimal)` and `To (txt)` .
+To send transaction, you need to enter only two arguments `Amount(decimal)` and `To (txt)`.
 
 ### Purging transactions
 
-If you would like to clear the history of transactions in your wallet follow next steps:
-
+If you would like to clear the history of transactions in your wallet, follow the next steps:
 
 1. Open the wallet
 2. At left sidebar select `Holdings`
@@ -77,21 +165,49 @@ If you would like to clear the history of transactions in your wallet follow nex
 5. Click on the `Purge Transactions`
 
 To verify if transactions were purged
-1. Open item `History` at the sidebar.
 
-all transactions related to the selected wallet should be purged.
+6. Open item `History` at the sidebar.
 
-## Backup
+All transactions related to the selected wallet should be purged.
+
+## Backup 
+
+You can save a backup of your main account or all of your accounts stored in the wallet. 
+
+There are some cases when this feature can help you. For example, you are going to change your laptop or delete a browser, in other cases, to re-install the OS. 
+
+All mentioned cases required to make a back up of your wallet. Once you delete the extension, the storage space for the extension will be deleted as well, so all data related to the wallet will be deleted too.
 
 ### Step by step explanation
+
+1. Open wallet 
+
+2. At the left sidebar, click on the item `Backup Wallet`.
+3. On the right side of the screen, click on the button `Backup Wallet`.
+4. Click `Create Backup File`
+5. In the next screen enter 
+   
+- Password
+- Confirm Password
+- Password Hint
+  
+Keep that password in a safe place. For example, you can use LastPass.
+
+6. Click `Keystore`
+
+On the next step, the Keystore file will be generated, and you will be asked to confirm by marking the checkbox `I Understand` and click on `Download File.`
+
+In the opened interface to the filesystem, select a disk and a folder where you would like to store a Keystore file.
+
+7. Click `Save`.
+   
 ![](/img/wallet/backup_keystore.gif)
 
 ## What is the backup warning for?
 
-The backup is stored and you got a tiny icon near item menu 'Backup Wallet'.
+The backup is stored, and you got a tiny icon near the item menu 'Backup Wallet'.
 
-It warns you to make backup your wallet regularly. 
-
+It warns you to make a backup of your wallet regularly. 
 
 <div class="alert alert--warning" role="alert">
   <button aria-label="Close" class="close" type="button">
@@ -100,35 +216,66 @@ It warns you to make backup your wallet regularly.
   `You have added Keys since your last backup so it is HIGHLY recommended that you create another backup.`
 </div>
 
-
 ![](/img/wallet/backup_warning.gif)
-
 
 ### Dismissing the warning
 
 You can click on the icon at the end of the warning and dismiss it.
 
 ## Restore
-To restore your wallet you need to have a password that you used for creating keystore. 
-Keep that password in a safe place. For example, you can use LastPass.
+To restore your wallet, you need to have a password that you used for creating Keystore. 
+
+
 
 ![](/img/wallet/restore_wallet.gif)
 
+
 ## IDE
 
+The Lamden wallet includes an interface for the smart contract submission. 
+Using embedded IDE in the Lamden wallet, you can view existed contracts on the network and submit new smart contracts.
+
 ### How to create a new blank contract
+
+1. Open the wallet 
+2. Click `Smart Contracts`
+3. At the right part of the screen, click on the `+` to add a new smart contract.
+4. On the next screen, select one of the options `Blank Contract` or `Example Contract`. 
+
+If you select  `Blank Contract`, the area for writing a contract will be empty.
+In other cases, if you select `Example Contract,` you will see smart-contract with like an example for reference.
+
 ### How to open an existing contract from the Lamden network
+
+There is an option to get the sources of smart contract that was submitted to the Blockchain. 
+
+1. Open the wallet.
+2. Click `Smart Contracts`
+3. At the right part of the screen, click on the `+` to add a new smart contract.
+
+In the field `From Blockchain`, you can enter the name of the contract that was submitted before in the Blockchain, for example - `currency` and click `Open`. The new tab with the contract will be opened.
+
 ### How to check contract for errors
-### How to submit contract the the network
+
+Once you finished writing the smart contract or just paste it there, you can check if the smart contact has errors. 
+
+To check the smart contract, you can click on `Check Contract`. If the smart contract has any errors, you will get  warnings. 
+
+### How to submit contract the  network
+
+1. Open the wallet.
+2. Click `Smart Contracts`
+3. At the right part of the screen, click on the `+` to add a new smart contract.
+4. Write a smart contract and click `Submit to Network`.
 
 ### Changing/Adding Lamden Blockchain networks
 
 To change blockchain network follow next steps to change or add a new blockchain network.
 
 1. Open the wallet
-2. At the left navigation sidebar select `Developer Tools` .
+2. At the left navigation sidebar, select `Developer Tools`.
 
-You will get an interface where you can add new network by adding such parameters as:
+You will get an interface where you can add a new network by adding such parameters as:
 
 - `Blockchain Network Name`
 - `Network Type`
@@ -136,8 +283,7 @@ You will get an interface where you can add new network by adding such parameter
 - `Port`
 - `Network Symbol`
   
-After adding network you will get an option to select new network in the dropdown list at the left.
-
+After adding the network you will get an option to select a new network in the dropdown list at the left.
 
 ### Types of networks (mainnet, testnet, mockchain)
 
@@ -145,80 +291,36 @@ There are three types of network that propose Lamden:
 
 - Mainnet
 
-
 - [Testnet](https://github.com/Lamden/cilantro-enterprise)
   
 
 - [Mockchain](https://github.com/Lamden/mockchain)
 
 
-
 ### Explain dTAU for testnet and mTAU for mockchain
 
+Testnet and Mockchain network has cryptocurrency. 
 
+These cryptocurrencies  exist only in mentioned networks and cannot be exchanged or transferred between networks.
+
+However, you can use cryptocurrencies for the test of dApps and smart contracts.
 
 ### Adding a new dev network
 
+In the wallet, click on the top right corner `Current Network`.
+At the opened screen you will see two sections:
+
+- `Current Network` and 
+- `Add Network`
+
+In the section `Add Network`, you enter the next parameters.
+
+- Name 
+- Select `Network Type` among values Mockchain, Testnet, Mainnet
+- Hostname
+- Port
+- Network Symbol
+
+Click `Add Network`.
 
 ## Deleting Wallet and wallet information
-
-The deletion of wallet is irreversible process. Before deletion be sure that you have made a backup of the wallet and you don't any assets on the account.
-
-
-![](/img/wallet/wallet_deletion.gif)
-
-### Removing extension
-
-You can easily remove extension from the browser. 
-![](/img/wallet/remove_wallet.gif)
-
-### Deleting all storage info
-
-Along with removing the lamden wallet extension from the chrome all data is removed from the local storage as well. So you can be sure that all sensitive information deleted.
-
-1. Creating a web dapp (javascript)
-    1.  Interfacing with the Lamden Wallet from a webpage
-        1.  All messages from the webpage must be JSON encoded for security
-        2.  Creating and Listening for wallet events
-            1.  Sending an approve message to the wallet to have the user approve your dapp (website)
-                1.  “Approve event” details
-                    1. What Lamden network to approve for (mainnet, testnet, mockchain)
-                    2. What contract to approve for (your dapp can only be associated with 1 contract and you can only submit transactions against that 1 contract
-                    3. The user will get a popup to approve the transaction
-                    4. If approved the wallet will create a new keypair specifically for your dapp
-                    5. 
-## Sending a transaction request
-
-                1.  “SendTx” event details
-                    1. Supply the method name, kwargs and network
-                    2.  The wallet fills in the approved contract name
-                    3.  The wallet fills in the public key (vk) that the was automatically created for your dapp
-                    4.  The user will get a popup to approve the transaction
-
-
-            1.  Listen for Wallet Info
-                1.  “Wallet info” event can be listened to, to get
-                    1.  Wallet installed status
-                    2.  Wallet Locked status
-                    3.  Wallet version
-                    4.  Wallet vk associated with this dapp
-                        1. Only sent when wallet is unlocked
-                        2. dDApp can use this to check the TAU balance of it from the masternode
-                    5.  Current approvals by network (mainnet, testnet, mockchain)
-                        1. You can only have 1 approval on each Lamden network type
-                        2. Contract names can be different
-                        3. This info is only sent when the wallet is unlocked
-                2.  Wallet info will automatically when the wallet is locked and unlocked
-            2.  Listen for Transaction Results
-                1.  “TxStatus” can be listened to to get the result of a transaction
-                    1.  If this is a “mockchain” transaction you will not get a hash, just a state result
-                    2.  If this is a testnet or mainnet transaction you will get a hash back and then a subsequent state change result. It’s the dapps responsibility to keep track of these things
-    1.  Interfacing with the blockchain via Lamden-js
-        1.  Lots of examples exists at [https://github.com/Lamden/lamden-js](https://github.com/Lamden/lamden-js)
-    2.  Create a SMALL example website that interfaces with the wallet to show all workflows and features that developers can take advantage of
-        1.  [https://github.com/Lamden/wallet-integration-example](https://github.com/Lamden/wallet-integration-example) can be reworked to do this
-        2.  Comment website code verbosely to show how it all works
-1. Creating a server dapp (python)
-    1.  How to use Lampy to create a dapp…
-    2.  Create small dApp that can be shared on github as an example
-    3.  Comment code verbosely

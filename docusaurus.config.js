@@ -1,4 +1,7 @@
 module.exports = {
+ 
+  plugins: [path.resolve(__dirname, '/@wino/docusaurus-gist-embed')],
+
   title: 'Lamden Documentation Website',
   tagline: 'All you need for your next dApp',
   url: 'https://lamden.io',
@@ -130,7 +133,7 @@ module.exports = {
         },
         
         plugins: ['@docusaurus/plugin-ideal-image'],
-
+        plugins:['@wino/docusaurus-gist-embed'],
 
         themes: ['@docusaurus/theme-live-codeblock'],
         theme: {

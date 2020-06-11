@@ -1818,6 +1818,11 @@
     "@webassemblyjs/wast-parser" "1.9.0"
     "@xtuc/long" "4.2.2"
 
+"@wino/docusaurus-gist-embed@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@wino/docusaurus-gist-embed/-/docusaurus-gist-embed-1.0.2.tgz#52585471b4ee053fa71bf64005d5e6a12fc00de5"
+  integrity sha512-a5BiRM9YzglwYLu5b2pohI20DOyL6N+I7mtL0YFjkHx+0iARiwWwMrWxwyO3meDC4a34uhrJVQeQAWqjGCDSMg==
+
 "@xtuc/ieee754@^1.2.0":
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@xtuc/ieee754/-/ieee754-1.2.0.tgz#eef014a3145ae477a1cbc00cd1e552336dceb790"
