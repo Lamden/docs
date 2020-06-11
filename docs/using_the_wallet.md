@@ -178,6 +178,16 @@ There are some cases when this feature can help you. For example, you are going 
 
 All mentioned cases required to make a back up of your wallet. Once you delete the extension, the storage space for the extension will be deleted as well, so all data related to the wallet will be deleted too.
 
+As a result of backup keystore file will be created.
+
+The keystore is just an encrypted file containing all "wallets" (keypairs) in storage. 
+
+So you can take that keystore, and restore those keypairs to a different wallet if you have the KEYSTORE password.  
+
+The keystore does not use the wallet's password at all.
+Note:
+Keystore does not backup dapp realationships or transaction history.
+
 ### Step by step explanation
 
 1. Open wallet 
@@ -191,6 +201,7 @@ All mentioned cases required to make a back up of your wallet. Once you delete t
 - Confirm Password
 - Password Hint
   
+ to keep passwords in one place you can use **[LastPass.com](https://www.lastpass.com)**
 Keep that password in a safe place. For example, you can use LastPass.
 
 6. Click `Keystore`
@@ -205,9 +216,12 @@ In the opened interface to the filesystem, select a disk and a folder where you 
 
 ## What is the backup warning for?
 
-The backup is stored, and you got a tiny icon near the item menu 'Backup Wallet'.
+Regular backups are nessessary everytime a new account is created (that's why the wallet has that warning).
+
+The backup is stored, and you create a new account  you get a tiny icon near the item menu 'Backup Wallet'.
 
 It warns you to make a backup of your wallet regularly. 
+
 
 <div class="alert alert--warning" role="alert">
   <button aria-label="Close" class="close" type="button">
@@ -238,9 +252,6 @@ For restoring the wallets you need to have a keystore file that your save while 
 8. Click `Restore Wallets`
 
 Your wallets will be restored
-
-![](/img/wallet/restore_wallet.gif)
-
 
 ## IDE
 
