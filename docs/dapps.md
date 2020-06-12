@@ -271,6 +271,20 @@ Only available on the second response
 
 #### Interfacing with the blockchain via Lamden-js
 
+Lamden-js is a published npm package that you can install by regular command as any other npm package.
+
+```bash
+npm install lamden-js
+```
+
+To check the consistency of the package you can launch tests.
+
+```bash
+npm run tests
+```
+
+
+
 Lots of examples exists at **https://github.com/Lamden/lamden-js**
 
 Create a SMALL example website that interfaces with the wallet to show all workflows and features that developers can take advantage of
