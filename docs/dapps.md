@@ -4,8 +4,34 @@ title: Creating a web dapp (javascript)
 sidebar_label: Creating a web dapp (javascript)
 ---
 
+For development the dApp you need to meet a number of conditions:
+
+1. Your smart contract should be written and deployed to the one of the Lamden network.
+2. The smart contract should have public functions for communication with frontend components of the dApp.
+3. The wallet should have account with reasonable amount of TAU.
+
+
 
 ## Interfacing with the Lamden Wallet from a webpage
+
+### Netowrk API Endpoints
+
+To interact with blockchain you can use next API endpoints.
+
+All API methods return a value, Promise or callback if provided
+
+| method   |      masternode endpoint      |  Description |
+|:----------|:-------------:|:------:|
+| getContractInfo(contractName)  |  /contracts/*contractName* | Returns the contract code of *contractName*  **[example](http://167.172.126.5:18080/contracts/currency/)** |
+| getVariable(contractName, variableName, parms) |    /contracts/*contractName*/*variableName*?key=*parm*   |   Retrieve the current state of a contract variable  **[example](http://167.172.126.5:18080/contracts/currency/balances?key=7497cfd946eb332f66fe096d6473aa869cdc3836f1c7ac3630cea68e78228e3e)** |
+| getContractMethods(contractName) | /contracts/*contractName*/methods |    Returns all methods belonging to *contractName*  **[example](http://167.172.126.5:18080/contracts/currency/methods)** |
+| pingServer() | /ping | Checks if network is online  **[example](http://167.172.126.5:18080/ping)** |
+| getCurrencyBalance(vk) | /contracts/currency/balances | A wrapper method for getVariable() which always returns the result of the currency contract's balances?key=*vk*  **[example](http://167.172.126.5:18080/contracts/currency/balances?key=7497cfd946eb332f66fe096d6473aa869cdc3836f1c7ac3630cea68e78228e3e)**  |
+| contractExists(contractName) | /contracts/*contractName*  | a wrapper method for getContractInfo() which returns if a contract exists on the blockchain |
+| sendTransaction(txData, *callback*) | / | submits a contract to the network a txHash will be returned.  Use checkTransaction() to get tx result |
+| getNonce(senderVk, *callback*) | /nonce/*senderVk* |    Get the current *nonce* and *processor* for a public key (vk) **[example](http://167.172.126.5:18080/nonce/d41b8ed0d747ca6dfacdc58b78e1dba86cd9616359014eebd5f3443509111120)**|
+| checkTransaction(txHash, callback) | /tx?hash=*txHash* | Get the result of a transaction **[example](http://167.172.126.5:18080/tx?hash=998922b0e3ea6b5334ef8f134d5e3d2b08bb61b6f13da737abdfa475b25a4865)**|
+
 
 ### All messages from the webpage must be JSON encoded for security
 Connections to the Lamden Wallet are defined and restricted in the following ways for the security of the user.
@@ -96,7 +122,7 @@ Once you launch the dApp it sends the request to approval to the wallet. As a re
 
 The approval means that a new account for dApp was created and you can interact with the blockchain through this account. 
 
-To check if a new account was created you can open the wallet - > `Holdings`.
+To check if a new account was created you can open the wallet - > `Accounts`.
 
 In the list of accounts, you will get
 - a new row with `name of your dApp`, that consists of
@@ -152,9 +178,8 @@ const detail = JSON.stringify({
 document.dispatchEvent(new CustomEvent('lamdenWalletSendTx', {detail}));
 
 ```
-
-#### The wallet fills in the approved contract name
-#### The wallet fills in the public key (vk) that the was automatically created for your dapp
+The wallet fills in the approved contract name
+The wallet fills in the public key (vk) that the was automatically created for your dapp
 
 ## Listen for Wallet Info
 ### Getting Wallet Information
@@ -164,6 +189,7 @@ Wallet Information Details:
 - `wallets` and `approvals` will return empty until the user unlocks the Lamden Wallet
 
 This example assumes your dApp has been approved usign the steps above
+
 ```javascript
 document.addEventListener('lamdenWalletInfo', (response) => {
     if (response.locked){
@@ -191,6 +217,11 @@ document.dispatchEvent(new CustomEvent('lamdenWalletGetInfo'));
 
 When you launch the dApp there are specific pre-requisities in order the dApp start work correctly.
 
+1. The wallet should be installed
+2. You should be signed in to the wallet
+
+That is why the dapp check next statuses:
+
 - Wallet installed status
 
 The dApp instance check if the Lamden wallet installed in your browser.
@@ -209,15 +240,21 @@ After approvement of the dApp the wallet create new account. All further communi
 
 #### Only sent when wallet is unlocked
 
-All transactions of the dApp can be processed only in unlocked wallet. If you sign out from the wallet the transaction will return a error.
+All transactions of the dApp can be processed only in unlocked wallet. If you sign out from the wallet the dapp will return a error.
 
 ### dDApp can use this to check the TAU balance of it from the masternode
-## Current approvals by network (mainnet, testnet, mockchain)
+
+### Current approvals by network (mainnet, testnet, mockchain)
+
 ### You can only have 1 approval on each Lamden network type
+It is possible to setup the dapp only for one network. If you would like to deploy the dapp for the different networks you need to setup new dapp for every network. 
 
 ### Contract names can be different
+
 ### This info is only sent when the wallet is unlocked
-## Wallet info will automatically when the wallet is locked and unlocked
+Any interaction with a wallet can be done only witn unlocked wallet. To unlock you need to sign in to the wallet.
+
+### Wallet info will automatically when the wallet is locked and unlocked
 
 ## Listen for Transaction Results
 ### “TxStatus” can be listened to to get the result of a transaction
@@ -282,8 +319,6 @@ To check the consistency of the package you can launch tests.
 ```bash
 npm run tests
 ```
-
-
 
 Lots of examples exists at **https://github.com/Lamden/lamden-js**
 
