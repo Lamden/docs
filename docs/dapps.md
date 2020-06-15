@@ -4,12 +4,27 @@ title: Creating a web dapp (javascript)
 sidebar_label: Creating a web dapp (javascript)
 ---
 
+### Pre-requisities for development the dAPP in Lamden
 For development the dApp you need to meet several conditions:
 
 1. Your smart contract should be written and deployed to one of the Lamden networks.
 2. The smart contract should have public functions for communication with frontend components of the dApp.
-3. The wallet should have an account with a reasonable amount of TAU.
+4. A brand new account is created for your dApp in the Lamden Wallet and you are permitted to only transaction against that.
+5. The account should be with a reasonable amount of TAU.
+6. The contract must exists on the network and be approved.
+   
+### Connections to the Lamden Wallet 
 
+All connections to the Lamden Wallet are defined and restricted in the following ways for the safety of the user
+
+- The Lamden Wallet associates all interaction with the dApp via the dApp's host.  
+
+### Images customization
+
+All images used for customization are prefixed with the dApp's hostname when displayed in the wallet.
+
+- All transactions are locked to the approved contract for that network
+    - this includes state variable lookups when creating charms
 
 ## Interfacing with the Lamden Wallet from a webpage
 
@@ -26,28 +41,24 @@ All API methods return a value, Promise or callback if provided
 | getContractMethods(contractName) | /contracts/*contractName*/methods |    Returns all methods belonging to *contractName*  **[example](http://167.172.126.5:18080/contracts/currency/methods)** |
 | pingServer() | /ping | Checks if network is online  **[example](http://167.172.126.5:18080/ping)** |
 | getCurrencyBalance(vk) | /contracts/currency/balances | A wrapper method for getVariable() which always returns the result of the currency contract's balances?key=*vk*  **[example](http://167.172.126.5:18080/contracts/currency/balances?key=7497cfd946eb332f66fe096d6473aa869cdc3836f1c7ac3630cea68e78228e3e)**  |
-| contractExists(contractName) | NA | a wrapper method for getContractInfo() which returns if a contract exists on the blockchain |
-| sendTransaction(txData, *callback*) | / | submits a contract to the network a txHash will be returned.  Use checkTransaction() to get tx result |
+|contractExists(contractName) | NA | a wrapper method for getContractInfo() which returns if a contract exists on the blockchain |
+|sendTransaction(txData, *callback*) | / | submits a contract to the network a txHash will be returned.  Use checkTransaction() to get tx result |
 | getNonce(senderVk, *callback*) | /nonce/*senderVk* |    Get the current *nonce* and *processor* for a public key (vk) **[example](http://167.172.126.5:18080/nonce/d41b8ed0d747ca6dfacdc58b78e1dba86cd9616359014eebd5f3443509111120)**|
 | checkTransaction(txHash, callback) | /tx?hash=*txHash* | Get the result of a transaction **[example](http://167.172.126.5:18080/tx?hash=998922b0e3ea6b5334ef8f134d5e3d2b08bb61b6f13da737abdfa475b25a4865)**|
 
+
+
+
+
 ### All messages from the webpage must be JSON encoded for security
-Connections to the Lamden Wallet are defined and restricted in the following ways for the safety of the user.
-- The Lamden Wallet associates all interaction with the dApp via the dApp's host.  
-    - All images used for customization are prefixed with the dApp's hostname when displayed in the wallet.
-- A brand new keypair is created for your dApp in the Lamden Wallet and you are permitted to only transaction against that.
-- A dApp can only approve 1 contract per network type, testnet, mainnet)
-    - The contract to be approved must exist on the network it's being approved on
-- All transactions are locked to the approved contract for that network
-    - this includes state variable lookups when creating charms
 - All event detail is passed in JSON format.
 - Wallet interactions are done via browser events.
     - For security, no script tags are injected into the browser
-- If Locked, the Lamden Wallet will return a "Wallet is Locked" error for all events except lamdenWalletGetInfo
+- If Locked, the Lamden Wallet will return a `Wallet is Locked` error for all events except `lamdenWalletGetInfo`
     - It is up to the dApp to handle prompting the user to unlock their wallet
-    - 
+  
 ### Creating and Listening for wallet events
-**All event detail is passed in JSON format for security.**
+
 
 | Event  | Type | Description  |
 | ------------- |------------| -----|
@@ -60,58 +71,7 @@ Connections to the Lamden Wallet are defined and restricted in the following way
 
 ## Advanced Connection Requests Options
 
-### Customize the Lamden Wallet
-There are a few configuration options you can use to customize your dApps view in the Lamden Wallet. **All image paths are relative to your dApp's hostname.**
 
-| Property  | Example Value | Description  |
-| ------------- |------------| -----|
-| logo | 'images/logo.png' | This logo will be displayed next to your associated keypair in the main Lamden Wallet view as well as displayed in your dApps section of the Lamden Wallet |
-| background | 'images/background.png' | This is a custom background you can set to replace the default on in your dApps part of the Lamden Wallet  |
-
-```javascript
-detail.logo = 'images/logo.png'
-deatil.background = 'images/background.png'
-```
-### State Charms
-Charms can be added to your dApps section of the Lamden Wallet and provide state information about your dApps's contract.  An example would a custom token value, the current player's turn in a game, etc.  There is no limit on the amount of charms you can add.  Define the charms and send them along with your initial connection request.  All image paths are relative to your dApp's hostname.
-
-Key Variables
-
-**wallet vk** - The Lamden Wallet will substitute the public key of the keypair created for your dApp
-
-```javascript
-//for example
-key = "players:<wallet vk>"
-// Becomes
-"players:270add00fc708791c97aeb5255107c770434bd2ab71c2e103fbee75e202aa15e"
-```
-
-```javascript
-detail.charms = [
-    //This creates a charm that always shows the wallets balance of Stu Bucks
-    {
-        //The label displayed on the charm
-        name: "Stu Bucks"
-        //The state variable in yoru dApp's contract
-        variableName: "customToken",
-        //described in section above this
-        key: "<wallet vk>",
-        //What format to display the returned value (number will also display as float)
-        formatAs: "number",
-        //Icon path is relative to your dDapp's hostname
-        //This iconPath will become http://www.mydapp.com/images/token.png
-        iconPath: "images/token.png",
-    },
-    //This creates a charm that always shows the current player's turn in a game
-    {
-        variableName: "playerTurn",
-        formatAs: "string",
-        iconPath: "images/player.png",
-        name: "Player Turn"
-    }
-]
-```
-!["Example of State Charms"](/img/charms.png)
 
 ### Sending an approve message to the wallet to have the user approve your dapp (website)
 Once you launch the dApp it sends the request to approval to the wallet. As a result, of approval hash of approval created.
