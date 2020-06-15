@@ -48,8 +48,6 @@ All API methods return a value, Promise or callback if provided
 
 
 
-
-
 ### All messages from the webpage must be JSON encoded for security
 - All event detail is passed in JSON format.
 - Wallet interactions are done via browser events.
