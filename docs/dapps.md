@@ -14,7 +14,7 @@ For development the dApp you need to meet a number of conditions:
 
 ## Interfacing with the Lamden Wallet from a webpage
 
-### Netowrk API Endpoints
+### Network API Endpoints
 
 To interact with blockchain you can use next API endpoints.
 
@@ -27,7 +27,7 @@ All API methods return a value, Promise or callback if provided
 | getContractMethods(contractName) | /contracts/*contractName*/methods |    Returns all methods belonging to *contractName*  **[example](http://167.172.126.5:18080/contracts/currency/methods)** |
 | pingServer() | /ping | Checks if network is online  **[example](http://167.172.126.5:18080/ping)** |
 | getCurrencyBalance(vk) | /contracts/currency/balances | A wrapper method for getVariable() which always returns the result of the currency contract's balances?key=*vk*  **[example](http://167.172.126.5:18080/contracts/currency/balances?key=7497cfd946eb332f66fe096d6473aa869cdc3836f1c7ac3630cea68e78228e3e)**  |
-| contractExists(contractName) | /contracts/*contractName*  | a wrapper method for getContractInfo() which returns if a contract exists on the blockchain |
+| contractExists(contractName) | NA | a wrapper method for getContractInfo() which returns if a contract exists on the blockchain |
 | sendTransaction(txData, *callback*) | / | submits a contract to the network a txHash will be returned.  Use checkTransaction() to get tx result |
 | getNonce(senderVk, *callback*) | /nonce/*senderVk* |    Get the current *nonce* and *processor* for a public key (vk) **[example](http://167.172.126.5:18080/nonce/d41b8ed0d747ca6dfacdc58b78e1dba86cd9616359014eebd5f3443509111120)**|
 | checkTransaction(txHash, callback) | /tx?hash=*txHash* | Get the result of a transaction **[example](http://167.172.126.5:18080/tx?hash=998922b0e3ea6b5334ef8f134d5e3d2b08bb61b6f13da737abdfa475b25a4865)**|
@@ -38,7 +38,7 @@ Connections to the Lamden Wallet are defined and restricted in the following way
 - The Lamden Wallet assocaites all interaction with the dApp via the dApp's host.  
     - All images used for customization are prefixed with the dApp's hostname when displayed in the wallet.
 - A brand new keypair is created for your dApp in the Lamden Wallet and you are permitted to only transaction against that.
-- A dApp can only approve 1 contract per network type (mockchain, testnet, mainnet)
+- A dApp can only approve 1 contract per network type, testnet, mainnet)
     - The contract to be approved must exist on the network it's being approved on
 - All transacations are locked to the approved contract for that network
     - this includes state variable lookups when creating charms
@@ -49,6 +49,9 @@ Connections to the Lamden Wallet are defined and restricted in the following way
     - It is up to the dApp to handle prompting the user to unlock their wallet
     - 
 ### Creating and Listening for wallet events
+**All event detail is passed in JSON format for security.**
+
+
 | Event  | Type | Description  |
 | ------------- |------------| -----|
 | lamdenWalletGetInfo | CustomEvent | Ask the Wallet for the current info which includes version, installed/setup status, locked status, wallet key assigned to your dApp and which connection approvals you currently have |
@@ -57,7 +60,7 @@ Connections to the Lamden Wallet are defined and restricted in the following way
 | lamdenWalletTxStatus | Event Listener | Results from your transactions request will be sent here  |
 | lamdenWalletInfo | Event Listener | Results from your Information request will be sent here.  All locking and unlocking of the user's wallet will automatically generate an event here. |
 
-**All event detail is passed in JSON format for security.**
+
 
 ## Advanced Connection Requests Options
 
@@ -126,18 +129,29 @@ To check if a new account was created you can open the wallet - > `Accounts`.
 
 In the list of accounts, you will get
 - a new row with `name of your dApp`, that consists of
-- the `balance of TAU` and `link to the dApp`.
+  - the `balance of TAU` and `link to the dApp`.
 
 ## “Approve event” details
 
-### What Lamden network to approve for (mainnet, testnet, mockchain)
+If you send the transaction through your dapp the wallet initiate an approval event in order to confirm if you are going to approve the transaction. You can set amount of TAU that you are allocate beforehand for the future transactions.
 
-### What contract to approve for (your dapp can only be associated with 1 contract and you can only submit transactions against that 1 contract
+### What Lamden network to approve for (mainnet, testnet)
+
+To use dapp on every network you need to deploy the smart contract for each of them respectively.
+
+The dapp will be approved for every blockchain network separately, as well. 
+
+#### What contract to approve for (your dapp can only be associated with 1 contract and you can only submit transactions against that 1 contract
 
 In order to use the dApp with interaction of blockchain you need to develop and submit a smart contract to the blockchain.
 
 It is not possible to add more than one smart contract in the dApp.
 All further transactions of the dapp will go throught the contract and new account that was created in your wallet.
+
+In the same time, logically you are not limited only by one smart contract in a dApp. 
+
+There is an option to import other smart-contracts. 
+more detailed information about smart contracts you can find in the section **[Smart contracting](/docs/contracting_and_smart_contract).**
 
 ### The user will get a popup to approve the transaction
 
@@ -152,7 +166,7 @@ By approving the transaction you confirm that you pay for processing this transa
 - The Lamden Wallet will automatically supply this information to your transactions
     - contractName: what was supplied in the connection request
     - senderVk: The public key of the keypair associated to your dApp
-    - network: The masternode information for the network type in the request (mainnet, testnet, mockchain)
+    - network: The masternode information for the network type in the request (mainnet, testnet)
     - signature: The Lamden Wallet will sign the transaction with the keypair assocatied with your dApp.
 
 ### Send a transaction
@@ -161,7 +175,7 @@ By approving the transaction you confirm that you pay for processing this transa
 ```javascript
 const detail = JSON.stringify({
     //Which Lamden Network to send this to
-    //mainnet, testnet or mockchain are the only acceptable values
+    //mainnet, testnet o are the only acceptable values
     networkType: 'mainnet', 
     //The method in your contract to call
     methodName: 'movePlayer', 
@@ -188,7 +202,7 @@ Wallet Information Details:
 - Listening to `lamdenWalletInfo` will provide you the info object everytime the user locks and unlocks their wallet
 - `wallets` and `approvals` will return empty until the user unlocks the Lamden Wallet
 
-This example assumes your dApp has been approved usign the steps above
+This example assumes your dApp has been approved using the steps above
 
 ```javascript
 document.addEventListener('lamdenWalletInfo', (response) => {
@@ -242,24 +256,38 @@ After approvement of the dApp the wallet create new account. All further communi
 
 All transactions of the dApp can be processed only in unlocked wallet. If you sign out from the wallet the dapp will return a error.
 
-### dDApp can use this to check the TAU balance of it from the masternode
+### dApp can use this to check the TAU balance of it from the masternode
 
-### Current approvals by network (mainnet, testnet, mockchain)
+Among all available functions that lamden-js provide there is a function that allow to check the balance of your account.
+
+```javascript
+getCurrencyBalance(vk)
+```
+More detailed information you can check following the **[link](#network-api-endpoints)**
+
+
+
+### Current approvals by network (mainnet, testnet)
+
+To track the dapps you can open your wallet and check the accounts that are associated with your dapps. 
 
 ### You can only have 1 approval on each Lamden network type
 It is possible to setup the dapp only for one network. If you would like to deploy the dapp for the different networks you need to setup new dapp for every network. 
 
 ### Contract names can be different
 
+You can create the same smart contract and deploy it to the network under different names as many times as you want.
+
 ### This info is only sent when the wallet is unlocked
 Any interaction with a wallet can be done only witn unlocked wallet. To unlock you need to sign in to the wallet.
 
 ### Wallet info will automatically when the wallet is locked and unlocked
+Basically the 'lamdenWalletInfo' listener will fire automatically when the user locks and unlocks the wallet. So your app can respond immediately
 
 ## Listen for Transaction Results
 ### “TxStatus” can be listened to to get the result of a transaction
 
- - If this is a `mockchain` transaction you will not get a hash, just a state result
+ - If this is a` transaction you will not get a hash, just a state result
  - If this is a `testnet` or `mainnet` transaction you will get a hash back and then a subsequent state change result. It’s the dapps responsibility to keep track of these things
 - 
 ```javascript
