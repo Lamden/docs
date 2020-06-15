@@ -220,30 +220,6 @@ document.dispatchEvent(new CustomEvent('lamdenWalletGetInfo'));
 | wallets | The Lamden public key your dApp was assigned.  There will only ever be 1 value in this array. |
 | approvals | The contracts you currently have approved on which networks along with a hash of the last approved connection information |
 
-### “Wallet info” event can be listened to get
-
-When you launch the dApp there are specific pre-requisites in order the dApp start work correctly.
-
-1. The wallet should be installed
-2. You should be signed in to the wallet
-
-That is why the dapp check next statuses:
-
-- Wallet installed status
-
-The dApp instance check if the Lamden wallet installed in your browser.
-
-- Wallet Locked status
-
-If you have installed the wallet and you click on `Sign out & Lock` and did not sign in you get a warning that your wallet is `Locked`.
-
-- Wallet version
-
-your dApp can check the current version of the Wallet and display the version on the screen.
-
-- Wallet account associated with this dapp
-
-After approvement of the dApp the wallet create new account. All further communications will be going through this account.
 
 #### Only sent when wallet is unlocked
 
