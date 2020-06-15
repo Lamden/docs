@@ -4,19 +4,18 @@ title: Creating a web dapp (javascript)
 sidebar_label: Creating a web dapp (javascript)
 ---
 
-For development the dApp you need to meet a number of conditions:
+For development the dApp you need to meet several conditions:
 
-1. Your smart contract should be written and deployed to the one of the Lamden network.
+1. Your smart contract should be written and deployed to one of the Lamden networks.
 2. The smart contract should have public functions for communication with frontend components of the dApp.
-3. The wallet should have account with reasonable amount of TAU.
-
+3. The wallet should have an account with a reasonable amount of TAU.
 
 
 ## Interfacing with the Lamden Wallet from a webpage
 
 ### Network API Endpoints
 
-To interact with blockchain you can use next API endpoints.
+To interact with blockchain, you can use the next API endpoints.
 
 All API methods return a value, Promise or callback if provided
 
@@ -32,15 +31,14 @@ All API methods return a value, Promise or callback if provided
 | getNonce(senderVk, *callback*) | /nonce/*senderVk* |    Get the current *nonce* and *processor* for a public key (vk) **[example](http://167.172.126.5:18080/nonce/d41b8ed0d747ca6dfacdc58b78e1dba86cd9616359014eebd5f3443509111120)**|
 | checkTransaction(txHash, callback) | /tx?hash=*txHash* | Get the result of a transaction **[example](http://167.172.126.5:18080/tx?hash=998922b0e3ea6b5334ef8f134d5e3d2b08bb61b6f13da737abdfa475b25a4865)**|
 
-
 ### All messages from the webpage must be JSON encoded for security
-Connections to the Lamden Wallet are defined and restricted in the following ways for the security of the user.
-- The Lamden Wallet assocaites all interaction with the dApp via the dApp's host.  
+Connections to the Lamden Wallet are defined and restricted in the following ways for the safety of the user.
+- The Lamden Wallet associates all interaction with the dApp via the dApp's host.  
     - All images used for customization are prefixed with the dApp's hostname when displayed in the wallet.
 - A brand new keypair is created for your dApp in the Lamden Wallet and you are permitted to only transaction against that.
 - A dApp can only approve 1 contract per network type, testnet, mainnet)
     - The contract to be approved must exist on the network it's being approved on
-- All transacations are locked to the approved contract for that network
+- All transactions are locked to the approved contract for that network
     - this includes state variable lookups when creating charms
 - All event detail is passed in JSON format.
 - Wallet interactions are done via browser events.
@@ -51,15 +49,13 @@ Connections to the Lamden Wallet are defined and restricted in the following way
 ### Creating and Listening for wallet events
 **All event detail is passed in JSON format for security.**
 
-
 | Event  | Type | Description  |
 | ------------- |------------| -----|
 | lamdenWalletGetInfo | CustomEvent | Ask the Wallet for the current info which includes version, installed/setup status, locked status, wallet key assigned to your dApp and which connection approvals you currently have |
-| lamdenWalletConnect | CustomEvent | Send an inital connection request to have the wallet paired up with your dApp.  See below for API instructions. |
+| lamdenWalletConnect | CustomEvent | Send an initial connection request to have the wallet paired up with your dApp.  See below for API instructions. |
 | lamdenWalletSendTx | CustomEvent | Send a transactions request to the wallet for transmission |
 | lamdenWalletTxStatus | Event Listener | Results from your transactions request will be sent here  |
 | lamdenWalletInfo | Event Listener | Results from your Information request will be sent here.  All locking and unlocking of the user's wallet will automatically generate an event here. |
-
 
 
 ## Advanced Connection Requests Options
@@ -70,18 +66,18 @@ There are a few configuration options you can use to customize your dApps view i
 | Property  | Example Value | Description  |
 | ------------- |------------| -----|
 | logo | 'images/logo.png' | This logo will be displayed next to your associated keypair in the main Lamden Wallet view as well as displayed in your dApps section of the Lamden Wallet |
-| background | 'images/background.png' | This is a custome background you can set to repalce the defualt on in your dApps section of the Lamden Wallet  |
+| background | 'images/background.png' | This is a custom background you can set to replace the default on in your dApps part of the Lamden Wallet  |
 
 ```javascript
 detail.logo = 'images/logo.png'
 deatil.background = 'images/background.png'
 ```
 ### State Charms
-Charms can be added to your dApps section of the Lamden Wallet and provide state information about your dApps's contract.  Example would a custome token value, the current player's turn in a game, etc.  There is no limit on the amount of charms you can add.  Define the charms and send them along with your initial connection request.  All image paths are relative to your dApp's hostname.
+Charms can be added to your dApps section of the Lamden Wallet and provide state information about your dApps's contract.  An example would a custom token value, the current player's turn in a game, etc.  There is no limit on the amount of charms you can add.  Define the charms and send them along with your initial connection request.  All image paths are relative to your dApp's hostname.
 
 Key Variables
 
-**wallet vk** - The Lamden Wallet will subsitute the public key of the keypair created for your dApp
+**wallet vk** - The Lamden Wallet will substitute the public key of the keypair created for your dApp
 
 ```javascript
 //for example
@@ -117,52 +113,50 @@ detail.charms = [
 ```
 !["Example of State Charms"](/img/charms.png)
 
-
 ### Sending an approve message to the wallet to have the user approve your dapp (website)
 Once you launch the dApp it sends the request to approval to the wallet. As a result, of approval hash of approval created.
 
 ### If approved the wallet will create a new account specifically for your dapp
 
-The approval means that a new account for dApp was created and you can interact with the blockchain through this account. 
+The approval means that a new account for dApp was created, and you can interact with the blockchain through this account. 
 
-To check if a new account was created you can open the wallet - > `Accounts`.
+To check if a new account was created, you can open the wallet - > `Accounts`.
 
 In the list of accounts, you will get
-- a new row with `name of your dApp`, that consists of
+- a new row with `name of your dApp` that consists of
   - the `balance of TAU` and `link to the dApp`.
 
 ## “Approve event” details
 
-If you send the transaction through your dapp the wallet initiate an approval event in order to confirm if you are going to approve the transaction. You can set amount of TAU that you are allocate beforehand for the future transactions.
+If you send the transaction through your dapp the wallet initiates an approval event in order to confirm if you are going to approve the transaction. You can set amount of TAU for future transactions.
 
 ### What Lamden network to approve for (mainnet, testnet)
 
-To use dapp on every network you need to deploy the smart contract for each of them respectively.
+To use dapp on every network, you need to deploy the smart contract for each of them, respectively.
 
 The dapp will be approved for every blockchain network separately, as well. 
 
-#### What contract to approve for (your dapp can only be associated with 1 contract and you can only submit transactions against that 1 contract
+#### What contract to approve for (your dapp can only be associated with one contract , and you can only submit transactions against that one contract
 
-In order to use the dApp with interaction of blockchain you need to develop and submit a smart contract to the blockchain.
+To use the dApp with the interaction of blockchain, you need to develop and submit a smart contract to the blockchain.
 
 It is not possible to add more than one smart contract in the dApp.
-All further transactions of the dapp will go throught the contract and new account that was created in your wallet.
+All further transactions of the dapp will go through the contract and new account that was created in your wallet.
 
-In the same time, logically you are not limited only by one smart contract in a dApp. 
+At the same time, logically, you are not limited only by one smart contract in a dApp. 
 
 There is an option to import other smart-contracts. 
 more detailed information about smart contracts you can find in the section **[Smart contracting](/docs/contracting_and_smart_contract).**
 
 ### The user will get a popup to approve the transaction
 
-Every transaction that initiated by the dApp should be approved by user. 
-For this reason the wallet initiate a pop-up window with option to `Deny` or `Approve` the transaction.
+Users should approve every transaction initiated by the dApp. 
+For this reason, the wallet initiates a pop-up window with the option to `Deny` or `Approve` the transaction.
 
-By approving the transaction you confirm that you pay for processing this transaction by blockchain. Also you can pre-approve defined amount of stamps for further transactions and this pop-up window will not appear untill your preapproved amount of stamps run out.
-
+By approving the transaction, you confirm that you pay for processing this transaction by blockchain. Also, you can pre-approve a defined amount of stamps for further transactions, and this pop-up window will not appear until your preapproved amount of stamps run out.
 
 ## Sending Transaction Requests
-- Transactions are locked to the name of the contract that was approved durring the connection request.
+- Transactions are locked to the name of the contract that was approved during the connection request.
 - The Lamden Wallet will automatically supply this information to your transactions
     - contractName: what was supplied in the connection request
     - senderVk: The public key of the keypair associated to your dApp
@@ -224,12 +218,11 @@ document.dispatchEvent(new CustomEvent('lamdenWalletGetInfo'));
 | setup | Boolean: If the user has run the Lamden Wallet through the inital setup |
 | locked | Boolean: If the wallet is locked or not |
 | wallets | The Lamden public key your dApp was assigned.  There will only ever be 1 value in this array. |
-| approvals | The contracts you currently have aprroved on which networks along with a hash of the last approved conenction infomation |
+| approvals | The contracts you currently have approved on which networks along with a hash of the last approved connection information |
 
+### “Wallet info” event can be listened to get
 
-### “Wallet info” event can be listened to, to get
-
-When you launch the dApp there are specific pre-requisities in order the dApp start work correctly.
+When you launch the dApp there are specific pre-requisites in order the dApp start work correctly.
 
 1. The wallet should be installed
 2. You should be signed in to the wallet
@@ -254,11 +247,11 @@ After approvement of the dApp the wallet create new account. All further communi
 
 #### Only sent when wallet is unlocked
 
-All transactions of the dApp can be processed only in unlocked wallet. If you sign out from the wallet the dapp will return a error.
+All transactions of the dApp can be processed only in the unlocked wallet. If you sign out from the wallet, the dapp will return an error.
 
 ### dApp can use this to check the TAU balance of it from the masternode
 
-Among all available functions that lamden-js provide there is a function that allow to check the balance of your account.
+Among all available functions that lamden-js provide, there is a function that allows to check the balance of your account.
 
 ```javascript
 getCurrencyBalance(vk)
@@ -266,12 +259,11 @@ getCurrencyBalance(vk)
 More detailed information you can check following the **[link](#network-api-endpoints)**
 
 
-
 ### Current approvals by network (mainnet, testnet)
 
 To track the dapps you can open your wallet and check the accounts that are associated with your dapps. 
 
-### You can only have 1 approval on each Lamden network type
+### You can only have one approval on each Lamden network type
 It is possible to setup the dapp only for one network. If you would like to deploy the dapp for the different networks you need to setup new dapp for every network. 
 
 ### Contract names can be different
@@ -279,13 +271,13 @@ It is possible to setup the dapp only for one network. If you would like to depl
 You can create the same smart contract and deploy it to the network under different names as many times as you want.
 
 ### This info is only sent when the wallet is unlocked
-Any interaction with a wallet can be done only witn unlocked wallet. To unlock you need to sign in to the wallet.
+Any interaction with a wallet can be done only with an unlocked wallet. To unlock, you need to sign in to the wallet.
 
 ### Wallet info will automatically when the wallet is locked and unlocked
-Basically the 'lamdenWalletInfo' listener will fire automatically when the user locks and unlocks the wallet. So your app can respond immediately
+Basically, the 'lamdenWalletInfo' listener will fire automatically when the user locks and unlocks the wallet. So your app can respond immediately
 
 ## Listen for Transaction Results
-### “TxStatus” can be listened to to get the result of a transaction
+### “TxStatus” can be listened to get the result of a transaction
 
  - If this is a` transaction you will not get a hash, just a state result
  - If this is a `testnet` or `mainnet` transaction you will get a hash back and then a subsequent state change result. It’s the dapps responsibility to keep track of these things
@@ -301,7 +293,6 @@ document.addEventListener('lamdenWalletTxStatus', (response) => {
 });
 
 ```
-
 
 #### Response object
 This information is avaiable in both responses
@@ -333,7 +324,6 @@ Only available on the second response
 |transaction | the transaction payload sent to the masternode |
 |timestamp | date/time stamp |
 
-
 #### Interfacing with the blockchain via Lamden-js
 
 Lamden-js is a published npm package that you can install by regular command as any other npm package.
@@ -342,11 +332,8 @@ Lamden-js is a published npm package that you can install by regular command as 
 npm install lamden-js
 ```
 
-To check the consistency of the package you can launch tests.
+To check the consistency of the package, you can launch tests.
 
 ```bash
 npm run tests
 ```
-
-
-
