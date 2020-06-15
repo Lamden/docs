@@ -348,9 +348,5 @@ To check the consistency of the package you can launch tests.
 npm run tests
 ```
 
-Lots of examples exists at **https://github.com/Lamden/lamden-js**
 
-Create a SMALL example website that interfaces with the wallet to show all workflows and features that developers can take advantage of
-**https://github.com/Lamden/wallet-integration-example** can be reworked to do this
-Comment website code verbosely to show how it all works
 

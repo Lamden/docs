@@ -40,6 +40,7 @@ module.exports = {
         'using_the_wallet',
         'purpose_of_the_wallet',
         'dapps',
+        'dapps_example',
         'dapps_python'
       ],
       
