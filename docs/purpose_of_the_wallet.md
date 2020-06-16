@@ -96,13 +96,5 @@ More information about blockchain networks you can read following the **[link](/
 
 
 
-## Allows approving and whitelisting of dapps that can access your keys
-### Approving a dapp (via popup)
-### Approving a transactions from a dapp (via popup)
-### Whitelisting dapp transactions
-## Risks
-### You must trust the App
-### Benefits
-#### You don't need to approve each transaction
 
 

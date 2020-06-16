@@ -3,7 +3,6 @@ id: using_the_wallet
 title: Using the Wallet
 sidebar_label: Using the Wallet
 ---
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ## Wallet and interacting with the wallet
 
@@ -22,7 +21,7 @@ Explicitly: Click the "Sign out & Lock" menu item on the left-side menu
 
 Implicitly: Closing down your browser (not just the tab)
 
-### Adding/Deleting a wallet
+### Adding/Deleting a account
 
 There are three types of accounts that you can add to the wallet
 
@@ -33,8 +32,8 @@ There are three types of accounts that you can add to the wallet
 To create a new account 
 
 1. Open the Lamden extension in the browser
-2. Click on the `Holdings`
-3. At the right screen, select `Add Wallet.`
+2. Click on the `Accounts`
+3. At the right screen, select `Add Account.`
 4. Select `Create New`
 5. Enter Wallet Nickname (Optional)
 6. Click Save
@@ -42,8 +41,8 @@ To create a new account
 To add Existing account 
 
 1. Open the Lamden extension in the browser
-2. Click on the `Holdings`
-3. At the right screen, select `Add Wallet.`
+2. Click on the `Accounts`
+3. At the right screen, select `Add Account.`
 4. Select `Add Existing Account`
 5.  Enter Private Key
 6.  Enter Wallet Nickname (Optional)
@@ -52,8 +51,8 @@ To add Existing account
 To add Track Address 
 
 1. Open the Lamden extension in the browser
-2. Click on the `Holdings`
-3. At the right screen, select `Add Wallet.`
+2. Click on the `Accounts`
+3. At the right screen, select `Add Account.`
 4. Select `Add Track Address`
 5.  Enter Private Key
 6.  Enter Wallet Nickname (Optional)
@@ -66,7 +65,7 @@ To add Track Address
 You can change the name of the wallet by following the next instruction.
 
 1. Open the Lamden extension in the browser
-2. Click on the `Holdings`
+2. Click on the `Account`
 3. Click on the wallet that you would like to change a nickname.
 4. Click on the options.
 5. Select `Edit Wallet Nickname.`
@@ -79,8 +78,8 @@ You can change the name of the wallet by following the next instruction.
 ### Copy Account Address
 
 1. Open the Lamden extension in the browser
-2. Click on the `Holdings`
-3. Select the wallet.
+2. Click on the `Accounts`
+3. Select the account.
 4. Click on the `Options`.
 5. Click on the button `Copy Key to Clipboard`.
 
@@ -99,11 +98,13 @@ The arguments include all necessary data to track the event related to the trans
 
 To transfer TAU, you need to take into account the next fields:
 
-- `The Wallet to sent from`: once you select a source account in the wallet, this field is populating automatically.
+- `The Account to sent from`: once you select a source account in the wallet, this field is populating automatically.
   
 - `Stamp Limit:` by default, this field has value '15000'.
   
 - `Enter Contract Name`: since you are transferring money, it has value 'currency.'
+"The currency contract is the contract where TAU is held."
+
 
 #### The field `Function name`: has next values to select:
 
@@ -116,9 +117,9 @@ To transfer TAU, you need to take into account the next fields:
 
 ### How to send “TAU”
 1. Open wallet 
-2. Click on the `Holdings`
-3. At the right part of the screen click on `SENT TX`
-4. Select `The Wallet to send From` 
+2. Click on the `Account`
+3. At the right part of the screen click on `SEND TX`
+4. Select `The Account to send From` 
 5. Leave fields populated by default: `Stamp Limit` `Enter Contact Name`, `Function Name`.
 
 To send transactions to enter `Transaction Arguments`.
@@ -159,8 +160,8 @@ To send transaction, you need to enter only two arguments `Amount(decimal)` and 
 If you would like to clear the history of transactions in your wallet, follow the next steps:
 
 1. Open the wallet
-2. At left sidebar select `Holdings`
-3. Select the wallet at which you would like to purge transactions.
+2. At left sidebar select `Accounts`
+3. Select the account at which you would like to purge transactions.
 4. Select `Options`.
 5. Click on the `Purge Transactions`
 
@@ -168,7 +169,7 @@ To verify if transactions were purged
 
 6. Open item `History` at the sidebar.
 
-All transactions related to the selected wallet should be purged.
+All transactions related to the selected account should be purged.
 
 ## Backup 
 
@@ -180,13 +181,17 @@ All mentioned cases required to make a back up of your wallet. Once you delete t
 
 As a result of backup keystore file will be created.
 
-The keystore is just an encrypted file containing all "wallets" (keypairs) in storage. 
+The keystore is just an encrypted file containing all "wallets" (accounts and private keys) in storage. 
 
 So you can take that keystore, and restore those keypairs to a different wallet if you have the KEYSTORE password.  
 
 The keystore does not use the wallet's password at all.
-Note:
+
+:::note
+
 Keystore does not backup dapp realationships or transaction history.
+
+:::
 
 ### Step by step explanation
 
@@ -200,11 +205,13 @@ Keystore does not backup dapp realationships or transaction history.
 - Password
 - Confirm Password
 - Password Hint
-  
- to keep passwords in one place you can use **[LastPass.com](https://www.lastpass.com)**
-Keep that password in a safe place. For example, you can use LastPass.
 
 6. Click `Keystore`
+
+:::note  
+To keep passwords in one place you can use **[LastPass.com](https://www.lastpass.com)**
+Keep that password in a safe place. For example, you can use LastPass.
+:::
 
 On the next step, the Keystore file will be generated, and you will be asked to confirm by marking the checkbox `I Understand` and click on `Download File.`
 
@@ -308,7 +315,7 @@ You will get an interface where you can add a new network by adding such paramet
   
 After adding the network you will get an option to select a new network in the dropdown list at the left.
 
-### Types of networks (mainnet, testnet, mockchain)
+### Types of networks (mainnet, testnet)
 
 There are three types of network that propose Lamden:
 
@@ -316,9 +323,6 @@ There are three types of network that propose Lamden:
 
 - [Testnet](https://github.com/Lamden/cilantro-enterprise)
   
-
-- [Mockchain](https://github.com/Lamden/mockchain)
-
 
 ### Explain dTAU for testnet and mTAU for mockchain
 
@@ -346,11 +350,14 @@ In the section `Add Network`, you enter the next parameters.
 
 Click `Add Network`.
 
-## Deleting Wallet and wallet information
+## Deleting Wallet and account information
+
+:::danger
 If you don't have a backup of the wallet the deletion of wallet is irreversible process. Before deletion be sure that you have made a backup of the wallet and/or you don't have any assets on the account.
+:::
 
 1. Open the wallet
-2. Click on `Holdings`
+2. Click on `Accounts`
 3. From the list of accounts in right part of the screen click on the account that you would like to delete.
 4. Click on `Options`.
 5. On the next screen select `Delete Wallet`
