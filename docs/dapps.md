@@ -12,23 +12,7 @@ For development the dApp you need to meet several conditions:
 4. A brand new account is created for your dApp in the Lamden Wallet and you are permitted to only transaction against that.
 5. The account should be with a reasonable amount of TAU.
 6. The contract must exists on the network and be approved.
-   
-
-## Interfacing with the blockchain via Lamden-js
-
-Lamden-js is a published npm package that you can install by regular command as any other npm package.
-
-```bash
-npm install lamden-js
-```
-
-To check the consistency of the package, you can launch tests.
-
-```bash
-npm run tests
-```
-
-
+ 
 ## Interfacing with the Lamden Wallet from a webpage
 
 ### Network API Endpoints
@@ -86,7 +70,7 @@ The user will get a browser pop-up and be asked to confirm your connection. On a
 ### 1.1 Upgrading Connection Information
 Sometime you will want to make changes to the connection information to add or change charms or maybe even change the contract.
 As part of the `lamdenWalletGetInfo` event you will be returned a hashed value of the wallet's previously approved request.  
-This is an MD5 hash of the JSON string you provided to the user for approval (minus and  "reapprove or newKeypair" options.
+
 
 You can use this hash to determine if the wallet using your dApp has the most current connection approval, and if not then you can send them a new connection approval with the updated info.  See [Re-approving](/docs/dapps#re-approving-your-application) below.
 
@@ -179,7 +163,7 @@ document.addEventListener('lamdenWalletTxStatus', (response) => {
 
 ```
 
-#### 3.3 Response object
+### 3.3 Response object
 This information is avaiable in both responses
 
 | Property | Description |
@@ -196,7 +180,7 @@ This information is avaiable in both responses
 |  nonceResult | Information on the nonce recieved from the masternode |
 | txBlockResult | Will be empty on first response |
 
-#### 3.4 txBlockResult
+### 3.4 txBlockResult
 Only available on the second response
 
 | Property | Description |
@@ -245,7 +229,7 @@ At the same time, logically, you are not limited only by one smart contract in a
 There is an option to import other smart-contracts. 
 more detailed information about smart contracts you can find in the section **[Smart contracting](/docs/contracting_and_smart_contract).**
 
-### b. The user will get a popup to approve the transaction
+#### b. The user will get a popup to approve the transaction
 
 Users should approve every transaction initiated by the dApp. 
 For this reason, the wallet initiates a pop-up window with the option to `Deny` or `Approve` the transaction.
@@ -301,3 +285,4 @@ Any interaction with a wallet can be done only with an unlocked wallet. To unloc
 
 ### Wallet info will automatically returned when the wallet is locked and unlocked
 Basically, the `lamdenWalletInfo` listener will fire automatically when the user locks and unlocks the wallet. So your app can respond immediately.
+
