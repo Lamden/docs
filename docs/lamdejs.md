@@ -45,9 +45,9 @@ While the development of dApp you should follows the very similar rules to the d
 <dd></dd>
 <dt><a href="#format_to_keys">format_to_keys(sk)</a> ⇒ Object</dt>
 <dd></dd>
-<dt><a href="#keys_to_format">keys_to_format(kp)</a> ⇒ string | string</dt>
+<dt><a href="#keys_to_format">keys_to_format(kp)</a> ⇒ String | string</dt>
 <dd></dd>
-<dt><a href="#sign">sign(sk, msg)</a> ⇒</dt>
+<dt><a href="#sign">sign(sk, msg)</a> ⇒ String</dt>
 <dd></dd>
 <dt><a href="#verify">verify(vk, msg, sig)</a> ⇒ Bool</dt>
 <dd></dd>
@@ -170,10 +170,6 @@ String  sig -  A 128 character long hex string representing the message's signat
 
 
 **Returns**: Bool - true, false - true if verify checked out, false if not
-
-
-
-
 
 
 
