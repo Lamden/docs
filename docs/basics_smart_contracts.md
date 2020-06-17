@@ -3,13 +3,6 @@ id: basics_smart_contracts
 title: Basics
 sidebar_label: Basics
 ---
- import embedGist from '@wino/docusaurus-gist-embed'
-
-const siteConfig = {
-  // …
-  markdownPlugins: [embedGist],
-  // …
-}
   
 
 ### How to create a contract
@@ -44,7 +37,6 @@ pip3 install sanic
 
 In your IDE creat file contracting_server.py
 
-{gist JeffWScott/7157af4600468cd755d557349de5d2e8/raw/9debfe6f9af01ef0277a49ce93ddf3142bd81486}
 
 ```python
 # server/contracting_server.py
@@ -191,11 +183,43 @@ If your smart-contract does not have any errors it will be submitted without any
 
 ### Explanation of the Submission contract
 
+The submission contract means that you contract was saved in the blockchain and if your smart contract has public functions you can call them externally.
 
 ### Explain all methods and state variables (make sure code is also commented properly)
 
+This is an example of smart contract from the wallet
+
+```python
+def token_contract():
+     balances = Hash()
+     owner = Variable()
+     
+     @construct
+     def seed():
+         owner.set(ctx.caller)
+
+     @export
+     def balance_of(wallet_id):
+         return balances[wallet_id]
+
+     @export
+     def transfer(to, amount):
+         balances[ctx.caller] -= amount
+         balances[to] += amount
+         sender_balance = balances[ctx.caller]
+
+         assert sender_balance >= 0, "Sender balance must be non-negative!!!"
+
+     @export
+     def mint(to, amount):
+         assert ctx.caller == owner.get(), 'Only the original contract author can mint!'
+         balances[to] += amount
+```
+
 ### Could even have a link to this doco as a comment at the top of the contract code
+
 How to declare a variable
+
 What types of variables can you make (dict, List, single value)
 limitations
 What variable would be better for certain situations

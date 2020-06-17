@@ -95,7 +95,7 @@ Lamden supports three types of blockhain
 
 - Mainnet
 - Testnet
-- Mockchain
+
 
 More detailed information you can read on the page about [Lamden Blockchain](/blockchain)
 ### Transactions
