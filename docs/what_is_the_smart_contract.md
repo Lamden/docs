@@ -79,11 +79,26 @@ We take inspiration from some of these Python libraries:
 ### Overview of “crypto” as related to Lamden
 
 
+
 ### What are public (vk) and private (sk) keys?
+
+The entity of account in Lamden consists of two elements:
+
+`VK - Verify Key`  - represented as a 64 character hex string.
+`SK - Signing Key` - represented as a 64 character hex string.
+
+In the browser wallet `Signing Key` is hidden. Also, by means of classes from the package lamden-js you can generate `VK` and `SK`.
+
+In other words `VK` is an address of account in crypto aspect it is a public key.
+
 
 ### How does Lamden use those keypairs in the system
 
+Every new dApp create new account in the user's wallet, but user see only VK.
+
+
 ### Relating data to a user’s public key
+
 
 ### Validating transactions using message signing
 
@@ -91,7 +106,7 @@ We take inspiration from some of these Python libraries:
 
 ### "Blockchains"
 
-Lamden supports three types of blockhain 
+Lamden supports two types of blockhain 
 
 - Mainnet
 - Testnet

@@ -185,8 +185,7 @@ If your smart-contract does not have any errors it will be submitted without any
 
 The submission contract means that you contract was saved in the blockchain and if your smart contract has public functions you can call them externally.
 
-### Explain all methods and state variables (make sure code is also commented properly)
-
+### The example of Smart Contract
 This is an example of smart contract from the wallet
 
 ```python
@@ -216,14 +215,48 @@ def token_contract():
          balances[to] += amount
 ```
 
-### Could even have a link to this doco as a comment at the top of the contract code
+
+### Contract naming standards
+
+1. The name of the contract must be preceded with con_
+2. 
+
+
+What types of variables can you make (dict, List, single value)
+
+- Variable Object
+- Hash Object
+- ForeignVariable (read-only)
+- ForeignHash (read-only
+
+
+What variable would be better for certain situations
 
 How to declare a variable
 
-What types of variables can you make (dict, List, single value)
+```python
+def data_contract():
+    basic_contract_owner = ForeignVariable(foreign_contract='basic_contract', foreign_name='owner')
+    
+    variable = Variable()
+    hash_ = Hash()
+    
+    # Demonstration of returning a value in another smart contract's namespace
+    @export
+    def whos_the_owner():
+        return basic_contract_owner.get()
+    
+    @export
+    def set_var(x):
+        variable.set(x)
+        
+    @export
+    def set_hash(k, v):
+        hash_[k] = v
+```
+
 limitations
-What variable would be better for certain situations
 Setting initial state of variables
 Setting/changing variable values via methods
-Contract naming standards, limitations
-Must be preceded with con_
+
+
