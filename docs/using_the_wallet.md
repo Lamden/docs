@@ -225,9 +225,9 @@ In the opened interface to the filesystem, select a disk and a folder where you 
 
 Regular backups are nessessary everytime a new account is created (that's why the wallet has that warning).
 
-The backup is stored, and you create a new account  you get a tiny icon near the item menu 'Backup Wallet'.
+The backup is stored, and you create a new account then you get a tiny icon near the item menu 'Backup Wallet'.
 
-It warns you to make a backup of your wallet regularly. 
+It warns you to make a backup of your wallet in order to include new account in the backup. 
 
 
 <div class="alert alert--warning" role="alert">
@@ -258,7 +258,32 @@ For restoring the wallets you need to have a keystore file that your save while 
 7. Select the accounts that you would like to restore by marking the checkbox
 8. Click `Restore Wallets`
 
-Your wallets will be restored
+Your wallets will be restored.
+
+### Option 2 to backup your account without generating keystorefile
+1. Open the wallet
+2. Click `Backup Wallet`
+3. At the right side of the screen click `Backup wallet`
+4. On the next screen click `View Account Keys`.
+5. The window with request of your wallet will appear. 
+6. Enter `password` of your account
+7. Click `Ok`.
+
+At the right part of the screen you will see the list of all your accounts and associated private keys. 
+
+You can copy private key of selected account and store it in secure way. 
+
+You can restore the account following next steps.
+1. Open the wallet.
+2. Click on `Accounts`.
+3. Click on `Add Account`.
+4. On the next screen select an appropriate network.
+5. In the block `Choose Action`.
+   1. Click `Add Existing`.
+   2. Enter the copied Private Key.
+   3. Enter `Account Nickname`.
+   4. Click `Save`.
+
 
 ## IDE
 
@@ -291,7 +316,7 @@ Once you finished writing the smart contract or just paste it there, you can che
 
 To check the smart contract, you can click on `Check Contract`. If the smart contract has any errors, you will get  warnings. 
 
-### How to submit contract the  network
+### How to submit contract to the network
 
 1. Open the wallet.
 2. Click `Smart Contracts`

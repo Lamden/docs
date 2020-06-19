@@ -35,7 +35,7 @@ You can use Sanic Server.
 pip3 install sanic
 ``` 
 
-In your IDE creat file contracting_server.py
+In your IDE create file contracting_server.py
 
 
 ```python
@@ -167,6 +167,13 @@ if __name__ == "__main__":
 ```
 
 #### How to upload it
+There are two ways how it is possible to submit the smart contract.
+
+By means of:
+
+1. Wallet.
+2. Contracting library
+
 
 You can submit smart contract through the Lamden Wallet interface.
 
@@ -181,9 +188,55 @@ You can submit smart contract through the Lamden Wallet interface.
 If your smart-contract does not have any errors it will be submitted without any warnings and you will get a message that `Contract is Okay`.
 
 
-### Explanation of the Submission contract
+## Explanation of the Submission contract
 
-The submission contract means that you contract was saved in the blockchain and if your smart contract has public functions you can call them externally.
+### How It Works
+
+When a smart contract is submitted, it goes through a special `submission` smart contract that is seeded at the beginning of the software's lifecycle.
+
+The submission contract is something that bypasses the traditional linting and compilation processes and thus provides a gateway between deeper levels of the Contracting protocol and the `whitelisted` interfaces of the execution environment.
+
+#### submission.s.py
+```python
+@__export('submission')
+def submit_contract(name, code, owner=None, constructor_args={}):
+    __Contract().submit(name=name, code=code, owner=owner, constructor_args=constructor_args)
+```
+
+The main concept is that generally \_\_ variables are private and not allowed. However, this code is injected into the state space before the software starts up. Once it is in the state, the `__Contract` object can never be submitted in another smart contract by the user because it will fail.
+
+Calling on the `submit_contract` function will then call `__Contract` which is a special ORM object. `__Contract`'s only job is to submit contracts.
+
+```python
+class Contract:
+    def __init__(self, driver: ContractDriver=driver):
+        self._driver = driver
+
+    def submit(self, name, code, owner=None, constructor_args={}):
+
+        c = ContractingCompiler(module_name=name)
+
+        code_obj = c.parse_to_code(code, lint=True)
+
+        scope = env.gather()
+        scope.update({'__contract__': True})
+        scope.update(rt.env)
+
+        exec(code_obj, scope)
+
+        if scope.get(config.INIT_FUNC_NAME) is not None:
+            scope[config.INIT_FUNC_NAME](**constructor_args)
+
+        self._driver.set_contract(name=name, code=code_obj, owner=owner, overwrite=False)
+```
+
+The code that is submitted is put through the `ContractingCompiler` with the `lint` flag set as true. This causes the code to be run through all of the checks and transformed into pure Contracting code, which has slight variations to the code that the user submits but is used internally by the system.
+
+`__Contract` will then gather the working environment and execute it on the submitted code. This encapsulates the execution environment completely within the new code module without potential leakage or exposure. The `__contract__` flag is also set to indicate to the Python import system that this code cannot use any builtins at runtime.
+
+`__Contract` will then try to see if there is a `@construct` function available on the code. If this is the case, it will execute this function and pass the constructor arguments into it if any are provided.
+
+Finally, the code string, as compiled, is stored in the state space so that other contracts can import it and users can transact upon it.
 
 ### The example of Smart Contract
 This is an example of smart contract from the wallet
@@ -218,16 +271,37 @@ def token_contract():
 
 ### Contract naming standards
 
-1. The name of the contract must be preceded with con_
-2. 
+While using `Contracting` as tool for submission smart contract you are not limited to select a name for the contract. 
 
+If you submit the contract through the wallet you need write a name that has `con_` in the beginnning. 
 
-What types of variables can you make (dict, List, single value)
+The name of the contract must be preceded with `con_`.
 
-- Variable Object
-- Hash Object
-- ForeignVariable (read-only)
-- ForeignHash (read-only
+For example - `con_my_token`.
+   
+### What types of variables can you make (dict, List, single value)
+
+In contracting you can define any variable that available in the Python:
+
+`Dict, List, str, int, Decimal, Boolean, Timedelta, Datetime`.
+
+For security reason it will be encoded regarding next rules.
+
+## Encoding
+
+All data is encoded in JSON format. This means that you can store 'complex' Python types and pull them out for your own use. Lists, tuples, and dictionaries are supported. Python objects are not supported. However, Timedelta and Datetime types are, which is explained in the 'Stdlib and Extensions' section in 'Key Concepts'.
+
+| Contracting format |	JSON format	|
+|--------------------|--------------|
+|Python dict		| object	|
+|Python list		| array	|
+|Python str		| string	|
+|Python int		| number (int)	|
+|Python Decimal		| object (special)	|
+|Python True		| true	|
+|Python False		| false	|
+|Contracting Timedelta		| object	|
+|Contracting Datetime		| object	|
 
 
 What variable would be better for certain situations
@@ -238,6 +312,7 @@ How to declare a variable
 def data_contract():
     basic_contract_owner = ForeignVariable(foreign_contract='basic_contract', foreign_name='owner')
     
+    # Demonstration of declaring a value
     variable = Variable()
     hash_ = Hash()
     
