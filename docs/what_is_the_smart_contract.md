@@ -21,7 +21,6 @@ A function of it's inputs
 
 Therefore, we have to make some considerations and alterations to what is allowed in a smart contract. We do not add any additional features to Python that make the code incompatible. Contracting is a strict subset.
 
-
 ## What is a Contracting
 
 Contracting is a system that brings the ease of Python into the complex world of smart contracts and distributed systems. 
@@ -61,11 +60,11 @@ def token_contract():
 ### Options Implementation of Contracting
 
 1. You can use Contracting as the language that is used in the Lamden blockchain system and you want to develop smart contracts for that blockchain system.
-2. Also, Contracting will help to deploy its own instance of a database that uses smart contract 'apps' to control traditional CRUD type operations.
-3. For real enthusiasts, Contracting is a great opportunity to learn Python as much as possible.
+2. Also, Contracting will help to deploy its own instance of a database that uses smart contract `apps` to control traditional `CRUD` type operations.
+3. For real enthusiasts, `Contracting` is a great opportunity to learn `Python` as much as possible.
 
 ### Value Proposition
-Contracting focuses on developer experience (DX) which is a major focus of the Python language as a whole.
+`Contracting` focuses on developer experience (DX) which is a major focus of the Python language as a whole.
 
 Our goal is to create a development experience that is clear, concises, and manageable so that you don't have to worry about what makes smart contracts hard, and just have to worry about what makes your smart contract great.
 
@@ -79,8 +78,7 @@ We take inspiration from some of these Python libraries:
 ### Overview of “crypto” as related to Lamden
 
 
-
-### What are public (vk) and private (sk) keys?
+#### What are public (vk) and private (sk) keys?
 
 The entity of account in Lamden consists of two elements:
 
@@ -111,7 +109,6 @@ The data that associated with account are the balance of tokens and transactions
 ### Validating transactions using message signing
 Every transaction in smart contract should be validated and signed by message. 
 
-
 #### How that works
 
 ### "Blockchains"
@@ -121,11 +118,11 @@ Lamden supports two types of blockhain
 - Mainnet
 - Testnet
 
-
 More detailed information you can read on the page about [Lamden Blockchain](/blockchain)
-### Transactions
 
-### State
+### Transactions??
+
+### State??
 
 ###  What kinds of things can you do with a smart contact
 
@@ -152,21 +149,18 @@ The unique part of Lamden contract is in realization by means of Python.
 
 Lamden defends against actual bugs by integrating with Python's existing suites of testing tools. Because Contracting is Python, you can develop Contracting code in any Python IDE and write full unit and integration tests using the testing framework you like: Unittests, Nose, Pytest, and more are all supported.
 
-
-
 :::info
 No other blockchain smart contracting system is already natively integrated with the entire stack of another major language.
 :::
 
-Smart contracts are reactive vs proactive
+### Smart contracts are reactive vs proactive ???
+
             1. Transaction driven
             2. No access to “internet”
             3. etc
-
-
 ### What types of situations are smart contracts good for
 
-In `Banking`, one of the most popular cases where the smart contract can save time and money by reducing work-hours is automating approval workflows and clearing calculations that at present are incredibly labor-intensive. 
+In `Banking`, one of the most popular cases where the smart contract can save time and money by reducing work-hours is automating approval workflows and clearing calculations that at present are incredibly labor-intensive. More information you can read following by the link **[Banking](https://lamden.io/files/Comerica%20Covenants%20Case%20Study.pdf)**
 
 The `Healthcare` industry is very vulnerable for hackers attacks, and this sphere and by means of Blockchain technology could allow entire databases of personal health records to be securely encrypted and kept.
 
@@ -177,11 +171,6 @@ Moreover, the in mortgage-related operations would allow both parties to agree t
 In `Insurance` sphere, smart contracts could also help improve the process of claim processing in many ways. They could allow error checks and define payout amounts by taking into account a set of criteria, and policy that was held by the individual or organization.
 
 In the sphere of `Medical Research`, the sensitive information about new drug formulas and test results could be secured over the use of smart contracts should they need to divulge any of this information to a third party for any reason.
-
-
-        1. 1 example is our governance systems which is smart contract based
-
-        2. Examples of simple CRUD apps/flows that can be replicated with a smart contract 
 
 One of the most indicative examples that demonstrate CRUD options of smart contract can represent next simple example. 
 
@@ -205,8 +194,6 @@ In determined period of time user can change indicators.
 
 `Delete`
 Users can delete their reports in determined period of time.
-
-
 
 ### What types of data can a smart contract store?
 

@@ -6,8 +6,6 @@ module.exports = {
       ],
    'Smart Contracting':
     [
-      'ide_smart_contract',
-      'contracting_and_smart_contract',
      'what_is_the_smart_contract',
      'basics_smart_contracts',
      'sm_advanced_stuff',
@@ -27,7 +25,6 @@ module.exports = {
             
       'Interacting with Blockchain': 
       [
-        'mockchain',
         'testnet',
         'mainnet',
         'currency_smart_contract',

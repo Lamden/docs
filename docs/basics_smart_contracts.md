@@ -5,8 +5,9 @@ sidebar_label: Basics
 ---
   
 
-### How to create a contract
+### 1. How to create a contract
 
+#### 1.1 Components Installation
 For contract creation you need to install next components. 
 
 ```bash 
@@ -20,16 +21,86 @@ Install Contracting
 ```bash 
 pip3 install contracting
 ```
+### 1.2 Contract naming standards
 
+While using `Contracting` as tool for submission smart contract you are not limited to select a name for the contract. 
 
-#### Where to code it?
-You can write a code of smart contract in any IDE that supports Python, for example PyCharm.
+If you submit the contract through the `Lamden wallet` or `lamden-js` you need write a name that has `con_` in the beginnning. 
 
+:::caution
+The name of the contract must be preceded with `con_`.
+:::
 
-#### How to test it
+For example - `con_my_token`.
+
+### 1.3 Where to code it?
+You can write a code of smart contract in any IDE that supports Python, for example PyCharm or Jupyter Notebook.
+
+For this quick 'how-to', we will be using **[Jupyter Notebook](https://jupyter.org/)**. Jupyter is a great tool for Python programmers to develop and explore in as they combine the high feedback of a REPL with the presentation and saving of a program.
+
+If you are a Python programmer, chances are you already have Jupyter installed. If not, follow [this guide](https://jupyter.readthedocs.io/en/latest/install.html) to get started. After that, just start the notebook:
+
+```
+jupyter notebook
+```
+
+### 1.4 Import the Client
+Contracting has a super high level client that allows you to develop smart contracts without any knowledge of the underlying mechanics of the execution system. This makes it perfect for new comers to the library.
+
+```python
+from contracting.client import ContractingClient
+client = ContractingClient()
+```
+If initializing the `client` hangs, that means your database is not running and Contracting can't connect to where it stores data.
+
+#### 1.4.1 Hello, World!
+The following will be our first smart contract. Recreate it in your notebook.
+
+```python
+def hello_world():
+	@export
+	def hello():
+		return 'World!'
+
+	@export
+	def add(a, b):
+		return private_add(a, b)
+
+	def private_add(a, b):
+		return a + b
+```
+
+Off the bat, notice two things:
+
+ 1. The smart contract is a closure (a function inside of a function)
+ 2. There is an `@export` decorator.
+
+ This will make sense in a bit. For now, notice them and let's submit this into the smart contracting 'state space.'
+
+```python
+client.submit(hello_world)
+client.get_contracts()
+```
+
+```python
+>> ['hello_world', 'submission']
+```
+
+If the `hello_world` contract now appears in the returned list, you've successfully submitted your first smart contract. Congrats!
+
+:::note
+For submitting closures, the name of the contract is automatically taken from the name of the closure. `def my_func():` becomes `my_func` in the smart contract state space, etc.
+:::
+
+#### 1.5 How to test smart contract written in Python
 For initial testing you don't need to deploy any private blockchain or connect to the testnetwork.
 
-You can use Sanic Server.
+For testing you have two options as well.
+
+1. Using Contracting by itself for testing in command line.
+2. Using Sanic Server that will imitate Blockchain network. 
+
+The example of using Sanic Server.
 
 ```bash
 pip3 install sanic
@@ -166,16 +237,17 @@ if __name__ == "__main__":
     app.run(host="0.0.0.0", port=3737)
 ```
 
-#### How to upload it
+## 2. How to submit the smart contract to the Lamden Blockchain Network
 There are two ways how it is possible to submit the smart contract.
 
 By means of:
 
-1. Wallet.
-2. Contracting library
+1. Lamden Wallet.
+2. Lamden-js library
 
+### `Lamden Wallet` interface.
 
-You can submit smart contract through the Lamden Wallet interface.
+You can submit smart contract through the `Lamden Wallet` interface.
 
 1. Open Lamden wallet.
 2. At the left sidebar click on the `Smart Contracts`.
@@ -188,9 +260,74 @@ You can submit smart contract through the Lamden Wallet interface.
 If your smart-contract does not have any errors it will be submitted without any warnings and you will get a message that `Contract is Okay`.
 
 
-## Explanation of the Submission contract
+### Submission through `Lamden-js` library.
 
-### How It Works
+To submit the contract through `lamden.js` you need to connect to the network and submit transaction that contains as an argument the contract. The content of the contract should be in string format.
+
+```javascript
+{
+    contractName: my_first_contract, 
+    methodName: submit_contract, 
+    kwargs: {
+        name: "con_ + name of your contract", 
+        code: "your code as a string",
+        owner: "usually blank", 
+        constructor_args: { a kwargs object with values to supply to you @construct method} 
+}
+
+```
+
+### The example of submission smart contract to the `Lamden Blockchain` by means of `lamden-js`
+
+
+```javascript
+
+const lamdenJs = require('lamden-js');
+
+var fs = require("fs");
+
+var contents = fs.readFileSync("./my_token.py").toString('utf-8');
+
+const sender = {
+       vk: "ea2cee33f9478d767d67afe345592ef36446ee04f8d588fa76942e6569a53298",
+       sk: "69a8db3fb7196debc2711fad1fa1935918d09f5d8900d84c3288ea5237611c03"
+  }
+
+const senderSk = sender.sk;
+
+const networkInfo = {
+    host: 'http://167.172.126.5',
+    port: '18080',
+    type: 'testnet'
+}
+let txInfo = {
+    uid:'',
+    senderVk: sender.vk,
+    contractName:'submission',
+    methodName:'submit_contract',
+    kwargs:{
+        name: "con_my_first_contract",
+        code: contents
+},
+    stampLimit: 150000    
+}
+
+let tx = new lamdenJs.TransactionBuilder(networkInfo, txInfo)
+
+//console.log(tx.kwargs)
+
+tx.events.on('response', () => {console.log(tx.getAllInfo())})
+
+tx.send(sender.sk).then(() => tx.checkForTransactionResult())
+
+```
+### 2.1 Explanation of the Submission contract
+
+For development purposes there is a need to verify if your contract pass all requirements of the Blockchain network in terms of compilation, for that reason you will use Submision contract.
+
+`Submission contract` is using to mimic the real submission to the Lamden Blockchain network.
+
+#### 2.1.1 How It Works
 
 When a smart contract is submitted, it goes through a special `submission` smart contract that is seeded at the beginning of the software's lifecycle.
 
@@ -238,7 +375,7 @@ The code that is submitted is put through the `ContractingCompiler` with the `li
 
 Finally, the code string, as compiled, is stored in the state space so that other contracts can import it and users can transact upon it.
 
-### The example of Smart Contract
+### 2.2 The example of Smart Contract
 This is an example of smart contract from the wallet
 
 ```python
@@ -269,25 +406,14 @@ def token_contract():
 ```
 
 
-### Contract naming standards
-
-While using `Contracting` as tool for submission smart contract you are not limited to select a name for the contract. 
-
-If you submit the contract through the wallet you need write a name that has `con_` in the beginnning. 
-
-The name of the contract must be preceded with `con_`.
-
-For example - `con_my_token`.
    
-### What types of variables can you make (dict, List, single value)
+### 2.3 What types of variables can you make (dict, List, single value)
 
 In contracting you can define any variable that available in the Python:
 
 `Dict, List, str, int, Decimal, Boolean, Timedelta, Datetime`.
 
-For security reason it will be encoded regarding next rules.
-
-## Encoding
+### 2.3.1 Encoding
 
 All data is encoded in JSON format. This means that you can store 'complex' Python types and pull them out for your own use. Lists, tuples, and dictionaries are supported. Python objects are not supported. However, Timedelta and Datetime types are, which is explained in the 'Stdlib and Extensions' section in 'Key Concepts'.
 
@@ -306,7 +432,9 @@ All data is encoded in JSON format. This means that you can store 'complex' Pyth
 
 What variable would be better for certain situations
 
-How to declare a variable
+### 2.5 How to declare a variable
+   - Setting initial state of variables
+   - Setting/changing variable values via methods
 
 ```python
 def data_contract():
@@ -320,18 +448,16 @@ def data_contract():
     @export
     def whos_the_owner():
         return basic_contract_owner.get()
-    
+    # Demonstration of setting a value to the variable
     @export
     def set_var(x):
         variable.set(x)
-        
+    # Demonstration of setting a value to the hash variable  
     @export
     def set_hash(k, v):
         hash_[k] = v
 ```
 
 limitations
-Setting initial state of variables
-Setting/changing variable values via methods
 
 
