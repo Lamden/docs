@@ -136,15 +136,13 @@ module.exports = {
 
         
         
-        plugins: ['@docusaurus/plugin-ideal-image'],
-        plugins:['@docusaurus/docusaurus-gist-embed'],
-        
-        
-        
-        
+        plugins: ['@docusaurus/plugin-ideal-image',
+                  '@docusaurus/docusaurus-gist-embed'
+                ],
         themes: ['@docusaurus/theme-live-codeblock'],
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
+          
         },
       },
     ],

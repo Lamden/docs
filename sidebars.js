@@ -28,7 +28,8 @@ module.exports = {
         'testnet',
         'mainnet',
         'currency_smart_contract',
-        'parts_of_transaction'
+        'parts_of_transaction',
+        'bc_master_node_api'
       ],
 
       'Wallet and Interaction with a Wallet': 

@@ -1,6 +1,6 @@
 ---
 id: purpose_of_the_wallet
-title: The Purpose of the Wallet
+hide_title: The Purpose of the Wallet
 sidebar_label: The Purpose of the Wallet
 ---
 

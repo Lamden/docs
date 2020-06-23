@@ -1,6 +1,6 @@
 ---
 id: basics_smart_contracts
-title: Basics
+hide_title: Basics
 sidebar_label: Basics
 ---
   
@@ -433,6 +433,7 @@ All data is encoded in JSON format. This means that you can store 'complex' Pyth
 What variable would be better for certain situations
 
 ### 2.5 How to declare a variable
+
    - Setting initial state of variables
    - Setting/changing variable values via methods
 
@@ -458,6 +459,6 @@ def data_contract():
         hash_[k] = v
 ```
 
-limitations
+## limitations???
 
 
