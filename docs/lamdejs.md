@@ -419,6 +419,3 @@ testnet.API.contractExists('currency').then(contr=>console.log(contr))
 | sendTransaction(txData, *callback*) | / | submits a contract to the network a txHash will be returned.  Use checkTransaction() to get tx result |
 | getNonce(senderVk, *callback*) | /nonce/*senderVk* |    Get the current *nonce* and *processor* for a public key (vk) |
 | checkTransaction(txHash, callback) | /tx?hash=*txHash* | Get the result of a transaction |
-
-
-

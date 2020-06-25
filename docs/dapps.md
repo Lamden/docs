@@ -15,6 +15,7 @@ For development the dApp you need to meet several conditions:
  
 ## Interfacing with the Lamden Wallet from a webpage
 
+
 ### Network API Endpoints
 
 To interact with blockchain, you can use the next API endpoints.
