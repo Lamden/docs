@@ -4,12 +4,11 @@ title: Installing Node
 sidebar_label: Installing Node
 ---
 
-
 ### Server preparation
 
 Prepare the server with Ubuntu 18.04.
 
-We recommend to use DigitalOcean droplets since it has very simple interface and give you a good start for your experiments.
+We recommend using DigitalOcean droplets since it has a straightforward interface and give you a good start for your experiments.
 
 Make sure that you choose the instance with next parameters:
 
@@ -18,16 +17,15 @@ Make sure that you choose the instance with next parameters:
 * 2 TB transfer 
 
 :::info
-The storage space is a critical factor if you are planning to join the Main Network consider more storage space.
+The storage space is a critical factor if you are planning to join the Main Network to consider more storage space.
 :::
 
 * * *
 
-
 ### Install all necessary components
 
 :::info
-If you are going to launch Private Blockchain network you need to repeat all steps below for your delegates. Another option to clone first instance as many times as many delegates you would like to have for your blockchain.
+If you are going to launch a Private Blockchain network, you need to repeat all steps below for your delegates. Another option to clone the first instance as many times as many delegates you would like to have for your blockchain.
 :::
 
 ### Install Pip3
@@ -52,7 +50,7 @@ sudo apt-get install -y mongodb
 ```
 
 ### Install Haveged (Recommended)
-For some reason, DigitalOcean droplets, and perhaps other cloud providers, have `/dev/random` blocking problems. This probably is because they are running many small computers on a single Linux instance and the entropy pool dries up pretty quickly. If this doesn't make sense, install Haveged and don't worry about it.
+For some reason, DigitalOcean droplets, and perhaps other cloud providers, have `/dev/random` blocking problems. This probably is because they are running many small computers on a single Linux instance, and the entropy pool dries up pretty quickly. If this doesn't make sense, install Haveged, and don't worry about it.
 
 If it does, `libsodium`, which is the public-private key cryptography library we use, uses `/dev/random` with no option to use `/dev/urandom`. Haveged solves this problem.
 
@@ -114,7 +112,7 @@ cd cilantro-enterprise
 git fetch
 ```
 
-Make sure that you are pulling the actual version of the network and double check the branch of repository.
+Make sure that you are pulling the original version of the network and double-check the branch of the repository.
 
 ```bash
 git checkout dev-final
@@ -138,17 +136,17 @@ mongod --dbpath ~/blocks --logpath ~/logs.log --bind_ip 127.0.0.1
 
 ## Setting up the network 
 
-The flexibility of the cillantro allows to build `private network` or join to the existed and use it for any business purposes. 
+The flexibility of the cillantro allows to build a `private network` or join to the existed and use it for any business purposes. 
 
-The advantage of Private Network is getting all functionality of blockchain network at short period of time. You can start test your DAPP at once after deployment network.
+The advantage of a Private Network is getting all functionality of the blockchain network in a short period. You can start test your DAPP at once after the deployment network.
 
 ### Setting up a Private Network
 
-We suppose that you have successfully prepare your instance on DigitalOcean.
-For private blockchain you need to initiate two instances.
-Now you need to setup firewall rules. 
+We suppose that you have successfully prepared your instance on DigitalOcean.
+For private blockchain, you need to initiate two instances.
+Now you need to set up firewall rules. 
 
-Open next ports on both VMs.
+Open the next ports on both VMs.
 
 * 19000 
 * 18080
@@ -156,9 +154,9 @@ Open next ports on both VMs.
 Now open your IDE and create accounts that will serve for masternode and delegate.
 The process is the same for both types of nodes.
 
- Repeat next step two times and store information about accounts in safe location.
+ Repeat the next step two times and store information about accounts in a safe location.
 
-If you need install lamden-js.
+If you need to install lamden-js.
 
 ```javascript
 npm install -g lamden-js
@@ -180,8 +178,7 @@ let lamdenWallet = lamdenJs.wallet.new_wallet()
 console.log(lamdenWallet)
 ```
 
-Launch next script to create accounts
-
+Launch the next script to create accounts
 
 ```bash
 node create_account.js
@@ -196,12 +193,11 @@ print(w.verifying_key)
 print(w.signing_key)
 ```
 
-
 ### 2. Setup `genesis.json`
 
-The file `genesis.json` is a core of the blockchain. In this file we define the account that will store the balance of TAU. The balance can be distributed regarding logic of smart contracts. 
+The file `genesis.json` is a core of the blockchain. In this file, we define the account that will store the balance of TAU. The balance can be distributed regarding the logic of smart contracts. 
 
-To make blockchain alive you need to edit `genesis.json` and paste address of your master account in the parameter 'VK'.  
+To make blockchain alive, you need to edit `genesis.json` and paste the address of your master account in the parameter 'VK'.  
 
 Open `genesis.json`.
 
@@ -211,55 +207,54 @@ nano  ~/cilantro-enterprise/cilantro_ee/contracts/genesis.json
 
 ```bash
 {
-	"base_directory": "/genesis",
-	"extension": ".s.py",
-	"contracts": [
-		{
-			"name": "currency",
-			"owner": null,
-			"constructor_args": {
-				"vk": "Enter your VK here"
-			}
-		},
-		{
-			"name": "election_house",
-			"owner": null,
-			"constructor_args": null
-		},
-		{
-			"name": "stamp_cost",
-			"owner": "election_house",
-			"constructor_args": {
-				"initial_rate": 20000
-			}
-		},
-		{
-			"name": "rewards",
-			"owner": "election_house",
-			"constructor_args": null
-		},
-		{
-			"name": "upgrade",
-			"owner": null,
-			"constructor_args": null
-		},
-		{
-			"name": "foundation",
-			"owner": null,
-			"constructor_args": {
-				"vk": "Enter your VK here"
-			}
-		}
-	]
+    "base_directory": "/genesis",
+    "extension": ".s.py",
+    "contracts": [
+        {
+            "name": "currency",
+            "owner": null,
+            "constructor_args": {
+                "vk": "Enter your VK here."
+            }
+        },
+        {
+            "name": "election_house",
+            "owner": null,
+            "constructor_args": null
+        },
+        {
+            "name": "stamp_cost",
+            "owner": "election_house",
+            "constructor_args": {
+                "initial_rate": 20000
+            }
+        },
+        {
+            "name": "rewards",
+            "owner": "election_house",
+            "constructor_args": null
+        },
+        {
+            "name": "upgrade",
+            "owner": null,
+            "constructor_args": null
+        },
+        {
+            "name": "foundation",
+            "owner": null,
+            "constructor_args": {
+                "vk": "Enter your VK here"
+            }
+        }
+    ]
 }
 ```
 
 ### 3. Constitution.json
 
-The constitution is a file that define the structure of masternodes and delegates.
+The constitution is a file that defines the structure of masternodes and delegates.
 
-This is a required file and you need to create this file if you would like to deploy your private network or join.
-
+This is a required file, and you need to create this file if you would like to deploy your private network or join.
 
 Create file `constitution.json` that will define parameters for the blockchain.
 
@@ -267,10 +262,10 @@ Create file `constitution.json` that will define parameters for the blockchain.
 nano ~/constitution.json
 ```
 
-The constitution for masternode and delegates will be the same and will looks like example below.
+The constitution for master node and delegates will be the same and will look like the example below.
 
 :::note
-For private network you will need at least one masternode and one delegate. 
+For private network, you will need at least one masternode and one delegate. 
 :::
 
 ```bash
@@ -289,10 +284,9 @@ Ctrl + O  save the file.
 Click `Enter`.
 Ctrl+X.
 
-
 ### Constitution for the Lamden Testnet 
 
-If you would like to join to the Lamden Testnet you need to use next constitution.
+If you would like to join the Lamden Testnet, you need to use the next constitution.
 
 ```bash
 wget -O ~/constitution.json https://gist.github.com/StuartFarmer/c074fa9066b0d40a0a887da266ef5c98
@@ -300,11 +294,11 @@ wget -O ~/constitution.json https://gist.github.com/StuartFarmer/c074fa9066b0d40
 
 ### Start your node (if you are starting from scratch)
 
-Make sure that you have done all previous steps. 
+Make sure that you have done all the previous steps. 
 Now you are ready to launch your nodes. 
 
 :::note 
-For private network you need to launch masternode first. Once masternode launched you will be able to launch delegate. 
+For private network, you need to launch a master node first. Once master node launched , you will be able to launch delegate. 
 :::
 
 ```bash
@@ -325,12 +319,10 @@ cil start delegate  -k 1234567b5aa12467880fbad249b6d679f496f9fa6fc2105b0379cca9f
 
 ### Network verification 
 
-Use next script to check if you network online.
-
+Use the next script to check if your network is online.
 
 ```javascript
 const Lamden = require('lamden-js')
-
 
 let testnet = new Lamden.Network({
     name: ' Private Testnet',
@@ -345,16 +337,13 @@ testnet.events.on('online', (online) => {
 testnet.ping()
 ```
 
-
 ### Join node (if you are trying to join an existing running network)
 
-
 ```bash
-cil join <masternode | delegate> -k <sk in hex format> -m <list of any masternode currently online>
+cil join <masternode | delegate> -k <sk in hex format> -m <list of any master node currently online>
 ```
 
-
-The example of connection to the node.
+The example of a connection to the node.
 
 ```bash
 cil join masternode -k 068d58db5aa12467880fbad249b6d679f496f9fa6fc2105b0379cca9fe445bc5 -m 168.192.0.0
