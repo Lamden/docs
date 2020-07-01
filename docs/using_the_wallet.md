@@ -67,7 +67,7 @@ To rename the wallet follow the instructions below.
 1. Open the Lamden extension in the browser
 2. Click on `Account`
 3. Click on the wallet that you would like to rename.
-4. Click on ‘Options’.
+4. Click on `Options`.
 5. Select `Edit Wallet Nickname.`
 6. Change `Nickname`.
 7. Click Save.
@@ -394,9 +394,9 @@ You are able to  easily remove the extension from the browser by completing the 
  
 In the Chrome browser:
  
-1. Click on ‘Options’. 
-2. Select ‘More Tools’ -> ‘Extensions’
-3. Find ‘Lamden Wallet Extension’.
+1. Click on `Options`. 
+2. Select `More Tools` -> `Extensions`
+3. Find `Lamden Wallet Extension`.
 4. Click on the button `Remove`.
 5. Confirm the deletion of the extension by clicking `Remove` once more.
 The extension is now removed successfully from the browser.
