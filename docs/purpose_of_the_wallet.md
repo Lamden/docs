@@ -4,7 +4,6 @@ hide_title: The Purpose of the Wallet
 sidebar_label: The Purpose of the Wallet
 ---
 
-
 ## Keeps keys safe
 Keys are credentials to your assets in Lamden. Anybody who has keys can get assets and withdraw them by transferring to another account. 
 
@@ -51,7 +50,7 @@ The instruction on how to do it as follows:
 1. Open the wallet
 2. In the left sidebar, click on `Restore Wallet.`
 3. In the right part of the screen, click `Restore Wallet.`
-4. For passing the next  screen, you need to choose/pick a Keystore file from your filesystem and bring it to the area `Drop File Here`.
+4. For passing the next screen, you need to choose/pick a Keystore file from your filesystem and bring it to the area `Drop File Here`.
 5. Click `Confirm Keystore.`
 6. Enter the password that you used to back up a Keystore.
    
@@ -63,7 +62,7 @@ You will find the list of accounts to restore.
 ![](/img/wallet/restore_wallet.gif)
 
 ###  Smart contract IDE
-In the Lamden wallet there is an IDE that your can use for development the smart contract.
+In the Lamden wallet, there is an IDE that you can use for developing the smart contract.
 
 #### Create Lamden Smart contracts
 
@@ -78,13 +77,13 @@ In other cases, if you select `Example Contract,` you will see smart-contract wi
 More detailed information you can get following the  [link](/docs/using_the_wallet#ide)
 
 ### “Lint” for python syntax and “contracting” specific errors
-The embedded IDE in the wallet support the python syntax and helps to catch the errors by using `contracting` methods.
+The embedded IDE in the wallet supports the python syntax and helps to catch the errors by using `contracting` methods.
 
 ### Test Lamden Smart contracts
 #### Test Methods
 Lamden platform allows very flexible methods for testing smart contracts. 
 
-Among available methods you can choose to test directly on the test networks by deploying the smart contract through IDE in Lamden wallet. 
+Among available methods, you can choose to test directly on the test networks by deploying the smart contract through IDE in the Lamden wallet. 
 
 Another available method to deploy a local Python server such as `Sanic Server`.
 
@@ -93,6 +92,7 @@ More detailed instruction you can find here by following the **[link](/docs/basi
 You can test smart contracts on different Blockchain networks by submission them through IDE.
 
 More information about blockchain networks you can read following the **[link](/docs/using_the_wallet#types-of-networks-mainnet-testnet-mockchain)**
+
 
 
 

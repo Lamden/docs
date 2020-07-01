@@ -8,7 +8,7 @@ sidebar_label: Basics
 ### 1. How to create a contract
 
 #### 1.1 Components Installation
-For contract creation, you need to install the next components. 
+To create a contract, you need to install the next components. 
 
 ```bash 
 sudo apt-get update
@@ -36,7 +36,7 @@ For example - `con_my_token`.
 ### 1.3 Where to code it?
 You can write a code of smart contract in any IDE that supports Python, for example PyCharm or Jupyter Notebook.
 
-For this quick 'how-to', we will be using **[Jupyter Notebook](https://jupyter.org/)**. Jupyter is a great tool for Python programmers to develop and explore in as they combine the high feedback of a REPL with the presentation and saving of a program.
+For this quick `how-to`, we will be using **[Jupyter Notebook](https://jupyter.org/)**. Jupyter is a great tool for Python programmers to develop and explore in as they combine the high feedback of a REPL with the presentation and saving of a program.
 
 If you are a Python programmer, chances are you already have Jupyter installed. If not, follow [this guide](https://jupyter.readthedocs.io/en/latest/install.html) to get started. After that, just start the notebook:
 
@@ -75,7 +75,7 @@ Off the bat, notice two things:
  1. The smart contract is a closure (a function inside of a function)
  2. There is an `@export` decorator.
 
- This will make sense in a bit. For now, notice them, and let's submit this into the smart contracting 'state space.'
+ This will make sense in a bit. For now, notice them, and let's submit this into the smart contracting `state space`.
 
 ```python
 client.submit(hello_world)
@@ -97,7 +97,7 @@ For initial testing, you don't need to deploy any private blockchain or connect 
 
 For testing you have two options as well.
 
-1. Using Contracting by itself for testing in the command line.
+1. Using `Contracting` by itself, for testing in the command line.
 2. Using a Sanic Server that will imitate Blockchain network. 
 
 The example of using Sanic Server.
@@ -255,7 +255,7 @@ You can submit a smart contract through the `Lamden Wallet` interface.
 6. In the field `Name` enter the name of the contract. 
 7. Click on the `Confirm Transaction`.
 
-If your smart-contract does not have any errors, it will be submitted without any warnings , and you will get a message that `Contract is Okay`.
+If your smart-contract does not have any errors, it will be submitted without any warnings, and you will get a message that `Contract is Okay`.
 
 ### Submission through `Lamden-js` library.
 
@@ -410,7 +410,7 @@ In contracting you can define any variable that available in the Python:
 
 ### 2.3.1 Encoding
 
-All data is encoded in JSON format. This means that you can store 'complex' Python types and pull them out for your own use. Lists, tuples, and dictionaries are supported. Python objects are not supported. However, Timedelta and Datetime types are, which is explained in the 'Stdlib and Extensions' section in 'Key Concepts'.
+All data is encoded in JSON format. This means that you can store `complex` Python types and pull them out for your own use. Lists, tuples, and dictionaries are supported. Python objects are not supported. However, Timedelta and Datetime types are, which is explained in the `Stdlib and Extensions` section in `Key Concepts`.
 
 | Contracting format |  JSON format |
 |--------------------|--------------|
@@ -423,8 +423,6 @@ All data is encoded in JSON format. This means that you can store 'complex' Pyth
 |Python False       | false |
 |Contracting Timedelta      | object    |
 |Contracting Datetime       | object    |
-
-What variable would be better for certain situations
 
 ### 2.5 How to declare a variable
 

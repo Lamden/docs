@@ -8,7 +8,7 @@ sidebar_label: Using Lamden-js in creation of web dapp
 
 Lamden-js is a published npm package that you can install by regular command as any other npm package.
 
-By using Lamden-js you don't need to communicate with a wallet installed in the browser. This package allows to develop dApp on any platform.
+By using Lamden-js, you don't need to communicate with a wallet installed in the browser. This package allows us to develop dApp on any platform.
 
 ```bash
 npm install lamden-js
@@ -20,11 +20,10 @@ To check the consistency of the package, you can launch tests.
 npm run tests
 ```
 
-While the development of dApp you should follows the very similar rules to the development with using the wallet extension. 
+While the development of dApp, you should follow very similar rules to the development by using the wallet extension. 
 
 1. The smart-contract should be developed and deployed on the network
 2. You should account on the network with funds for paying stamps for processing transactions.
-
 
 
 ### There are available next classes and functions in `wallet.js` that can be exported from `Lamden-js` package.
@@ -74,7 +73,6 @@ vk - Verify Key (VK) represents a 32 byte verifying key.
 
 sk - Signing Key (SK) represents 32 byte signing key.
 
-
 <a name="new_wallet"></a>
 
 ## new\_wallet
@@ -94,7 +92,6 @@ vk - Verify Key (VK) represents a 32 byte verifying key.
 
 sk - Signing Key (SK) represents 32 byte signing key.
 
-
 <a name="get_vk"></a>
 
 ## get\_vk(sk) ⇒ String
@@ -104,10 +101,8 @@ sk - Signing Key (SK) represents 32 byte signing key.
 | --- | --- | --- |
 | sk | String | A 64 character long hex representation of a signing key (private key). |
 
-
 **Returns**: 
 String - vk - A 64 character long hex representation of a verify key (public key).
-
 
 <a name="format_to_keys"></a>
 
@@ -116,14 +111,13 @@ String - vk - A 64 character long hex representation of a verify key (public key
 
 | Param | Type | Description |
 | --- | --- | --- |
-| sk | array | Signing Key (SK) represents 32 byte signing key. |
+| sk | array | Signing Key (SK) represents 32-byte signing key. |
 
 **Returns**: {array) 
 
 vk - Verify Key (VK) represents a 32 byte verifying key.
 
 kp - the object that contain vk and sk.
-
 
 <a name="keys_to_format"></a>
 
@@ -134,12 +128,10 @@ kp - the object that contain vk and sk.
 | --- | --- | --- |
 | kp | Object | Object containing the properties sk and vk |
 
-
 **Returns**: 
 
 string - vk - Verify Key (VK) represented as a 64 character hex string. 
 string - sk - Signing Key (SK) represented as a 64 character hex string.
-
 
 <a name="sign"></a>
 
@@ -156,7 +148,6 @@ string - sk - Signing Key (SK) represented as a 64 character hex string.
 
 String  sig -  A 128 character long hex string representing the message's signature
 
-
 <a name="verify"></a>
 
 ## verify(vk, msg, sig) ⇒ Bool
@@ -168,12 +159,10 @@ String  sig -  A 128 character long hex string representing the message's signat
 | msg | Uint8Array | A Uint8Array (bytes) representation of a message that has been signed |
 | sig | String | A 128 character long hex representation of a nacl signature |
 
-
 **Returns**: Bool - true, false - true if verify checked out, false if not
 
 
-
-To make available all functions from `Lamden-js` you need to import that package in your project. There are two availalbe methods to do that:
+To make available all functions from `Lamden-js` you need to import that package in your project. There are two available methods to do that:
 
 #### Add to project
 
@@ -234,7 +223,7 @@ Use `Lamden.TransactionBuilder(networkInfo, txInfo)` to create a new Lamden tran
 Public Testnet masternode is http://167.172.126.5:18080
 
 ### Create networkInfo object
-create an object that describes the masternode/network that you are going to send the transaction to network.
+Create an object that describes the masternode/network that you are going to send the transaction to the network.
 
 ```javascript
 let networkInfo = {
@@ -259,8 +248,8 @@ create an object that describes the transaction you are going to send
 let senderVk = "ea2cee33f9478d767d67afe345592ef36446ee04f8d588fa76942e6569a53298"
 let receiverVk = "bb0fab41b9118f0afdabf3721fa9a6caae3c93845ed409d3118841065ad1a197"
 
-// Kwargs are the arugments you will send the contract method.  
-// For example the "currency" contract's "transfer" method needs two arguments to create a transfter; the person reciving the TAU and the amount to transfer.  So we create a kwargs object like so.
+// Kwargs are the arguments you will send the contract method.  
+// For example, the "currency" contract's "transfer" method needs two arguments to create a transfer; the person is receiving the TAU and the amount to transfer.  So we create a kwargs object like so.
 let kwargs: {
         to: receiverVk,
         amount: 1000
@@ -318,9 +307,9 @@ In this case, the <b>*new*</b> balances for both keys is returned
 ```
 
 ## Getting a Nonce and Processor
-Note: Nonce and processor will be retrieved from the masternode automatcially when send() is called.
+Note: Nonce and processor will be retrieved from the masternode automatically when send() is called.
 
-getNonce() can be used to set the nonce and processor before hand.
+getNonce() can be used to set the nonce and processor beforehand.
 
 ```javascript
 let tx = new Lamden.TransactionBuilder(networkInfo, TxInfo)
@@ -341,13 +330,12 @@ tx.getNonce((res, err) => {
 ```
 
 ## Network and API
-Create a network instance will allow you to call the masternode API. This class takes a "networkInfo" object as described above.
+Create a network instance that will allow you to call the masternode API. This class takes a "networkInfo" object as described above.
 
 ### Create new Network instance
 
 ```javascript
 const Lamden = require('lamden-js')
-
 
 let testnet = new Lamden.Network({
     name: 'Lamden Public Testnet',
@@ -362,7 +350,6 @@ testnet.events.on('online', (online) => {
 testnet.ping()
 ```
 
-
 ### Examples of using masternode API
 All API methods return a value, Promise or callback if provided
 
@@ -370,8 +357,7 @@ All API methods return a value, Promise or callback if provided
 |:----------|:-------------:|:------:|
 | getContractInfo(contractName)  |  /contracts/*contractName* | Returns the contract code of *contractName*  [example](http://167.172.126.5:18080/contracts/currency/) |
 
-
-As an example to demonstrate the `getContractInfo` we take the contract `Currency`.
+As an example, to demonstrate the `getContractInfo` we take the contract `Currency`.
 
 ```javascript
 testnet.API.getContractInfo('currency').then(cur=>console.log(cur))
@@ -419,3 +405,5 @@ testnet.API.contractExists('currency').then(contr=>console.log(contr))
 | sendTransaction(txData, *callback*) | / | submits a contract to the network a txHash will be returned.  Use checkTransaction() to get tx result |
 | getNonce(senderVk, *callback*) | /nonce/*senderVk* |    Get the current *nonce* and *processor* for a public key (vk) |
 | checkTransaction(txHash, callback) | /tx?hash=*txHash* | Get the result of a transaction |
+
+

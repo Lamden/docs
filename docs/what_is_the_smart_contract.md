@@ -5,30 +5,27 @@ sidebar_label: What is the Smart Contract
 ---
 ## What is the Smart Contract
 
-A smart contract is a computer program or a transaction protocol respectively, which is intended to automatically execute, control or document respectively legally relevant events and actions according to the terms of a contract, of an agreement or of a negotiation.[Wikipedia](https://en.wikipedia.org/wiki/Smart_contract)
+A smart contract is a computer program or a transaction protocol, respectively, which is intended to automatically execute, control or document respectively legally relevant events and actions according to the terms of a contract, of an agreement or of a negotiation.[Wikipedia](https://en.wikipedia.org/wiki/Smart_contract)
 
 ## Why use a smart contract
 
-By means of smart contract you can automatise different business processes and simplify routine operations related to money transfering, profit distribution and many other cases.
+By means of the smart-contract you can automatize different business processes and simplify the routine operations related to the money transfering, profit distribution, and many other cases.
 
+For better understanding, let's define what a smart contract is, and what isn't.
 
-For better understanding, let's define what a smart contract is, and what one isn't.
-
-A smart contract is: 						| A smart contract isn't:
--					 						| -
-Immutable			 						| A full application
-Open-Sourced								| A database
-Accessible through strict API 				| Able to act without interaction
-A set of rules enforced by consensus 		| Able to draw data from the web arbitrarily
-A function of it's inputs |
+A smart contract is:                        | A smart contract isn't:
+-                                           | -
+Immutable                                   | A full application
+Open-Sourced                                | A database
+Accessible through strict API               | Able to act without interaction
+A set of rules enforced by consensus        | Able to draw data from the web arbitrarily
+A function of its inputs |
 
 Therefore, we have to make some considerations and alterations to what is allowed in a smart contract. We do not add any additional features to Python that make the code incompatible. Contracting is a strict subset.
 
 
 
-
 ### Overview of “crypto” as related to Lamden
-
 
 #### What are public (vk) and private (sk) keys?
 
@@ -38,50 +35,45 @@ The entity of account in Lamden consists of two elements:
 
 `SK - Signing Key` - represented as a 64 character hex string.
 
+The `VK` is an address of the account in the crypto aspect it is a public key and SK.
 
-The `VK` is an address of account in crypto aspect it is a public key and SK.
-
-In the browser wallet `Signing Key` is hidden. The `SK` is storing in the keystore when you are doing backup and using when you restore it.
+In the browser wallet, `Signing Key` is hidden. The `SK` is storing in the keystore when you are doing the backup and using it when you restore it.
 
 Also, by means of classes from the package lamden-js you can generate `VK` and `SK`.
 
-
 ### How does Lamden use those keypairs(account) in the system
 
-The account is a essential part of the blockchain. 
-All transactions that occur in the blockchain are associated with some account.
+The account is a essential part of  Blockchain. 
+All transactions that occur in Blockchain are associated with an account.
 
-Every new dApp create new account in the user's wallet.
-
+Every new dApp creates a new account in the user's wallet.
 
 ### Relating data to a user’s account (public key)
 
-The data that associated with account are the balance of tokens and transactions.
+The data associated with the account is the balance of tokens and transactions.
 
 ### Validating transactions using message signing
-Every transaction in smart contract should be validated and signed by message. 
+Every transaction in a smart contract should be validated and signed by the message. 
 
 #### How that works
 
 ### "Blockchains"
 
-Lamden supports two types of blockhain 
+Lamden supports two types of Blockchain 
 
 - Mainnet
 - Testnet
 
 More detailed information you can read on the page about [Lamden Blockchain](/blockchain)
 
-
 #### Transactions
 #### State
 
+###  What kind of things can you do with a smart contract
 
-###  What kinds of things can you do with a smart contact
+There are hundreds of use cases where it is possible to use smart contracts.
 
-There are a hundreads of use cases where it is possible to use smart contracts.
-
-Among most popular use cases we can highlight next:
+Among them the most popular use cases we can highlight are:
 
 1. **[Telecom](https://lamden.io/files/Telecom%20Case%20Study.pdf)**
 2. **[Trade finance](https://lamden.io/files/Trade%20Finance%20Case%20Study.pdf)**
@@ -97,7 +89,7 @@ Among most popular use cases we can highlight next:
     
 ## Comparisons with a Lamden contract v other platforms
 
-The unique part of Lamden contract is in realization by means of Python. 
+The unique part of the Lamden contract is in the realization by means of Python. 
 
 Lamden defends against actual bugs by integrating with Python's existing suites of testing tools. Because Contracting is Python, you can develop Contracting code in any Python IDE and write full unit and integration tests using the testing framework you like: Unittests, Nose, Pytest, and more are all supported.
 
@@ -109,9 +101,9 @@ No other blockchain smart contracting system is already natively integrated with
 |-------------|-------------|-------------|-------------|
 |Contract Language|Python|Java, Go, Javascript; Community maintained:Python,C# .NET Standard 2.0,C++,Scala,Ruby,iOS & macOS||
 |Medium Confirmation Time|Lamden|5 seconds|3.5 minutes|
-|Price|Lamden|Negligible transaction fee(.00001 XML~=$0.0000002).10 XLM/offer deposit(refunded when offer filled or canceled). No gas fee for computations.|Depends on complexity of computation, speed of transaction, and fiat value of ether. The median cost for a transfer is $0.094|
-|Features|Lamden|A library of base abstractions that can generate sophisticated behavior|The range of features are not limited, since the Solidity is Turing-complete languange|
-|Security|Lamden|Decentralized network anyone can run a Stellar Core node and validate transactions. Can choose your validators for increased security. Atomic transactions comprised of simple, declarative operations lead to more auditable code and fewer security pitfalls.|Decentralized network: anyone can run a node and validate transactions. No built-in feature for choosing approved validators.Turing complete programming capabilites produces less auditable code and greated risk of exploitable vulnerabilities.|
+|Price|Lamden|Negligible transaction fee(.00001 XML~=$0.0000002).10 XLM/offer deposit(refunded when offer filled or canceled). No gas fee for computations.|Depends on the complexity of computation, speed of transaction, and fiat value of ether. The median cost for a transfer is $0.094|
+|Features|Lamden|A library of base abstractions that can generate sophisticated behavior|The range of features are not limited since the Solidity is Turing-complete languange|
+|Security|Lamden|Decentralized network anyone can run a Stellar Core node and validate transactions. Can choose your validators for increased security. Atomic transactions comprised of simple, declarative operations lead to more auditable code and fewer security pitfalls.|Decentralized network: anyone can run a node and validate transactions. No built-in feature for choosing approved validators. Turing complete programming capabilities produces less auditable code and greater risk of exploitable vulnerabilities.|
 
 Source (for Stellar and Ethereum): https://steemit.com/crypto/@tufayel/comparison-of-smart-contract-platforms
 
@@ -119,7 +111,6 @@ Source (for Stellar and Ethereum): https://steemit.com/crypto/@tufayel/compariso
 ## Transaction driven
 ## No access to “internet”
 ## etc
-
 
 ### What types of situations are smart contracts good for
 
@@ -131,33 +122,32 @@ In `Real Estate` smart contracts can remove the need for expensive services such
 
 Moreover, the in mortgage-related operations would allow both parties to agree to the sale before then processing the payment digitally. 
 
-In `Insurance` sphere, smart contracts could also help improve the process of claim processing in many ways. They could allow error checks and define payout amounts by taking into account a set of criteria, and policy that was held by the individual or organization.
+In the `Insurance` sphere, smart contracts could also help improve the process of claim processing in many ways. They could allow error checks and define payout amounts by taking into account a set of criteria, and policy that was held by the individual or organization.
 
 In the sphere of `Medical Research`, the sensitive information about new drug formulas and test results could be secured over the use of smart contracts should they need to divulge any of this information to a third party for any reason.
 
-One of the most indicative examples that demonstrate CRUD options of smart contract can represent next simple example. 
-
+One of the most indicative examples that demonstrate CRUD options of smart-contract can represent the next simple example. 
 
 ### Water quality report (CRUD Example)
 Imagine we need to report about the quality of water. 
 
-The report includes three indicators for analyse:
+The report includes three indicators for analysing:
 
 - pH
 - Hardness
 - TDS
 
 `Create`
-User submit report to the system by inputing three indicators in the input form.
+Users submit a report to the system by inputting three indicators in the input form.
 
 `Read`
 `The Control Entity` review report and can approve the report.
 
 `Update` 
-In determined period of time user can change indicators. 
+In a determined period of time, the user can change indicators. 
 
 `Delete`
-Users can delete their reports in determined period of time.
+Users can delete their reports in a determined period of time.
 
 ### What types of data can a smart contract store (Text, Media)?
 
@@ -171,7 +161,6 @@ Variable and Hash.
 
 `Hash` allows for a dynamic amount of dimensions to be added to them. Hashes are great for data types such as balances or mappings.
 
-
 ### What does interacting with a smart contract cost?
 
 #### Stamps
@@ -180,26 +169,24 @@ A stamp is a single unit of computational work in a smart contract. Stamps are c
 
 **1. Why is there a cost?**
 
-To calculate work, the code is ran through an optimized tracer. Each Python VM opcode has a specific cost. Each step of the code deducts from the number of stamps attached to the transaction.
-
+To calculate work, the code is run through an optimized tracer. Each Python VM opcode has a specific cost. Each step of the code deducts from the number of stamps attached to the transaction.
 
 **2. Who pays the cost?**
 
-
-If all of the stamps are deducted before the transaction is done, the transaction reverts states and fails. If there are left over stamps from the transaction execution, they are returned to the sender.
+If all of the stamps are deducted before the transaction is done, the transaction reverts states and fails. If there are leftover stamps from the transaction execution, they are returned to the sender.
 
 **3. How can it be calculated**
 
-The calculation of the stamps can be done taking into account next data about cost per byte.
+The calculation of the stamps can be done, taking into account the next data about the cost per byte.
 
-- Cost to read one byte from state: 3 stamps
+- Cost to read one byte from the state: 3 stamps
 - Cost to write one byte to state: 25 stamps
 
 ## Opcode Cost Chart
 
 Details on Python Opcodes from the `dis` module documentation [here](https://docs.python.org/3/library/dis.html). CPython Opcode definitions [here](https://github.com/python/cpython/blob/master/Include/opcode.h).
 
-Some opcodes that are never encountered due to the linter failing the contract on submission have been left out of this table. Inversely, not all opcodes in this list may ever be encountered in valid Contracting code.
+Some opcodes that are never encountered due to the linter failing the contract on the submission have been left out of this table. Inversely, not all opcodes in this list may ever be encountered invalid Contracting code.
 
 | Op Code                      | Num | Cost | Muliplier | Actual Cost |
 |------------------------------|-----|:------:|:-----------:|:-------------:|
@@ -311,3 +298,4 @@ Some opcodes that are never encountered due to the linter failing the contract o
 | BUILD_CONST_KEY_MAP          | 156 | 3.5  | 2         | 7           |
 | BUILD_STRING                 | 157 | 4    | 2         | 8           |
 | BUILD_TUPLE_UNPACK_WITH_CALL | 158 | 2    | 2         | 4           |
+
