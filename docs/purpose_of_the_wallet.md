@@ -3,98 +3,100 @@ id: purpose_of_the_wallet
 hide_title: The Purpose of the Wallet
 sidebar_label: The Purpose of the Wallet
 ---
-
+ 
 ## Keeps keys safe
-Keys are credentials to your assets in Lamden. Anybody who has keys can get assets and withdraw them by transferring to another account. 
-
+`Keys` are credentials to access assets within Lamden. Anybody who possesses keys can access assets, and then withdraw them by transferring them to another account. 
+ 
 ### Strong password
-
-There are some general rules about creating a password. 
-
-1. Don't use words or phrases from dictionaries. 
-2. Don't use as password your birthdate or your's relatives.
-3. Don't stick written notes with a password on the display of your laptop.
-
-While creating a wallet in Lamden, you need to enter at least ten symbols, among them should be:
-
+ 
+There are some general rules regarding the creation of a password. 
+ 
+1. Do not use words or phrases commonly found in dictionaries. 
+2. Do not use the birthdate of either yourself or or your relatives.
+3. Do not keep written notes with your password on display in the vicinity of your laptop.
+ 
+whilst creating a wallet in Lamden, one must enter a minimum of ten symbols, among them, the following must be included:
+ 
 * 1 Lowercase Letter
 * 1 Capital Letter
 * 1 Number
 * 1 Special Character
-
-You can follow the next instruction on how to create a wallet in Lamden
-
+ 
+To create a wallet in Lamden, follow the instructions below.
+ 
 ![](/img/wallet/creating_wallet.gif)
-
+ 
 ### Private keys Encrypted in browser storage
-
+ 
 ### Extension storage and messaging is sandboxed to the extension namespace
-
+ 
 ## Allows backing up and restoring of keys
-
-In the Lamden wallet, you can backup the keys and store them anywhere offline. 
-
+ 
+Within the Lamden wallet, the keys are able to be backed up and stored anywhere offline. 
+ 
 ### What is a Keystore file
-By using the Keystore file, you can restore your access to the wallet in the case if you forgot the password. 
-
-You can backup your Keystore file by using the next instruction.
-
+Using the Keystore file, it provides the ability to restore access to the wallet in case the password was forgotten. 
+ 
+TheKeystore file can be backed up by following the instructions below.
+ 
 ![](/img/wallet/backup_keystore.gif)
-
+ 
 ### Restoring keys
-
-To restore the key is pretty straightforward. All you need to have is a Keystore file that you backed up before and a password. 
-
-The instruction on how to do it as follows:
-
+ 
+Restoration of the key is a straightforward process. To do so, all that is necessary is a Keystore file that was previously backed up and a password. 
+ 
+The instruction to do so are as follows:
+ 
 1. Open the wallet
-2. In the left sidebar, click on `Restore Wallet.`
-3. In the right part of the screen, click `Restore Wallet.`
-4. For passing the next screen, you need to choose/pick a Keystore file from your filesystem and bring it to the area `Drop File Here`.
+2. From the left sidebar, click `Restore Wallet.`
+3. On the right-hand side of the screen, click `Restore Wallet`.
+4. To progress to the next screen, it is necessary to choose/pick a Keystore file from your filesystem and drag it to the area `Drop File Here`.
 5. Click `Confirm Keystore.`
-6. Enter the password that you used to back up a Keystore.
+6. Enter the password which was used to back up the Keystore.
    
-You will find the list of accounts to restore. 
-
-1. Mark checkboxes near the accounts that you would like to restore. 
+The list of accounts able to be restored will appear. 
+ 
+1. Select the accounts that you would like to restore by checking the corresponding box. 
    
-
+ 
 ![](/img/wallet/restore_wallet.gif)
-
+ 
 ###  Smart contract IDE
-In the Lamden wallet, there is an IDE that you can use for developing the smart contract.
-
+In the Lamden wallet, an IDE is present which can be used to develop the smart contract.
+ 
 #### Create Lamden Smart contracts
-
+ 
 1. Open the wallet 
-2. Click `Smart Contracts`
-3. At the right part of the screen, click on the `+` to add a new smart contract.
-4. On the next screen, select one of the options `Blank Contract` or `Example Contract`. 
-
-If you select  `Blank Contract`, the area for writing a contract will be empty.
-In other cases, if you select `Example Contract,` you will see smart-contract with like an example for reference.
-
-More detailed information you can get following the  [link](/docs/using_the_wallet#ide)
-
+2. Click on `Smart Contracts`
+3. On the right-hand side of the screen, click `+` to add a new smart contract.
+4. On the next screen, select either of the available options, `Blank Contract` or `Example Contract`. 
+ 
+In the event that `Blank Contract`is selected, the area designated for writing a contract will remain empty.
+In other cases, if `Example Contract` is selected, a smart-contract example will be visible for reference.
+ 
+For more detailed information follow the given link  [link](/docs/using_the_wallet#ide)
+ 
 ### “Lint” for python syntax and “contracting” specific errors
-The embedded IDE in the wallet supports the python syntax and helps to catch the errors by using `contracting` methods.
-
+The embedded IDE in the wallet supports the python syntax, and helps to catch errors using `contracting` methods.
+ 
 ### Test Lamden Smart contracts
 #### Test Methods
-Lamden platform allows very flexible methods for testing smart contracts. 
-
-Among available methods, you can choose to test directly on the test networks by deploying the smart contract through IDE in the Lamden wallet. 
-
-Another available method to deploy a local Python server such as `Sanic Server`.
-
-More detailed instruction you can find here by following the **[link](/docs/basics_smart_contracts.md)**
-
-You can test smart contracts on different Blockchain networks by submission them through IDE.
-
-More information about blockchain networks you can read following the **[link](/docs/using_the_wallet#types-of-networks-mainnet-testnet-mockchain)**
-
-
-
-
-
+Lamden platform allows very flexible methods in order to  test smart contracts. 
+ 
+Amongst various available methods, the user is able to choose to test directly on the test networks, by deploying the smart contract through IDE in the Lamden wallet. 
+ 
+Another available method entails the  deployment of a local Python server such as `Sanic Server`.
+ 
+More detailed instructions can be found by following the **[link](/docs/basics_smart_contracts.md)**
+ 
+Smart contracts can be tested on different Blockchain networks by submitting them through IDE.
+ 
+More information regarding  blockchain networks can be found by following the **[link](/docs/using_the_wallet#types-of-networks-mainnet-testnet-mockchain)**
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 

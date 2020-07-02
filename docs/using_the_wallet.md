@@ -33,7 +33,7 @@ To Create a New Account
  
 1. Open the Lamden extension in your browser
 2. Click on `Accounts`
-3. On theright handscreen, select `Add Account.`
+3. On the right-hand screen, select `Add Account.`
 4. Select `Create New`
 5. Enter Wallet Nickname (Optional)
 6. Click Save
@@ -42,7 +42,7 @@ To Add an Existing Account
  
 1. Open the Lamden extension in the browser
 2. Click on `Accounts`
-3. On the right hand screen, select `Add Account.`
+3. On the right-hand screen, select `Add Account.`
 4. Select `Add Existing Account`
 5.  Enter Private Key
 6.  Enter Wallet Nickname (Optional)
@@ -52,7 +52,7 @@ To Add a Tracked Address
  
 1. Open the Lamden extension in the browser
 2. Click on `Accounts`
-3. On the right hand screen, select `Add Account.`
+3. On the right-hand screen, select `Add Account.`
 4. Select `Add Track Address`
 5. Enter Private Key
 6. Enter Wallet Nickname (Optional)
