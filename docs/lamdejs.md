@@ -67,8 +67,6 @@ Represent an account.
  
 **Returns**: 
  
-{array}
- 
 vk - Verify Key (VK) represents a 32 byte verifying key. 
  
 sk - Signing Key (SK) represents a 32 byte signing key.
@@ -86,7 +84,7 @@ Represents an account.
 | --- | --- | --- |
 | seed | array | A Uint8Array with a length of 32 to seed the keyPair with, This is advanced behavior and ought to be avoided by everyday users. |
  
-**Returns**: {array} 
+**Returns**:
  
 vk - Verify Key (VK) represents a 32 byte verifying key.
  
@@ -113,7 +111,7 @@ String - vk - A 64 character long hex representation of a verify key (public key
 | --- | --- | --- |
 | sk | array | Signing Key (SK) represents a 32-byte signing key. |
  
-**Returns**: {array}
+**Returns**: 
  
 vk - Verify Key (VK) represents a 32 byte verifying key.
  
@@ -133,8 +131,10 @@ kp - the object that contains vk and sk.
 string - vk - Verify Key (VK) represented as a 64 character hex string. 
 string - sk - Signing Key (SK) represented as a 64 character hex string.
  
+ ```javascript
 <a name="sign"></a>
- 
+ ```
+
 ## sign(sk, msg) ⇒ String
  
 **Type**: global function
