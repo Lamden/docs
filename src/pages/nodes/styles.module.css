@@ -18,6 +18,10 @@
   }
 }
 
+.heroImg {
+  max-width: 90%;
+}
+
 .buttons {
   display: flex;
   align-items: center;

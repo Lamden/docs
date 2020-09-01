@@ -12,6 +12,10 @@ module.exports = {
   organizationName: 'Lamden', // Usually your GitHub org/user name.
   projectName: 'lamden-docs-site', // Usually your repo name.
   themeConfig: {
+    colorMode: {
+      defaultMode: 'light',
+      disableSwitch: true
+    },
     navbar: {
       title: 'Lamden',
       logo: {
@@ -24,6 +28,13 @@ module.exports = {
           activeBasePath: 'docs',
           label: 'Docs',
           position: 'left',
+          
+        },
+        {
+          to: 'wallet',
+          activeBasePath: 'pages',
+          label: 'Wallet',
+          position: 'right',
         },
         {
           to: 'smart_contracting',
@@ -32,33 +43,22 @@ module.exports = {
           position: 'right',
         },
         {
-          to: 'nodes',
-          activeBasePath: 'pages',
-          label: 'Nodes',
-          position: 'right',
-        },
-        {
-          to: 'wallet',
-          activeBasePath: 'pages',
-          label: 'Wallet',
-          position: 'right',
-        },
-
-        {
           to: 'blockchain',
           activeBasePath: 'pages',
           label: 'Blockchain',
           position: 'right',
         },
-
         {
-          to: 'lamden_world',
+          to: 'develop',
           activeBasePath: 'pages',
-          label: 'Lamden World',
-          position: 'left',
+          label: 'Develop',
+          position: 'right',
         },
-        
-        {to: 'https://blog.lamden.io/', label: 'Blog', position: 'left'},
+        {
+          to: 'https://blog.lamden.io/', 
+          label: 'Blog', 
+          position: 'left'
+        },
         {
           href: 'https://github.com/facebook/docusaurus',
           label: 'GitHub',
@@ -133,9 +133,6 @@ module.exports = {
             'https://github.com/facebook/docusaurus/edit/master/website/blog/',
         },
 
-
-        
-        
         plugins: ['@docusaurus/plugin-ideal-image',
                   '@docusaurus/docusaurus-gist-embed'
                 ],

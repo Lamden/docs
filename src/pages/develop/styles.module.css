@@ -5,6 +5,11 @@
  * and scoped locally.
  */
 
+ h2{
+  margin: 4rem 0 2rem;
+  color: var(--ifm-color-primary)
+}
+
 .heroBanner {
   padding: 4rem 0;
   text-align: center;
@@ -16,6 +21,10 @@
   .heroBanner {
     padding: 2rem;
   }
+}
+
+.heroImg{
+  max-width: 450px;
 }
 
 .buttons {
@@ -40,4 +49,12 @@
   width:5px;
   height:auto;
   display:inline-block;
+}
+
+.tool{
+  margin: 1rem 0;
+}
+
+.tool_image{
+  max-width: 200px;
 }

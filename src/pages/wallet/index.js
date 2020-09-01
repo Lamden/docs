@@ -8,32 +8,29 @@ import styles from './styles.module.css';
 
 const features = [
   {
-    title: <>Easy to Use</>,
-    imageUrl: 'img/undraw_docusaurus_mountain.svg',
+    title: <>Safe and Secure</>,
+    imageUrl: 'img/wallet-1.svg',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Keep all your Lamden TAU tokens safe in one place.  Backup and Restore to keystore files all from one unified interface.
       </>
     ),
   },
   {
-    title: <>Focus on What Matters</>,
-    imageUrl: 'img/undraw_docusaurus_tree.svg',
+    title: <>Built-In Python IDE</>,
+    imageUrl: 'img/wallet-2.svg',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Build, Test and Upload smart contracts directly from the wallet. Open and view smart contracts that already exist on the Lamden blockchain.
       </>
     ),
   },
   {
-    title: <>Powered by React</>,
-    imageUrl: 'img/undraw_docusaurus_react.svg',
+    title: <>Linked Accounts</>,
+    imageUrl: 'img/wallet-3.svg',
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Link your accounts to website to allow for powerful blockchain interactions. Enable automatic transactiosn to super charge app and game experiences.
       </>
     ),
   },
@@ -65,8 +62,8 @@ function Home() {
         <div className="container">
           <div className="row">
             <div className={classnames('col col--5 col--offset-1')}>
-            <h1 className="hero__title">Wallet</h1>
-          <p className="hero__subtitle">Lamden wallet to keep your crypto assets secure</p>
+            <h1 className="hero__title">Lamden Wallet</h1>
+          <p className="hero__subtitle">Safe TAU Storage and MUCH More</p>
               <div className={styles.buttons}>
               <Link
               className={classnames(
