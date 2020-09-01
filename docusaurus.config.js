@@ -7,6 +7,7 @@ module.exports = {
   tagline: 'All you need for your next dApp',
   url: 'https://docs.lamden.io',
   baseUrl: '/',
+  onBrokenLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'Lamden', // Usually your GitHub org/user name.
   projectName: 'lamden-docs-site', // Usually your repo name.
@@ -17,7 +18,7 @@ module.exports = {
         alt: 'Lamden Logo',
         src: 'img/logo.svg',
       },
-      links: [
+      items: [
         {
           to: 'docs/index',
           activeBasePath: 'docs',
@@ -120,7 +121,6 @@ module.exports = {
       {
         docs: {
           // It is recommended to set document id as docs home page (`docs/` path).
-          homePageId: 'index',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
