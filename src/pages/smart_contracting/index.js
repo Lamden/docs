@@ -113,7 +113,7 @@ function Home() {
                 <code> pip3 install contracting</code>
 
                 <h3>Your First Smart Contract</h3>
-                <p>my_token.py</p>
+                <code>nano my_token.py</code>
                 <SyntaxHighlighter language="python">
                   { 
                     '#create some state \n' +

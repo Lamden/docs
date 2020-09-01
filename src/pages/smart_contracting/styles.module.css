@@ -62,3 +62,7 @@ h3{
 .tutorials_text > h3 {
   margin-top: 1rem;
 }
+
+pre{
+  margin: 1rem 0;
+}
