@@ -6,6 +6,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
 import SyntaxHighlighter from 'react-syntax-highlighter';
+import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 
 const features = [
   {
@@ -114,7 +115,7 @@ function Home() {
 
                 <h3>Your First Smart Contract</h3>
                 <code>nano my_token.py</code>
-                <SyntaxHighlighter language="python">
+                <SyntaxHighlighter language="python" style={docco}>
                   { 
                     '#create some state \n' +
                     'balances = Hash(default_value=0) \n' +
@@ -126,7 +127,7 @@ function Home() {
                     ' \n' +
                     '#transfer funds \n' +
                     '@export \n' +
-                    'def transfer(to, from, amount): \n' +
+                    'def transfer(to: str, from: str, amount: int): \n' +
                     '    assert balances[from] >= amount, "Insufficient Funds" \n' +
                     '    balances[to] += amount \n' +
                     '    balances[from] -= amount'
