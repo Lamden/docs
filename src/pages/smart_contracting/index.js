@@ -5,35 +5,33 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
+import SyntaxHighlighter from 'react-syntax-highlighter';
 
 const features = [
   {
-    title: <>Easy to Use</>,
-    imageUrl: 'img/undraw_docusaurus_mountain.svg',
+    title: <>Native Python</>,
+    imageUrl: 'img/smartcontracts-1.svg',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Develop smart contracts in your favorite Python IDE and testing suite.
       </>
     ),
   },
   {
-    title: <>Focus on What Matters</>,
-    imageUrl: 'img/undraw_docusaurus_tree.svg',
+    title: <>Get Empowerd</>,
+    imageUrl: 'img/smartcontracts-2.svg',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Translate your ideas to the blockchain without worrying about abstract coding paradigms. 
       </>
     ),
   },
   {
-    title: <>Powered by React</>,
-    imageUrl: 'img/undraw_docusaurus_react.svg',
+    title: <>Save Time</>,
+    imageUrl: 'img/smartcontracts-3.svg',
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Spend time focusing on your product and not complex smart contract languages.
       </>
     ),
   },
@@ -98,6 +96,7 @@ function Home() {
       <main>
         {features && features.length > 0 && (
           <section className={styles.features}>
+            
             <div className="container">
               <div className="row">
                 {features.map((props, idx) => (
@@ -107,6 +106,31 @@ function Home() {
             </div>
           </section>
         )}
+        <section className={styles.quickstart}>
+            <div className="container">
+              <h2>Quickstart</h2>
+                <h3>Install</h3>
+                <code> pip3 install contracting</code>
+
+                <h3>Your First Smart Contract</h3>
+                <SyntaxHighlighter language="python">
+                  {'#create some state \n' +
+                    'balances = Hash(default_value=0) \n' +
+                    ' \n'  +
+                    '#seed initial balances \n' +
+                    '@construct \n' +
+                    'def seed(): \n' +
+                    '    balances["me"] = 1000000 \n' +
+                    ' \n' +
+                    '#transfer funds \n' +
+                    '@export \n' +
+                    'def transfer(to, from, amount): \n' +
+                    '    assert balances[from] >= amount, "Insufficient Funds" \n' +
+                    '    balances[to] += amount \n' +
+                    '    balances[from] -= amount'}  +
+                </SyntaxHighlighter>
+            </div>
+          </section>
       </main>
     </Layout>
   );
