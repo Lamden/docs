@@ -36,10 +36,29 @@
   width: 200px;
 }
 
-.quickstart{
+.quickstart, .tutorials{
   padding: 2rem 0;
+}
+
+.tutorials_image{
+  border: 2px dashed #ffffff00
+
+}
+
+.tutorials_image:hover{
+  border: 2px dashed #461BC2
+}
+
+.tutorials_text{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 h3{
   margin: 2rem 0 1rem;
+}
+
+.tutorials_text > h3 {
+  margin-top: 1rem;
 }

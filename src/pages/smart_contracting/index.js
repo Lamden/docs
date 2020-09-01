@@ -63,16 +63,16 @@ function Home() {
         <div className="container">
           <div className="row">
             <div className={classnames('col col--5 col--offset-1')}>
-          <h1 className="hero__title">Smart Contracting</h1>
-          <p className="hero__subtitle">Don't Limit your Fantasy</p>
+          <h1 className="hero__title">Contracting</h1>
+          <p className="hero__subtitle">Python Powered Smart Contracts</p>
               <div className={styles.buttons}>
               <Link
               className={classnames(
                 'button button--secondary button--lg',
                 styles.getStarted, 
               )}
-              to={useBaseUrl('docs/ide_smart_contract')}>
-            Documentation
+              to={useBaseUrl('https://contracting.lamden.io')}>
+            Documentations
             </Link>
 
             &nbsp;  &nbsp;
@@ -113,8 +113,10 @@ function Home() {
                 <code> pip3 install contracting</code>
 
                 <h3>Your First Smart Contract</h3>
+                <p>my_token.py</p>
                 <SyntaxHighlighter language="python">
-                  {'#create some state \n' +
+                  { 
+                    '#create some state \n' +
                     'balances = Hash(default_value=0) \n' +
                     ' \n'  +
                     '#seed initial balances \n' +
@@ -127,8 +129,31 @@ function Home() {
                     'def transfer(to, from, amount): \n' +
                     '    assert balances[from] >= amount, "Insufficient Funds" \n' +
                     '    balances[to] += amount \n' +
-                    '    balances[from] -= amount'}  +
+                    '    balances[from] -= amount'
+                  }
                 </SyntaxHighlighter>
+            </div>
+          </section>
+          <section className={styles.tutorials}>
+            <div className="container">
+              <h2>Tutorials</h2>
+              <div class="row" >
+                <div class="col col--4">
+                  <a href="https://github.com/JeffWScott/my_token_lamden_tutorial" >
+                    <img  src="img/smartcontracts-tutorial-mytoken.png" className={styles.tutorials_image}/>
+                  </a>
+                </div>
+                <div class="col col--8" >
+                  <div className={styles.tutorials_text}>
+                    <h3>"My Token" Tutorial Series</h3>
+                    <p>Create a token smart contract from scratch using Python's Contracting package. The simple smart contract will mint an initial supply to a user of our choice and then define a tansfer method for our users to use. To finish it off we create unit test to validate our new smart contact does exactly what we want it to do.</p>
+                  </div>
+                </div>
+              </div>
+                
+
+                
+                
             </div>
           </section>
       </main>
