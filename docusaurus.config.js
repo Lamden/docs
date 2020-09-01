@@ -5,11 +5,11 @@ module.exports = {
 
   title: 'Lamden Documentation Website',
   tagline: 'All you need for your next dApp',
-  url: 'https://lamden.io',
+  url: 'https://docs.lamden.io',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
   organizationName: 'Lamden', // Usually your GitHub org/user name.
-  projectName: 'https://github.com/Lamden/whitepaper', // Usually your repo name.
+  projectName: 'lamden-docs-site', // Usually your repo name.
   themeConfig: {
     navbar: {
       title: 'Lamden',
