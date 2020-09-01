@@ -89,7 +89,7 @@ function Home() {
               </div>
             </div>
             <div className={classnames('col col--5')}>
-              <img className={styles.heroImg} src="img/undraw_process_e90d.svg" />
+              <img className={styles.heroImg} src="/img/undraw_process_e90d.svg" />
             </div>
           </div>
         </div>
@@ -141,7 +141,7 @@ function Home() {
               <div class="row" >
                 <div class="col col--4">
                   <a href="https://github.com/JeffWScott/my_token_lamden_tutorial" >
-                    <img  src="img/smartcontracts-tutorial-mytoken.png" className={styles.tutorials_image}/>
+                    <img  src="/img/smartcontracts-tutorial-mytoken.png" className={styles.tutorials_image}/>
                   </a>
                 </div>
                 <div class="col col--8" >
