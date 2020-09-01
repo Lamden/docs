@@ -67,25 +67,25 @@ function Home() {
           <h1 className="hero__title">Contracting</h1>
           <p className="hero__subtitle">Python Powered Smart Contracts</p>
               <div className={styles.buttons}>
+                <Link
+                className={classnames(
+                  'button button--secondary button--lg',
+                  styles.getStarted, 
+                )}
+                to={useBaseUrl('https://contracting.lamden.io')}>
+              Documentations
+              </Link>
+
+              &nbsp;  &nbsp;
+
               <Link
-              className={classnames(
-                'button button--secondary button--lg',
-                styles.getStarted, 
-              )}
-              to={useBaseUrl('https://contracting.lamden.io')}>
-            Documentations
-            </Link>
-
-            &nbsp;  &nbsp;
-
-            <Link
-              className={classnames(
-                'button button--secondary button--lg',
-                styles.getStarted, 
-              )}
-              to={useBaseUrl('https://github.com/Lamden/contracting')}>
-              GitHub
-            </Link>
+                className={classnames(
+                  'button button--secondary button--lg',
+                  styles.getStarted, 
+                )}
+                to={useBaseUrl('https://github.com/Lamden/contracting')}>
+                GitHub
+              </Link>
               </div>
             </div>
             <div className={classnames('col col--5')}>
