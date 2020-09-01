@@ -78,7 +78,7 @@ const tools = [
   },
   {
     title: <>Lamden Wallet API</>,
-    imageUrl: 'img/tools-lamdenjs.svg',
+    imageUrl: 'img/tools-walletapi.svg',
     description: (
       <>
         Connect your app to the Lamden Wallet via a simple event driven API. 
