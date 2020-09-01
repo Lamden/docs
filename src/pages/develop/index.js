@@ -66,6 +66,17 @@ const tools = [
     link: 'https://contracting.lamden.io'
   },
   {
+    title: <>Lamden</>,
+    imageUrl: 'img/tools-lamden.svg',
+    description: (
+      <>
+        Lamden is a Python package that allows you to create wallets, transactions and interact with the Lamden blockchain.  
+        This package houses the masternode and delegate software for running nodes.  It's a one stop shop for all lamden tech on Python.
+      </>
+    ),
+    link: '/docs/lamdenjs'
+  },
+  {
     title: <>Lamden-js</>,
     imageUrl: 'img/tools-lamdenjs.svg',
     description: (
@@ -118,14 +129,14 @@ function Tools({imageUrl, title, description, link}) {
     <div className={classnames('row', styles.tool)}>
       <div class="col col--4">
           <Link
-            className={classnames('button button--secondary button--lg', styles.getStarted)}
+            className={classnames('button button--secondary button--lg', styles.getStarted, styles.tool_button)}
             to={useBaseUrl(link)}>
               <img src={imgUrl} className={styles.tool_image}/>
           </Link>
         </div>
         <div class="col col--8" >
           <div className={styles.tutorials_text}>
-            <h3>{title}</h3>
+            <h3 className={styles.tool_heading}>{title}</h3>
             <p>{description}</p>
           </div>
         </div>

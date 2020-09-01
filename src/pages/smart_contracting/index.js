@@ -138,11 +138,13 @@ function Home() {
           <section className={styles.tutorials}>
             <div className="container">
               <h2>Tutorials</h2>
-              <div class="row" >
+              <div class="row" className={classnames('row', styles.tutorials)}>
                 <div class="col col--4">
-                  <a href="https://github.com/JeffWScott/my_token_lamden_tutorial" >
-                    <img  src="/img/smartcontracts-tutorial-mytoken.png" className={styles.tutorials_image}/>
-                  </a>
+                  <Link
+                      className={classnames('button button--secondary button--lg', styles.getStarted, styles.tutorials_button)}
+                      to={useBaseUrl('https://github.com/JeffWScott/my_token_lamden_tutorial')}>
+                        <img src="/img/tutorials-mytoken.png" className={classnames(styles.tutorials_image)}/>
+                  </Link>
                 </div>
                 <div class="col col--8" >
                   <div className={styles.tutorials_text}>
@@ -151,7 +153,25 @@ function Home() {
                   </div>
                 </div>
               </div>
-                
+              <div class="row" >
+                <div class="col col--4">
+                  <Link
+                    className={classnames('button button--secondary button--lg', styles.getStarted, styles.tutorials_button)}
+                    to={useBaseUrl('https://contracting.lamden.io/quickstart/import-submit/')}>
+                      <img src="/img/tutorials-jupyter.svg" className={classnames(styles.tutorials_image_jupyter)}/>
+                  </Link>
+                </div>
+                <div class="col col--8" >
+                  <div className={styles.tutorials_text}>
+                    <h3>Juypter Notebook Quickstart</h3>
+                    <p>
+                        Jupyter is a great tool for Python programmers to develop and explore in as they combine the high feedback of a REPL with the presentation and saving of a program.
+                        If you are a Python programmer, chances are you already have Jupyter installed. If not, follow this guide to get started.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              
 
                 
                 

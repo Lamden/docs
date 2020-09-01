@@ -31,6 +31,12 @@ module.exports = {
           
         },
         {
+          to: 'develop',
+          activeBasePath: 'pages',
+          label: 'Develop',
+          position: 'right',
+        },
+        {
           to: 'wallet',
           activeBasePath: 'pages',
           label: 'Wallet',
@@ -48,12 +54,7 @@ module.exports = {
           label: 'Blockchain',
           position: 'right',
         },
-        {
-          to: 'develop',
-          activeBasePath: 'pages',
-          label: 'Develop',
-          position: 'right',
-        },
+
         {
           to: 'https://blog.lamden.io/', 
           label: 'Blog', 

@@ -65,25 +65,23 @@ function Home() {
             <h1 className="hero__title">Lamden Wallet</h1>
           <p className="hero__subtitle">Safe TAU Storage and MUCH More</p>
               <div className={styles.buttons}>
-              <Link
-              className={classnames(
-                'button button--secondary button--lg',
-                styles.getStarted, 
-              )}
-              to={useBaseUrl('docs/walletinstallation')}>
-            Documentation
-            </Link>
-
-            &nbsp;  &nbsp;
-
-            <Link
-              className={classnames(
-                'button button--secondary button--lg',
-                styles.getStarted, 
-              )}
-              to={useBaseUrl('https://github.com/Lamden/wallet')}>
-              GitHub
-            </Link>
+                <Link
+                  className={classnames(
+                    'button button--primary button--lg',
+                    styles.getStarted, 
+                  )}
+                  to={useBaseUrl('https://github.com/Lamden/wallet')}>
+                  Install
+                </Link>
+                &nbsp;  &nbsp;
+                <Link
+                  className={classnames(
+                    'button button--secondary button--lg',
+                    styles.getStarted, 
+                  )}
+                  to={useBaseUrl('docs/walletinstallation')}>
+                  Documentation
+                </Link>
               </div>
             </div>
             <div className={classnames('col col--5')}>
