@@ -106,7 +106,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Lamden USA LLC.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Copyright Lamden Sàrl, 2020.`,
     },
   },
   presets: [
