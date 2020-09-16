@@ -4,7 +4,7 @@ module.exports = {
  
 
   title: 'Lamden Documentation Website',
-  tagline: 'All you need for your next dApp',
+  tagline: 'Full Documentation Comming Soon',
   url: 'https://docs.lamden.io',
   baseUrl: '/',
   onBrokenLinks: 'warn',
@@ -106,7 +106,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Lamden USA LLC.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Copyright Lamden Sàrl, 2020.`,
     },
   },
   presets: [
