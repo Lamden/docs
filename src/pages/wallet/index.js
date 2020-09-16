@@ -70,7 +70,7 @@ function Home() {
                     'button button--primary button--lg',
                     styles.getStarted, 
                   )}
-                  to={useBaseUrl('https://github.com/Lamden/wallet')}>
+                  to={useBaseUrl('https://chrome.google.com/webstore/detail/lamden-wallet-browser-ext/fhfffofbcgbjjojdnpcfompojdjjhdim')}>
                   Install
                 </Link>
                 &nbsp;  &nbsp;

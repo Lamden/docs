@@ -49,13 +49,6 @@ module.exports = {
           position: 'right',
         },
         {
-          to: 'blockchain',
-          activeBasePath: 'pages',
-          label: 'Blockchain',
-          position: 'right',
-        },
-
-        {
           to: 'https://blog.lamden.io/', 
           label: 'Blog', 
           position: 'left'

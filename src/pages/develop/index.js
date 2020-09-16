@@ -158,30 +158,13 @@ function Home() {
           <div className="row">
             <div className={classnames('col col--5 col--offset-1')}>
             <h1 className="hero__title">Develop Apps</h1>
-          <p className="hero__subtitle">Tap Into Success</p>
-              <div className={styles.buttons}>
-              <Link
-              className={classnames(
-                'button button--secondary button--lg',
-                styles.getStarted, 
-              )}
-              to={useBaseUrl('docs/lw_how_to_play')}>
-            Documentation
-            </Link>
-
-            &nbsp;  &nbsp;
-
-            <Link
-              className={classnames(
-                'button button--primary button--lg',
-                styles.getStarted, 
-              )}
-              to={useBaseUrl('https://pixelframes.lamden.io')}>
-              Demo
-            </Link>
-
+          <p className="hero__subtitle">Documentation Comming Soon</p>
+            
+            <div className={styles.buttons}>
               </div>
+              
             </div>
+
             <div className={classnames('col col--5')}>
               <img className={styles.heroImg} src="img/undraw_video_game_night_8h8m.svg" />
             </div>
