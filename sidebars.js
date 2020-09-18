@@ -13,7 +13,12 @@ module.exports = {
 				'Accounts': [
 					'wallet/accounts_overview',
 					'wallet/accounts_creation',
-					'wallet/accounts_linked'
+					{
+						'Linked Accounts': [
+						'wallet/accounts_linked_overview',
+						'wallet/accounts_linked_create'
+						]
+					}
 				],
 				'Backup & Restore Keys': [
 					'wallet/backup',

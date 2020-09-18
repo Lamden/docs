@@ -4,12 +4,7 @@ title: Creating Wallet Accounts
 sidebar_label: Creating
 ---
 
-Wallet accounts store your TAU token in the Lamden Wallet.  
-
-You can have multiple wallet accounts, each of them has their own unique address which is encrypted in the Lamden Wallet.
-
-It is heavily recommened that you do a [NEW BACKUP](wallet/backup.md) everytime you add a new account as each backup only stores the accounts you had at that specific point in time.
-
+You can add accounts to your Lamden Wallet in three ways.
 
 ## New Account
 This will create you a brand new wallet account with a freah wallet address.
