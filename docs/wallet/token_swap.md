@@ -11,7 +11,7 @@ If you currently hold ERC-20 TAU it will not be useable on the Lamden Mainnet.  
 1. Install, Setup and Login to the Lamden Wallet
 2. Install Setup and Loging to Metamask
 3. Add the Lamden TAU Token to Metamask using our smart contract 0xc27a2f05fa577a83ba0fdb4c38443c0718356501.
-4. Transfer your ERC-20 TAU to your Metamast address
+4. Transfer your ERC-20 TAU to your Metamask address
 5. Set your Metamask plugin to the "Main Network"
 
 ## FAQ
@@ -59,7 +59,8 @@ This step will have you send two seperate transactions:
 
 #### Ethereum Approval Transaction
 1. Enter the amount of ERC-20 you want to swap, you don't need to swap your entire ERC-20 amount at once.
-2. Verify the Transaction Details
+2. Verify the Transaction Details and also verify the amount specific DOES NOT EXCEED your token balance (if that happens Metamask will estimate very high gas prices).
+![](/img/wallet/confirm_swap_amount.png)
 3. Click the "Send Approval" button
 4. On the Metamask popup click "Confirm"
 5. Wait for Ethereum transaction to complete... DO NOT CLOSE THE WALLET at this point.

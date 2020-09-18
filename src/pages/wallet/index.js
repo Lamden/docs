@@ -79,7 +79,7 @@ function Home() {
                     'button button--secondary button--lg',
                     styles.getStarted, 
                   )}
-                  to={useBaseUrl('docs/walletinstallation')}>
+                  to={useBaseUrl('docs/wallet/overview')}>
                   Documentation
                 </Link>
               </div>
