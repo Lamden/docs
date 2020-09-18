@@ -4,7 +4,7 @@ title: Linked Accounts
 sidebar_label: Overview
 ---
 
-A Linked Accounts is ancount created in your Lamden Wallet by a website that you have let interact with your Lamden Wallet.  This approval is done via a popup window when you visit the website.
+A Linked Account is an ancount created in your Lamden Wallet by a website that you have approved to interact with your Lamden Wallet.  This approval is done via a popup window when you visit the website.
 
 Each website that you interact with will have it's own Linked Account. This lets you, as the user, control how much of your TAU that application has access to.
 
