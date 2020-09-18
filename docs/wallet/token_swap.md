@@ -20,7 +20,7 @@ We have a [blog post](https://blog.lamden.io/lamden-tau-token-swap-faq-cb68ab59c
 ## Swap Process
 Here is a video of the process. Detailed steps are below.
  
-![](/img/wallet/1.0.0_token_swap.gif)
+![](/img/wallet/gif/1.0.0_token_swap.gif)
 
 ### Step 1 - Disclaimer & Questions
 1. Make sure you are on "Lamden Mainnet" by checking the top right-hand corner of the screen.  If it says Lamden Testnet, click  it to change.
