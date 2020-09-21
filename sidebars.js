@@ -28,6 +28,16 @@ module.exports = {
 					'wallet/token_swap'
 				]
 			}
+		],
+		'Devlopers':[
+			{'Lamden Wallet API':[
+				'develop/wallet_api/overview',
+				'develop/wallet_api/create_connection',
+				'develop/wallet_api/customize_connection',
+				'develop/wallet_api/get_wallet_info',
+				'develop/wallet_api/send_transactions',
+				'develop/wallet_api/approval_transactions'
+			]}
 		]
 	}
 };
