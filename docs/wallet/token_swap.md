@@ -75,7 +75,7 @@ After this step your TAU will be committed to the swap!
 6. When prompted with the blue checkmark and the works "Transaction Successful" then click the "Continue" button
 
 
-### Step 5 - Approve and send Ethereum ERC-20 TAU
+### Step 5 - Get Lamden Mainet TAU
 In this step we will process your ETH Swap transaction and send you the Lamden Mainnet TAU to the Lamden Account you specifec in Step 2.
 1. The swap will begin automatically, wait for a result to appear
 2. If you see "Swap is Complete" then everything processed correctly and you can go back to the "Accounts" page and view your balance has updated. If your balance has not updated then click the refresh button (circular arrow) beside your main wallet total.  If you still don't see your updated balance skip to the next step.  If you do see yoru updated balance then Congrate on a successful swap!
@@ -90,3 +90,12 @@ There will be no log of attempted transactions, only transaction where they Ethe
 If you have a completed ETH Swap transaction but are getting and error from the swap process then contact team@lamden.io or get a hold of and admin in our Telegram[Telegram Room](https://t.me/lamdenchat). You will be asked to provide all of your swap information, which can be found under "Token Swap" on the main menu.
 
 Once we find and fix the problem you can click the "Retry" button located under the failed swap in the swap log on the "Token Swap" page in the Lamden Wallet.
+
+
+## Troubleshooting
+
+### High gas fees
+While Lamden can't control Ethereum gas prices (we wish we could, trust us!), there is one situtation where you might be experiecing WAY higher gas fees than [https://ethgasstation.info](https://ethgasstation.info/) shows.  This will happend if you're trying to approve MORE TAU than you have in your wallet balance.  Check the ammount being approved in the metamask transaction details and verify the wallet didn't round up one of the decimals places.
+
+### Can't click the checkboxes to approve the agreements
+Try resizing the text area using the button in the lower right-hand corner of the text box.  Then make sure you are scrolled to the bottom.
