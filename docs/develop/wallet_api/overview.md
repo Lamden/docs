@@ -20,7 +20,7 @@ Connections to the Lamden Wallet are defined and restricted in the following way
 1. The Lamden Wallet creates ONE [Linked Account](/docs/wallet/accounts_linked_overview) for each URL.  Example, DAPP1.mydomain.com and DAPP2.mydomain.com would be concidered 2 seperate DAPPS Lamden Wallet.
 2. All images used for customization are prefixed with the DAPPS's hostname when displayed in the wallet.
 3. A brand new [Linked Account](/docs/wallet/accounts_linked_overview) is created for your dApp in the Lamden Wallet and you are permitted to only transaction against that one account.
-4. A DAPP can only approve ONE smart contract per network type (testnet, mainnet). User approval is needed for EACH network.
+4. A DAPP can only approve ONE smart contract per network type (testnet, mainnet). User approval is needed for EACH network. Smart contact can be changed later, but it's not recommended. The use will be provded a popup to warn then if you the smart contract is changing.
 5. The contract to be approved must exist on the network it's being approved on before trying to create a connection request.
 6. All transacations are locked to the user approved contract for that network. This includes state variable lookups when creating charms; although this could change in the future.
 7. All event detail is passed in JSON format.

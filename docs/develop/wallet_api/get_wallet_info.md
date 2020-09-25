@@ -1,6 +1,6 @@
 ---
 id: get_wallet_info
-title: Get Acctount Info From Lamden Wallet
+title: Get User Account Info
 sidebar_label: Get Account Info
 ---
 
@@ -11,6 +11,7 @@ This event is triggered when:
 2. You request information from the Lamden Wallet by sending a "lamdenWalletGetInfo" event
 3. The user locks or unlocks the wallet 
 
+## Listen for Wallet Info
 This example assumes your DAPP has previously been approved
 ```javascript
 document.addEventListener('lamdenWalletInfo', (response) => {
@@ -25,6 +26,13 @@ document.addEventListener('lamdenWalletInfo', (response) => {
         console.log(response.wallets[0])
     } 
 });
+// Get Wallet Info
+document.dispatchEvent(new CustomEvent('lamdenWalletGetInfo'));
+
+```
+
+## Request Wallet Info
+```javascript
 // Get Wallet Info
 document.dispatchEvent(new CustomEvent('lamdenWalletGetInfo'));
 
