@@ -4,7 +4,7 @@ module.exports = {
  
 
   title: 'Lamden Documentation Website',
-  tagline: 'Full Documentation Comming Soon',
+  tagline: 'Full Documentation Coming Soon',
   url: 'https://docs.lamden.io',
   baseUrl: '/',
   onBrokenLinks: 'warn',

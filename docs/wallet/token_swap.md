@@ -1,7 +1,7 @@
 ---
 id: token_swap
 title: TAU Token Swap Process
-sidebar_label: FAQ and Steps
+sidebar_label: Token Swap
 ---
 
 ## What is a token swap?

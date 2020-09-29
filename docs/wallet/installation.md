@@ -3,94 +3,71 @@ id: installation
 title: Lamden Wallet Installation
 sidebar_label: Installation
 ---
+![](/img/wallet/gif/1.0.0_wallet_install.gif)
+
+The Lamden Wallet is a Chrome Extention and can be installed from the Chrome Web Store.
+
+**This is the only official wallet from Lamden**
+
+The extention is created for and tested in <u>[Chrome Browser](https://www.google.ca/chrome)</u>.  If can work in other chromium based broswers, but **install at own risk**.
  
-There are two methods by which one can install the wallet:
- 
-The first method of installation is to add the wallet in Chrome as an extension from the web store.
- 
-The second method is a cloning repository from GitHub which builds locally, and afterwards, uploads to Chrome as an extension.
- 
-## Chrome web store link
- 
-Click or copy and paste the **[link](https://chrome.google.com/webstore/search/lamden)** to get Lamden wallet.
- 
-```
-https://chrome.google.com/webstore/search/lamden
-```
- 
-Follow the instructions below to install it.
- 
-A screen will open, inside which the Lamden Wallet extension will appear. 
- 
-1. Click on the button `Add to Chrome`.
-2. Confirm installation of the extension by clicking `Add extension`.
-3. As confirmation of the installation, a pop-up window will appear in the top left corner of  Chrome.
- 
-Now you are able to click on the icon of the wallet and launch the wallet in the browser. 
- 
-![](/img/wallet/chrome_wallet_installation.gif)
- 
-## Installation from the Repository
- 
-### Clone Github Repo
- 
-```bash
-git clone https://github.com/Lamden/wallet.git
- 
-```
-Type in the terminal copied command
- 
-![image](/img/wallet/1._Step_wallet.png)
- 
-After cloning the repository,the next screen will appear.
- 
-![image](/img/wallet/2._Step_-_wallet.png)
- 
-Open the folder named‘wallet’, and all contents of the folder `wallet`will be visible.
- 
-```bash
-cd wallet
-```
- 
-![image](/img/wallet/3._Step-wallet.png)
- 
- 
-### Install package dependencies
- 
-```bash
-sudo npm install
-```
- 
-### Build plugin
- 
-```bash
-npm run build
-```
-Once the build is completed, you will see the folder `build` was created.
- 
-![image](/img/wallet/4._Step_-_wallet.png)
- 
-### Load the extension in Chrome & Opera
-1. Open Chrome/Opera browser and navigate to `chrome://extensions`
-2. Select "Developer Mode" and then click "Load unpacked extension..."
-3. From the file explorer, choose `wallet/build`
- 
-### Load the extension in Firefox
-1. Open Firefox browser and navigate to `about:debugging`
-2. Click "Load Temporary Add-on" and from the file browser, choose `wallet/build/manifest.json`
- 
-![](/img/wallet/wallet_installation_firefox.gif)
- 
-### Load the extension in Brave
-1. Open Brave browser and navigate to `brave://extensions/`
-2. Turn on the developer mode from the top right-hand corner
-3. Click "Load Unpacked Extention"
-4. Select the build directory unzipped from the zip file.
- 
-## Testing
-### Live reload
-Once you would like to begin  developing the extension and want to enable live reload use
- 
-```bash
-npm run dev
-```
+## Chrome Installation Steps
+1. Click on <u>[HERE](https://chrome.google.com/webstore/detail/lamden-wallet-browser-ext/fhfffofbcgbjjojdnpcfompojdjjhdim)</u> to view the Lamden Wallet in the Chrome Web Store.
+2. Click the `Add to Chrome` button
+3. On the broswer popup click `Add extention`
+4. In the top right hand corner of the Chrome Browser click the `puzzle piece` icon.
+5. In the resulting popup menu click the `pin icon` next to the Lamden Wallet Entry.
+6. Click the `lamden logo` to launch the wallet.
+
+## First Time Setup
+Click the `lamden logo` on the extentions bar to launch the wallet.
+
+![](/img/wallet/wallet_extention_logo.png)
+
+- If you don't see the `lamden logo` click the `puzzle piece` logo and then `pin` the Lamden Wallet to the extention bar.
+
+### Fresh Wallet Setup
+1. Click, `CREATE A WALLET`.
+2. Enter a strong password in the `Password` box that:
+    - Is 10 or more characters in length
+    - Has 1 lowercase letter
+    - Has 1 uppercase letter
+    - Has 1 number
+    - Has 1 special character
+3. Re-enter the password in the `Confirm Password` box.
+4. Click, `SAVE PASSWORD`.
+5. Click, `I UNDERSTAND` if you understand **backing up your wallet and keeping your passwords safe is YOUR RESPONSIBILITY**.
+6. Follow steps to <u>[Backup Lamden Wallet to Keystore File](/docs/wallet/backup_keystore)</u>.
+
+
+
+
+### Restore Wallet from Keystore
+![](/img/wallet/gif/1.0.0_setup_from_keystore.gif)
+1. Click, `CREATE A WALLET`.
+2. Enter a strong password in the `Password` box that:
+    - Is 10 or more characters in length
+    - Has 1 lowercase letter
+    - Has 1 uppercase letter
+    - Has 1 number
+    - Has 1 special character
+3. Re-enter the password in the `Confirm Password` box.
+4. Click, `SAVE PASSWORD`.
+5. Chose a Keystore File in one of the following ways:
+    - Click the link `click here to choose a file` to browse to the Keystore file.
+    - Drag and drop the Keystore file into the `Drop File Here` box on the Lamden Wallet.
+6. Click the `CONFIRM KEYSTORE` button.
+7. Enter the password which was used to back up the Keystore.
+    - If you entered a hint when you <u>[Created the Keystore](/docs/wallet/restore_keystore)</u> you will see it displayed.
+8. Put a checkmark next to each accout you wish to restore
+9. Click the `RESTORE ACCOUNTS` button.
+10. After the restoration is complete you may see the following messages:
+    - (success) `Added <account name> to your wallet` - This means the account was successfully restored.
+    - (success) `Updated the private key for ` - This means a previously <u>[Watched Account](/docs/wallet/accounts_creation#track-account)</u> has been updated with the associated secret key and is now a full account.
+    - (error) `Keypair already exists as <account name>` - There is an Account in your wallet that already has the keypair you're trying to restore.
+    - (error) `Cannot decrypt Secret Key: wrong password or bad data. Encrypted Data: <secret key>` - After the key was decrypted with the keystore password the resulting information was not a secret key.
+11. Click, `FINISH`
+
+
+#### Re-linking Accounts
+If you had <u>[Linked Account](/docs/wallet/accounts_linked_overview)</u> previously they will not be conneted.  You will have to follow the process to manually <u>[Re-Link](/docs/wallet/restore_linked_account)</u> to DAPPs.
