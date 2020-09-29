@@ -5,14 +5,15 @@ module.exports = {
 		],
 
 		'Lamden Wallet': [
+			'wallet/overview',
+			'wallet/installation',
+			'wallet/lock_unlock',
 			{
-				'Quickstart': [
-					'wallet/overview',
-					'wallet/installation'
-				],
 				'Accounts': [
 					'wallet/accounts_overview',
-					'wallet/accounts_creation'
+					'wallet/accounts_creation',
+					'wallet/accounts_copy_address',
+					'wallet/accounts_delete'
 				],
 				'Linked Accounts': [
 					'wallet/accounts_linked_overview',
@@ -21,16 +22,33 @@ module.exports = {
 					'wallet/accounts_linked_transfer',
 					'wallet/accounts_linked_revoke'
 				],
-				'Backup & Restore Keys': [
-					'wallet/backup',
-					'wallet/restore'
+				'Transactions': [
+					'wallet/transactions_overview',
+					'wallet/transactions_create',
+					'wallet/transactions_result',
+					'wallet/transactions_history'
 				],
-				'Token Swap': [
-					'wallet/token_swap'
-				]
-			}
+				'Smart Contract IDE':[
+					'wallet/ide_overview',
+					'wallet/ide_create_smartcontracts',
+					'wallet/ide_submit_smartcontract',
+					'wallet/ide_run_smartcontracts'
+				],
+				'Backup Keys': [
+					'wallet/backup_overview',
+					'wallet/backup_keystore',
+					'wallet/backup_view_keys'
+				],
+				'Restore Keys': [
+					'wallet/restore_keystore',
+					'wallet/restore_secret_key',
+					'wallet/restore_linked_account'
+				],
+			},
+			'wallet/token_swap',
+			'wallet/change_network'
 		],
-		'Devlopers':[
+		'Developers':[
 			{'Lamden Wallet API':[
 				'develop/wallet_api/overview',
 				'develop/wallet_api/create_connection',
