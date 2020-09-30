@@ -4,6 +4,9 @@ title: Lamden Wallet DAPP API Overview
 sidebar_label: Overview
 ---
 
+![](/img/develop/wallet_api/linked_account_details.png)
+The Lamden Wallet allows your DAPP to create an experiece for your users unlike any current wallet on any platform. No other wallet allows you to tailor the user experience and increase engagement.
+
 Follow this documentaion if you would like to have your DAPP connected to the Lamden Wallet and create a [Linked Account](/docs/wallet/accounts_linked_overview). 
 
 The Lamden Wallet **does not pass any information** to DAPPS without approved Linked Accounts.

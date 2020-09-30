@@ -6,7 +6,7 @@ sidebar_label: Customize Connection
 
 There are a few configuration options you can use to customize your Linked Account in the Lamden Wallet. 
 
-![picture alt](/img/develop/wallet_api/wallet_custom_2.png "Example of State Charms")
+![](/img/develop/wallet_api/linked_account_details.png)
 
 | Property  | Example Value | Description  |
 | ------------- |------------| -----|
