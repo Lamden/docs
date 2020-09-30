@@ -64,6 +64,11 @@ module.exports = {
 					'develop/wallet_controller/wallet_contoller_quickstart',
 					'develop/wallet_controller/wallet_contoller_api',
 				]
+			},
+			{
+				'Blockchain': [
+					'develop/blockchain/masternode_api'
+				]
 			}
 		]
 	}
