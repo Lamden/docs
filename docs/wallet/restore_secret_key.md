@@ -4,18 +4,10 @@ title: Restore Keys from a Keystore File
 sidebar_label: From Secret Key
 ---
  
-Restoration of the key is a straightforward process. To do so, all that is necessary is a Keystore file that was previously backed up and a password. 
- 
-The instruction to do so are as follows:
- 
-1. Open the wallet
-2. From the left sidebar, click `Restore Wallet.`
-3. On the right-hand side of the screen, click `Restore Wallet`.
-4. To progress to the next screen, it is necessary to choose/pick a Keystore file from your filesystem and drag it to the area `Drop File Here`.
-5. Click `Confirm Keystore.`
-6. Enter the password which was used to back up the Keystore.
+If you are trying to restore an account and all you have is the sercret key, no keystore file then follow the steps to <u>[Add Existing Account](/docs/wallet/accounts_creation#existing-account)</u>.
    
-The list of accounts able to be restored will appear. 
- 
-1. Select the accounts that you would like to restore by checking the corresponding box. 
-   
+## Restore Linked Accounts
+If any of the newly restored account were once <u>[Linked Accounts](/docs/wallet/accounts_linked_overview)</u> then you will need to follow the <u>[Restore Linked Accounts](/docs/wallet/restore_linked_account)</u> process to reconnect them.
+
+## Backup Secret Keys
+If you are looking to Backup your Secret Keys then please see the <u>[Backup Overview](/docs/wallet/backup_overview)</u> .
