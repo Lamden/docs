@@ -1,5 +1,5 @@
 ---
-id: wallet_contoller_quickstart
+id: wallet_controller_quickstart
 title: Using the Lamden Wallet Controller (LWC)
 sidebar_label: Quickstart
 ---

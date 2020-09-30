@@ -1,5 +1,5 @@
 ---
-id: wallet_contoller_api
+id: wallet_controller_api
 title: Lamden Wallet Controller API
 sidebar_label: API
 ---

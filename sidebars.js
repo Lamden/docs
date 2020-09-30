@@ -60,9 +60,9 @@ module.exports = {
 				]
 			},
 			{
-				'Lamden Wallet Contoller':[
-					'develop/wallet_controller/wallet_contoller_quickstart',
-					'develop/wallet_controller/wallet_contoller_api',
+				'Lamden Wallet Controller':[
+					'develop/wallet_controller/wallet_controller_quickstart',
+					'develop/wallet_controller/wallet_controller_api',
 				]
 			},
 			{
