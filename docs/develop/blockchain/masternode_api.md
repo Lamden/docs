@@ -6,7 +6,7 @@ sidebar_label: Masternode REST API
 
 Lamden Masternodes run a webserver which allows anyone to easily interface with the Lamden Blockchain.  
 
-This webserver is the only way to interact with the network.
+The webserver provides direct access to the network's state and is the single entry point for submitting transactions.
 
 > The webserver sorce code can be found <u>[here](https://github.com/Lamden/lamden/blob/master/lamden/nodes/masternode/webserver.py)</u>.
 
