@@ -49,14 +49,27 @@ module.exports = {
 			'wallet/change_network'
 		],
 		'Developers':[
-			{'Lamden Wallet API':[
-				'develop/wallet_api/overview',
-				'develop/wallet_api/create_connection',
-				'develop/wallet_api/customize_connection',
-				'develop/wallet_api/get_wallet_info',
-				'develop/wallet_api/send_transactions',
-				'develop/wallet_api/approval_transactions'
-			]}
+			{
+				'Lamden Wallet API':[
+					'develop/wallet_api/overview',
+					'develop/wallet_api/create_connection',
+					'develop/wallet_api/customize_connection',
+					'develop/wallet_api/get_wallet_info',
+					'develop/wallet_api/send_transactions',
+					'develop/wallet_api/approval_transactions'
+				]
+			},
+			{
+				'Lamden Wallet Contoller':[
+					'develop/wallet_controller/wallet_contoller_quickstart',
+					'develop/wallet_controller/wallet_contoller_api',
+				]
+			},
+			{
+				'Blockchain': [
+					'develop/blockchain/masternode_api'
+				]
+			}
 		]
 	}
 };
