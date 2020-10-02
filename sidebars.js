@@ -50,6 +50,11 @@ module.exports = {
 		],
 		'Developers':[
 			{
+				type: 'link',
+				label:'Contracting',
+				href: 'https://contracting.lamden.io/'
+			},
+			{
 				'Lamden Wallet API':[
 					'develop/wallet_api/overview',
 					'develop/wallet_api/create_connection',
@@ -67,9 +72,51 @@ module.exports = {
 			},
 			{
 				'Blockchain': [
-					'develop/blockchain/masternode_api'
+					{
+						type: 'link',
+						label:'General Architecture',
+						href: 'https://architecture.lamden.io/intro/'
+					},
+					{
+						type: 'link',
+						label:'Nodes',
+						href: 'https://architecture.lamden.io/nodes/'
+					},
+					{
+						type: 'link',
+						label:'Governance',
+						href: 'https://architecture.lamden.io/governance/'
+					},
+					'develop/blockchain/current_masternodes',
+					'develop/blockchain/masternode_api',
+					//'develop/blockchain/transactions'
+				]
+			},
+			{
+				'Languages' : [
+					{
+						'Javascript':[
+							{
+								'Lamden-js': [
+									'develop/lamden_js/overview',
+									'develop/lamden_js/wallets',
+									'develop/lamden_js/network',
+									'develop/lamden_js/transactions',
+									'develop/lamden_js/masternode_api_wrapper'
+								]
+							}
+
+						]
+					},
+					{
+						'C#': [
+							'develop/unity_3d/unity_3d'
+						]
+					}
+					
 				]
 			}
+			
 		]
 	}
 };

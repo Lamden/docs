@@ -162,7 +162,14 @@ function Home() {
             
             <div className={styles.buttons}>
               </div>
-              
+              <Link
+                  className={classnames(
+                    'button button--secondary button--lg',
+                    styles.getStarted, 
+                  )}
+                  to={useBaseUrl('/docs/develop/wallet_api/overview')}>
+                  Documentation
+                </Link>
             </div>
 
             <div className={classnames('col col--5')}>

@@ -11,14 +11,14 @@ Follow this documentaion if you would like to have your DAPP connected to the La
 
 The Lamden Wallet **does not pass any information** to DAPPS without approved Linked Accounts.
 
-## Benifits
+## Benefits
 Connecting your DAPP to the <u>[Lamden Wallet](/docs/wallet/overview)</u> will create a smoother blockchain experience for your users in the following ways:
 1. Sign transactions to your DAPP's smart contract AS the user.
 2. A custom Account for your DAPP is created in the user's wallet which adds visability for your DAPP and allows the user some control over your connection.
 3. Retrieve information about the user's Lamden Wallet including the [Linked Account](/docs/wallet/accounts_linked_overview) address that was created for your DAPP.
 3. Enables Automatic Transactions for <u>[Trusted Accounts](docs/wallet/accounts_linked_create#make-account-trusted)</u>; elemiating the need for the user to approve every transaction.
 
-## Restictions
+## Restrictions
 Connections to the Lamden Wallet are defined and restricted in the following ways for the security of the user.
 1. The Lamden Wallet creates ONE [Linked Account](/docs/wallet/accounts_linked_overview) for each URL.  Example, DAPP1.mydomain.com and DAPP2.mydomain.com would be concidered 2 seperate DAPPS Lamden Wallet.
 2. All images used for customization are prefixed with the DAPPS's hostname when displayed in the wallet.
