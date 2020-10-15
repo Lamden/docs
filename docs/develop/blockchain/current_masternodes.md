@@ -10,8 +10,6 @@ sidebar_label: Masternode Information
 ### Current Masternodes
 - **[https://masternode-01.lamden.io](https://masternode-01.lamden.io/ping)**
     -   **verifying_key**: [5b09493df6c18d17cc883ebce54fcb1f5afbd507533417fe32c006009a9c3c4a](https://masternode-01.lamden.io/id)
-- **[https://masternode-02.lamden.io](https://masternode-02.lamden.io/ping)**
-    -   **verifying_key**: [a2ce0217d08e0cf5718d36fc3b7b59d7bb5e4c6e3140a04e02da1d28a6fea56f](https://masternode-02.lamden.io/id)
 
 ### [Current Constitution](https://masternode-01.lamden.io/constitution)
 
