@@ -7,7 +7,7 @@ sidebar_label: Creating
 You can add accounts to your Lamden Wallet in three ways.
 
 ## New Account
-This will create you a brand new wallet account with a freah wallet address.
+This will create you a brand new wallet account with a fresh wallet address.
 
 1. From the left-hand menu select "Accounts"
 2. Click the "Add Accounts" button

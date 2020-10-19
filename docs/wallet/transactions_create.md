@@ -14,7 +14,7 @@ sidebar_label: Create a Transaction
 5. If the account you selected has a `TAU` balance then the `Stamp Limit` will automatically populate.
 6. Enter the name of the contract you are tying to call in the `Enter Contract Name` field.
 7. From the `Choose Functions to Run` box select the function on the contract you wish to execute.
-8. In the `Transaction Arguments` section enter the values for each argument the function expects.
+8. In the `Transaction Arguments` section, enter the values for each argument the function expects.
     - Each argument expects a specific type of data. That type is in brackets beside the name of the argument.
 
 ## Transaction Results

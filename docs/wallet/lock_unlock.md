@@ -10,7 +10,7 @@ sidebar_label: Lock and Unlock
 The Lamden Wallet can be locked in two ways.
 
 ### Manually
-1. Click, `Sign out & Lock` on the left-hand 
+1. Click `Sign Out & Lock` on the left-hand side 
 
 ### Passively
 1. Close down all instances of your broswer

@@ -43,6 +43,6 @@ All the connection information can be updated buy incrementing the the version o
 Here are some considerations you may want to make before changing the smart contract.
 1. Any associations the user's account address had to the previous smart contract will not carry over to your new one.  This will cause your users to lose items or ownership they once had. If you are migrating from one smart contract to another, you may need to setup some initial state in the new smart contract to accommodate this. 
 2. The user will be supplied a popup when you change the smart contract. They will have to approve the change manually even if your DAPP has <u>[Trusted Status](/docs/wallet/accounts_linked_create#make-account-trusted)</u>
-3. It's important that you communicate the reason for the change to your users.  Before they click "Accept Change" on the popup they will be instructed seek out you for a reason. 
+3. It's important that you communicate the reason for the change to your users. Before they click "Accept Change" on the popup they will be instructed to look to you for a reason for the change.
 
 ```

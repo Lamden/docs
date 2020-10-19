@@ -6,12 +6,12 @@ sidebar_label: Transaction Result
 
 ![](/img/wallet/gif/1.0.0_transactions_create.gif)
 
-As deiscussed in the <u>[overview](/docs/wallet/accounts_linked_overview)</u>, smart contract transactions can do any number of things in the blockchain. 
+As discussed in the <u>[overview](/docs/wallet/accounts_linked_overview)</u>, smart contract transactions can do any number of things in the blockchain. 
 
 Depending on the intention of the transaction there are a few ways to view the results.
 
 ## Transaction Hash result
-When you submit a transactions, and it is accepted by the masternode, it will be assined a `trasnaction hash`.  This hash is a reference to your transaction and allows you to view the result later.
+When you submit a transaction, and it is accepted by the master node, it will be assigned a `transaction hash`. This hash is a reference to your transaction and allows you to view the result later.
 
 The following are ways to get the result of your transaction using the hash:
 

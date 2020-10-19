@@ -23,8 +23,8 @@ IMPORTANT: The window object needs to be available when creating this instance a
 | connectionRequest.version | `string`  | Connection version. Older version will be over-written in the uers's wallet. | &nbsp; |
 | connectionRequest.contractName | `string`  | The smart contract your DAPP will transact to | &nbsp; |
 | connectionRequest.networkType | `string`  | Which Lamden network the approval is for (mainnet or testnet) are the only options | &nbsp; |
-| connectionRequest.logo | `string`  | The reletive path of an image on your webserver to use as a logo for your Lamden Wallet Linked Account | &nbsp; |
-| connectionRequest.background | `string`  | The reletive path of an image on your webserver to use as a background for your Lamden Wallet Linked Account | *Optional* |
+| connectionRequest.logo | `string`  | The relative path of an image on your webserver to use as a logo for your Lamden Wallet Linked Account | &nbsp; |
+| connectionRequest.background | `string`  | The relative path of an image on your webserver to use as a background for your Lamden Wallet Linked Account | *Optional* |
 | connectionRequest.charms.name | `string`  | Charm name | *Optional* |
 | connectionRequest.charms.variableName | `string`  | Smart contract variable to pull data from | *Optional* |
 | connectionRequest.charms.key | `string`  | Key assoicated to the value you want to lookup | *Optional* |
@@ -60,8 +60,8 @@ This will fire the "newInfo" events.on event
 | connectionRequest.version | `string`  | Connection version. Older version will be over-written in the uers's wallet. | &nbsp; |
 | connectionRequest.contractName | `string`  | The smart contract your dApp will transact through | &nbsp; |
 | connectionRequest.networkType | `string`  | Which Lamden network the approval is for (Mainnet or testnet) | &nbsp; |
-| connectionRequest.background | `string`  | A reletive path to an image to override the default lamden wallet account background | *Optional* |
-| connectionRequest.logo | `string`  | A reletive path to an image to use as a logo in the Lamden Wallet | &nbsp; |
+| connectionRequest.background | `string`  | A relative path to an image to override the default lamden wallet account background | *Optional* |
+| connectionRequest.logo | `string`  | A relative path to an image to use as a logo in the Lamden Wallet | &nbsp; |
 | connectionRequest.charms.name | `string`  | Charm name | *Optional* |
 | connectionRequest.charms.variableName | `string`  | Smart contract variable to pull data from | *Optional* |
 | connectionRequest.charms.key | `string`  | Key assoicated to the value you want to lookup | *Optional* |

@@ -6,7 +6,7 @@ sidebar_label: From Keystore
  ![](/img/wallet/gif/1.0.0_restore_keystore.gif)
 
 1. Unlock Lamden Wallet
-2. From the left-hand meun, click `Restore Wallet.`
+2. From the left-hand menu, click `Restore Wallet.`
 3. On the right-hand side of the screen, click the `RESTORE NOW` button.
 4. Chose a Keystore File in one of the following ways:
     - Click the link `click here to choose a file` to browse to the Keystore file.

@@ -10,7 +10,7 @@ sidebar_label: Submit a Smartcontract
 A smart contract can only be submitted to the blackchain if no errors are detected.
 The wallet will lint the contract before you submit, but you can always click the `CHECK CONTRACT` button at the bottom of the IDE to manually check.
 
-Errors that are found will who up in the error's box below the IDE window.  If no errors are detected this box will contain the message `Contract is Okay`.
+Errors that are found will show up in the error box below the IDE window.  If no errors are detected this box will contain the message `Contract is Okay`.
 
 ## Submit Smart Contract
 1. Switch to the network you want to submit the smartcontract to; `Lamden Testnet` or `Lamden Mainnet`.
@@ -31,23 +31,23 @@ Errors that are found will who up in the error's box below the IDE window.  If n
 
 
 ### Owner property
-This is an advanced feature and should only be used by developers that understand its purpose.  Most smartcontacts do not need to be submitted with an Owner.
+This is an advanced feature and should only be used by developers that understand its purpose.  Most smartcontracts do not need to be submitted with an Owner.
 
-Specifying the `OWNER` of a smartcontract will prevent anyone from executing methods on that smartcontract that is not the owner.
+Specifying the `OWNER` of a smartcontract will prevent anyone except the owner from executing methods on that smartcontract.
 
 The owner can be a wallet address or another smart contract.  Once set it cannot be removed and the blockchain will reject all transactions not from the specified owner.
 
-**The owner is seperate and has nothing to do with developer rewards**.
+**The owner is separate and has nothing to do with developer rewards**.
 
 ### Constructor Args property
 This is an advanced feature and should only be used by developers that understand its purpose.
 
 If your smart contract uses the <u>[@construct](https://contracting.lamden.io/quickstart/submit)</u> decorator to create a `constructor method` then it's possible you will need to provide that method some inital arguments.
 
-The `Constructor Args` property takes an object (in JSON format) that will be provided to the submission contract as part of the transaction.  The submission contract will map these values to the arguemnts in your `constructor method`.
+The `Constructor Args` property takes an object (in JSON format) that will be provided to the submission contract as part of the transaction.  The submission contract will map these values to the arguments in your `constructor method`.
 
 #### Example
-Imagine we have a token contract that we want to add to the network.  We want this contract to mint an inital supply to some wallet address that we control.
+Imagine we have a token contract that we want to add to the network.  We want this contract to mint an initial supply to some wallet address that we control.
 We COULD hardcode these values, but to allow this contract to be reuseable we will instead provide these values using `Constructor Args`
 
 ```python

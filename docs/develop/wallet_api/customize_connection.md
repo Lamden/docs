@@ -11,7 +11,7 @@ There are a few configuration options you can use to customize your Linked Accou
 | Property  | Example Value | Description  |
 | ------------- |------------| -----|
 | logo | 'images/logo.png' | This logo will be displayed next to your linked account in the main Lamden Wallet view as well as displayed in your linked account detail section of the Lamden Wallet |
-| background | 'images/background.png' | This is a custome background you can set to repalce the defualt on in your licked account detail section of the Lamden Wallet  |
+| background | 'images/background.png' | This is a custom background you can set to replace the default on your linked account detail section of the Lamden Wallet  |
 
 **All image paths are relative to your dApp's hostname.**
 
@@ -21,12 +21,12 @@ deatil.background = 'images/background.png'
 ```
 
 ## State Charms
-Charms can be added to your Linked Account details section of the Lamden Wallet and provide state information about your dApps's contract.  Example would a custome token value, the current player's turn in a game, etc.  There is no limit on the amount of charms you can add.  Define the charms and send them along with your initial connection request.  
+Charms can be added to your Linked Account details section of the Lamden Wallet and provide state information about your dApps's contract.  An example would a custom token value, the current player's turn in a game, etc.  There is no limit on the amount of charms you can add.  Define the charms and send them along with your initial connection request.  
 
 Each charm can have an indivudial icon. **All image paths are relative to your dApp's hostname.**
 
-Key Vaiables
-&lt;wallet vk&gt; - The Lamden Wallet will subsitute the public key of the keypair created for your dApp
+Key Variables
+&lt;wallet vk&gt; - The Lamden Wallet will substitute the public key of the keypair created for your dApp
 
 ```javascript
 //for example

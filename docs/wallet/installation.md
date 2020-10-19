@@ -9,10 +9,10 @@ The Lamden Wallet is a Chrome Extention and can be installed from the Chrome Web
 
 **This is the only official wallet from Lamden**
 
-The extention is created for and tested in <u>[Chrome Browser](https://www.google.ca/chrome)</u>.  If can work in other chromium based broswers, but **install at own risk**.
+The Extension is created for and tested in the <u>[Chrome Browser](https://www.google.ca/chrome)</u>.  It may work in other Chromium-based browsers but **install at your own risk**.
  
 ## Chrome Installation Steps
-1. Click on <u>[HERE](https://chrome.google.com/webstore/detail/lamden-wallet-browser-ext/fhfffofbcgbjjojdnpcfompojdjjhdim)</u> to view the Lamden Wallet in the Chrome Web Store.
+1. Click <u>[HERE](https://chrome.google.com/webstore/detail/lamden-wallet-browser-ext/fhfffofbcgbjjojdnpcfompojdjjhdim)</u> to view the Lamden Wallet in the Chrome Web Store.
 2. Click the `Add to Chrome` button
 3. On the broswer popup click `Add extention`
 4. In the top right hand corner of the Chrome Browser click the `puzzle piece` icon.
@@ -70,4 +70,4 @@ Click the `lamden logo` on the extentions bar to launch the wallet.
 
 
 #### Re-linking Accounts
-If you had <u>[Linked Account](/docs/wallet/accounts_linked_overview)</u> previously they will not be conneted.  You will have to follow the process to manually <u>[Re-Link](/docs/wallet/restore_linked_account)</u> to DAPPs.
+If you had any <u>[linked accounts](/docs/wallet/accounts_linked_overview)</u> previously, they will not be connected.  You will have to follow the process to manually <u>[Re-Link](/docs/wallet/restore_linked_account)</u> to DAPPs.

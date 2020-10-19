@@ -23,7 +23,7 @@ Transaction History is organized by date.  Each date has below it a list of tran
 - **contract**: The name of the contract this transaction was exectuted against.
 - **method**: The name of the method that was executed.
 - **amount**: If the contract was `currency` and the method was `transfer` then this will show the amount of `dTAU/TAU` that was transfered.  `Green is recieved` and `Red is sent`.
-- **TX DETAILS**: Click this button open the transaction result on the block explorer website.
+- **TX DETAILS**: Click this button to open the transaction result on the block explorer website.
 
 ## Refresh Transaction History
 Click the blue `refresh icon` next to the words `Transaction History` to refresh the transaction history list.

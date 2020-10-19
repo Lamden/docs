@@ -26,7 +26,7 @@ A new tab will be created and a new example contract will open up in the IDE
 ## Open Existing contract from Blockchain
 ![](/img/wallet/gif/1.0.0_ide_create_smartcontract_blockchain.gif)
 
-1. Change to the network of the smart contract from by clicking the `Current Network` icon in the top right-hand corner of the Lamden Wallet. 
+1. Change the network of the smart contract by clicking the `Current Network` icon in the top right-hand corner of the Lamden Wallet. 
 2. Click the `New Contract` button. ![](/img/wallet/new_smartcontract.png)
 3. Enter the name of the contract in the `Contract (Lamden ...)` box. 
 4. Click the `OPEN` button.
