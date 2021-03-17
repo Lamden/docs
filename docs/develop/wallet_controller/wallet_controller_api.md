@@ -64,7 +64,7 @@ This will fire the "newInfo" events.on event
 | connectionRequest.logo | `string`  | A relative path to an image to use as a logo in the Lamden Wallet | &nbsp; |
 | connectionRequest.charms.name | `string`  | Charm name | *Optional* |
 | connectionRequest.charms.variableName | `string`  | Smart contract variable to pull data from | *Optional* |
-| connectionRequest.charms.key | `string`  | Key assoicated to the value you want to lookup | *Optional* |
+| connectionRequest.charms.key | `string`  | Key associated to the value you want to lookup | *Optional* |
 | connectionRequest.charms.formatAs | `string`  | What format the data is | *Optional* |
 | connectionRequest.charms.iconPath | `string`  | An icon to display along with your charm | *Optional* |
 
