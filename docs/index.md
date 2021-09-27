@@ -8,8 +8,8 @@ sidebar_label: Overview
 ### Lamden Wallet
 - **[Using the Wallet](/docs/wallet/overview)**
 - **Developing with the Wallet**
-    - [Wallet API](/docs/develop/wallet_api/overview)**
-    - [Wallet Controller](/docs/develop/wallet_controller/wallet_controller_quickstart)**
+    - [Wallet API](/docs/develop/wallet_api/overview)
+    - [Wallet Controller](/docs/develop/wallet_controller/wallet_controller_quickstart)
 
 ### Building
 - **[Smart Contracts](https://contracting.lamden.io/)**
