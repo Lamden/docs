@@ -36,8 +36,10 @@ let tx = new Lamden.TransactionBuilder(networkInfo, txInfo)
 ## Send transaction
 ```javascript
 let senderSk = "69a8db3fb7196debc2711fad1fa1935918d09f5d8900d84c3288ea5237611c03"
+// Specify a maternode URL here to direct the tx to a specific node. Setting this to undefined will use the nodes from the Network object
+let masternodeURL = undefined
 
-tx.send(senderSk, (res, err) => {
+tx.send(senderSk, masternodeURL, (res, err) => {
     if (err) throw new Error(err)
     console.log(res.hash)
     tx.checkForTransactionResult()
