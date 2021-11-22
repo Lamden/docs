@@ -8,15 +8,6 @@ A Linked Account is an account created in your Lamden Wallet by a website that y
 
 Each website that you interact with will have its own Linked Account. This lets you, as the user, control how much of your TAU that each application has access to.
 
-This is an example of what a linked account looks like in the Lamden Wallet.
-
-![](/img/wallet/linked_account_1.png)
-
-
-This is an example of a customized linked account where the application has supplied a custom logo.
-
-![](/img/wallet/linked_account_2.png)
-
 
 ## Decentralized Applications (DAPPS)
 

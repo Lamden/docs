@@ -1,8 +1,5 @@
 
 module.exports = {
- 
- 
-
   title: 'Lamden Documentation Website',
   tagline: 'Full Documentation Coming Soon',
   url: 'https://docs.lamden.io',
@@ -11,6 +8,8 @@ module.exports = {
   favicon: 'img/favicon.ico',
   organizationName: 'Lamden', // Usually your GitHub org/user name.
   projectName: 'lamden-docs-site', // Usually your repo name.
+  plugins: ['@docusaurus/plugin-ideal-image'],
+  themes: ['@docusaurus/theme-live-codeblock'],
   themeConfig: {
     colorMode: {
       defaultMode: 'light',
@@ -126,11 +125,6 @@ module.exports = {
           editUrl:
             'https://github.com/facebook/docusaurus/edit/master/website/blog/',
         },
-
-        plugins: ['@docusaurus/plugin-ideal-image',
-                  '@docusaurus/docusaurus-gist-embed'
-                ],
-        themes: ['@docusaurus/theme-live-codeblock'],
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
           
