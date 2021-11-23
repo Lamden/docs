@@ -4,18 +4,36 @@ title: Create a Smart Contract Transaction
 sidebar_label: Create a Transaction
 ---
 
-![](/img/wallet/gif/1.0.0_transactions_create.gif)
+## Using External Account
 
+![](/img/wallet/gif/simple_transactions_create1.gif)
 
 1. Click, `Accounts` on the left-hand wallet menu.
 2. Click the account you want to send the transaction from.
 3. Click the `SEND TX` button. 
-4. Validate correct account is selected in the `Select Account to Send From` dropdown.
-5. If the account you selected has a `TAU` balance then the `Stamp Limit` will automatically populate.
-6. Enter the name of the contract you are tying to call in the `Enter Contract Name` field.
-7. From the `Choose Functions to Run` box select the function on the contract you wish to execute.
-8. In the `Transaction Arguments` section, enter the values for each argument the function expects.
-    - Each argument expects a specific type of data. That type is in brackets beside the name of the argument.
+4. Click the `AN EXTERNAL ACCOUNT` button (default)
+5. Select a token you want to transfer in the `Token` dropdown.
+6. Select an account in the `From Address` dropdown.
+7. Enter the receiving address in the `To Address` field.
+8. Enter the amount in the `Amount` field.
+9. Click the `NEXT` button
+10. Click the `CONFIRM TRANSACTION` button
+
+## Using One Of My Accounts
+
+![](/img/wallet/gif/simple_transactions_create2.gif)
+
+1. Click, `Accounts` on the left-hand wallet menu.
+2. Click the account you want to send the transaction from.
+3. Click the `SEND TX` button. 
+4. Click the `ONE OF MY ACCOUNTS` button
+5. Select a token you want to transfer in the `Token` dropdown.
+6. Select an account in the `From Address` dropdown.
+7. Select an account in the `To Address` field.
+8. Enter the amount in the `Amount` field.
+9. Click the `NEXT` button
+10. Click the `CONFIRM TRANSACTION` button
+
 
 ## Transaction Results
 ![](/img/wallet/wallet_transaction_success.png)

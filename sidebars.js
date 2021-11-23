@@ -22,9 +22,20 @@ module.exports = {
 					'wallet/accounts_linked_transfer',
 					'wallet/accounts_linked_revoke'
 				],
+				'Dapp Connections': [
+					'wallet/dapp_connections_overview',
+					'wallet/dapp_connections_change'
+				],
+				'Tokens': [
+					'wallet/tokens_add_token', 
+					'wallet/tokens_edit_token',
+					'wallet/tokens_delete_token',
+					'wallet/tokens_transfer_token'
+				],
 				'Transactions': [
 					'wallet/transactions_overview',
 					'wallet/transactions_create',
+					'wallet/transactions_advanced_create',
 					'wallet/transactions_result',
 					'wallet/transactions_history'
 				],
@@ -34,18 +45,21 @@ module.exports = {
 					'wallet/ide_submit_smartcontract',
 					'wallet/ide_run_smartcontracts'
 				],
-				'Backup Keys': [
-					'wallet/backup_overview',
-					'wallet/backup_keystore',
-					'wallet/backup_view_keys'
-				],
-				'Restore Keys': [
-					'wallet/restore_keystore',
-					'wallet/restore_secret_key',
-					'wallet/restore_linked_account'
+				'Settings':[{
+					'Backup Keys': [
+						'wallet/backup_overview',
+						'wallet/backup_keystore',
+						'wallet/backup_view_keys'
+					],
+					'Restore Keys': [
+						'wallet/restore_keystore',
+						'wallet/restore_secret_key',
+						'wallet/restore_linked_account'
+					]
+				},
+				'wallet/settings_changepassword'
 				],
 			},
-			'wallet/token_swap',
 			'wallet/change_network'
 		],
 		'Developers':[

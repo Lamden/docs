@@ -7,8 +7,8 @@ sidebar_label: View Secret Keys
 ![](/img/wallet/gif/1.0.0_backup_view_keys.gif)
 
 1. Login to Lamden Wallet
-2. Click `Backup Wallet` on the left-hand menu
-3. Click the `BACKUP WALLET` button from the Backup Menu.
+2. Click `Settings` on the left-hand menu
+3. Click the `BACKUP WALLET` button from the Settings Menu.
 4. Click the `VIEW ACCOUNT KEYS` button
 5. Enter your Lamden Wallet password in the `Password` box
 6. Click `CONFIRM PASSWORD`

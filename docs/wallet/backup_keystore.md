@@ -13,8 +13,8 @@ A keystore file is a password encrypted file that houses all your account <u>[ke
 
 ## How to Create Keystore File
 1. Login to Lamden Wallet
-2. Click `Backup Wallet` on the left-hand menu
-3. Click the `BACKUP WALLET` button from the Backup Menu.
+2. Click `Settins` on the left-hand menu
+3. Click the `BACKUP WALLET` button from the Settings Menu.
 4. Click the `CREATE A BACKUP FILE` button
 5. Create a strong password to with the following rules and enter it in the `Password` box:
     - Is 15 or more characters in length
