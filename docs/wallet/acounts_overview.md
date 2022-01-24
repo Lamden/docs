@@ -4,9 +4,19 @@ title: What Are Wallet Accounts?
 sidebar_label: Overview
 ---
 
-Wallet accounts store your TAU Tokens in the Lamden Vault.
+Wallet accounts store your TAU Tokens.
 
-You can have multiple wallet accounts. Each account has its own unique keypair which is encrypted in the Lamden Vault.
+There are two types of accounts. One is Vault Accounts, and the other is Legacy Accounts.
+
+## What are Vault Accounts
+
+These accounts are created through a unique 24-word phrase that is generated when you first setup. Your funds are connected to that phrase.
+
+It is important to write the 24-word phrase down on paper and hide it somewhere, put it in a safety deposit box, or use a secure password manager.
+
+## What are Legacy Accounts
+
+Only old users own such accounts. Each account has its own unique keypair which is encrypted in the Lamden Vault.
 
 It is heavily recommened that you do a <u>[BACKUP](/docs/wallet/backup_overview)</u> **everytime** you add a new account as each backup only stores the accounts you had at that specific point in time.
 

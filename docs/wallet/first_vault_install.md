@@ -25,3 +25,7 @@ Click the `lamden logo` on the extentions bar to launch the wallet.
 ![](/img/wallet/wallet_extention_logo.png)
 
 - If you don't see the `lamden logo` click the `puzzle piece` logo and then `pin` the Lamden Vault to the extention bar.
+
+## First Time Run
+You can create/restore your Lamden Vault at the first time you run it.
+![](/img/wallet/first_run_main.png)

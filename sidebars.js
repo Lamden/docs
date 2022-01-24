@@ -54,19 +54,24 @@ module.exports = {
 				'Settings':[{
 					'Backup Keys': [
 						'wallet/backup_overview',
+						'wallet/backup_recovery_phrase',
 						'wallet/backup_keystore',
 						'wallet/backup_view_keys'
 					],
 					'Restore Keys': [
+						'wallet/restore_recovery_phrase',
 						'wallet/restore_keystore',
-						'wallet/restore_secret_key',
 						'wallet/restore_linked_account'
+					],
+					'Manage Networks': [
+						'wallet/network_overview',
+						'wallet/change_network',
+						'wallet/manage_network'
 					]
 				},
 				'wallet/settings_changepassword'
 				],
-			},
-			'wallet/change_network'
+			}
 		],
 		'Developers':[
 			{
