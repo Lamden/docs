@@ -5,7 +5,7 @@ sidebar_label: Overview
 ---
 
 
-### Lamden Wallet
+### Lamden Vault
 - **[Using the Wallet](/docs/wallet/overview)**
 - **Developing with the Wallet**
     - [Wallet API](/docs/develop/wallet_api/overview)

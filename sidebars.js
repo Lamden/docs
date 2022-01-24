@@ -4,9 +4,15 @@ module.exports = {
 			'index'
 		],
 
-		'Lamden Wallet': [
+		'Lamden Vault': [
 			'wallet/overview',
-			'wallet/installation',
+			{
+				'Installation': [
+					'wallet/first_vault_install',
+					'wallet/first_vault_create',
+					'wallet/first_vault_restore'
+				]
+			},
 			'wallet/lock_unlock',
 			{
 				'Accounts': [
@@ -69,7 +75,7 @@ module.exports = {
 				href: 'https://contracting.lamden.io/'
 			},
 			{
-				'Lamden Wallet API':[
+				'Lamden Vault API':[
 					'develop/wallet_api/overview',
 					'develop/wallet_api/create_connection',
 					'develop/wallet_api/customize_connection',
@@ -79,7 +85,7 @@ module.exports = {
 				]
 			},
 			{
-				'Lamden Wallet Controller':[
+				'Lamden Vault Controller':[
 					'develop/wallet_controller/wallet_controller_quickstart',
 					'develop/wallet_controller/wallet_controller_api',
 				]

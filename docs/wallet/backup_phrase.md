@@ -1,10 +1,8 @@
 ---
-id: backup_view_keys
+id: backup_recovery_phrase
 title: View Accounts Keys
 sidebar_label: View Accounts Keys
 ---
-
-![](/img/wallet/gif/1.0.0_backup_view_keys.gif)
 
 1. Login to Lamden Vault
 2. Click `Settings` on the left-hand menu

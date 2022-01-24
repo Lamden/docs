@@ -18,12 +18,12 @@ When a DAPP's contract calls the currency contract, from within itself, the curr
 To put it simply, if the **con_cool_dapp** contract calls **currency.transfer** from within itself, the currency contract sees that as **con_cool_dapp** initiating the transfer, not you.
 
 ## How do I Approve a DAPP?
-What DAPPS need first is for YOU to give them permission to spend your TAU.  They do this by having you send an "approve" transaction to the currency contract, that they initate through the Lamden Wallet API.  This lets the currency contract know you are allowing a specific person, or contract to spend some of your TAU. Then the DAPP calls another function called "transfer_from" which allows the currency contract to check that the calling contract, **con_cool_dapps** has been approved to transfer funds out of your account.
+What DAPPS need first is for YOU to give them permission to spend your TAU.  They do this by having you send an "approve" transaction to the currency contract, that they initate through the Lamden Vault API.  This lets the currency contract know you are allowing a specific person, or contract to spend some of your TAU. Then the DAPP calls another function called "transfer_from" which allows the currency contract to check that the calling contract, **con_cool_dapps** has been approved to transfer funds out of your account.
 
-## How does the Lamden Wallet keep me safe?
+## How does the Lamden Vault keep me safe?
 In general you never want to give anyone or any contract access to your TAU unless you are sure they are using it in your best interest.  Maybe you are paying TAU to buy something or maybe the DAPP is using it on your behalf to facilitate a process.  Either way, **the responsibility is on you**, the owner of the TAU to understand why you are giving permission and if that party is trustworthy. If you are unsure you can always ask in our <u>[Telegram Group](https://t.me/lamdenchat)</u>.
 
-As a Lamden Wallet user, you have a few safeguards but ultimately none of these will help you if you give permission to a malicious DAPP.
+As a Lamden Vault user, you have a few safeguards but ultimately none of these will help you if you give permission to a malicious DAPP.
 1. The DAPP can only send approvals for its own approved smart contract.  Meaning, you cannot accidentally approve the DAPPS owner's account address and then they spend your TAU.  So if you trust all methods of the the DAPP's contract then you can be sure that the approval is always good when you see the popup.
 2. You will see the approval popup EVERY TIME even if you have enabled automatic transactions by <u>[setting the Linked Account as trusted](/docs/wallet/accounts_linked_create#make-account-trusted)</u>.  The DAPP cannot sneak in an approval that you did not authorize.
 

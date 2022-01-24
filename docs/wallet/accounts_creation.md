@@ -4,7 +4,7 @@ title: Creating Wallet Accounts
 sidebar_label: Creating
 ---
 
-You can add accounts to your Lamden Wallet in three ways.
+You can add accounts to your Lamden Vault in three ways.
 
 ## New Account
 This will create you a brand new wallet account with a fresh wallet address.
@@ -33,7 +33,7 @@ This will create you an account based off an existing account's Private Key.  Th
 
 
 ## Track Account
-Sometimes you may want to track an Account that you don't own.  This option will allow you to input any Account address and it will show up in your Lamden wallet. Because you did not add this address with the Private Key, you will not be able to make transactions with this account.
+Sometimes you may want to track an Account that you don't own.  This option will allow you to input any Account address and it will show up in your Lamden Vault. Because you did not add this address with the Private Key, you will not be able to make transactions with this account.
 
 1. From the left-hand menu select "Accounts"
 2. Click the "Add Accounts" button

@@ -9,7 +9,7 @@ sidebar_label: Change Password
 ### **Lamden is not responsible for lost or stolen keys or keystores**
 
 ## How To Change Password
-1. Login to Lamden Wallet
+1. Login to Lamden Vault
 2. Click `Account Settings` on the left-hand menu.
 3. Click the `CHANGE PASSWORD` button.
 4. Enter the current password in the `Confirm Current Password` box.

@@ -5,12 +5,12 @@ sidebar_label: From Keystore
 ---
  ![](/img/wallet/gif/1.0.0_restore_keystore.gif)
 
-1. Unlock Lamden Wallet
+1. Unlock Lamden Vault
 2. From the left-hand menu, click `Settings`
 3. Click the `RESTORE WALLET` button from the Settings Menu.
 4. Chose a Keystore File in one of the following ways:
     - Click the link `click here to choose a file` to browse to the Keystore file.
-    - Drag and drop the Keystore file into the `Drop File Here` box on the Lamden Wallet.
+    - Drag and drop the Keystore file into the `Drop File Here` box on the Lamden Vault.
 5. Click the `CONFIRM KEYSTORE` button.
 6. Enter the password which was used to back up the Keystore.
     - If you entered a hint when you <u>[Created the Keystore](/docs/wallet/restore_keystore)</u> you will see it displayed.

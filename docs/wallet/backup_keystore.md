@@ -1,21 +1,23 @@
 ---
 id: backup_keystore
-title: Backup to Keystore File
-sidebar_label: Create Keystore
+title: BACKUP LEGACY ACCOUNTS
+sidebar_label: BACKUP LEGACY ACCOUNTS
 ---
 
 ![](/img/wallet/gif/1.0.0_backup_keystore.gif)
 
 ### **Lamden is not responsible for lost or stolen keys or keystores**
 
+This process will allow you to create a keystore file.
+
 ## What is a Keystore file
-A keystore file is a password encrypted file that houses all your account <u>[keypairs](/docs/wallet/accounts_linked_overview)</u>. 
+A keystore file is a password encrypted file that houses all your legacy accounts <u>[keypairs](/docs/wallet/accounts_linked_overview)</u>. 
 
 ## How to Create Keystore File
-1. Login to Lamden Wallet
+1. Login to Lamden Vault
 2. Click `Settins` on the left-hand menu
 3. Click the `BACKUP WALLET` button from the Settings Menu.
-4. Click the `CREATE A BACKUP FILE` button
+4. Click the `BACKUP LEGACY ACCOUNTS` button
 5. Create a strong password to with the following rules and enter it in the `Password` box:
     - Is 15 or more characters in length
     - Has 1 lowercase letter

@@ -4,7 +4,7 @@ title: Change Wallet Network
 sidebar_label: Change Network
 ---
 
-The Lamden Wallet can connect to two networks:
+The Lamden Vault can connect to two networks:
 
 1. **Lamden Mainnet**: This is the main Lamden Network where `TAU` is the currency that pays for transactions.
 2. **Lamden Testnet**: This is the main Lamden Network where `dTAU` is the currency that pays for transactions.

@@ -62,7 +62,7 @@ function Home() {
         <div className="container">
           <div className="row">
             <div className={classnames('col col--5 col--offset-1')}>
-            <h1 className="hero__title">Lamden Wallet</h1>
+            <h1 className="hero__title">Lamden Vault</h1>
           <p className="hero__subtitle">Safe TAU Storage and MUCH More</p>
               <div className={styles.buttons}>
                 <Link
