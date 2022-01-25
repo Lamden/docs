@@ -5,7 +5,7 @@ sidebar_label: Installation
 ---
 ![](/img/wallet/gif/1.0.0_wallet_install.gif)
 
-The Lamden Vault is a Chrome Extention and can be installed from the Chrome Web Store.
+The Lamden Vault is a Chrome Extension and can be installed from the Chrome Web Store.
 
 **This is the only official wallet from Lamden**
 
@@ -14,17 +14,17 @@ The Extension is created for and tested in the <u>[Chrome Browser](https://www.g
 ## Chrome Installation Steps
 1. Click <u>[HERE](https://chrome.google.com/webstore/detail/lamden-wallet-browser-ext/fhfffofbcgbjjojdnpcfompojdjjhdim)</u> to view the Lamden Vault in the Chrome Web Store.
 2. Click the `Add to Chrome` button
-3. On the broswer popup click `Add extention`
+3. On the broswer popup click `Add extension`
 4. In the top right hand corner of the Chrome Browser click the `puzzle piece` icon.
 5. In the resulting popup menu click the `pin icon` next to the Lamden Vault Entry.
 6. Click the `lamden logo` to launch the wallet.
 
 ## First Time Setup
-Click the `lamden logo` on the extentions bar to launch the wallet.
+Click the `lamden logo` on the extensions bar to launch the wallet.
 
 ![](/img/wallet/wallet_extention_logo.png)
 
-- If you don't see the `lamden logo` click the `puzzle piece` logo and then `pin` the Lamden Vault to the extention bar.
+- If you don't see the `lamden logo` click the `puzzle piece` logo and then `pin` the Lamden Vault to the extension bar.
 
 ## First Time Run
 You can create/restore your Lamden Vault at the first time you run it.

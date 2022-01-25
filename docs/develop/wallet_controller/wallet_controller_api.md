@@ -39,7 +39,7 @@ Creates a "lamdenWalletGetInfo" CustomEvent to ask the Lamden Vault for the curr
 This will fire the "newInfo" events.on event
 
 ## walletIsInstalled() 
-Check if the Lamden Vault extention is installed in the user's broswer.
+Check if the Lamden Vault extension is installed in the user's broswer.
 
 This will fire the "newInfo" events.on event
 
