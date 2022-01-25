@@ -9,7 +9,7 @@ sidebar_label: Approve TAU Spending
 ## What are Approvals for?
 The system contract that holds the "TAU" token on the Lamden Network is called the currency contract.
 
-The currency contract will let YOU, the owner of the account. do what you wish with your TAU because you can sign the transaction to the currency contract with your account keys. All you need to do is sign a transaction to the "transfer" method of the currency contract and it will execute that for you, no "approval" is needed because it knows you are you.
+The currency contract will let YOU, the owner of the account, do what you wish with your TAU because you can sign the transaction to the currency contract with your account keys. All you need to do is sign a transaction to the "transfer" method of the currency contract and it will execute that for you, no "approval" is needed because it knows you are you.
 
 DAPPS have their OWN smart contract and will "import" the currency contract into their contract to execute transfers.
 
