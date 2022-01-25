@@ -18,7 +18,7 @@ The Lamden Vault also has a number of features that allow the user to interface 
 ## Quick Start
 
 ### Install Wallet
-You can <u>[Install and Setup](/docs/wallet/installation)</u> a Lamden Vault in seconds!
+You can <u>[Install and Setup](/docs/wallet/first_vault_install)</u> a Lamden Vault in seconds!
 
 ### Develop
 Do you have a great DAPP idea?  Check out the <u>[Lamden Vault API](/docs/develop/wallet_api/overview)</u> documentaion to get started!
