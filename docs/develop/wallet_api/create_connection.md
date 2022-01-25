@@ -36,7 +36,7 @@ If the user denies your connection request or closes the popup you will get an e
 If at some point you need to make a change to the connection information you can resend the 'lamdenWalletConnect' event with an incremented version. The Lamden Vault will update the information automatically and then send back a <u>[lamdenWalletGetInfo](/docs/develop/wallet_api/get_wallet_info)</u> object on the <u>[lamdenWalletInfo](/docs/develop/wallet_api/get_wallet_info)</u> listener.
 
 ### Updating Smart Contracts
-All the connection information can be updated buy incrementing the the version of your request. This includes the smart contract name associated to the user's Linked Account.  
+All the connection information can be updated by incrementing the the version of your request. This includes the smart contract name associated to the user's Linked Account.  
 
 **Changing the smart contract of your DAPP should not be taken lightly and is not recommended.**  But the option is available. 
 

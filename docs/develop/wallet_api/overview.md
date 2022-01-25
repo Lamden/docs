@@ -16,7 +16,7 @@ Connecting your DAPP to the <u>[Lamden Vault](/docs/wallet/overview)</u> will cr
 1. Sign transactions to your DAPP's smart contract AS the user.
 2. A custom Account for your DAPP is created in the user's wallet which adds visability for your DAPP and allows the user some control over your connection.
 3. Retrieve information about the user's Lamden Vault including the [Linked Account](/docs/wallet/accounts_linked_overview) address that was created for your DAPP.
-3. Enables Automatic Transactions for <u>[Trusted Accounts](docs/wallet/accounts_linked_create#make-account-trusted)</u>; elemiating the need for the user to approve every transaction.
+3. Enables Automatic Transactions for <u>[Trusted Accounts](docs/wallet/accounts_linked_create#make-account-trusted)</u>; eliminating the need for the user to approve every transaction.
 
 ## Restrictions
 Connections to the Lamden Vault are defined and restricted in the following ways for the security of the user.

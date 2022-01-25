@@ -41,7 +41,7 @@ detail.charms = [
     {
         //The label displayed on the charm
         name: "Stu Bucks"
-        //The state variable in yoru dApp's contract
+        //The state variable in your dApp's contract
         variableName: "customToken",
         //described in section above this
         key: "<wallet vk>",
