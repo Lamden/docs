@@ -4,7 +4,7 @@ title: Smart Contracting IDE
 sidebar_label: Overview
 ---
 ![](/img/wallet/ide_main_view.png)
-The Lamden Wallet boasts a full featured IDE to allow quick creation and testing of ideas.
+The Lamden Vault boasts a full featured IDE to allow quick creation and testing of ideas.
 
 The Smart Contract IDE allows you to:
 1. _<u>[Create smart contracts](/docs/wallet/ide_create_smartcontracts)</u>

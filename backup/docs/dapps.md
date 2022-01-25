@@ -9,11 +9,11 @@ For development the dApp you need to meet several conditions:
 
 1. Your smart contract should be written and deployed to one of the Lamden networks.
 2. The smart contract should have public functions for communication with frontend components of the dApp.
-4. A brand new account is created for your dApp in the Lamden Wallet and you are permitted an only transaction against that.
+4. A brand new account is created for your dApp in the Lamden Vault and you are permitted an only transaction against that.
 5. The account should be with a reasonable amount of TAU.
 6. The contract must exist on the network and be approved.
  
-## Interfacing with the Lamden Wallet from a webpage
+## Interfacing with the Lamden Vault from a webpage
 
 ### Network API Endpoints
 
@@ -46,7 +46,7 @@ All event`s detail is passed in JSON format for security.
 For security, no script tags are injected into the browser.
 :::
 
-- If Locked, the Lamden Wallet will return a `Wallet is Locked` error for all events except `lamdenWalletGetInfo`.
+- If Locked, the Lamden Vault will return a `Wallet is Locked` error for all events except `lamdenWalletGetInfo`.
     - It is up to the dApp to handle prompting the user to unlock their wallet.
   
 
@@ -63,7 +63,7 @@ const detail = JSON.stringify({
 document.dispatchEvent(new CustomEvent('lamdenWalletConnect', {detail}));
 ```
 
-The user will get a browser pop-up and be asked to confirm your connection. On approval, the Lamden Wallet will create a new account in the user's wallet and assign it to your dApp.
+The user will get a browser pop-up and be asked to confirm your connection. On approval, the Lamden Vault will create a new account in the user's wallet and assign it to your dApp.
 
 ### 1.1 Upgrading Connection Information
 Sometime you will want to make changes to the connection information to add or change charms or maybe even change the contract.
@@ -85,7 +85,7 @@ You can use this hash to determine if the wallet using your dApp has the most cu
 
 Wallet Information Details: 
 - Listening to `lamdenWalletInfo` will provide you the info object every time the user locks and unlocks their wallet
-- `wallets` and `approvals` will return empty until the user unlocks the Lamden Wallet
+- `wallets` and `approvals` will return empty until the user unlocks the Lamden Vault
 
 This example assumes your dApp has been approved using the steps above
 
@@ -104,20 +104,20 @@ document.dispatchEvent(new CustomEvent('lamdenWalletGetInfo'));
 
 | Property  | Description  |
 | ------------- | -----|
-| version | The version of the installed Lamden Wallet you are connected to |
+| version | The version of the installed Lamden Vault you are connected to |
 | installed | Boolean: Wallet is installed in the broswer |
-| setup | Boolean: If the user has run the Lamden Wallet through the inital setup |
+| setup | Boolean: If the user has run the Lamden Vault through the inital setup |
 | locked | Boolean: If the wallet is locked or not |
 | wallets | The Lamden public key your dApp was assigned.  There will only ever be 1 value in this array. |
 | approvals | The contracts you currently have approved on which networks along with a hash of the last approved connection information |
 
 ## 3. Sending Transaction Requests
 - Transactions are locked to the name of the contract that was approved during the connection request.
-- The Lamden Wallet will automatically supply this information to your transactions
+- The Lamden Vault will automatically supply this information to your transactions
     - contractName: what was supplied in the connection request
     - senderVk: The public key of the keypair associated to your dApp
     - network: The masternode information for the network type in the request (mainnet, testnet, mockchain)
-    - signature: The Lamden Wallet will sign the transaction with the keypair assocatied with your dApp.
+    - signature: The Lamden Vault will sign the transaction with the keypair assocatied with your dApp.
 
 ### 3.1 Send a transaction
 
@@ -163,7 +163,7 @@ This information is available in both responses
 | Property | Description |
 | ------------- | -----|
 | status | "success" or "error"|
-| uid | a unique ID assigned to your tx by the Lamden Wallet.  Not needed for anything. |
+| uid | a unique ID assigned to your tx by the Lamden Vault.  Not needed for anything. |
 | txHash | The hash assigned to your transaction by the network |
 | signed | transaction was successfully signed |
 | signature | the signature of your transaction |
@@ -231,7 +231,7 @@ For this reason, the wallet initiates a pop-up window with the option to `Deny` 
 By approving the transaction, you confirm that you pay for processing this transaction by blockchain. Also, you can pre-approve a defined amount of stamps for further transactions, and this pop-up window will not appear until your pre-approved amount of stamps run out.
 
 ### 4.6 RE-Approving Your Application
-Any subsequent connection requests sent to the Lamden Wallet will bounce back the error **App is already authorized to use &lt;your contract&gt; on &lt;requested network&gt;**
+Any subsequent connection requests sent to the Lamden Vault will bounce back the error **App is already authorized to use &lt;your contract&gt; on &lt;requested network&gt;**
 If you wish the change any of the information that was initially approved, such as the contract name, icon paths, charms, etc., you can set the `reapprove` flag on the connection request, and the user will get an approve pop-up to confirm your new changes.
 
 ```javascript
@@ -244,7 +244,7 @@ In that case, you will get this error:
 
 **Your dApp was previously approved but no matching vk is currently found in the wallet. Prompt the user to restore their keypair for vk 'user's key' or add 'reapprove = true, newKeypair = true' to your approve request to have a new keypair generated.** 
 
-If you need to generate a new keypair you can specify the newKeypair flag like this. A brand new keypair will be generated in the Lamden Wallet and associated with your dApp.
+If you need to generate a new keypair you can specify the newKeypair flag like this. A brand new keypair will be generated in the Lamden Vault and associated with your dApp.
 
 ```javascript
 detail.newKeypair = true

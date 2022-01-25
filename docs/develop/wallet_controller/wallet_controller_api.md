@@ -1,14 +1,14 @@
 ---
 id: wallet_controller_api
-title: Lamden Wallet Controller API
+title: Lamden Vault Controller API
 sidebar_label: API
 ---
 ## <u>[walletController.js](https://github.com/Lamden/lamden_wallet_controller)</u>
 
 ## constructor([connectionRequest]) 
-Lamden Wallet Controller Class
+Lamden Vault Controller Class
 
-This Class interfaces with the Lamden Wallet's content script. It provids helper methods for creating a connection,
+This Class interfaces with the Lamden Vault's content script. It provids helper methods for creating a connection,
 getting wallet info, sending transactions and retreiving tx information.
 
 The connection information for your DAPP can be supplied now or later by calling "sendConnection" manually.
@@ -23,8 +23,8 @@ IMPORTANT: The window object needs to be available when creating this instance a
 | connectionRequest.version | `string`  | Connection version. Older version will be over-written in the uers's wallet. | &nbsp; |
 | connectionRequest.contractName | `string`  | The smart contract your DAPP will transact to | &nbsp; |
 | connectionRequest.networkType | `string`  | Which Lamden network the approval is for (mainnet or testnet) are the only options | &nbsp; |
-| connectionRequest.logo | `string`  | The relative path of an image on your webserver to use as a logo for your Lamden Wallet Linked Account | &nbsp; |
-| connectionRequest.background | `string`  | The relative path of an image on your webserver to use as a background for your Lamden Wallet Linked Account | *Optional* |
+| connectionRequest.logo | `string`  | The relative path of an image on your webserver to use as a logo for your Lamden Vault Linked Account | &nbsp; |
+| connectionRequest.background | `string`  | The relative path of an image on your webserver to use as a background for your Lamden Vault Linked Account | *Optional* |
 | connectionRequest.charms.name | `string`  | Charm name | *Optional* |
 | connectionRequest.charms.variableName | `string`  | Smart contract variable to pull data from | *Optional* |
 | connectionRequest.charms.key | `string`  | Key assoicated to the value you want to lookup | *Optional* |
@@ -35,11 +35,11 @@ IMPORTANT: The window object needs to be available when creating this instance a
 - `WalletController`  
 
 ## getInfo() 
-Creates a "lamdenWalletGetInfo" CustomEvent to ask the Lamden Wallet for the current information.
+Creates a "lamdenWalletGetInfo" CustomEvent to ask the Lamden Vault for the current information.
 This will fire the "newInfo" events.on event
 
 ## walletIsInstalled() 
-Check if the Lamden Wallet extention is installed in the user's broswer.
+Check if the Lamden Vault extention is installed in the user's broswer.
 
 This will fire the "newInfo" events.on event
 
@@ -47,7 +47,7 @@ This will fire the "newInfo" events.on event
 - `Promise`  Wallet is Installed.
 
 ## sendConnection([connectionRequest]) 
-Send a connection to the Lamden Wallet for approval. 
+Send a connection to the Lamden Vault for approval. 
 If the connectionRequest object wasn't supplied to the construtor then it must be supplied here.
 
 This will fire the "newInfo" events.on event
@@ -60,8 +60,8 @@ This will fire the "newInfo" events.on event
 | connectionRequest.version | `string`  | Connection version. Older version will be over-written in the uers's wallet. | &nbsp; |
 | connectionRequest.contractName | `string`  | The smart contract your dApp will transact through | &nbsp; |
 | connectionRequest.networkType | `string`  | Which Lamden network the approval is for (Mainnet or testnet) | &nbsp; |
-| connectionRequest.background | `string`  | A relative path to an image to override the default lamden wallet account background | *Optional* |
-| connectionRequest.logo | `string`  | A relative path to an image to use as a logo in the Lamden Wallet | &nbsp; |
+| connectionRequest.background | `string`  | A relative path to an image to override the default Lamden Vault account background | *Optional* |
+| connectionRequest.logo | `string`  | A relative path to an image to use as a logo in the Lamden Vault | &nbsp; |
 | connectionRequest.charms.name | `string`  | Charm name | *Optional* |
 | connectionRequest.charms.variableName | `string`  | Smart contract variable to pull data from | *Optional* |
 | connectionRequest.charms.key | `string`  | Key associated to the value you want to lookup | *Optional* |
@@ -69,10 +69,10 @@ This will fire the "newInfo" events.on event
 | connectionRequest.charms.iconPath | `string`  | An icon to display along with your charm | *Optional* |
 
 ### Returns
-- `Promise`  The User's Lamden Wallet Account details or errors from the wallet
+- `Promise`  The User's Lamden Vault Account details or errors from the wallet
 
 ## sendTransaction(tx[, callback]) 
-Creates a "lamdenWalletSendTx" event to send a transaction request to the Lamden Wallet.  
+Creates a "lamdenWalletSendTx" event to send a transaction request to the Lamden Vault.  
 If a callback is specified here then it will be called with the transaction result.
 
 This will fire the "txStatus" events.on event

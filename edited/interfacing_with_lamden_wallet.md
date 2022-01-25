@@ -1,14 +1,14 @@
 ### Live [Demo](https://goofy-shaw-4a429e.netlify.app/)
 
-# Lamden Wallet Integration Example
+# Lamden Vault Integration Example
 When an application interacts with a blockchain it's referred to as a "dApp".
-The [Lamden Wallet](https://github.com/Lamden/wallet) runs as a browser extention in Most modern browser (Safari not yet supported) and it allows your website (dApp) to interact with the Lamden Blockchain.
+The [Lamden Vault](https://github.com/Lamden/wallet) runs as a browser extention in Most modern browser (Safari not yet supported) and it allows your website (dApp) to interact with the Lamden Blockchain.
 
 Using the interaction API outlined below your dApp will be able to do the following things:
-- Quickly engage users of the Lamden Wallet to interact with your application quickly and effectivly
-- Securely create and send transactions to the Lamden Wallet and get the results
+- Quickly engage users of the Lamden Vault to interact with your application quickly and effectivly
+- Securely create and send transactions to the Lamden Vault and get the results
 - Have the user "auto approve" transactions to impreove the useability of your dApp
-- Create and customize a space for your dApp inside the user's Lamden Wallet where you can keep them upto date and engaged
+- Create and customize a space for your dApp inside the user's Lamden Vault where you can keep them upto date and engaged
 
 ## Installation of Demo Website
 ** Site functional but also a Work in Progress **
@@ -24,12 +24,12 @@ npm run dev
 open http://localhost:5000/ in broswer
 ```
 
-# Install Lamden Wallet
-[Follow Lamden Wallet install instructions](https://github.com/Lamden/wallet)
+# Install Lamden Vault
+[Follow Lamden Vault install instructions](https://github.com/Lamden/wallet)
 
 
 
-## Communicating with the Lamden Wallet 
+## Communicating with the Lamden Vault 
 | Event  | Type | Description  |
 | ------------- |------------| -----|
 | lamdenWalletGetInfo | CustomEvent | Ask the Wallet for the current info which includes version, installed/setup status, locked status, wallet key assigned to your dApp and which connection approvals you currently have |
@@ -64,7 +64,7 @@ You can use this hash to determine if the wallet using your dApp has the most cu
 
 
 ### RE-Approving Your Application
-Any subsequent connection requests sent to the Lamden Wallet will bouce back the error **App is already authorized to use &lt;your contract&gt; on &lt;requested network&gt;**
+Any subsequent connection requests sent to the Lamden Vault will bouce back the error **App is already authorized to use &lt;your contract&gt; on &lt;requested network&gt;**
 If you wish the change any of the information that was initially approved, such as the contract name, icon paths, charms, etc you can set the "reappove" flag on the connection request and the user will get an approve popup to confirm your new changes.
 
 ```javascript
@@ -74,7 +74,7 @@ It could happen that a user deleted the keypair that was created for your dApp p
 In that case you will get this error: <br>
 **Your dApp was previously approved but no matching vk is currently found in the wallet. Prompt the user to restore their keypair for vk 'user's key' or add 'reapprove = true, newKeypair = true' to your approve request to have a new keypair generated.** <br>
 
-If you need to generate a new keypair you can specify the newKeypair flag like this. A brand new keypair will be generated in the Lamden Wallet and associated to your dApp.
+If you need to generate a new keypair you can specify the newKeypair flag like this. A brand new keypair will be generated in the Lamden Vault and associated to your dApp.
 ```javascript
 detail.newKeypair = true
 ```

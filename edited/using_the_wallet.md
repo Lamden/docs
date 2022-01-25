@@ -284,8 +284,8 @@ The account can be restored byfollowing the next steps.
  
 ## IDE
  
-The Lamden wallet includes an interface utilised for the submission of smart contracts. 
-Using embedded IDE in the Lamden wallet, you are able to  view existing contracts on the network, as well as  submit new smart contracts.
+The Lamden Vault includes an interface utilised for the submission of smart contracts. 
+Using embedded IDE in the Lamden Vault, you are able to  view existing contracts on the network, as well as  submit new smart contracts.
  
 ### How to create a new blank contract
  
@@ -396,7 +396,7 @@ In the Chrome browser:
  
 1. Click on `Options`. 
 2. Select `More Tools` -> `Extensions`
-3. Find `Lamden Wallet Extension`.
+3. Find `Lamden Vault Extension`.
 4. Click on the button `Remove`.
 5. Confirm the deletion of the extension by clicking `Remove` once more.
 The extension is now removed successfully from the browser.
@@ -405,4 +405,4 @@ The extension is now removed successfully from the browser.
  
 ### Deleting all storage info
  
-Along with the removal of the Lamden wallet extension from Chrome, all related data is removed from local storage as well. It is thus guaranteed that all sensitive information has been deleted.
+Along with the removal of the Lamden Vault extension from Chrome, all related data is removed from local storage as well. It is thus guaranteed that all sensitive information has been deleted.

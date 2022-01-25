@@ -1,17 +1,17 @@
 ---
 id: send_transactions
-title: Submit Transactions to the Lamden Wallet
+title: Submit Transactions to the Lamden Vault
 sidebar_label: Submit Transactions
 ---
 
 ## Sending Transaction Requests
 - Transactions are locked to the name of the contract that was approved during the connection request.
     - One exception to this rule is <u>[TAU Approval](/docs/develop/wallet_api/approval_transactions)</u> transactions. Which ALWAYS prompt for a popup.
-- The Lamden Wallet will automatically supply this information to your transactions
+- The Lamden Vault will automatically supply this information to your transactions
     - contractName: what was supplied in the connection request
     - senderVk: The public key of the Linked Account
     - network: The masternode information for the network type in the request (mainnet, testnet)
-    - signature: The Lamden Wallet will sign the transaction with the Linked Account keys.
+    - signature: The Lamden Vault will sign the transaction with the Linked Account keys.
 
 ## Create Transaction Detail
 ```javascript
@@ -87,7 +87,7 @@ This information is avaiable in both responses
 | Property | Description |
 | ------------- | -----|
 | status | "success" or "error"|
-| uid | a unique ID assigned to your tx by the Lamden Wallet.  Not needed for anything. |
+| uid | a unique ID assigned to your tx by the Lamden Vault.  Not needed for anything. |
 | txHash | The hash assigned to your transaction by the network |
 | signed | transaction was successfully signed |
 | signature | the signature of your transaction |
