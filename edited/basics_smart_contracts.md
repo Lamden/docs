@@ -25,7 +25,7 @@ pip3 install contracting
 
 While using `Contracting` as a tool for submission smart contract you are not limited to select a name for the contract. 
 
-If you submit the contract through the `Lamden wallet` or `lamden-js` you need to write a name that has `con_` in the beginning. 
+If you submit the contract through the `Lamden Vault` or `lamden-js` you need to write a name that has `con_` in the beginning. 
 
 :::caution
 The name of the contract must be preceded with `con_`.
@@ -240,14 +240,14 @@ There are two ways you can submit the smart contract.
 
 By means of:
 
-1. Lamden Wallet.
+1. Lamden Vault.
 2. Lamden-js library
 
-### `Lamden Wallet` interface.
+### `Lamden Vault` interface.
 
-You can submit a smart contract through the `Lamden Wallet` interface.
+You can submit a smart contract through the `Lamden Vault` interface.
 
-1. Open Lamden wallet.
+1. Open Lamden Vault.
 2. On the left sidebar, click on the `Smart Contracts`.
 3. In the top of the area with example code, click on the button `New Contract` .
 4. Click `SUBMIT TO NETWORK`

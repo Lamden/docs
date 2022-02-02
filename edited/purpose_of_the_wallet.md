@@ -38,7 +38,7 @@ The embedded IDE in the wallet supports the python syntax and helps to catch err
 #### Test Methods
 Lamden platform allows very flexible methods in order to  test smart contracts. 
  
-Amongst various available methods, the user is able to choose to test directly on the test networks, by deploying the smart contract through IDE in the Lamden wallet. 
+Amongst various available methods, the user is able to choose to test directly on the test networks, by deploying the smart contract through IDE in the Lamden Vault. 
  
 Another available method entails the deployment of a local Python server such as `Sanic Server`.
  

@@ -1,6 +1,6 @@
 ---
 id: accounts_linked_revoke
-title: Revoke Access to your Lamden Wallet
+title: Revoke Access to your Lamden Vault
 sidebar_label: Revoke Access
 ---
 ![](/img/wallet/gif/1.0.0_account_linked_revoke.gif)

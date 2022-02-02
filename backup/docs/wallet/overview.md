@@ -1,6 +1,6 @@
 ---
 id: overview
-hide_title: Lamden Wallet Overview
+hide_title: Lamden Vault Overview
 sidebar_label: Overview
 ---
  
@@ -32,7 +32,7 @@ To create a wallet in Lamden, follow the instructions below.
  
 ## Allows backing up and restoring of keys
  
-Within the Lamden wallet, the keys are able to be backed up and stored anywhere offline. 
+Within the Lamden Vault, the keys are able to be backed up and stored anywhere offline. 
  
 ### What is a Keystore file
 Using the Keystore file, it provides the ability to restore access to the wallet in case the password was forgotten. 
@@ -62,7 +62,7 @@ The list of accounts able to be restored will appear.
 ![](/img/wallet/restore_wallet.gif)
  
 ###  Smart contract IDE
-In the Lamden wallet, an IDE is present which can be used to develop the smart contract.
+In the Lamden Vault, an IDE is present which can be used to develop the smart contract.
  
 #### Create Lamden Smart contracts
  
@@ -83,7 +83,7 @@ The embedded IDE in the wallet supports the python syntax, and helps to catch er
 #### Test Methods
 Lamden platform allows very flexible methods in order to  test smart contracts. 
  
-Amongst various available methods, the user is able to choose to test directly on the test networks, by deploying the smart contract through IDE in the Lamden wallet. 
+Amongst various available methods, the user is able to choose to test directly on the test networks, by deploying the smart contract through IDE in the Lamden Vault. 
  
 Another available method entails the  deployment of a local Python server such as `Sanic Server`.
  

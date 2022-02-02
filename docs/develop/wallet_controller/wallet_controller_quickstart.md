@@ -1,14 +1,14 @@
 ---
 id: wallet_controller_quickstart
-title: Using the Lamden Wallet Controller (LWC)
+title: Using the Lamden Vault Controller (LWC)
 sidebar_label: Quickstart
 ---
 
 > This package should work with all javascript implementations including nodejs and vanilla javascript
 
 ## What is it?
-The Lamden Wallet Controller (LWC) is a helper package for interacting with the <u>[Lamden Wallet API](/docs/develop/wallet_api/overview)</u> via a webpage.
-You can interact with the <u>[Lamden Wallet API](/docs/develop/wallet_api/overview)</u> without this package, but the intent here is to replace the process of 
+The Lamden Vault Controller (LWC) is a helper package for interacting with the <u>[Lamden Vault API](/docs/develop/wallet_api/overview)</u> via a webpage.
+You can interact with the <u>[Lamden Vault API](/docs/develop/wallet_api/overview)</u> without this package, but the intent here is to replace the process of 
 managing listeners and events with a more modern callback/Promise workflow.
 
 - Check out the <u>[GITHUB REPO](https://github.com/Lamden/lamden_wallet_controller)</u>
@@ -38,7 +38,7 @@ import WalletController from 'lamden_wallet_controller';
 
 
 ## Create Connection Request Object
-Creating a connection request is the same as <u>[Lamden Wallet API - Create a Connection](docs/develop/wallet_api/overview)</u>.
+Creating a connection request is the same as <u>[Lamden Vault API - Create a Connection](docs/develop/wallet_api/overview)</u>.
 
 Below is the mandatory information for a connection request but <u>[more customization optons](/docs/develop/wallet_api/customize_connection)</u>  are available.
 ```javascript
@@ -86,7 +86,7 @@ lwc.walletIsInstalled()
 ```
 So to recap, the `walletIsInstalled` method will accomplish 3 things:
 1. Reports back the installed status of the wallet.
-2. If installed is true and a connection request was provided to the constructor then it will automatically create the `lamdenWalletConnect` event and provide your connection request to the users Lamden Wallet
+2. If installed is true and a connection request was provided to the constructor then it will automatically create the `lamdenWalletConnect` event and provide your connection request to the users Lamden Vault
 3. If the user has a <u>[Linked Account](/docs/wallet/accounts_linked_overview)</u> for your DAPP you will be sent the Wallet Information on the `newInfo` listener; or else the user will compelte the New Linked Account process and you will be proveded the Wallet Information at that point.
 
 ## Send Connection Request
@@ -102,7 +102,7 @@ lwc.sendConnection(connectionRequest)
 
 
 ## Send A Transaction
-Create the transaction object as per the <u>[Lamden Wallet API](/docs/develop/wallet_api/send_transactions#create-transaction-detail)</u> specification.
+Create the transaction object as per the <u>[Lamden Vault API](/docs/develop/wallet_api/send_transactions#create-transaction-detail)</u> specification.
 
 > `contractName` is automatically filled in by the LamdenWallet with the value approved by the user in your connection request.
 

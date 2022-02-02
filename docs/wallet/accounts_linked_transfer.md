@@ -9,7 +9,7 @@ sidebar_label: Approve Transfers
 
 
 ## Confirm Transfer Popup
-The approve transfer popup tells you that there is a DAPP that is trying to initate a transfer via the Linked Account in your Lamden Wallet.
+The approve transfer popup tells you that there is a DAPP that is trying to initate a transfer via the Linked Account in your Lamden Vault.
 
 ** You will not see the popup below if you have set the DAPPS's Linked Account to <u>[Trusted Status](/docs/wallet/accounts_linked_create#make-account-trusted)</u>.**
 
@@ -18,12 +18,12 @@ The approve transfer popup tells you that there is a DAPP that is trying to init
 ## Information on the Confirm Popup
 Here is an explanation of the parts of the popup and why they are important to you:
 1. **DAPP name and source location:**  At the top of the popup you will see the name and icon of the DAPP as well as the location the popup was originated from.  You can click the link to verify the popup has come from the website you expected it to.
-2. **Smart Contract:** This is the smart contract that this transaction will be going to.  This value is auto-populated by the Lamden Wallet and should be the smart contract that you approved durring the <u>[Linked Account Creation](/docs/wallet/accounts_linked_create)</u> process.
+2. **Smart Contract:** This is the smart contract that this transaction will be going to.  This value is auto-populated by the Lamden Vault and should be the smart contract that you approved durring the <u>[Linked Account Creation](/docs/wallet/accounts_linked_create)</u> process.
 3. **Network:** This is the network the transaction will be processed on.  The values are either "Lamden Mainnet" or "Lamden Testnet".
 4. **Action:** The "method" on the smart contract that this transaction will invoke. If you are not sure what this method does, maybe ask the DAPP developer directly. Ideally, the developer of the smart contract has given this method a name that reflects the DAPP action to be performed that created the popup.
-5. **Data:** Any additional information under "Action" will be sent as data in the transction and utilized by the smart contract while processing your transaction.  Take a look at this data to see if it accurately reflects the intention of your action. Depending on the action and smart contract, the data may or may not be discernable by you.  You can always check with the DAPP developer if you are unsure what data they are sending.
+5. **Data:** Any additional information under "Action" will be sent as data in the transaction and utilized by the smart contract while processing your transaction.  Take a look at this data to see if it accurately reflects the intention of your action. Depending on the action and smart contract, the data may or may not be discernable by you.  You can always check with the DAPP developer if you are unsure what data they are sending.
 
-If you are confident with the contents of the popup then click "APPROVE" and the Lamden Wallet will sign and send the transaction.
+If you are confident with the contents of the popup then click "APPROVE" and the Lamden Vault will sign and send the transaction.
 If you aren't sure you can always click "DENY" and no transaction will be sent.
 
 ## Automatic Transactions (No popups)

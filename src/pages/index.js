@@ -21,7 +21,7 @@ const features = [
     imageUrl: 'img/develop-2.svg',
     description: (
       <>
-        Create an Account in the Lamden Wallet specific to your Application. Customize the Account to help engage your users. 
+        Create an Account in the Lamden Vault specific to your Application. Customize the Account to help engage your users. 
       </>
     ),
   },
@@ -88,23 +88,23 @@ const tools = [
     link: '/docs/lamdenjs'
   },
   {
-    title: <>Lamden Wallet API</>,
+    title: <>Lamden Vault API</>,
     imageUrl: 'img/tools-walletapi.svg',
     description: (
       <>
-        Connect your app to the Lamden Wallet via a simple event driven API. 
-        Once your app is connected to a user's Lamden Wallet you can sign transactions to your smart contract on their behalf. 
+        Connect your app to the Lamden Vault via a simple event driven API. 
+        Once your app is connected to a user's Lamden Vault you can sign transactions to your smart contract on their behalf. 
         Automatic transactions supercharge the user experience by getting rid of popups.
       </>
     ),
     link: '/docs/lamdenjs'
   },
   {
-    title: <>Lamden Wallet Controller</>,
+    title: <>Lamden Vault Controller</>,
     imageUrl: 'img/tools-walletcontroller.svg',
     description: (
       <>
-        A javascript package for connecting and communicating with the Lamden Wallet.  
+        A javascript package for connecting and communicating with the Lamden Vault.  
         This package facilitates the Wallet connection process and streamlines the flow of communication.
       </>
     ),

@@ -4,7 +4,7 @@ title: Add Token
 sidebar_label: Add Token
 ---
 
-You can add tokens to your Lamden Wallet in two ways.
+You can add tokens to your Lamden Vault in two ways.
 
 ## Add From Rocketswap Dropdown
 
