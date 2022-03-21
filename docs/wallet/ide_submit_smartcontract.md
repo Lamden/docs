@@ -7,7 +7,7 @@ sidebar_label: Submit a Smartcontract
 ![](/img/wallet/gif/1.0.0_ide_submit_smartcontract.gif)
 
 ## Lint for errors
-A smart contract can only be submitted to the blackchain if no errors are detected.
+A smart contract can only be submitted to the blockchain if no errors are detected.
 The wallet will lint the contract before you submit, but you can always click the `CHECK CONTRACT` button at the bottom of the IDE to manually check.
 
 Errors that are found will show up in the error box below the IDE window.  If no errors are detected this box will contain the message `Contract is Okay`.

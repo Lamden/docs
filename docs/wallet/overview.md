@@ -12,13 +12,13 @@ The Lamden Vault also has a number of features that allow the user to interface 
  - Safe storage of <u>[Account](/docs/wallet/accounts_overview)</u> keys (<u>[keypairs](/docs/wallet/accounts_linked_overview)</u>).
  - Easy <u>[Backup](/docs/wallet/backup_overview)</u> and <u>[Restore](/docs/wallet/restore_keystore)</u> of accounts.
  - Manage all your TAU tokens in one place!.
- - Create <u>[Linked Accounts](/docs/wallet/accounts_linked_overview)</u> which allow your to interact with DAPP websites.
- - Create, Test and Run Smartcontract right in the Lamden Vault using our in-built <u>[Contracting IDE](/docs/wallet/ide_overview)</u>.
+ - Create <u>[Linked Accounts](/docs/wallet/accounts_linked_overview)</u> which allow you to interact with DAPP websites.
+ - Create, Test and Run Smartcontracts right in the Lamden Vault using our in-built <u>[Contracting IDE](/docs/wallet/ide_overview)</u>.
  
 ## Quick Start
 
 ### Install Wallet
-You can <u>[Install and Setup](/docs/wallet/installation)</u> a Lamden Vault in seconds!
+You can <u>[Install and Setup](/docs/wallet/first_vault_install)</u> a Lamden Vault in seconds!
 
 ### Develop
 Do you have a great DAPP idea?  Check out the <u>[Lamden Vault API](/docs/develop/wallet_api/overview)</u> documentaion to get started!

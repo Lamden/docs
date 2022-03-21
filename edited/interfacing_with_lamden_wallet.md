@@ -2,7 +2,7 @@
 
 # Lamden Vault Integration Example
 When an application interacts with a blockchain it's referred to as a "dApp".
-The [Lamden Vault](https://github.com/Lamden/wallet) runs as a browser extention in Most modern browser (Safari not yet supported) and it allows your website (dApp) to interact with the Lamden Blockchain.
+The [Lamden Vault](https://github.com/Lamden/wallet) runs as a browser extension in Most modern browser (Safari not yet supported) and it allows your website (dApp) to interact with the Lamden Blockchain.
 
 Using the interaction API outlined below your dApp will be able to do the following things:
 - Quickly engage users of the Lamden Vault to interact with your application quickly and effectivly

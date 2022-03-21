@@ -11,9 +11,9 @@ To create a Linked Account to a DAPP first visit the DAPP's website.
 
 Some websites will prompt right away for a connection and some could have a "connect to wallet" button.  The way you initiate a connection is entirely up to the DAPP but you will always need to have your wallet unlocked to be able to accept DAPP connection requests.
 
-Once the DAPP has initaited a connection request to your Lamden Vault the process is the same.
+Once the DAPP has initiated a connection request to your Lamden Vault the process will remain the same.
 
-Lamden is not responsible for lost or stolen funds with regard to accepting connections to malicious DAPPS.
+Lamden is not responsible for any losses or stolen funds with regard to accepting connections to malicious DAPPS.
 
 You do have some protections when creating Linked Accounts.
 1. DAPPs will ONLY be able to interact with their specific account and have no access to other accounts in your wallet.
@@ -48,7 +48,7 @@ On this screen you should choose an existing account to associate with the dapp.
 
 ## Make Account Trusted
 ![](/img/wallet/linked_account_popup_3.png)
-On this screen you will decide if this Linked Account will be treated as a "Trusted Account" by the Lamden Vault.  Tusted Accounts enable automatic transactions; which means you will not get a popup to any transactions the DAPP submits.
+On this screen you will decide if this Linked Account will be treated as a "Trusted Account" by the Lamden Vault.  Trusted Accounts enable automatic transactions; which means you will not get a popup to any transactions the DAPP submits.
 
 Note: Do not set an account as Trusted unelss you are sure you do. 
 

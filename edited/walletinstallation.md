@@ -84,7 +84,7 @@ Once the build is completed, you will see the folder `build` was created.
 ### Load the extension in Brave
 1. Open Brave browser and navigate to `brave://extensions/`
 2. Turn on the developer mode from the top right-hand corner
-3. Click "Load Unpacked Extention"
+3. Click "Load Unpacked Extension"
 4. Select the build directory unzipped from the zip file.
  
 ## Testing

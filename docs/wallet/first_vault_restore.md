@@ -1,7 +1,7 @@
 ---
 id: first_vault_restore
 title: First Time Restore Lamden Vault
-sidebar_label: Fisrtrun Restore Lamden Vault
+sidebar_label: Firstrun Restore Lamden Vault
 ---
 
 You can restore accounts to your Lamden Vault in three ways at the first time you run.

@@ -1,7 +1,7 @@
 ---
 id: first_vault_create
 title: First Time Create Lamden Vault
-sidebar_label: Fisrtrun Create Lamden Vault
+sidebar_label: Firstrun Create Lamden Vault
 ---
 ### First Lamden Vault Create
 1. Click, `Restore A WALLET`.

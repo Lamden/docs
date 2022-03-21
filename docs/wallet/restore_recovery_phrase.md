@@ -7,7 +7,7 @@ sidebar_label: From Recovery Phrase
 1. Unlock Lamden Vault
 2. From the left-hand menu, click `Settings`
 3. Click the `RESTORE WALLET` button from the Settings Menu.
-4. Click `RESTORE AACCOUNTS FROM RECOVERY PHRASE` button.
+4. Click `RESTORE ACCOUNTS FROM RECOVERY PHRASE` button.
 5. Enter your secret recovery phrase.
 6. Click the `CONFIRM KEYSTORE` button.
 7. Enter the password which was used to back up the Keystore.
