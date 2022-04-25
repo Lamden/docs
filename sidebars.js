@@ -118,6 +118,13 @@ module.exports = {
 				]
 			},
 			{
+				'Blockservice': [
+					'develop/blockservice/overview',
+					'develop/blockservice/quickstart',
+					'develop/blockservice/config',
+				]
+			},
+			{
 				'Languages' : [
 					{
 						'Javascript':[
