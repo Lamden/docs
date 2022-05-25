@@ -120,8 +120,11 @@ module.exports = {
 			{
 				'Blockservice': [
 					'develop/blockservice/overview',
-					'develop/blockservice/quickstart',
+					'develop/blockservice/estimation_installation',
+					'develop/blockservice/installation',
 					'develop/blockservice/config',
+					'develop/blockservice/restful',
+					'develop/blockservice/events',
 				]
 			},
 			{
