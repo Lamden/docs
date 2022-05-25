@@ -687,10 +687,10 @@ Get all token smart contracts information.
 ```
 
 ---
-### Get all token smart contracts information
+### Get a token smart contracts information
 **`get` `/tokens/contractName`**
 
-Get all token smart contracts information.
+Get a token smart contracts information.
 
 > Example
 > /tokens/con_diego2
