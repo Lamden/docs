@@ -1,10 +1,10 @@
 ---
 id: config
-title: Config
-sidebar_label: Config
+title: Blockservice Config
+sidebar_label: Blockservice Config
 ---
 
-You can custom your block service in ```.env``` file.
+All configuration is done by an ```.env``` file which you need to create in the root of the application folder. Some variables which are not be set will use default values.  
 
 ### Lamden configuration items
 
@@ -30,10 +30,6 @@ You can custom your block service in ```.env``` file.
 |  Item   | Description  | default |
 |  ----  | ----  | ---- |
 | DEBUG_ON |  outputs some logs while grabbing blocks | false |
-| REPAIR_BLOCKS  |  Use this if you are missing blocks. The app will start at whatever value you pass in and iterate up in blocks to see if it's missing any. Any missing will be processed. | undefined |
-| RE_PARSE_BLOCKS |  Reload the CurrentState and StateChanges tables using the Blockinfo stored inthe Blocks database. This drops both tables before hand but DOES NOT DROP BLOCKS TABLE! | false |
-| START_AT_BLOCK_NUMBER  |  Used in conjunction with ```RE_PARSE_BLOCKS``` to set a starting block. Could be useful if you're app has no state below a certain block. | 0 |
-| WIPE  |  ```USE AT OWN RISK!``` This will drop the entire database which means you will need to start syncing all blocks from the masternode (which is slow). If you want to just reload the CurrentState and StateChanges tables then use ```RE_PARSE_BLOCKS``` instead! | false | 
 
 ### Server options
 
