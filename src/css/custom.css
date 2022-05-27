@@ -26,6 +26,6 @@
   padding: 0 var(--ifm-pre-padding);
 }
 
-p > code {
+* > code {
   color: #dfe2ff;
 }
