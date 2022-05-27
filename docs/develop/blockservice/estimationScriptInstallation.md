@@ -8,9 +8,34 @@ This script is used for estimating stamps cost of a transaction and serves a soc
 Installing this script can ensure endpoint ```/stamps/estimation``` works. You can find it at [<u>here</u>](https://github.com/Lamden/stamp_estimation_script).
 
 ### Preparation
-1. [<u>Mongodb</u>(version > 4.0)](httpv://www.mongodb.com/docs/manual/installation/)
-2. [<u>python 3.6+</u>](https://www.python.org/)
+1.[<u>Mongodb</u>(version > 4.0)](httpv://www.mongodb.com/docs/manual/installation/)
+2. [<u>python 3.6.x</u>](https://www.python.org/) (should come with UBUNTU 18.04)
 3. poetry installed. poetry is a package manager tool. More detail click [<u>here</u>](https://python-poetry.org/docs)
+```
+    curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -
+    source $HOME/.poetry/env
+```
+
+### Install Dependancies
+1. pip3
+```
+    sudo apt-get update
+    sudo apt-get -y install python3-pip
+```
+
+2. python setuptools
+```
+    pip3 install setuptools
+```
+
+2. lamden contracting
+```
+    cd ~
+    git clone https://github.com/Lamden/contracting.git
+    cd contracting
+    git checkout blockservice-driver
+    python3 ./setup.py develop
+```
 
 ### Install
 You should make sure that poetry and python have been installed.
@@ -43,6 +68,6 @@ port=3232    # port number
 ```
 poetry run python ./setup.py # Default use config.dev.ini
 
-poetry run PYTHON_ENV="production" python ./setup.py # Will use config.ini
+PYTHON_ENV="production" poetry run python ./setup.py # Will use config.ini
 ```
 
