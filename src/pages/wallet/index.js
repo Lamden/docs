@@ -102,6 +102,27 @@ function Home() {
             </div>
           </section>
         )}
+                <section className={styles.quickstart}>
+            <div className="container">
+              <h2>Quickstart</h2>
+                <h3>1. Install</h3>
+                Lamden Vault is a browser plugin. You can search and install it in&nbsp;
+                <Link 
+                  style={{textDecoration: 'underline'}}
+                  to={useBaseUrl('https://chrome.google.com/webstore/detail/lamden-wallet-browser-ext/fhfffofbcgbjjojdnpcfompojdjjhdim')}>
+                chrome store
+                </Link>
+                .
+
+                <h3>2. Set Up Your Vault</h3>
+                <p>Open the Vault</p>
+                <img src='/img/wallet_setup.png' style={{marginBottom: '0.5rem'}} />
+                <p>Then You can create/restore your Lamden Vault.</p>
+                <img src='/img/wallet/first_run_main.png' style={{marginBottom: '0.5rem', width: '50%'}} />
+                <p>Now you can use your vault!</p>
+                <img src='/img/wallet_home.png' style={{marginBottom: '2rem', width: '50%'}} />
+            </div>
+          </section>
       </main>
     </Layout>
   );
