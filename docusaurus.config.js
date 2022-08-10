@@ -23,7 +23,7 @@ module.exports = {
       },
       items: [
         {
-          to: 'docs/index',
+          to: 'docs',
           activeBasePath: 'docs',
           label: 'Docs',
           position: 'left',
@@ -33,6 +33,12 @@ module.exports = {
           to: 'develop',
           activeBasePath: 'pages',
           label: 'Develop',
+          position: 'right',
+        },
+        {
+          to: 'mytutorials',
+          activeBasePath: 'pages',
+          label: 'Tutorials',
           position: 'right',
         },
         {
@@ -127,8 +133,21 @@ module.exports = {
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
-          
         },
+      },
+    ],
+  ],
+  plugins: [
+    [
+      '@docusaurus/plugin-content-blog',
+      {
+        id: 'tutorials-lottery',
+        routeBasePath: 'tutorials/lottery',
+        path: './tutorials/lottery',
+        blogSidebarTitle: 'Tutorials',
+        blogSidebarCount: 'ALL',
+        showReadingTime: false,
+        sortPosts: 'ascending',
       },
     ],
   ],
