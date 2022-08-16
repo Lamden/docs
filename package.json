@@ -20,7 +20,6 @@
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-syntax-highlighter": "^13.5.1",
-    "sharp": "^0.23.2",
     "watchpack": "^1.7.4"
   },
   "browserslist": {
