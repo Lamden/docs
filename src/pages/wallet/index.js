@@ -68,7 +68,7 @@ function Home() {
                 <Link
                   className={classnames(
                     'button button--primary button--lg',
-                    styles.getStarted, 
+                     
                   )}
                   to={useBaseUrl('https://chrome.google.com/webstore/detail/lamden-wallet-browser-ext/fhfffofbcgbjjojdnpcfompojdjjhdim')}>
                   Install
@@ -77,7 +77,7 @@ function Home() {
                 <Link
                   className={classnames(
                     'button button--secondary button--lg',
-                    styles.getStarted, 
+                     
                   )}
                   to={useBaseUrl('docs/wallet/overview')}>
                   Documentation

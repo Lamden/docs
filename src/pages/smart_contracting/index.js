@@ -89,7 +89,7 @@ function Home() {
                 <Link
                 className={classnames(
                   'button button--secondary button--lg',
-                  styles.getStarted, 
+                   
                 )}
                 to={useBaseUrl('https://contracting.lamden.io')}>
               Documentations
@@ -100,7 +100,7 @@ function Home() {
               <Link
                 className={classnames(
                   'button button--secondary button--lg',
-                  styles.getStarted, 
+                   
                 )}
                 to={useBaseUrl('https://github.com/Lamden/contracting')}>
                 GitHub
@@ -204,7 +204,7 @@ def transfer_from(amount: float, to: str, main_account: str):
               <div class="row" className={classnames('row', styles.tutorials)}>
                 <div class="col col--4">
                   <Link
-                      className={classnames('button button--secondary button--lg', styles.getStarted, styles.tutorials_button)}
+                      className={classnames('button button--secondary button--lg',  styles.tutorials_button)}
                       to={useBaseUrl('https://github.com/JeffWScott/my_token_lamden_tutorial')}>
                         <img src="/img/tutorials-mytoken.png" className={classnames(styles.tutorials_image)}/>
                   </Link>
@@ -219,7 +219,7 @@ def transfer_from(amount: float, to: str, main_account: str):
               <div class="row" className={classnames('row', styles.tutorials)}>
                 <div class="col col--4">
                   <Link
-                    className={classnames('button button--secondary button--lg', styles.getStarted, styles.tutorials_button)}
+                    className={classnames('button button--secondary button--lg',  styles.tutorials_button)}
                     to={useBaseUrl('https://contracting.lamden.io/quickstart/import-submit/')}>
                       <img src="/img/tutorials-jupyter.svg" className={classnames(styles.tutorials_image_jupyter)}/>
                   </Link>
@@ -237,7 +237,7 @@ def transfer_from(amount: float, to: str, main_account: str):
               <div class="row"  className={classnames('row', styles.tutorials)}>
                 <div class="col col--4">
                   <Link
-                    className={classnames('button button--secondary button--lg', styles.getStarted, styles.tutorials_button)}
+                    className={classnames('button button--secondary button--lg',  styles.tutorials_button)}
                     to={useBaseUrl('https://github.com/Lamden-Standards/')}>
                       <img src="/img/tutorials-standards.png" className={classnames(styles.tutorials_image_jupyter)}/>
                   </Link>

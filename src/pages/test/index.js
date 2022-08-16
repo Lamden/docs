@@ -71,7 +71,7 @@ function Home() {
               <Link
               className={classnames(
                 'button button--secondary button--lg',
-                styles.getStarted, 
+                 
               )}
               to={useBaseUrl('docs/ide_smart_contract')}>
             Documentation
@@ -82,7 +82,7 @@ function Home() {
             <Link
               className={classnames(
                 'button button--secondary button--lg',
-                styles.getStarted, 
+                 
               )}
               to={useBaseUrl('https://github.com/Lamden/contracting')}>
               GitHub

@@ -129,7 +129,7 @@ function Tools({imageUrl, title, description, link}) {
     <div className={classnames('row', styles.tool)}>
       <div class="col col--4">
           <Link
-            className={classnames('button button--secondary button--lg', styles.getStarted, styles.tool_button)}
+            className={classnames('button button--secondary button--lg',  styles.tool_button)}
             to={useBaseUrl(link)}>
               <img src={imgUrl} className={styles.tool_image}/>
           </Link>
@@ -165,7 +165,7 @@ function Home() {
               <Link
                   className={classnames(
                     'button button--secondary button--lg',
-                    styles.getStarted, 
+                     
                   )}
                   to={useBaseUrl('/docs/develop/wallet_api/overview')}>
                   Documentation
