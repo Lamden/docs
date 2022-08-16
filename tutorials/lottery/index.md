@@ -1,6 +1,7 @@
 ---
 title: Introduction
 slug: lottery-introduction
+date: 2022-08-10T09:00
 authors:
   - name: Dapiguabc
     url: https://github.com/Dapiguabc
