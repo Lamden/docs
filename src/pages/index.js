@@ -74,7 +74,7 @@ const tools = [
         This package houses the masternode and delegate software for running nodes.  It's a one stop shop for all lamden tech on Python.
       </>
     ),
-    link: '/docs/lamdenjs'
+    link: 'https://www.lamden.io'
   },
   {
     title: <>Lamden-js</>,
@@ -85,7 +85,7 @@ const tools = [
         Integreate Lamden in to your webapp using lamden-js's simple event driven API.
       </>
     ),
-    link: '/docs/lamdenjs'
+    link: 'docs/develop/lamden_js/overview'
   },
   {
     title: <>Lamden Vault API</>,
@@ -97,7 +97,7 @@ const tools = [
         Automatic transactions supercharge the user experience by getting rid of popups.
       </>
     ),
-    link: '/docs/lamdenjs'
+    link: '/docs/develop/wallet_api/overview'
   },
   {
     title: <>Lamden Vault Controller</>,
@@ -108,7 +108,7 @@ const tools = [
         This package facilitates the Wallet connection process and streamlines the flow of communication.
       </>
     ),
-    link: '/docs/lamdenjs'
+    link: '/docs/develop/wallet_controller/wallet_controller_quickstart'
   },
   {
     title: <>C# Unity Plugin</>,
@@ -119,7 +119,7 @@ const tools = [
         The Lamden blockchain's speed and versitilty can connect your users to seemless item markets and real ownership over game objects.
       </>
     ),
-    link: '/docs/lamdenjs'
+    link: '/docs/develop/unity_3d/unity_3d'
   },
 ]
 
