@@ -42,8 +42,7 @@ module.exports = {
 					'wallet/transactions_overview',
 					'wallet/transactions_create',
 					'wallet/transactions_advanced_create',
-					'wallet/transactions_result',
-					'wallet/transactions_history'
+					'wallet/transactions_result'
 				],
 				'Smart Contract IDE':[
 					'wallet/ide_overview',

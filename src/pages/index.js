@@ -66,17 +66,6 @@ const tools = [
     link: 'https://contracting.lamden.io'
   },
   {
-    title: <>Lamden</>,
-    imageUrl: 'img/tools-lamden.svg',
-    description: (
-      <>
-        Lamden is a Python package that allows you to create wallets, transactions and interact with the Lamden blockchain.  
-        This package houses the masternode and delegate software for running nodes.  It's a one stop shop for all lamden tech on Python.
-      </>
-    ),
-    link: 'https://www.lamden.io'
-  },
-  {
     title: <>Lamden-js</>,
     imageUrl: 'img/tools-lamdenjs.svg',
     description: (
