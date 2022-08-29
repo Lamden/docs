@@ -8,7 +8,7 @@ sidebar_label: Transaction Result
 
 ![](img/wallet/gif/1.0.0_transactions_create.gif)
 
-As discussed in the <u>[overview](/wallet/accounts_linked_overview)</u>, smart contract transactions can do any number of things in the blockchain. 
+As discussed in the <u>[overview](/accounts_linked_overview)</u>, smart contract transactions can do any number of things in the blockchain. 
 
 Depending on the intention of the transaction there are a few ways to view the results.
 

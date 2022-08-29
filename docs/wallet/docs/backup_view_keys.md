@@ -18,8 +18,8 @@ sidebar_label: View Accounts Keys
 Listed are the keypairs for each of your accounts include Lamden Vault accounts and legacy accounts.
 
 ## Backing up keypairs
-You can copy and paste these <u>[keypairs](/wallet/accounts_linked_overview)</u> into whatever backup solution you choose.
+You can copy and paste these <u>[keypairs](/accounts_linked_overview)</u> into whatever backup solution you choose.
 
-Creating a <u>[Keystore File](/wallet/accounts_linked_overview)</u> will also backup and password encrypt these keys except vault accounts.
+Creating a <u>[Keystore File](/accounts_linked_overview)</u> will also backup and password encrypt these keys except vault accounts.
 
 ### **Lamden is not responsible for lost or stolen keys or keystores**

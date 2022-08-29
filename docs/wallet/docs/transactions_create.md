@@ -43,4 +43,4 @@ After sending the transaction through the wallet you will be provided the result
 
 **Stamps are deducted on the success or failure of a transaction.**
 
-See the <u>[Transaction Results](/wallet/transactions_result)</u> section to get more results from your transaction.
+See the <u>[Transaction Results](/transactions_result)</u> section to get more results from your transaction.

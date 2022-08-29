@@ -19,7 +19,7 @@ It is important to write the 24-word phrase down on paper and hide it somewhere,
 
 Only old users own such accounts. Each account has its own unique keypair which is encrypted in the Lamden Vault.
 
-It is heavily recommened that you do a <u>[BACKUP](/wallet/backup_overview)</u> **everytime** you add a new account as each backup only stores the accounts you had at that specific point in time.
+It is heavily recommened that you do a <u>[BACKUP](/backup_overview)</u> **everytime** you add a new account as each backup only stores the accounts you had at that specific point in time.
 
 ## What are keypairs?
 Each account in your Lamden Vault has an asssociated cryptographic keypair.

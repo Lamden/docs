@@ -27,7 +27,7 @@ In general you never want to give anyone or any contract access to your TAU unle
 
 As a Lamden Vault user, you have a few safeguards but ultimately none of these will help you if you give permission to a malicious DAPP.
 1. The DAPP can only send approvals for its own approved smart contract.  Meaning, you cannot accidentally approve the DAPPS owner's account address and then they spend your TAU.  So if you trust all methods of the the DAPP's contract then you can be sure that the approval is always good when you see the popup.
-2. You will see the approval popup EVERY TIME even if you have enabled automatic transactions by <u>[setting the Linked Account as trusted](/wallet/accounts_linked_create#make-account-trusted)</u>.  The DAPP cannot sneak in an approval that you did not authorize.
+2. You will see the approval popup EVERY TIME even if you have enabled automatic transactions by <u>[setting the Linked Account as trusted](/accounts_linked_create#make-account-trusted)</u>.  The DAPP cannot sneak in an approval that you did not authorize.
 
 
 

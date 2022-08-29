@@ -21,4 +21,4 @@ sidebar_label: Firstrun Create Lamden Vault
 7. Now enter the seed recovery phrase you copied on last screen in the seperate boxes and the click the `NEXT` button.
    ![](img/wallet/firstrun_verify_memoric.png)
 8.  Click, `I UNDERSTAND` if you understand **backing up your wallet and keeping your passwords safe is YOUR RESPONSIBILITY**.
-9.  Follow steps to <u>[Backup Lamden Vault](/wallet/backup_keystore)</u>.
+9.  Follow steps to <u>[Backup Lamden Vault](/backup_keystore)</u>.
