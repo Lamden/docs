@@ -4,6 +4,10 @@ title: Create Wallets
 sidebar_label: Wallets
 ---
 
+A lamden wallet, similar to a bank account, is an entity with an tau balance that can send transactions on Lamden.
+You should create a wallet before starting your blockchain journey because all interactions with smart contracts need it. 
+**In order to keep your wallet safe, never share your secret key with others and store it in a safe place.**
+
 # Create Wallets
 
 ## Create a Lamden Keypair
