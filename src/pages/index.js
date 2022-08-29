@@ -53,7 +53,7 @@ function Feature({imageUrl, title, description}) {
 }
 
 
-const tools = [
+const toolsBackend = [
   {
     title: <>Contracting</>,
     imageUrl: 'img/tools-contracting.svg',
@@ -64,17 +64,6 @@ const tools = [
       </>
     ),
     link: 'https://contracting.lamden.io'
-  },
-  {
-    title: <>Lamden-js</>,
-    imageUrl: 'img/tools-lamdenjs.svg',
-    description: (
-      <>
-        Lamden-js is a NodeJS package which allows you to easily create transactions and query state on the Lamden Blockchain.  
-        Integreate Lamden in to your webapp using lamden-js's simple event driven API.
-      </>
-    ),
-    link: 'docs/develop/lamden_js/overview'
   },
   {
     title: <>Lamden Vault API</>,
@@ -89,17 +78,6 @@ const tools = [
     link: '/docs/develop/wallet_api/overview'
   },
   {
-    title: <>Lamden Vault Controller</>,
-    imageUrl: 'img/tools-walletcontroller.svg',
-    description: (
-      <>
-        A javascript package for connecting and communicating with the Lamden Vault.  
-        This package facilitates the Wallet connection process and streamlines the flow of communication.
-      </>
-    ),
-    link: '/docs/develop/wallet_controller/wallet_controller_quickstart'
-  },
-  {
     title: <>C# Unity Plugin</>,
     imageUrl: 'img/tools-unity.svg',
     description: (
@@ -110,6 +88,31 @@ const tools = [
     ),
     link: '/docs/develop/unity_3d/unity_3d'
   },
+]
+
+const toolsFonted = [
+  {
+    title: <>Lamden-js</>,
+    imageUrl: 'img/tools-lamdenjs.svg',
+    description: (
+      <>
+        Lamden-js is a NodeJS package which allows you to easily create transactions and query state on the Lamden Blockchain.  
+        Integreate Lamden in to your webapp using lamden-js's simple event driven API.
+      </>
+    ),
+    link: 'docs/develop/lamden_js/overview'
+  },
+  {
+    title: <>Lamden Vault Controller</>,
+    imageUrl: 'img/tools-walletcontroller.svg',
+    description: (
+      <>
+        A javascript package for connecting and communicating with the Lamden Vault.  
+        This package facilitates the Wallet connection process and streamlines the flow of communication.
+      </>
+    ),
+    link: '/docs/develop/wallet_controller/wallet_controller_quickstart'
+  }
 ]
 
 function Tools({imageUrl, title, description, link}) {
@@ -180,8 +183,14 @@ function Home() {
         )}
         <section className={styles.tools}>
             <div className="container">
-            <h2>Developer Tools</h2>
-              {tools.map((props, idx) => (
+            <h2>Backend Development Tools</h2>
+              {toolsBackend.map((props, idx) => (
+                  <Tools key={idx} {...props} />
+                ))}
+            </div>
+            <div className="container">
+            <h2>Fonted Development Tools</h2>
+              {toolsFonted.map((props, idx) => (
                   <Tools key={idx} {...props} />
                 ))}
             </div>
