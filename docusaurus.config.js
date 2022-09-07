@@ -23,10 +23,16 @@ module.exports = {
       },
       items: [
         {
-          to: 'develop',
           activeBasePath: 'pages',
           label: 'Develop',
           position: 'right',
+          items: [{
+            href: 'https://tools.lamden.io/',
+            label: 'Documents' 
+          },{
+            to: '/templates',
+            label: 'Templates' 
+          }]
         },
         {
           to: 'mytutorials',
@@ -73,10 +79,13 @@ module.exports = {
         },
         {
           title: 'Community',
-          items: [
-            
+          items: [     
             {
               label: 'Telegram',
+              href: 'https://t.me/lamdenchat',
+            },
+            {
+              label: 'Telegram Developer',
               href: 'https://t.me/lamdenchat',
             },
             {

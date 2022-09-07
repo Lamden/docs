@@ -75,7 +75,7 @@ const toolsBackend = [
         Automatic transactions supercharge the user experience by getting rid of popups.
       </>
     ),
-    link: '/docs/develop/wallet_api/overview'
+    link: 'https://tools.lamden.io/wallet_api/overview'
   },
   {
     title: <>C# Unity Plugin</>,
@@ -86,7 +86,7 @@ const toolsBackend = [
         The Lamden blockchain's speed and versitilty can connect your users to seemless item markets and real ownership over game objects.
       </>
     ),
-    link: '/docs/develop/unity_3d/unity_3d'
+    link: 'https://tools.lamden.io/unity_3d/unity_3d'
   },
 ]
 
@@ -100,7 +100,7 @@ const toolsFonted = [
         Integreate Lamden in to your webapp using lamden-js's simple event driven API.
       </>
     ),
-    link: 'docs/develop/lamden_js/overview'
+    link: 'https://tools.lamden.io/lamden_js/overview'
   },
   {
     title: <>Lamden Vault Controller</>,
@@ -111,7 +111,7 @@ const toolsFonted = [
         This package facilitates the Wallet connection process and streamlines the flow of communication.
       </>
     ),
-    link: '/docs/develop/wallet_controller/wallet_controller_quickstart'
+    link: 'https://tools.lamden.io/wallet_controller/wallet_controller_quickstart'
   }
 ]
 
@@ -128,7 +128,7 @@ const startedRes = [
     description: "Read up on core concepts with our docs",
     btnName: "Read the docs",
     imgurl: "https://twemoji.maxcdn.com/v/latest/svg/1f9d1-200d-1f52c.svg",
-    link: "/"
+    link: "https://tools.lamden.io/"
   },
   {
     title: "Set up local environment",

@@ -2,12 +2,12 @@ site_name: Lamden Develop Tools
 theme: readthedocs
 nav:
     - Lamden Vault:
-      - Overview: /wallet/overview.md
-      - Installation: /wallet//first_vault_install
+      - Overview: /wallet/overview
+      - Installation: /wallet/first_vault_install
       - Quick Start: 
         - Create Vault: /wallet/first_vault_create
         - Restore Vault: /wallet/first_vault_restore
-        - Lock and Unlock: /wallet//lock_unlock
+        - Lock and Unlock: /wallet/lock_unlock
       - Key Concepts: 
         - Accounts:
           - Overview: /wallet/accounts_overview
