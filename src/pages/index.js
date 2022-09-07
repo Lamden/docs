@@ -214,7 +214,7 @@ function Home() {
                     'button button--secondary button--lg',
                      
                   )}
-                  to={useBaseUrl('/docs/develop/wallet_api/overview')}>
+                  to={useBaseUrl('https://tools.lamden.io/')}>
                   Documentation
                 </Link>
             </div>
