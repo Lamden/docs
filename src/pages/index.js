@@ -115,6 +115,30 @@ const toolsFonted = [
   }
 ]
 
+const startedRes = [
+  {
+    title: "Learn through tutorials",
+    description: "Learn Ethereum development step-by-step from builders who have already done it",
+    btnName: "View Tutorials",
+    imgurl: "https://twemoji.maxcdn.com/v/latest/svg/1f469-200d-1f4bb.svg",
+    link: "/mytutorials"
+  },
+  {
+    title: "Learn Lamden development",
+    description: "Read up on core concepts with our docs",
+    btnName: "Read the docs",
+    imgurl: "https://twemoji.maxcdn.com/v/latest/svg/1f9d1-200d-1f52c.svg",
+    link: "/"
+  },
+  {
+    title: "Set up local environment",
+    description: "Get ready for building by configuring a development environment.",
+    btnName: "View Tutorials",
+    imgurl: "https://twemoji.maxcdn.com/v/latest/svg/1f9d1-200d-1f3a8.svg",
+    link: "/tutorials/basic/basic-docker"
+  },
+]
+
 function Tools({imageUrl, title, description, link}) {
   const imgUrl = useBaseUrl(imageUrl);
   return (
@@ -136,6 +160,31 @@ function Tools({imageUrl, title, description, link}) {
   );
 }
 
+
+function StartCard({title, description, btnName, link, imgurl}) {
+  return (
+    <div>
+    <div className={classnames("card shadow--lw", styles["start_card"])}>
+      <div class="card__header">
+        <img src={imgurl} width="36px"/>
+        <h3 style={{marginTop: 0}}>{title}</h3>
+      </div>
+      <div class="card__body">
+        <p>{description}</p>
+      </div>
+      <div class="card__footer">
+        <Link
+          className={classnames(
+            'button button--primary button--block'  
+          )}
+          to={useBaseUrl(link)}>
+          {btnName}
+        </Link>
+      </div>
+    </div>
+  </div>
+  )
+}
 
 
 function Home() {
@@ -181,6 +230,19 @@ function Home() {
             </div>
           </section>
         )}
+        <section>
+          <div className="container">
+              <h2>Get Started</h2> 
+              <div className="row">
+              {startedRes.map((props, index) => (
+                <div className="col">
+                  <StartCard key={index} {...props} />
+                </div>
+                ))}
+              </div>
+          </div>
+        </section>
+
         <section className={styles.tools}>
             <div className="container">
             <h2>Backend Development Tools</h2>
@@ -189,7 +251,7 @@ function Home() {
                 ))}
             </div>
             <div className="container">
-            <h2>Fonted Development Tools</h2>
+            <h2>Fronted Development Tools</h2>
               {toolsFonted.map((props, idx) => (
                   <Tools key={idx} {...props} />
                 ))}

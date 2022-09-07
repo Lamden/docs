@@ -143,5 +143,16 @@ module.exports = {
         sortPosts: 'ascending',
       },
     ],
+    [
+      '@docusaurus/plugin-content-blog',
+      {
+        id: 'tutorials-basic',
+        routeBasePath: 'tutorials/basic',
+        path: './tutorials/basic',
+        blogSidebarCount: 0,
+        showReadingTime: false,
+        sortPosts: 'ascending',
+      },
+    ]
   ],
 };
