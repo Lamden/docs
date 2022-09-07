@@ -137,6 +137,13 @@ const startedRes = [
     imgurl: "https://twemoji.maxcdn.com/v/latest/svg/1f9d1-200d-1f3a8.svg",
     link: "/tutorials/basic/basic-docker"
   },
+  {
+    title: "Start form boilerplate",
+    description: "Start from some boilerplates provided by community",
+    btnName: "View The Boilerplates",
+    imgurl: "https://twemoji.maxcdn.com/v/latest/svg/1f9d1-200d-1f3a8.svg",
+    link: "/templates"
+  },
 ]
 
 function Tools({imageUrl, title, description, link}) {
@@ -235,7 +242,7 @@ function Home() {
               <h2>Get Started</h2> 
               <div className="row">
               {startedRes.map((props, index) => (
-                <div className="col">
+                <div className="col col--3">
                   <StartCard key={index} {...props} />
                 </div>
                 ))}
