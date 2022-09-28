@@ -127,13 +127,13 @@ function Home() {
         repo: 'Lamden-Standards/LST002',
         tags: ['Token', 'Lamden Standards']
     },{
-        category: 'contracts',
-        repo: 'Lamden-Standards/LST003',
-        tags: ['NFT', 'Lamden Standards']
-    },{
         category: 'web',
         repo: 'Dapiguabc/lamden-svelte-template',
         tags: ['Svelte']
+    },{
+        category: 'examples',
+        repo: 'Nebula-NEB/contracts',
+        tags: ['Defi']
     }]
 
     const dropdownData = [
@@ -165,6 +165,20 @@ function Home() {
                 selected: false,
             },{
                 name: "React",
+                selected: false,
+            }]
+        },
+        {
+            id: 'examples',
+            value: "Complex Examples",
+            navs: [{
+                name: "ALL",
+                selected: true,
+            },{
+                name: "Defi",
+                selected: false,
+            },{
+                name: "NFT",
                 selected: false,
             }]
         }
