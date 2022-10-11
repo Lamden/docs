@@ -1,0 +1,81 @@
+site_name: Lamden Develop Tools
+theme: readthedocs
+nav:
+    - Lamden Vault:
+      - Overview: /wallet/overview
+      - Installation: /wallet/first_vault_install
+      - Quick Start: 
+        - Create Vault: /wallet/first_vault_create
+        - Restore Vault: /wallet/first_vault_restore
+        - Lock and Unlock: /wallet/lock_unlock
+      - Key Concepts: 
+        - Accounts:
+          - Overview: /wallet/accounts_overview
+          - Creating: /wallet/accounts_creation
+          - Copy Account Address: /wallet/accounts_copy_address
+          - Delete: /wallet/accounts_delete
+        - Linked Accounts:
+          - Overview: /wallet/accounts_linked_overview
+          - Creating: /wallet/accounts_linked_create
+          - Approve TAU Spending: /wallet/accounts_linked_approval
+          - Approve Transfers: /wallet/accounts_linked_transfer
+          - Revoke Access: /wallet/accounts_linked_revoke
+        - Dapp Connections:
+          - Overview: /wallet/dapp_connections_overview
+          - Change Account: /wallet/dapp_connections_change
+        - Tokens:
+          - Add: /wallet/tokens_add_token
+          - Edit: /wallet/tokens_delete_token
+          - Delete: /wallet/tokens_edit_token
+          - Transfer: /wallet/tokens_transfer_token
+        - Transactions:
+          - Overview: /wallet/transactions_overview
+          - Create a Transaction: /wallet/transactions_create
+          - Create An Advanced Transaction: /wallet/transactions_advanced_create
+          - Transaction Result: /wallet/transactions_result
+        - Smart Contract IDE:
+          - Overview: /wallet/ide_overview
+          - Create Smartcontract: /wallet/ide_create_smartcontracts
+          - Submit a Smartcontract: /wallet/ide_submit_smartcontract
+          - Query and Run: /wallet/ide_test_smartcontracts
+        - Settings:
+          - Bakcup:
+            - Overview: /wallet/backup_overview
+            - View Recovery Phrase: /wallet/backup_recovery_phrase
+            - Backup Legacy Accounts: /wallet/backup_keystore
+            - View Accounts Keys: /wallet/backup_view_keys
+          - Manage Networks:
+            - Overview: /wallet/network_overview
+            - Change Network: /wallet/change_network
+            - Manage Network: /wallet/manage_network
+    - Lamden Vault API:
+      - Overview: /wallet_api/overview
+      - Create Wallet Connection: /wallet_api/create_connection
+      - Customize Connection: /wallet_api/customize_connection
+      - Get Account Info: /wallet_api/get_wallet_info
+      - Submit Transactions: /wallet_api/send_transactions
+      - Approval Transactions: /wallet_api/approval_transactions
+    - Lamden Vault Controller:
+      - Quickstart: /wallet_controller/wallet_controller_quickstart
+      - API: /wallet_controller/wallet_controller_api
+    - BlockChain:
+      - Masternode Information: /blockchain/current_masternodes
+      - Masternode REST API: /blockchain/masternode_api
+    - Blockservice:
+      - Overview:  /blockservice/overview
+      - Estimation Script Installation:  /blockservice/estimationScriptInstallation
+      - Blockservice Installation:  /blockservice/installation
+      - Blockservice Config:  /blockservice/config
+      - REST API:  /blockservice/restful
+      - Events:  /blockservice/events
+    - Languages:
+      - Javascript:
+        - Lamden-js:
+          - Overview:  /lamden_js/overview
+          - Wallets:  /lamden_js/wallets
+          - Network Object:  /lamden_js/network
+          - Transactions:  /lamden_js/transactions
+          - Masternode API:  /lamden_js/masternode_api_wrapper
+      - C#:
+        - Unity 3D Plugin: /unity_3d/unity_3d
+

@@ -53,7 +53,7 @@ function Feature({imageUrl, title, description}) {
 }
 
 
-const tools = [
+const toolsBackend = [
   {
     title: <>Contracting</>,
     imageUrl: 'img/tools-contracting.svg',
@@ -66,28 +66,6 @@ const tools = [
     link: 'https://contracting.lamden.io'
   },
   {
-    title: <>Lamden</>,
-    imageUrl: 'img/tools-lamden.svg',
-    description: (
-      <>
-        Lamden is a Python package that allows you to create wallets, transactions and interact with the Lamden blockchain.  
-        This package houses the masternode and delegate software for running nodes.  It's a one stop shop for all lamden tech on Python.
-      </>
-    ),
-    link: 'https://www.lamden.io'
-  },
-  {
-    title: <>Lamden-js</>,
-    imageUrl: 'img/tools-lamdenjs.svg',
-    description: (
-      <>
-        Lamden-js is a NodeJS package which allows you to easily create transactions and query state on the Lamden Blockchain.  
-        Integreate Lamden in to your webapp using lamden-js's simple event driven API.
-      </>
-    ),
-    link: 'docs/develop/lamden_js/overview'
-  },
-  {
     title: <>Lamden Vault API</>,
     imageUrl: 'img/tools-walletapi.svg',
     description: (
@@ -97,18 +75,7 @@ const tools = [
         Automatic transactions supercharge the user experience by getting rid of popups.
       </>
     ),
-    link: '/docs/develop/wallet_api/overview'
-  },
-  {
-    title: <>Lamden Vault Controller</>,
-    imageUrl: 'img/tools-walletcontroller.svg',
-    description: (
-      <>
-        A javascript package for connecting and communicating with the Lamden Vault.  
-        This package facilitates the Wallet connection process and streamlines the flow of communication.
-      </>
-    ),
-    link: '/docs/develop/wallet_controller/wallet_controller_quickstart'
+    link: 'https://tools.lamden.io/wallet_api/overview'
   },
   {
     title: <>C# Unity Plugin</>,
@@ -119,7 +86,63 @@ const tools = [
         The Lamden blockchain's speed and versitilty can connect your users to seemless item markets and real ownership over game objects.
       </>
     ),
-    link: '/docs/develop/unity_3d/unity_3d'
+    link: 'https://tools.lamden.io/unity_3d/unity_3d'
+  },
+]
+
+const toolsFonted = [
+  {
+    title: <>Lamden-js</>,
+    imageUrl: 'img/tools-lamdenjs.svg',
+    description: (
+      <>
+        Lamden-js is a NodeJS package which allows you to easily create transactions and query state on the Lamden Blockchain.  
+        Integreate Lamden in to your webapp using lamden-js's simple event driven API.
+      </>
+    ),
+    link: 'https://tools.lamden.io/lamden_js/overview'
+  },
+  {
+    title: <>Lamden Vault Controller</>,
+    imageUrl: 'img/tools-walletcontroller.svg',
+    description: (
+      <>
+        A javascript package for connecting and communicating with the Lamden Vault.  
+        This package facilitates the Wallet connection process and streamlines the flow of communication.
+      </>
+    ),
+    link: 'https://tools.lamden.io/wallet_controller/wallet_controller_quickstart'
+  }
+]
+
+const startedRes = [
+  {
+    title: "Learn through tutorials",
+    description: "Learn Ethereum development step-by-step from builders who have already done it",
+    btnName: "View Tutorials",
+    imgurl: "https://twemoji.maxcdn.com/v/latest/svg/1f469-200d-1f4bb.svg",
+    link: "/mytutorials"
+  },
+  {
+    title: "Learn Lamden development",
+    description: "Read up on core concepts with our docs",
+    btnName: "Read the docs",
+    imgurl: "https://twemoji.maxcdn.com/v/latest/svg/1f9d1-200d-1f52c.svg",
+    link: "https://tools.lamden.io/"
+  },
+  {
+    title: "Set up local environment",
+    description: "Get ready for building by configuring a development environment.",
+    btnName: "View Tutorials",
+    imgurl: "https://twemoji.maxcdn.com/v/latest/svg/1f9d1-200d-1f3a8.svg",
+    link: "/tutorials/basic/basic-docker"
+  },
+  {
+    title: "Start form boilerplate",
+    description: "Start from some boilerplates provided by community",
+    btnName: "View The Boilerplates",
+    imgurl: "https://twemoji.maxcdn.com/v/latest/svg/1f9d1-200d-1f3a8.svg",
+    link: "/templates"
   },
 ]
 
@@ -145,6 +168,31 @@ function Tools({imageUrl, title, description, link}) {
 }
 
 
+function StartCard({title, description, btnName, link, imgurl}) {
+  return (
+    <div>
+    <div className={classnames("card shadow--lw", styles["start_card"])}>
+      <div class="card__header">
+        <img src={imgurl} width="36px"/>
+        <h3 style={{marginTop: 0}}>{title}</h3>
+      </div>
+      <div class="card__body">
+        <p>{description}</p>
+      </div>
+      <div class="card__footer">
+        <Link
+          className={classnames(
+            'button button--primary button--block'  
+          )}
+          to={useBaseUrl(link)}>
+          {btnName}
+        </Link>
+      </div>
+    </div>
+  </div>
+  )
+}
+
 
 function Home() {
   const context = useDocusaurusContext();
@@ -166,7 +214,7 @@ function Home() {
                     'button button--secondary button--lg',
                      
                   )}
-                  to={useBaseUrl('/docs/develop/wallet_api/overview')}>
+                  to={useBaseUrl('https://tools.lamden.io/')}>
                   Documentation
                 </Link>
             </div>
@@ -189,10 +237,29 @@ function Home() {
             </div>
           </section>
         )}
+        <section>
+          <div className="container">
+              <h2>Get Started</h2> 
+              <div className="row">
+              {startedRes.map((props, index) => (
+                <div className="col col--3">
+                  <StartCard key={index} {...props} />
+                </div>
+                ))}
+              </div>
+          </div>
+        </section>
+
         <section className={styles.tools}>
             <div className="container">
-            <h2>Developer Tools</h2>
-              {tools.map((props, idx) => (
+            <h2>Backend Development Tools</h2>
+              {toolsBackend.map((props, idx) => (
+                  <Tools key={idx} {...props} />
+                ))}
+            </div>
+            <div className="container">
+            <h2>Fronted Development Tools</h2>
+              {toolsFonted.map((props, idx) => (
                   <Tools key={idx} {...props} />
                 ))}
             </div>

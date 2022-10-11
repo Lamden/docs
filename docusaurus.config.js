@@ -23,17 +23,16 @@ module.exports = {
       },
       items: [
         {
-          to: 'docs',
-          activeBasePath: 'docs',
-          label: 'Docs',
-          position: 'left',
-          
-        },
-        {
-          to: 'develop',
           activeBasePath: 'pages',
           label: 'Develop',
           position: 'right',
+          items: [{
+            href: 'https://tools.lamden.io/',
+            label: 'Documents' 
+          },{
+            to: '/templates',
+            label: 'Templates' 
+          }]
         },
         {
           to: 'mytutorials',
@@ -80,10 +79,13 @@ module.exports = {
         },
         {
           title: 'Community',
-          items: [
-            
+          items: [     
             {
               label: 'Telegram',
+              href: 'https://t.me/lamdenchat',
+            },
+            {
+              label: 'Telegram Developer',
               href: 'https://t.me/lamdenchat',
             },
             {
@@ -118,13 +120,13 @@ module.exports = {
     [
       '@docusaurus/preset-classic',
       {
-        docs: {
-          // It is recommended to set document id as docs home page (`docs/` path).
-          sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
-        },
+        // docs: {
+        //   // It is recommended to set document id as docs home page (`docs/` path).
+        //   sidebarPath: require.resolve('./sidebars.js'),
+        //   // Please change this to your repo.
+        //   editUrl:
+        //     'https://github.com/facebook/docusaurus/edit/master/website/',
+        // },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
@@ -150,5 +152,16 @@ module.exports = {
         sortPosts: 'ascending',
       },
     ],
+    [
+      '@docusaurus/plugin-content-blog',
+      {
+        id: 'tutorials-basic',
+        routeBasePath: 'tutorials/basic',
+        path: './tutorials/basic',
+        blogSidebarCount: 0,
+        showReadingTime: false,
+        sortPosts: 'ascending',
+      },
+    ]
   ],
 };

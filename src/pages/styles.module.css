@@ -63,3 +63,19 @@
 .tool_image{
   max-width: 200px;
 }
+
+.start_card{
+  min-height: 260px;
+  background: var(--ifm-color-secondary-contrast-background);
+}
+
+.start_card:hover{
+  box-shadow: var(--ifm-global-shadow-md)!important
+}
+
+
+@media screen and (max-width: 966px) {
+  .start_card {
+    margin-top: 20px;
+  }
+}

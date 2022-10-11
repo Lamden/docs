@@ -1,0 +1,80 @@
+.tcard {
+  background: rgb(251,251,251);
+  height: 164px;
+  cursor: pointer;
+  text-decoration: unset;
+}
+
+.tcard:hover {
+  box-shadow: var(--ifm-global-shadow-md);
+}
+
+.card-body {
+  display: flex;
+}
+
+.card-intro {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.wrap {
+  display: flex;
+}
+
+.sidebar {
+  margin-right: 32px;
+}
+
+.side-item {
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.side-item-active {
+  color: var(--ifm-color-primary-dark);
+}
+
+.side-item:hover {
+  color: var(--ifm-color-primary-dark);
+}
+
+.meta {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.meta-item {
+  margin-right: 20px;
+  align-items: center;
+}
+
+.mr2 {
+  margin-right: 2px;
+}
+
+.temps {
+  flex: 1;
+  padding-top: 0.5rem;
+}
+
+.temp-dropdown {
+  margin-bottom: 1.2rem;
+}
+
+.dropdown-main-active {
+  color: var(--ifm-color-primary-dark);
+}
+
+
+.empty {
+  text-align: center;
+}
+
+
+.link, .link:hover, .link:visited, .link:focus {
+  text-decoration: none;
+}

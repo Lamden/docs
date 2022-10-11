@@ -158,7 +158,6 @@ function Home() {
           <div className="row">
             <div className={classnames('col col--5 col--offset-1')}>
             <h1 className="hero__title">Develop Apps</h1>
-          <p className="hero__subtitle">Documentation Coming Soon</p>
             
             <div className={styles.buttons}>
               </div>
