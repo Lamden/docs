@@ -25,4 +25,4 @@ Your `Private Key` is also referred to as a `secret key` or `sk`. ** DO NOT SHAR
 4. Click the `View Private Key` button
 5. Enter you wallet password
 6. Click `Copy Key` button
-4. Click `Back` to close this window
+7. Click `Back` to close this window
