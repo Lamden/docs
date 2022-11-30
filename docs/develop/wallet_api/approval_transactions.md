@@ -16,6 +16,7 @@ You can initiate this process on the user's behalf, and the Lamden Vault will pr
 
 ```javascript
 const detail = JSON.stringify({
+    networkVersion: 2,     // if not provided, the default version is 1
     contractName: 'currency',
     methodName: 'approve',
     networkType: 'mainnet',
