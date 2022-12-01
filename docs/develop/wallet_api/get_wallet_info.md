@@ -48,3 +48,27 @@ document.dispatchEvent(new CustomEvent('lamdenWalletGetInfo'));
 | approvals | Object: The networks that are currently approved and the information about those approvals including, ContractName, trustedApp and version. |
 
 The **wallets** and **approvals** properties will return empty objects until the user unlocks the Lamden Vault
+
+**There is a break change in approvals propertie since version 2.3.2.**
+
+For old versions(< 2.3.2), you will get something like this:
+```json
+{
+    "mainnet": {...},
+    "testnet": {...},
+}
+```
+But now you will get:
+
+```json
+{
+    "V1|mainnet": {
+        "contractName": "con_pixel_whale_master_v1",
+        "networkVersion": 1,
+        "trustedApp": true,
+        "version": "0.5"
+    },
+    "V1|testnet": {...},
+    "V2|testnet": {...},
+}
+```
