@@ -12,6 +12,7 @@ This is an example of a basic connection request
 ## Basic Connection Info
 ```javascript
 const detail = JSON.stringify({
+    networkVersion: 2,     // if not provided, the default version is 1
     appName: 'My Killer dApp',
     version: '1.0.0',
     logo: 'images/logo.png', //or whatever the location of your logo
