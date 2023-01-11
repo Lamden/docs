@@ -1,5 +1,5 @@
 # Transaction Changes
-There have been very few changes to to way transaction work from legacy Lamden to Arko.  If your dapps was creating or parsing transactions on legacy Lamden it should have no issues doing the same on Arko, with one exception.
+There have been very few changes to to way transaction work from legacy Lamden to Arko.  If your Dapps was creating or parsing transactions on legacy Lamden it should have no issues doing the same on Arko, with one exception.
 
 ## No Timestamp
 Transactions no long have the `timestamp` property in their metadata.

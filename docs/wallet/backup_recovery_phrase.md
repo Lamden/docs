@@ -1,10 +1,8 @@
----
-id: backup_recovery_phrase
-title: View Recovery Phrase
-sidebar_label: View Recovery Phrase
----
 
-![](/img/wallet/gif/backup_recovery_phrase.gif)
+# View Recovery Phrase
+
+
+![](../../img/wallet/gif/backup_recovery_phrase.gif)
 
 ## How to backup Recovery Phrase
 1. Login to Lamden Vault

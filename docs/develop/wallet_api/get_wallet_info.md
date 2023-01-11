@@ -1,8 +1,4 @@
----
-id: get_wallet_info
-title: Get User Account Info
-sidebar_label: Get Account Info
----
+# Get User Account Info from Vault
 
 Your DAPP can get the user's <u>[Linked Account](/docs/wallet/accounts_linked_overview)</u> information by listening for the lamdenWalletInfo event.
 

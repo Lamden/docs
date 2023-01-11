@@ -1,8 +1,4 @@
----
-id: restful
-title: Blockservice REST API
-sidebar_label: REST API
----
+# Blockservice REST API
 
 Blockservice currently provides many APIs to allow user easily access to the on-chain data of Lamden.
 The APIs are documented using Swagger. For details and examples, please check the documents you served at local or visit the online [<u>documents</u>](http://119.29.130.37:8999/api-docs/).

@@ -1,8 +1,6 @@
----
-id: restore_secret_key
-title: Restore Keys from a Keystore File
-sidebar_label: From Secret Key
----
+
+# Restore Keys from a Keystore File
+
  
 If you are trying to restore an account and all you have is the sercret key, no keystore file then follow the steps to <u>[Add Existing Account](/docs/wallet/accounts_creation#existing-account)</u>.
    

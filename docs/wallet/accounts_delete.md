@@ -1,10 +1,8 @@
----
-id: accounts_delete
-title: Delete an Account
-sidebar_label: Delete
----
 
-![](/img/wallet/gif/1.0.0_account_delete.gif)
+# Delete an Account
+
+
+![](../../img/wallet/gif/1.0.0_account_delete.gif)
 
 **Before deleting an account it is STRONGLY RECOMMENDED that you perform a <u>[backup](/docs/wallet/backup_overview)</u>.**
 

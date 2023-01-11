@@ -1,4 +1,4 @@
-site_name: Arko Dapp Migration Guide
+site_name: Lamden Documentation
 theme: readthedocs
 extra_css: [extra.css]
 markdown_extensions:
@@ -6,18 +6,89 @@ markdown_extensions:
         permalink: 
 nav:
   - Home: index.md
+  - Arko Blockchain:
+    - Visit Arko Documentaion Site >>: https://arko.lamden.io
+  - Block Explorer: 
+    - Visit TAU HQ >>: https://www.tauhq.com
+  - Lamden Vault:
+    - Overview: wallet/overview.md
+    - Getting Started:
+      - Installation: wallet/first_vault_install.md
+      - Run: wallet/first_vault_create.md
+      - Restore: wallet/first_vault_restore.md
+    - Lock and Unlock: wallet/lock_unlock.md
+    - Accounts:
+      - Overview: wallet/accounts_overview.md 
+      - Create Account: wallet/accounts_creation.md
+      - Copy Account Address: wallet/accounts_copy_address.md
+      - Delete Account: wallet/accounts_delete
+    - Linked Dapp Accounts:
+      - Overview: wallet/accounts_linked_overview.md
+      - Create: wallet/accounts_linked_create.md
+      - Approve TAU Spending: wallet/accounts_linked_approval.md
+      - Approve Transfers: wallet/accounts_linked_transfer.md
+      - Revoke Access: wallet/accounts_linked_revoke.md
+    - Dapp Connections:
+      - Overview: wallet/dapp_connections_overview.md
+      - Change Account: wallet/dapp_connections_change.md
+    - Tokens:
+      - Add Token: wallet/tokens_add_token.md
+      - Edit Token: wallet/tokens_edit_token.md
+      - Delete Token: wallet/tokens_delete_token.md
+      - Transfer Token: wallet/tokens_transfer_token.md
+    - Transactions:
+      - Overview: wallet/transactions_overview.md
+      - Create a Transaction: wallet/transactions_create.md
+      - Create an Advanced Transaction: wallet/transactions_advanced_create.md
+      - Transaction Result: wallet/transactions_result.md
+      - History: wallet/transactions_history.md
+    - Smart Contract IDE:
+      - Overview: wallet/ide_overview.md
+      - Create a Smartcontract: wallet/ide_create_smartcontracts.md
+      - Submit a Smartcontract: wallet/ide_submit_smartcontract.md
+      - Query State and Run Methods: wallet/ide_run_smartcontracts.md
+    - Settings:
+      - Backup Keys:
+        - Overview: wallet/backup_overview.md
+        - View Recovery Phrase: wallet/backup_recovery_phrase.md
+        - Backup Legacy Accounts: wallet/backup_keystore.md
+        - View Account Keys: wallet/backup_view_keys.md
+      - Restore Keys:
+        - From Recovery Phrase: wallet/restore_recovery_phrase.md
+        - From Keystore: wallet/restore_keystore.md
+        - Re-Link Dapp Accounts: wallet/restore_linked_account.md
+      - Manage Networks:
+        - Network Overview: wallet/network_overview.md
+        - Change Network: wallet/change_network.md
+        - Manage Network: wallet/manage_network.md
+      - Change Password: wallet/settings_changepassword.md
   - Developers:
     - Arko Migration:
       - Block Structure: migration/block_structure.md
       - Transactions: migration/transactions.md
       - Block Service: migration/block_service.md
       - Lamden Vault API: migration/lamden_vault_api.md
-    - Lamden Value API:
+    - Smart Contracts:
+      - Visit Lamden Contracting Site >>: https://contracting.lamden.io 
+    - Lamden Vault API:
       - Overview: develop/wallet_api/overview.md
       - Connect To Wallet: develop/wallet_api/create_connection.md
       - Customize Connection: develop/wallet_api/customize_connection.md
       - Get User Account Info: develop/wallet_api/get_wallet_info.md
-      - Submit Transactions: develop/wallet_api/send_transaction.md
+      - Submit Transactions: develop/wallet_api/send_transactions.md
       - Approval Transactions: develop/wallet_api/approval_transactions.md
+    - Block Service API:
+      - REST: develop/blockservice/restful.md
+      - GRAPHQL: develop/blockservice/graphql.md
+    - Javascript Package:
+      - Overview: develop/lamden_js/overview.md
+      - Install: develop/lamden_js/install.md
+      - Wallets: develop/lamden_js/wallets.md
+      - Network Object: develop/lamden_js/network.md
+      - Transactions: develop/lamden_js/transactions.md
+      - Masternode API: develop/lamden_js/masternode_api_wrapper.md
+    - Unity 3d:
+      - develop/unity_3d/unity_3d.md
+
 
 

@@ -1,7 +1,5 @@
----
-id: transactions
-title: Creating Raw Transactions
-sidebar_label: Creating Transactions
----
+
+# Creating Raw Transactions
+
 
 # ** MORE COMING **

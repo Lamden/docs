@@ -1,10 +1,8 @@
----
-id: ide_submit_smartcontract
-title: Submit a Smartcontract to the Blockchain
-sidebar_label: Submit a Smartcontract
----
 
-![](/img/wallet/gif/1.0.0_ide_submit_smartcontract.gif)
+# Submit a Smartcontract to the Blockchain
+
+
+![](../../img/wallet/gif/1.0.0_ide_submit_smartcontract.gif)
 
 ## Lint for errors
 A smart contract can only be submitted to the blockchain if no errors are detected.

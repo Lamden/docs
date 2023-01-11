@@ -1,8 +1,6 @@
----
-id: dapp_connections_change
-title: Change Dapp Connections
-sidebar_label: Change Account
----
+
+# Change Dapp Connections
+
 
 You can change a dapp connection for a different account in two ways.
 
@@ -13,7 +11,7 @@ You can directly click the `CHANGE ACCOUNT` button to change the dapp connection
 2. Click the `CHANGE ACCOUNT` button
 3. Select a new account from the Accounts dropdown
 
-![](/img/wallet/gif/dapp_connections_change1.gif)
+![](../../img/wallet/gif/dapp_connections_change1.gif)
 
 ## Change On Dapp Details Screen
 You can as well go to the dapp details screen and  click the `CHANGE ACCOUNT` button to change the dapp connection which you want.
@@ -23,4 +21,4 @@ You can as well go to the dapp details screen and  click the `CHANGE ACCOUNT` bu
 3. Click the `CHANGE ACCOUNT` button
 4. Select a new account from the Accounts dropdown
  
-![](/img/wallet/gif/dapp_connections_change2.gif)
+![](../../img/wallet/gif/dapp_connections_change2.gif)

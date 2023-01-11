@@ -1,10 +1,8 @@
----
-id: settings_changepassword
-title: Change your wallet password
-sidebar_label: Change Password
----
 
-![](/img/wallet/gif/setting_changepassword.gif)
+# Change your wallet password
+
+
+![](../../img/wallet/gif/setting_changepassword.gif)
 
 ### **Lamden is not responsible for lost or stolen keys or keystores**
 

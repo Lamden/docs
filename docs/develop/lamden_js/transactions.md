@@ -1,8 +1,5 @@
----
-id: transactions
-title: Create Lamden Transactions
-sidebar_label: Transactions
----
+
+# Create Lamden Transactions
 
 ## Create Transaction Info Object
 This object will describe the transaction you are going to send
@@ -318,7 +315,7 @@ contained a `hash` property.
 > Returns *object*: 
 >```javascript
 >{
-    title: 'Transaction Pending',
+    # 'Transaction Pending',
     subtitle: 'Your transaction was submitted and is being processed',
     message: `Tx Hash: ${this.txHash}`,
     type: 'success',

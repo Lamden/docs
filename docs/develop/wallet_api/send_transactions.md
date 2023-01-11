@@ -1,8 +1,4 @@
----
-id: send_transactions
-title: Submit Transactions to the Lamden Vault
-sidebar_label: Submit Transactions
----
+# Submit Transactions via the Lamden Vault
 
 ## Sending Transaction Requests
 - Transactions are locked to the name of the contract that was approved during the connection request.

@@ -1,8 +1,4 @@
----
-id: accounts_creation
-title: Creating Wallet Accounts
-sidebar_label: Creating
----
+# Creating Wallet Accounts
 
 ## Add New Account
 This will create you a brand new wallet account with a fresh wallet address.
@@ -12,4 +8,4 @@ This will create you a brand new wallet account with a fresh wallet address.
 3. Enter a Nickname for your new Account (Optional)
 4. Click the "Save" button
 
-![](/img/wallet/gif/1.0.0_account_add_new.gif)
+![](../../img/wallet/gif/1.0.0_account_add_new.gif)

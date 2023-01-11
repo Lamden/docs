@@ -1,11 +1,12 @@
 # Overview
 
-![](/img/develop/wallet_api/linked_account_details.png)
+![](../../img/develop/wallet_api/linked_account_details.png)
+
 The Lamden Vault allows your DAPP to create an experiece for your users unlike any current wallet on any platform. No other wallet allows you to tailor the user experience and increase engagement.
 
 Follow this documentaion if you would like to have your DAPP connected to the Lamden Vault and create a [Linked Account](/docs/wallet/accounts_linked_overview). 
 
-The Lamden Vault **does not pass any information** to DAPPS without approved Linked Accounts.
+The Lamden Vault **does not pass any information** to Dapps without approved Linked Accounts.
 
 ## Benefits
 Connecting your DAPP to the <u>[Lamden Vault](/docs/wallet/overview)</u> will create a smoother blockchain experience for your users in the following ways:
@@ -16,8 +17,8 @@ Connecting your DAPP to the <u>[Lamden Vault](/docs/wallet/overview)</u> will cr
 
 ## Restrictions
 Connections to the Lamden Vault are defined and restricted in the following ways for the security of the user.
-1. The Lamden Vault creates ONE [Linked Account](/docs/wallet/accounts_linked_overview) for each URL.  Example, DAPP1.mydomain.com and DAPP2.mydomain.com would be concidered 2 seperate DAPPS Lamden Vault.
-2. All images used for customization are prefixed with the DAPPS's hostname when displayed in the wallet.
+1. The Lamden Vault creates ONE [Linked Account](/docs/wallet/accounts_linked_overview) for each URL.  Example, DAPP1.mydomain.com and DAPP2.mydomain.com would be concidered 2 seperate Dapps Lamden Vault.
+2. All images used for customization are prefixed with the Dapps's hostname when displayed in the wallet.
 3. A brand new [Linked Account](/docs/wallet/accounts_linked_overview) is created for your dApp in the Lamden Vault and you are permitted to only transaction against that one account.
 4. A DAPP can only approve ONE smartcontract per network type (testnet, mainnet). User approval is needed for EACH network. The smartcontract can be changed later, but it's not recommended. The user will be provided a popup to warn them if your smart contract is changing.
 5. The contract to be approved must exist on the network it's being approved on before trying to create a connection request.

@@ -1,8 +1,4 @@
----
-id: create_connection
-title: Create a Connection to the Lamden Vault
-sidebar_label: Create Wallet Connection
----
+# Create a Dapp Connection to the Vault
 
 The Lamden Vault listens for a "lamdenWalletConnect" event.
 

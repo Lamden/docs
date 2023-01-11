@@ -1,12 +1,8 @@
----
-id: customize_connection
-title: Customize Your Linked Account
-sidebar_label: Customize Connection
----
+# Customize Your Linked Account
 
 There are a few configuration options you can use to customize your Linked Account in the Lamden Vault. 
 
-![](/img/develop/wallet_api/linked_account_details.png)
+![](../../img/develop/wallet_api/linked_account_details.png)
 
 | Property  | Example Value | Description  |
 | ------------- |------------| -----|
@@ -21,7 +17,7 @@ deatil.background = 'images/background.png'
 ```
 
 ## State Charms
-Charms can be added to your Linked Account details section of the Lamden Vault and provide state information about your dApps's contract.  An example would a custom token value, the current player's turn in a game, etc.  There is no limit on the amount of charms you can add.  Define the charms and send them along with your initial connection request.  
+Charms can be added to your Linked Account details section of the Lamden Vault and provide state information about your Dapps's contract.  An example would a custom token value, the current player's turn in a game, etc.  There is no limit on the amount of charms you can add.  Define the charms and send them along with your initial connection request.  
 
 Each charm can have an indivudial icon. **All image paths are relative to your dApp's hostname.**
 

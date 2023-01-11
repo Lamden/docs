@@ -1,10 +1,8 @@
----
-id: backup_keystore
-title: Backup Legacy Accounts
-sidebar_label: Backup Legacy Accounts
----
 
-![](/img/wallet/gif/1.0.0_backup_keystore.gif)
+# Backup Legacy Accounts
+
+
+![](../../img/wallet/gif/1.0.0_backup_keystore.gif)
 
 ### **Lamden is not responsible for lost or stolen keys or keystores**
 

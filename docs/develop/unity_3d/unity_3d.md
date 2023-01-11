@@ -1,8 +1,4 @@
----
-id: unity_3d
-title: Official Lamden Unity Plugin
-sidebar_label: Unity 3D Plugin
----
+# Official Lamden Unity Plugin
 
 > **Visit the <u>[Github Repository](https://github.com/Lamden/lamden-unity-csharp)</u>**
 

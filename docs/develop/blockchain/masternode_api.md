@@ -1,8 +1,6 @@
----
-id: masternode_api
-title: Lamden Masternode Webserver REST API
-sidebar_label: Masternode REST API
----
+
+# Lamden Masternode Webserver REST API
+
 
 
 

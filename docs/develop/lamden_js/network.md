@@ -1,8 +1,5 @@
----
-id: network
-title: Creating a Network Object
-sidebar_label: Network Object
----
+# Creating a Network Object
+
 
 Lamden-js usese a `Network Object` which tells the `Transaction Builder` and `Masternode API` information about the Lamden Network you want to use.
 

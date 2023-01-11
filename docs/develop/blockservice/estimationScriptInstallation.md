@@ -1,8 +1,6 @@
----
-id: estimation_installation
-title: Estimation Script Installation
-sidebar_label: Estimation Script Installation
----
+
+# Estimation Script Installation
+
 
 This script is used for estimating stamps cost of a transaction and serves a socket server to communicate with Lamden Block Service. 
 Installing this script can ensure endpoint ```/stamps/estimation``` works. You can find it at [<u>here</u>](https://github.com/Lamden/stamp_estimation_script).

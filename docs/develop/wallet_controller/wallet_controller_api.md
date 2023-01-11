@@ -1,8 +1,6 @@
----
-id: wallet_controller_api
-title: Lamden Vault Controller API
-sidebar_label: API
----
+
+# Lamden Vault Controller API
+
 ## <u>[walletController.js](https://github.com/Lamden/lamden_wallet_controller)</u>
 
 ## constructor([connectionRequest]) 

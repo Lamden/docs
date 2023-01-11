@@ -1,8 +1,6 @@
----
-id: wallet_controller_quickstart
-title: Using the Lamden Vault Controller (LWC)
-sidebar_label: Quickstart
----
+
+# Using the Lamden Vault Controller (LWC)
+
 
 > This package should work with all javascript implementations including nodejs and vanilla javascript
 
@@ -43,7 +41,7 @@ Creating a connection request is the same as <u>[Lamden Vault API - Create a Con
 Below is the mandatory information for a connection request but <u>[more customization optons](/docs/develop/wallet_api/customize_connection)</u>  are available.
 ```javascript
 const connectionRequest = {
-    appName: 'My Killer dApp', // Your DAPPS's name
+    appName: 'My Killer dApp', // Your Dapps's name
     version: '1.0.0', // any version to start, increment later versions to update connection info
     logo: 'images/logo.png', // or whatever the location of your logo
     contractName: 'con_killer_app', // Will never change

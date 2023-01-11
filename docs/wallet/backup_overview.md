@@ -1,8 +1,6 @@
----
-id: backup_overview
-title: Backing up your Lamden Vault Accounts
-sidebar_label: Overview
----
+
+# Backing up your Lamden Vault Accounts
+
 
 At no point does the Lamden Vault do an Automatic Backup. **All backups are MANUAL and the user's responsibilty.**
 

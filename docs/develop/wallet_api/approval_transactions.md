@@ -1,8 +1,4 @@
----
-id: approval_transactions
-title: Prompt For an Approval
-sidebar_label: Approval Transactions
----
+# Send an Approval Transaction
 
 It's a common practise to have your DAPP transfer TAU on the user's behalf espeically if you are going to have them pay for certain things on the blockchain.
 

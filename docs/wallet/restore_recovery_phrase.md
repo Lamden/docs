@@ -1,8 +1,6 @@
----
-id: restore_recovery_phrase
-title: Restore Accounts from Recovery Phrase
-sidebar_label: From Recovery Phrase
----
+
+# Restore Accounts from Recovery Phrase
+
 
 1. Unlock Lamden Vault
 2. From the left-hand menu, click `Settings`
@@ -15,9 +13,9 @@ sidebar_label: From Recovery Phrase
 8. Click the `I Understand` checkbox and then click the `I Understand` button.
 9. Enter your password in the inputbox.
 10. Enter your 24-words seed recovery phrase in order, then click the `NEXT` button.
-    ![](/img/wallet/restore_enter_mem.png)
+    ![](../../img/wallet/restore_enter_mem.png)
 8. Put a checkmark next to each accout you wish to restore
-    ![](/img/wallet/firstrun_add_wallet.png)
+    ![](../../img/wallet/firstrun_add_wallet.png)
 9.  Click the `RESTORE ACCOUNTS` button.
 10. After the restoration is complete you may see the following messages:
     - (success) `Added <account name> to your wallet` - This means the account was successfully restored.

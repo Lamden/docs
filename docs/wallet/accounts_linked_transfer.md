@@ -1,16 +1,14 @@
----
-id: accounts_linked_transfer
-title: Approving Transfers from DAPPS
-sidebar_label: Approve Transfers
----
+
+# Approving Transfers from Dapps
+
 
 ## Confirm Transfer Popup
 
 The approve transfer popup tells you that there is a DAPP that is trying to initate a transfer via the Linked Account in your Lamden Vault.
 
-** You will not see the popup below if you have set the DAPPS's Linked Account to <u>[Trusted Status](/docs/wallet/accounts_linked_create#make-account-trusted)</u>.**
+** You will not see the popup below if you have set the Dapps's Linked Account to <u>[Trusted Status](/docs/wallet/accounts_linked_create#make-account-trusted)</u>.**
 
-![](/img/wallet/linked_account_transfer.png)
+![](../../img/wallet/linked_account_transfer.png)
 
 ## Information on the Confirm Popup
 
@@ -31,17 +29,17 @@ If you aren't sure you can always click "DENY" and no transaction will be sent.
 1. Click `Change` button
 2. Modify the value of stamp limit. Please make sure to provide enough stamps or you wiil get a error message displayed.
 
-   ![](/img/wallet/change_stamps_setp_1.png)
+   ![](../../img/wallet/change_stamps_setp_1.png)
 
 3. Click `Save` Button. Congratulations, you have changed it successfully.
 
-   ![](/img/wallet/change_stamps_setp_2.png)
+   ![](../../img/wallet/change_stamps_setp_2.png)
 
 ## Automatic Transactions (No popups)
 
 If you trust a DAPP or have been using it successfully for a while, you can turn on <u>[Trusted Status](/docs/wallet/accounts_linked_create#make-account-trusted)</u> from the Linked Account's "DAPP Settings" page. This will remove the need to approve EVERY transaction and will allow for a smoother DAPP experience. This is usually a good option for games that have a high frequency of transactions.
 
-Automatic Transactions can be enabled or disabled at any time but changing the <u>[Trusted Status](/docs/wallet/accounts_linked_create#make-account-trusted)</u> of the DAPPS's <u>[Linked Account](/docs/wallet/accounts_linked_overview)</u>.
+Automatic Transactions can be enabled or disabled at any time but changing the <u>[Trusted Status](/docs/wallet/accounts_linked_create#make-account-trusted)</u> of the Dapps's <u>[Linked Account](/docs/wallet/accounts_linked_overview)</u>.
 
 ## Transaction Costs
 

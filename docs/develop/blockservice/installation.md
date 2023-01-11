@@ -1,8 +1,6 @@
----
-id: installation
-title: Blockservice Installation
-sidebar_label: Blockservice Installation
----
+
+# Blockservice Installation
+
 
 ### Preparation
 1. [<u>Mongodb</u>(version > 4.0)](httpv://www.mongodb.com/docs/manual/installation/)
