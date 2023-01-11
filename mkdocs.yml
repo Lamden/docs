@@ -1,15 +1,21 @@
 site_name: Lamden Documentation
-theme: readthedocs
+theme: 
+  name: ivory
+  highlightjs: true
+  include_homepage_in_sidebar: false
+  collapse_navigation: true
 extra_css: [extra.css]
 markdown_extensions:
     - toc:
-        permalink: 
+        permalink: " 🔗&#xFE0E;"
 nav:
   - Home: index.md
   - Arko Blockchain:
     - Visit Arko Documentaion Site >>: https://arko.lamden.io
+
   - Block Explorer: 
     - Visit TAU HQ >>: https://www.tauhq.com
+
   - Lamden Vault:
     - Overview: wallet/overview.md
     - Getting Started:
@@ -21,7 +27,7 @@ nav:
       - Overview: wallet/accounts_overview.md 
       - Create Account: wallet/accounts_creation.md
       - Copy Account Address: wallet/accounts_copy_address.md
-      - Delete Account: wallet/accounts_delete
+      - Delete Account: wallet/accounts_delete.md
     - Linked Dapp Accounts:
       - Overview: wallet/accounts_linked_overview.md
       - Create: wallet/accounts_linked_create.md
@@ -46,7 +52,7 @@ nav:
       - Overview: wallet/ide_overview.md
       - Create a Smartcontract: wallet/ide_create_smartcontracts.md
       - Submit a Smartcontract: wallet/ide_submit_smartcontract.md
-      - Query State and Run Methods: wallet/ide_run_smartcontracts.md
+      - Query State and Run Methods: wallet/ide_test_smartcontracts.md
     - Settings:
       - Backup Keys:
         - Overview: wallet/backup_overview.md
@@ -62,6 +68,18 @@ nav:
         - Change Network: wallet/change_network.md
         - Manage Network: wallet/manage_network.md
       - Change Password: wallet/settings_changepassword.md
+    - Develop With Lamden Vault:
+      - Lamden Vault API:
+        - Overview: develop/wallet_api/overview.md
+        - Connect To Wallet: develop/wallet_api/create_connection.md
+        - Customize Connection: develop/wallet_api/customize_connection.md
+        - Get User Account Info: develop/wallet_api/get_wallet_info.md
+        - Submit Transactions: develop/wallet_api/send_transactions.md
+        - Approval Transactions: develop/wallet_api/approval_transactions.md
+      - Lamden Wallet Controller:
+        - Quickstart: wallet_controller/wallet_controller_quickstart.md
+        - Controller API: wallet_controller/wallet_controller_api.md
+      
   - Developers:
     - Arko Migration:
       - Block Structure: migration/block_structure.md
@@ -70,13 +88,6 @@ nav:
       - Lamden Vault API: migration/lamden_vault_api.md
     - Smart Contracts:
       - Visit Lamden Contracting Site >>: https://contracting.lamden.io 
-    - Lamden Vault API:
-      - Overview: develop/wallet_api/overview.md
-      - Connect To Wallet: develop/wallet_api/create_connection.md
-      - Customize Connection: develop/wallet_api/customize_connection.md
-      - Get User Account Info: develop/wallet_api/get_wallet_info.md
-      - Submit Transactions: develop/wallet_api/send_transactions.md
-      - Approval Transactions: develop/wallet_api/approval_transactions.md
     - Block Service API:
       - REST: develop/blockservice/restful.md
       - GRAPHQL: develop/blockservice/graphql.md

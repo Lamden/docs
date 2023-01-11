@@ -1,0 +1,14 @@
+ul > li.toctree-l1 > button{
+    font-weight: 600!important;
+    color: rgb(104, 161, 218)!important;
+    text-transform: uppercase;
+    margin-top: 1em;
+}
+
+blockquote{
+    border-left: 10px solid rgb(163, 243, 175);
+    border-radius: 5px;
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-top: 2rem;
+}
