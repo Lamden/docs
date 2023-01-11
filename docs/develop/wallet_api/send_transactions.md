@@ -41,7 +41,7 @@ In addition to being a failsafe the nodes will also check the stampLimit against
 #### Calculating StampLimit
 As the developer you need to determine how many stamps your methods will take to run.  As a reference, calling the currency contract's tranfer method (which a standard "TAU" transfer) costs around 20 stamps. If the amount of state your method changes is consistant, then so will the stamp cost for each run of that method. You should always run your methods on testnet to get an idea of the stamp cost and use this for the stampLimit. It's a good idea to pad the stampLimit number to a point where it won't ever fail, but not too much that the user can call that method without needing a LARGE TAU balance in their account at all times.
 
-For the best user experience, when sending a transaction through the wallet you should alway handle the possiblity of "Transaction sender has too few stamps for this transaction.".  This can be done proactively by getting the TAU balance first and then making sure they would have enough stamps, or reactively by waiting for the error to occur and then prompting them to fund your DAPP with more TAU.
+For the best user experience, when sending a transaction through the wallet you should alway handle the possiblity of "Transaction sender has too few stamps for this transaction.".  This can be done proactively by getting the TAU balance first and then making sure they would have enough stamps, or reactively by waiting for the error to occur and then prompting them to fund your Dapp with more TAU.
 
 #### Stamp Ratio
 

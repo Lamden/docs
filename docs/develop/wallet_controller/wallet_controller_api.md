@@ -9,7 +9,7 @@ Lamden Vault Controller Class
 This Class interfaces with the Lamden Vault's content script. It provids helper methods for creating a connection,
 getting wallet info, sending transactions and retreiving tx information.
 
-The connection information for your DAPP can be supplied now or later by calling "sendConnection" manually.
+The connection information for your Dapp can be supplied now or later by calling "sendConnection" manually.
 
 IMPORTANT: The window object needs to be available when creating this instance as it will attempt to create listeners.
 
@@ -19,7 +19,7 @@ IMPORTANT: The window object needs to be available when creating this instance a
 | connectionRequest | `Object`  | A connection request object | *Optional* |
 | connectionRequest.appName | `string`  | The name of your dApp | &nbsp; |
 | connectionRequest.version | `string`  | Connection version. Older version will be over-written in the uers's wallet. | &nbsp; |
-| connectionRequest.contractName | `string`  | The smart contract your DAPP will transact to | &nbsp; |
+| connectionRequest.contractName | `string`  | The smart contract your Dapp will transact to | &nbsp; |
 | connectionRequest.networkType | `string`  | Which Lamden network the approval is for (mainnet or testnet) are the only options | &nbsp; |
 | connectionRequest.logo | `string`  | The relative path of an image on your webserver to use as a logo for your Lamden Vault Linked Account | &nbsp; |
 | connectionRequest.background | `string`  | The relative path of an image on your webserver to use as a background for your Lamden Vault Linked Account | *Optional* |

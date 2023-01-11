@@ -1,24 +1,9 @@
----
 # Write Lottery Contract
-slug: lottery-contract
-date: 2022-08-10T10:00
-authors:
-  - name: Dapiguabc
-    url: https://github.com/Dapiguabc
-    image_url: https://github.com/Dapiguabc.png
-image: https://i.imgur.com/mErPwqL.png
-hide_table_of_contents: false
----
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
 
-:::tip
 
 Make sure python contracting package installed before you start this tutorial.
 
 Check [this link](https://contracting.lamden.io/#installing) to get more details.
-
-:::
 
 
 [<strong style={{color: "tomato"}}><u>Here is the completed Git repo for this part</u></strong>](https://github.com/Dapiguabc/lottery)

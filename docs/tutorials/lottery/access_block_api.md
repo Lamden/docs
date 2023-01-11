@@ -1,14 +1,5 @@
----
+
 # Access Block Service API
-slug: lottery-access-blockservice
-date: 2022-08-10T10:02
-authors:
-  - name: Dapiguabc
-    url: https://github.com/Dapiguabc
-    image_url: https://github.com/Dapiguabc.png
-image: https://i.imgur.com/mErPwqL.png
-hide_table_of_contents: false
----
 
 ![image](/img/toturials/access_blockapi_1.png)
 

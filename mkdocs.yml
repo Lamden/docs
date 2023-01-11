@@ -72,7 +72,6 @@ nav:
       - Lamden Vault API:
         - Overview: develop/wallet_api/overview.md
         - Connect To Wallet: develop/wallet_api/create_connection.md
-        - Customize Connection: develop/wallet_api/customize_connection.md
         - Get User Account Info: develop/wallet_api/get_wallet_info.md
         - Submit Transactions: develop/wallet_api/send_transactions.md
         - Approval Transactions: develop/wallet_api/approval_transactions.md
@@ -100,6 +99,14 @@ nav:
       - Masternode API: develop/lamden_js/masternode_api_wrapper.md
     - Unity 3d:
       - develop/unity_3d/unity_3d.md
+
+  - Tutorials:
+    - Lottery App:
+      - Introduction: tutorials/lottery/index.md
+      - Write a Smart Contract: tutorials/lottery/write_contract.md
+      - Interact with Lamden Vault: tutorials/lottery/Interact_with_wallet.md
+      - Send a Transaction: tutorials/lottery/send_transaction.md
+      - Access Blockchain State: tutorials/lottery/access_block_api.md
 
 
 

@@ -19,6 +19,6 @@ There are a couple of ways to backup your Lamden Vault Accounts and either will 
 These are the only ways to backup your accounts.
 
 ## Backing up Linked Accounts
-A Keystore file will include the <u>[keypairs](/docs/wallet/accounts_linked_overview)</u> for your Linked Accounts but the DAPP association will be lost.
+A Keystore file will include the <u>[keypairs](/docs/wallet/accounts_linked_overview)</u> for your Linked Accounts but the Dapp association will be lost.
 
-When the Linked Account keypairs are restored you can follow this process to re-link you account to the DAPP.
+When the Linked Account keypairs are restored you can follow this process to re-link you account to the Dapp.

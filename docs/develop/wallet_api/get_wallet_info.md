@@ -1,6 +1,6 @@
 # Get User Account Info from Vault
 
-Your DAPP can get the user's <u>[Linked Account](/docs/wallet/accounts_linked_overview)</u> information by listening for the lamdenWalletInfo event.
+Your Dapp can get the user's <u>[Linked Account](/docs/wallet/accounts_linked_overview)</u> information by listening for the lamdenWalletInfo event.
 
 This event is triggered when:
 1. You send a "lamdenWalletConnect" event
@@ -8,7 +8,7 @@ This event is triggered when:
 3. The user locks or unlocks the wallet 
 
 ## Listen for Wallet Info
-This example assumes your DAPP has previously been approved
+This example assumes your Dapp has previously been approved
 ```javascript
 document.addEventListener('lamdenWalletInfo', (response) => {
     if (response.error.length > 0){

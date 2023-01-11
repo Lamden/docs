@@ -85,14 +85,14 @@ lwc.walletIsInstalled()
 So to recap, the `walletIsInstalled` method will accomplish 3 things:
 1. Reports back the installed status of the wallet.
 2. If installed is true and a connection request was provided to the constructor then it will automatically create the `lamdenWalletConnect` event and provide your connection request to the users Lamden Vault
-3. If the user has a <u>[Linked Account](/docs/wallet/accounts_linked_overview)</u> for your DAPP you will be sent the Wallet Information on the `newInfo` listener; or else the user will compelte the New Linked Account process and you will be proveded the Wallet Information at that point.
+3. If the user has a <u>[Linked Account](/docs/wallet/accounts_linked_overview)</u> for your Dapp you will be sent the Wallet Information on the `newInfo` listener; or else the user will compelte the New Linked Account process and you will be proveded the Wallet Information at that point.
 
 ## Send Connection Request
 > ** Not required if you have already called `walletIsInstalled`**
 
 `sendConnection` can be used if you didn't supply the connectionRequest information to the wallet previously or if you want to submit another connection request.
 
-If the user has a <u>[Linked Account](/docs/wallet/accounts_linked_overview)</u> for your DAPP you will be sent the Wallet Information on the `newInfo` listener; or else the user will compelte the New Linked Account process and you will be proveded the Wallet Information at that point.
+If the user has a <u>[Linked Account](/docs/wallet/accounts_linked_overview)</u> for your Dapp you will be sent the Wallet Information on the `newInfo` listener; or else the user will compelte the New Linked Account process and you will be proveded the Wallet Information at that point.
 
 ```javascript
 lwc.sendConnection(connectionRequest)  

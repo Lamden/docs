@@ -1,14 +1,4 @@
----
 # Introduction
-slug: lottery-introduction
-date: 2022-08-10T09:00
-authors:
-  - name: Dapiguabc
-    url: https://github.com/Dapiguabc
-    image_url: https://github.com/Dapiguabc.png
-image: https://i.imgur.com/mErPwqL.png
-hide_table_of_contents: true
----
 
 ![image](/img/toturials/index.png)
 
@@ -25,8 +15,3 @@ In this module, you will get into how to build a lottery dapp step by step:
 - Familiarity with Python, Javascript/CSS/HTML, React
 - Python contracting package installed
 - Basic Familiarity with contracting package.
-
-
-
-<!--truncate-->
-  

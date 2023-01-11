@@ -1,14 +1,4 @@
----
 # Send Transactions
-slug: lottery-send-tx
-date: 2022-08-10T10:03
-authors:
-  - name: Dapiguabc
-    url: https://github.com/Dapiguabc
-    image_url: https://github.com/Dapiguabc.png
-image: https://i.imgur.com/mErPwqL.png
-hide_table_of_contents: false
----
 
 This tutorial will make you understand how to send a transaction and allow users to buy some tickets through the lottery dapp.
 
