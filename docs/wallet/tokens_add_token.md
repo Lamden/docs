@@ -15,7 +15,7 @@ This will add an existing account from Rocketswap to your wallet.
 5. Select a token from the Tokens dropdown
 6. Click the `ADD TOKEN` button
 
-![](../../img/wallet/gif/tokens_add_rocketswap.gif)
+![image](/img/wallet/gif/tokens_add_rocketswap.gif)
 
 ## Add Custom Token
 
@@ -28,4 +28,4 @@ This will add a custom account to your wallet.
 5. Enter a contract name in the `Contract Name` inputbox
 6. Wait until the `ADD TOKEN` button is clickable and then click it
 
-![](../../img/wallet/gif/tokens_add_custom.gif)
+![image](/img/wallet/gif/tokens_add_custom.gif)

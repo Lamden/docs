@@ -18,7 +18,7 @@ This will transfer a token to an external account.
 8. Click the `NEXT` button
 9. Click the `CONFIRM TRANSACTION` button
 
-![](../../img/wallet/gif/tokens_transfer_external.gif)
+![image](/img/wallet/gif/tokens_transfer_external.gif)
 
 ## Transfer To One Of My Accounts
 
@@ -34,4 +34,4 @@ This will transfer a token to one of my accounts.
 8. Click the `NEXT` button
 9. Click the `CONFIRM TRANSACTION` button
 
-![](../../img/wallet/gif/tokens_transfer_my.gif)
+![image](/img/wallet/gif/tokens_transfer_my.gif)

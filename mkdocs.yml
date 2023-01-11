@@ -76,8 +76,8 @@ nav:
         - Submit Transactions: develop/wallet_api/send_transactions.md
         - Approval Transactions: develop/wallet_api/approval_transactions.md
       - Lamden Wallet Controller:
-        - Quickstart: wallet_controller/wallet_controller_quickstart.md
-        - Controller API: wallet_controller/wallet_controller_api.md
+        - Quickstart: develop/wallet_controller/wallet_controller_quickstart.md
+        - Controller API: develop/wallet_controller/wallet_controller_api.md
       
   - Developers:
     - Arko Migration:

@@ -9,7 +9,7 @@ When you create a transaction you are specifying:
 - the `method/function` of the smart contract you want to execute.
 - The `arguments` to provide to the smart contract.
 
-![](../../img/wallet/wallet_create_transaction.png)
+![image](/img/wallet/wallet_create_transaction.png)
 
 ### Prerequisites
 

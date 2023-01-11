@@ -13,9 +13,9 @@
 8. Click the `I Understand` checkbox and then click the `I Understand` button.
 9. Enter your password in the inputbox.
 10. Enter your 24-words seed recovery phrase in order, then click the `NEXT` button.
-    ![](../../img/wallet/restore_enter_mem.png)
+    ![image](/img/wallet/restore_enter_mem.png)
 8. Put a checkmark next to each accout you wish to restore
-    ![](../../img/wallet/firstrun_add_wallet.png)
+    ![image](/img/wallet/firstrun_add_wallet.png)
 9.  Click the `RESTORE ACCOUNTS` button.
 10. After the restoration is complete you may see the following messages:
     - (success) `Added <account name> to your wallet` - This means the account was successfully restored.

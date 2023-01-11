@@ -2,7 +2,7 @@
 # View Accounts Keys
 
 
-![](../../img/wallet/gif/1.0.0_backup_view_keys.gif)
+![image](/img/wallet/gif/1.0.0_backup_view_keys.gif)
 
 1. Login to Lamden Vault
 2. Click `Settings` on the left-hand menu

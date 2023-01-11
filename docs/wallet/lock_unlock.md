@@ -2,7 +2,7 @@
 # Lock and Unlock Wallet
 
 
-![](../../img/wallet/gif/1.0.0_lock_unlock.gif)
+![image](/img/wallet/gif/1.0.0_lock_unlock.gif)
 
 ## Lock Wallet
 The Lamden Vault can be locked in two ways.

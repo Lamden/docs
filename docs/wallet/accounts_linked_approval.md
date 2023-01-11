@@ -2,7 +2,7 @@
 # Give Permission to Spend your TAU
 
 
-![](../../img/wallet/linked_account_approve.png)
+![image](/img/wallet/linked_account_approve.png)
 
 ## What are Approvals for?
 The system contract that holds the "TAU" token on the Lamden Network is called the currency contract.

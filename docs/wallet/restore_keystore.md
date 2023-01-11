@@ -1,7 +1,7 @@
 
 # Restore Accounts from a Keystore File
 
- ![](../../img/wallet/gif/1.0.0_restore_keystore.gif)
+ ![image](/img/wallet/gif/1.0.0_restore_keystore.gif)
 
 1. Unlock Lamden Vault
 2. From the left-hand menu, click `Settings`

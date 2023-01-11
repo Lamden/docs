@@ -2,7 +2,7 @@
 # Delete Token
 
 
-![](../../img/wallet/gif/tokens_delete.gif)
+![image](/img/wallet/gif/tokens_delete.gif)
 
 ## How to delete a token
 

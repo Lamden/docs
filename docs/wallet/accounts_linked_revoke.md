@@ -1,7 +1,7 @@
 
 # Revoke Access to your Lamden Vault
 
-![](../../img/wallet/gif/1.0.0_account_linked_revoke.gif)
+![image](/img/wallet/gif/1.0.0_account_linked_revoke.gif)
 
 Revoking access removes the permission granted to the Dapp during the <u>[Linked Account Creation](/docs/wallet/accounts_linked_create)</u> process.  
 

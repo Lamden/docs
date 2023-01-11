@@ -2,7 +2,7 @@
 # The Result of a Transaction
 
 
-![](../../img/wallet/gif/1.0.0_transactions_create.gif)
+![image](/img/wallet/gif/1.0.0_transactions_create.gif)
 
 As discussed in the <u>[overview](/docs/wallet/accounts_linked_overview)</u>, smart contract transactions can do any number of things in the blockchain. 
 

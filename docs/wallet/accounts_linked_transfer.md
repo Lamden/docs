@@ -8,7 +8,7 @@ The approve transfer popup tells you that there is a Dapp that is trying to init
 
 ** You will not see the popup below if you have set the Dapps's Linked Account to <u>[Trusted Status](/docs/wallet/accounts_linked_create#make-account-trusted)</u>.**
 
-![](../../img/wallet/linked_account_transfer.png)
+![image](/img/wallet/linked_account_transfer.png)
 
 ## Information on the Confirm Popup
 
@@ -29,11 +29,11 @@ If you aren't sure you can always click "DENY" and no transaction will be sent.
 1. Click `Change` button
 2. Modify the value of stamp limit. Please make sure to provide enough stamps or you wiil get a error message displayed.
 
-   ![](../../img/wallet/change_stamps_setp_1.png)
+   ![image](/img/wallet/change_stamps_setp_1.png)
 
 3. Click `Save` Button. Congratulations, you have changed it successfully.
 
-   ![](../../img/wallet/change_stamps_setp_2.png)
+   ![image](/img/wallet/change_stamps_setp_2.png)
 
 ## Automatic Transactions (No popups)
 

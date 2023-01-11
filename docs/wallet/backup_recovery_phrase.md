@@ -2,7 +2,7 @@
 # View Recovery Phrase
 
 
-![](../../img/wallet/gif/backup_recovery_phrase.gif)
+![image](/img/wallet/gif/backup_recovery_phrase.gif)
 
 ## How to backup Recovery Phrase
 1. Login to Lamden Vault

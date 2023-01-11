@@ -2,7 +2,7 @@
 # Backup Legacy Accounts
 
 
-![](../../img/wallet/gif/1.0.0_backup_keystore.gif)
+![image](/img/wallet/gif/1.0.0_backup_keystore.gif)
 
 ### **Lamden is not responsible for lost or stolen keys or keystores**
 

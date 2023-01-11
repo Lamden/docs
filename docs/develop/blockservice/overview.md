@@ -14,5 +14,5 @@ Python script for `/stamps/estimation` endpoint. This script serves a socket ser
 
 <br/>
 
-![](../../img/develop/blockservice/blockservice_sync.png)
+![image](/img/develop/blockservice/blockservice_sync.png)
 

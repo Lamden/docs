@@ -2,7 +2,7 @@
 
 There are a few configuration options you can use to customize your Linked Account in the Lamden Vault. 
 
-![](../../img/develop/wallet_api/linked_account_details.png)
+![image](/img/develop/wallet_api/linked_account_details.png)
 
 | Property  | Example Value | Description  |
 | ------------- |------------| -----|

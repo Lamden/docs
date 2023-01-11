@@ -2,7 +2,7 @@
 # Re-Link a Restored Account
 
  
-![](../../img/wallet/gif/1.0.0_dapp_change_association.gif)
+![image](/img/wallet/gif/1.0.0_dapp_change_association.gif)
 
 Restored Accounts via <u>[Keystore](/docs/wallet/accounts_linked_overview)</u> or <u>[Secret Key](/docs/wallet/accounts_creation#existing-account)</u> will not have retained their <u>[Linked Account](/docs/wallet/accounts_linked_overview)</u>  information and will need to be manually re-linked to the Dapp that created them.
 

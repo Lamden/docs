@@ -3,7 +3,7 @@
 
 
 ## Query Smart Contract State
-![](../../img/wallet/gif/1.0.0_ide_query_state.gif)
+![image](/img/wallet/gif/1.0.0_ide_query_state.gif)
 1. Open the smartcontract <u>[from the Blockchain](/docs/wallet/ide_create_smartcontracts#open-existing-contract-from-blockchain)</u>.
 2. Scroll down to the `Get Current State` section, below the IDE window.
 3. In the `Variable Name` box enter the variable or hash you want to query from the smart contract.

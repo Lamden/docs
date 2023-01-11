@@ -2,7 +2,7 @@
 # Delete an Account
 
 
-![](../../img/wallet/gif/1.0.0_account_delete.gif)
+![image](/img/wallet/gif/1.0.0_account_delete.gif)
 
 **Before deleting an account it is STRONGLY RECOMMENDED that you perform a <u>[backup](/docs/wallet/backup_overview)</u>.**
 

@@ -2,7 +2,7 @@
 # Change your wallet password
 
 
-![](../../img/wallet/gif/setting_changepassword.gif)
+![image](/img/wallet/gif/setting_changepassword.gif)
 
 ### **Lamden is not responsible for lost or stolen keys or keystores**
 
