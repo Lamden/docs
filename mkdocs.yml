@@ -1,0 +1,23 @@
+site_name: Arko Dapp Migration Guide
+theme: readthedocs
+extra_css: [extra.css]
+markdown_extensions:
+    - toc:
+        permalink: 
+nav:
+  - Home: index.md
+  - Developers:
+    - Arko Migration:
+      - Block Structure: migration/block_structure.md
+      - Transactions: migration/transactions.md
+      - Block Service: migration/block_service.md
+      - Lamden Vault API: migration/lamden_vault_api.md
+    - Lamden Value API:
+      - Overview: develop/wallet_api/overview.md
+      - Connect To Wallet: develop/wallet_api/create_connection.md
+      - Customize Connection: develop/wallet_api/customize_connection.md
+      - Get User Account Info: develop/wallet_api/get_wallet_info.md
+      - Submit Transactions: develop/wallet_api/send_transaction.md
+      - Approval Transactions: develop/wallet_api/approval_transactions.md
+
+
