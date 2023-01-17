@@ -2,7 +2,7 @@
 # Backing up your Lamden Vault Accounts
 
 
-At no point does the Lamden Vault do an Automatic Backup. **All backups are MANUAL and the user's responsibilty.**
+At no point does the Lamden Vault do an Automatic Backup. **All backups are MANUAL and the user's responsibility.**
 
 ## When to backup
 A backup must be created EVERY TIME a new legacy account is added to your Lamden Vault.
@@ -11,7 +11,7 @@ A backup must be created EVERY TIME a new legacy account is added to your Lamden
 There are a couple of ways to backup your Lamden Vault Accounts and either will allow you restore an account later:
 1. View Recovery Phrase
    - A unique 24-word phrase which connected to your funds.
-2. Backup legacy accounts.Thie wiil create <u>[Keystore File](/docs/wallet/backup_keystore)</u> 
+2. Backup legacy accounts. This will create <u>[Keystore File](/docs/wallet/backup_keystore)</u> 
     - This is an encrypted file that contains the keypairs associated with your account
 3. View <u>[Secret Keys](/docs/wallet/backup_view_keys)</u>
     - Some people prefer to write the secret keys down manually and store them offline

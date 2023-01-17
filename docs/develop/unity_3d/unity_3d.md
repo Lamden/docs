@@ -24,7 +24,7 @@ A Unity package to simplify the integration of [Lamden Blockchain](https://lamde
   * Get Methods
   * Get contact code
 
-# Recomendation
+# Recommendation
 
 I would suggest you familiarize yourself the the Lamden Contracts by going through [these tutorials](https://blog.lamden.io/smart-contracting-with-python-2af233620dca) first.  The concepts below will make much more sense if you have the basics of how a Lamden contract works.
 
@@ -51,9 +51,9 @@ The `MasterNodeApi` script can be configured with the follow variables:
  * Lamden: Defines if the network is a Lamden network or not, Default Value: true, Type: boolean
  * Block Explorer: URL to the block explorer for the defined network, Default value: https://testnet.lamden.io/
 
-If you are performing testing with a locally hosted [Lamden mockchain](https://github.com/Lamden/mockchain) with the default configuration change the hosts array to only contain one host of `http://127.0.0.1:8000`.  The other settings should not matter for testing.
+If you are performing testing with a locally hosted [Lamden mock-chain](https://github.com/Lamden/mockchain) with the default configuration change the hosts array to only contain one host of `http://127.0.0.1:8000`.  The other settings should not matter for testing.
 
-Afer adding the `LamdenManager` to the scene the next thing to do is create a Lamden Vault.  This is done using the 'LamdenUnity\Core\Wallet' script.  A wallet is composed of a VK (verification key or public key) and a SK (signing key or private key) keypair.  ***NOTE: Anyone that has copy of a wallet's SK can perform any action on behalf of the owner, so the SK should stored in a secure place.*** For testing purposes on a local mockchain or on the testnet it probably ok to store the SK in plain text or in code. ***NOTE: Keypairs are shared across the lamden testnet and mainnet, ensure that you are not using a keypair that has any TAU or other assets associated with it in your development environment to avoid issues with having the SK post in source or accidently executing a transaction on the mainnet.***
+After adding the `LamdenManager` to the scene the next thing to do is create a Lamden Vault.  This is done using the 'LamdenUnity\Core\Wallet' script.  A wallet is composed of a VK (verification key or public key) and a SK (signing key or private key) keypair.  ***NOTE: Anyone that has copy of a wallet's SK can perform any action on behalf of the owner, so the SK should stored in a secure place.*** For testing purposes on a local mock-chain or on the testnet it probably ok to store the SK in plain text or in code. ***NOTE: Keypairs are shared across the lamden testnet and mainnet, ensure that you are not using a keypair that has any TAU or other assets associated with it in your development environment to avoid issues with having the SK post in source or accidentally executing a transaction on the mainnet.***
 
 # Creating or Loading Wallet and Accessing Keys
 * `New()`: Creates a new keypair (VK and SK)
@@ -62,58 +62,58 @@ Afer adding the `LamdenManager` to the scene the next thing to do is create a La
 * `GetSK()`: Get hex string of the SK (signing key or private key)
 
 # API Calls
-Once a wallet has been generated or loaded API calls can be made through the `MasterNodeApi` is added to the `LamdenManager` gameobject. As the network calls are performed using cooroutines the `MasterNodeApi` must be called attached to a gameobject. The basic structure on all the API calls is to execute an `Action` after the request has been executed and return the results in the action arguments.  The first argument in the `Action` will be a `bool` that indicates if the request was successful.  The other arguments generally contain more infomation and are specific to the action.
+Once a wallet has been generated or loaded API calls can be made through the `MasterNodeApi` is added to the `LamdenManager` game object. As the network calls are performed using coroutines the `MasterNodeApi` must be called attached to a game object. The basic structure on all the API calls is to execute an `Action` after the request has been executed and return the results in the action arguments.  The first argument in the `Action` will be a `bool` that indicates if the request was successful.  The other arguments generally contain more information and are specific to the action.
 
 There are several useful API calls built into the `MasterNodeApi` script:
 
 ## Ping
 * **Method:** `PingServer(Action<bool, string> callBack)`
 * **Purpose:** Calls the `<master node>/ping` API to determine if the network is up
- * **Action Argurments:**
+ * **Action Arguments:**
    * `bool`:The first bool arg will be true if the server responds `online`, if the server is unreachable or reports offline it will respond with false
    * `string`: Returns the error message or json response from the server in as a string
 
 ## Get Currency Balance
 * **Method:** `GetCurrencyBalance(string key, Action<bool, float> callBack)`: 
-* **Purpose:** Retreives the account balance of for the wallet from the server
- * **Argurments:**
+* **Purpose:** Retrieves the account balance of for the wallet from the server
+ * **Arguments:**
    * `key`: The VK of the wallet for the request
- * **Action Argurments:**
+ * **Action Arguments:**
    * `bool`: `true` = call successful, `false` = call failed
    * `float`: Successful: The balance of the wallet for a  request, Failed: `-1`
 
 ## Get Stamp Ratio
 * **Method:** `GetStampRatio(Action<bool, int> callBack)`
 * **Purpose:** Get the number of stamps per 1 TAU (stamps are the fee that the sender of the transaction pay for it to be processed)
- * **Action Argurments:** 
+ * **Action Arguments:** 
    * `bool`: `true` = call successful, `false` = call failed
    * `int`: Successful: The number of stamps per 1 TAU, failed: `-1`
 
 ## Get Max Stamps
 * **Method:** `GetMaxStamps(string key, Action<bool, int> callBack)`
 * **Purpose:** Get the maximum number of stamps a user could spend (stamp ratio * currency balance)
- * **Argurments:**
+ * **Arguments:**
    * `key`: The VK of the wallet for the request
- * **Action Argurments:**
+ * **Action Arguments:**
    * `bool`: `true` = call successful, `false` = call failed
    * `int`: Successful: The maximum stamps the user could spend, failed: `-1`
 
 # Sending Transactions
 
-While the methods for sending a transaction are exposed via the `MasterNodeApi` the plugin has a speical class called `Transaction` to execute smart contracts on the Lamden blockchain. Simple create a new instance of the class passing all the needed variables into the class contstructor and the transaction will be started.
+While the methods for sending a transaction are exposed via the `MasterNodeApi` the plugin has a special class called `Transaction` to execute smart contracts on the Lamden blockchain. Simple create a new instance of the class passing all the needed variables into the class constructor and the transaction will be started.
 
 **Constructor:** `Transaction(MasterNodeApi node, TxInfo ti, Action<TransactionStatus, TxResponse> action)`
-* **Argurments:**
- * `node`: Reference to the MasterNodeApi that has been attached to an active gameobject in the scene
+* **Arguments:**
+ * `node`: Reference to the MasterNodeApi that has been attached to an active game object in the scene
  * `ti`: An instance of the `TxInfo` class, more on that below...
  * `action`: The action that will be executed after the call to the server was made
- * **Action Argurments:**
+ * **Action Arguments:**
    * `TransactionStatus`: Current status of the transaction `enum TransactionStatus { Error, Sending, SubmittedProcessing, Completed  };`
-   * `TxResponse`: Instance of the TxReposnse, more on that below...
+   * `TxResponse`: Instance of the TxResponse, more on that below...
 
 When as transaction is called and executed successfully will move from `Sending` to `SubmittedProcessing` and then finally to `Completed`. At any point it could change to `Error` if there was a failure with the execution.  These different states can be used to update the GUI and let the users know the status of the request.  The average for the transaction to be completed is between 400 and 1000 ms which is very fast compared to other blockchains. 
 
-When submitting a transaction details are requried that will depend on the contact that is being executed and these detailed are stored int the `TxInfo` class.  Below is an example `TxInfo`:
+When submitting a transaction details are required that will depend on the contact that is being executed and these detailed are stored int the `TxInfo` class.  Below is an example `TxInfo`:
 
 ```java
 TxInfo txInfo = new TxInfo()
@@ -139,7 +139,7 @@ TxInfo txInfo = new TxInfo()
 ```
 Note all the `KT_` classes hold the specific contract argument types that relate the Python code.  The above examples relates to the smart contract called [on_values_testing](http://167.172.126.5:18080/contracts/con_values_testing) that accepts one of every argument type for testing.  The `kwargs` variable will need to match the arguments of the contract with names and types.
 
-After the transaction has been sumbitted the status will be returned the `Action` passed into the transaction contructor.  I like using lamba expressions for the `Action` below is an example that updates a text field as the transaction is processed.
+After the transaction has been submitted the status will be returned the `Action` passed into the transaction constructor.  I like using lambda expressions for the `Action` below is an example that updates a text field as the transaction is processed.
 
 ```java
 Transaction tx = new Transaction(lamdenTest.masterNodeApi, txInfo, (Transaction.TransactionStatus txStatus, TxResponse txResponse) => {
@@ -154,7 +154,7 @@ Transaction tx = new Transaction(lamdenTest.masterNodeApi, txInfo, (Transaction.
 });
 ```
 
-The `TxResponse` class will contain extra infomation about the transaction including the updated state of the contract. 
+The `TxResponse` class will contain extra information about the transaction including the updated state of the contract. 
 
 ```java
 public class TxResponse
@@ -166,7 +166,7 @@ public class TxResponse
 }
 ```
 
-If the transaction `TransactionStatus` returned as error there will be more information in the `TransactionStatus.error` string.  If the transaction status was returned as `Completed` the `TransactionStatus.transactionData` will contain a lot of data about the transacation that was completed held in the `CheckTransactionData` class. Below is the JSON data that is returned.
+If the transaction `TransactionStatus` returned as error there will be more information in the `TransactionStatus.error` string.  If the transaction status was returned as `Completed` the `TransactionStatus.transactionData` will contain a lot of data about the transaction that was completed held in the `CheckTransactionData` class. Below is the JSON data that is returned.
 
 
 ```json
@@ -219,18 +219,18 @@ For more details there are unit tests that run the Unity Test Framework to test 
 ![My image](https://github.com/Lamden/lamden-unity-csharp/blob/master/readme_images/exampleUI.JPG?raw=true)
 
 **Create New Wallet** will create a new random keypair that can be used as a wallet
-**Ping Server** will ping the server configured in the `Lamden Manager/MasterNodeApi` script and the image to the right will turn green if the server is online and red if unreaachable.
+**Ping Server** will ping the server configured in the `Lamden Manager/MasterNodeApi` script and the image to the right will turn green if the server is online and red if unreachable.
 
 **Create Wallet from SK** will generate the VK from the SK that is entered into the field to the left of it *NOTE: Copy and paste works with keyboard short cuts for all the input fields)*.
 
 **VK** is the wallets verification key or public key.
 
-**SK** is the wallets signature key or private key **NOTE: In non-development situations this the SK is extremely senstive and should kept secert.  Do not use your mainnet wallet for development!**
+**SK** is the wallets signature key or private key **NOTE: In non-development situations this the SK is extremely sensitive and should kept secret.  Do not use your mainnet wallet for development!**
 
 **Get Balance** will update the wallet currency amount in the field to the right of it.
 
 **Get dTAU "Testnet TAU"** will copy the wallets VK to the clipboard and open the [Testnet Faucet](https://faucet.lamden.io/) webpage, where you can paste the VK and get 100 dTAU a day for development purposes.
 
-**Test Contract Submission** is actually testing the contract excecution of the `con_values_testing/test_values`, the submit button will send the contract to the server *Note: you need to have a wallet with dTAU or TAU in it to execute a contract on the testnet or mainnet respectively*
+**Test Contract Submission** is actually testing the contract execution of the `con_values_testing/test_values`, the submit button will send the contract to the server *Note: you need to have a wallet with dTAU or TAU in it to execute a contract on the testnet or mainnet respectively*
 
 **Test Signature Generation** will create a signature using the SK of the test in the top input field.

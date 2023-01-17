@@ -36,9 +36,9 @@ document.dispatchEvent(new CustomEvent('lamdenWalletGetInfo'));
 
 | Property  | Description  |
 | ------------- | -----|
-| walletVersion | The version of the installed Lamden Vault you are conencted to |
-| installed | Boolean: Wallet is installed in the broswer |
-| setup | Boolean: If the user has run the Lamden Vault through the inital setup |
+| walletVersion | The version of the installed Lamden Vault you are connected to |
+| installed | Boolean: Wallet is installed in the browser |
+| setup | Boolean: If the user has run the Lamden Vault through the initial setup |
 | locked | Boolean: If the wallet is locked or not |
 | wallets | Array: The Lamden public key your dApp was assigned.  There will only ever be 1 value in this array. |
 | approvals | Object: The networks that are currently approved and the information about those approvals including, ContractName, trustedApp and version. |

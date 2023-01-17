@@ -16,14 +16,14 @@ It is important to write the 24-word phrase down on paper and hide it somewhere,
 
 Only old users own such accounts. Each account has its own unique keypair which is encrypted in the Lamden Vault.
 
-It is heavily recommened that you do a <u>[BACKUP](/docs/wallet/backup_overview)</u> **everytime** you add a new account as each backup only stores the accounts you had at that specific point in time.
+It is heavily recommended that you do a <u>[BACKUP](/docs/wallet/backup_overview)</u> **every time** you add a new account as each backup only stores the accounts you had at that specific point in time.
 
 ## What are keypairs?
-Each account in your Lamden Vault has an asssociated cryptographic keypair.
+Each account in your Lamden Vault has an associated cryptographic keypair.
 1. Public Key 
     - Referred to as "Account Address" in the wallet but also commonly referred to as a "public key" or "verifying key (vk)"
     - Can be "public knowledge" and you are free to share this without risking the security of your account
 2. Secret Key
     - As the name suggests this **MUST BE KEPT SECRET!**
-    - Used to sign transcations and transactions signed by this key identify you on the blockchain
+    - Used to sign transactions. Transactions signed by this key identify you on the blockchain by your Public Key.
     - If someone has your secret key then, to the blockchain, they are you and can act as you!

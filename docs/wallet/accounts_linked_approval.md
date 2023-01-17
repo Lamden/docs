@@ -11,12 +11,12 @@ The currency contract will let YOU, the owner of the account, do what you wish w
 
 Dapps have their OWN smart contract and will "import" the currency contract into their contract to execute transfers.
 
-When a Dapp's contract calls the currency contract, from within itself, the currency contract sees this as the Dapp's contract calling it, not YOU; even though you signed the transaction to the Dapps's contract initially.  This is obvioulsy for security as without this anyone could call the currency contract "as you" and take your TAU.
+When a Dapp's contract calls the currency contract, from within itself, the currency contract sees this as the Dapp's contract calling it, not YOU; even though you signed the transaction to the Dapps's contract initially.  This is obviously for security as without this anyone could call the currency contract "as you" and take your TAU.
 
 To put it simply, if the **con_cool_dapp** contract calls **currency.transfer** from within itself, the currency contract sees that as **con_cool_dapp** initiating the transfer, not you.
 
 ## How do I Approve a Dapp?
-What Dapps need first is for YOU to give them permission to spend your TAU.  They do this by having you send an "approve" transaction to the currency contract, that they initate through the Lamden Vault API.  This lets the currency contract know you are allowing a specific person, or contract to spend some of your TAU. Then the Dapp calls another function called "transfer_from" which allows the currency contract to check that the calling contract, **con_cool_Dapps** has been approved to transfer funds out of your account.
+What Dapps need first is for YOU to give them permission to spend your TAU.  They do this by having you send an "approve" transaction to the currency contract, that they initiate through the Lamden Vault API.  This lets the currency contract know you are allowing a specific person, or contract to spend some of your TAU. Then the Dapp calls another function called "transfer_from" which allows the currency contract to check that the calling contract, **con_cool_Dapps** has been approved to transfer funds out of your account.
 
 ## How does the Lamden Vault keep me safe?
 In general you never want to give anyone or any contract access to your TAU unless you are sure they are using it in your best interest.  Maybe you are paying TAU to buy something or maybe the Dapp is using it on your behalf to facilitate a process.  Either way, **the responsibility is on you**, the owner of the TAU to understand why you are giving permission and if that party is trustworthy. If you are unsure you can always ask in our <u>[Telegram Group](https://t.me/lamdenchat)</u>.

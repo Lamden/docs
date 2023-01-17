@@ -1,14 +1,14 @@
 # Lamden Vault API
 
->The changes outlined below will not with with Lamden Valut versions 2.3.5 or below.
+>The changes outlined below will not with with Lamden Vault versions 2.3.5 or below.
 
 >If you are reading this and have wallet 2.3.5 because it is the latest, then a wallet update will be released in the next few days to allow these interactions to take place.
 
 ## Wallet Connections
 
-Most Dapps use the [Lamden Vault](https://docs.lamden.io/docs) to send transactions on behald of the user.
+Most Dapps use the [Lamden Vault](https://docs.lamden.io/docs) to send transactions on behalf of the user.
 
-To make your Dapp connect and send transctions to Arko you will provide a new `networkName` property in the wallet connection information.
+To make your Dapp connect and send transactions to Arko you will provide a new `networkName` property in the wallet connection information.
 
 #### Legacy Lamden
 
@@ -80,7 +80,7 @@ const detail = JSON.stringify({
 
 The [lamdenWalletInfo](https://docs.lamden.io/docs/develop/wallet_api/get_wallet_info) event sent from the Lamden Vault has an approvals property which will show which networks the user has approved your Dapp for. 
 
-The return previouly was just `mainnet` and `testnet` if approvals existed. This will rename for the legacy network but to get approvals from any new network you will need to search for that specific network name.
+The return previously was just `mainnet` and `testnet` if approvals existed. This will rename for the legacy network but to get approvals from any new network you will need to search for that specific network name.
 
 See the changes below to the `lamdenWalletInfo` event object
 

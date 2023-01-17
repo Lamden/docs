@@ -3,7 +3,7 @@
 
 ![image](/img/toturials/access_blockapi_1.png)
 
-This tutorial will get you konw how to access **Block Service** api. The **Block Service** is a application for syncing and serving the Lamden Blockchain to a local app. This application serves as starting point to be able to build an app on Lamden that requires easy access to current state and realtime updates. 
+This tutorial will get you know how to access **Block Service** api. The **Block Service** is a application for syncing and serving the Lamden Blockchain to a local app. This application serves as starting point to be able to build an app on Lamden that requires easy access to current state and realtime updates. 
 
 <!--truncate-->
 
@@ -19,7 +19,7 @@ As a result, **your should set up your own Block Service**.  [`Click here`](/doc
 
 ### Display current round data
 
-As a dapp, it's important to show the current lottery round data to users. Luckily the Block Serivce provides us with some APIs to accees the current state of smart contract. 
+As a dapp, it's important to show the current lottery round data to users. Luckily the Block Service provides us with some APIs to access the current state of smart contract. 
 
 - [<u>/current/one/:contractName/:variableName</u>](https://docs.lamden.io/docs/develop/blockservice/restful#get-state-of-variable)
 - [<u>/current/all/:contractName/:variableName</u>](https://docs.lamden.io/docs/develop/blockservice/restful#get-state-of-variable-1)
@@ -199,11 +199,11 @@ Click the tab button `Claim`. Then you will find nothing about the bet history.
 ![image](/img/toturials/access_blockapi_4.png)
 
 
-We can get current states of lottert contract by calling the Block Service APIs and then display them to suers.
+We can get current states of lottery contract by calling the Block Service APIs and then display them to suers.
 So that users can easily figure out what rounds they have played so far.
 
 The first thing that we need to do is to get to know what rounds users have played. So we can get the value of **user_rounds**.
-Open the file `src\Pages\Home\Claim.jsx` and copy the code into the componet "Claim".
+Open the file `src\Pages\Home\Claim.jsx` and copy the code into the component "Claim".
 
 ```js
 useEffect(() => {

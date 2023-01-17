@@ -3,7 +3,7 @@
 
 
 # Lamden Block Service
-A nodejs application for syncing and serving the Lamden Blockchain to a local app.
+A node.js application for syncing and serving the Lamden Blockchain to a local app.
 This application serves as starting point to be able to build an app on Lamden that requires easy access to current state and realtime updates.
 
 ### Stamp Estimation Script

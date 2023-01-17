@@ -17,8 +17,8 @@ You can restore accounts to your Lamden Vault in three ways at the first time yo
   ![image](/img/wallet/firstrun_create_password.png)
 3. Re-enter the password in the `Confirm Password` box.
 4. Click, `SAVE PASSWORD`.
-5. Select the option you want from the dropown.
-    1. Select "Seed Recovery Phrase". Enter your seed recovery phrase in the seperate boxes.
+5. Select the option you want from the drop down.
+    1. Select "Seed Recovery Phrase". Enter your seed recovery phrase in the separate boxes.
        ![image](/img/wallet/firstrun_recovery_phrase.png)
     2. Select "Keystore File". Chose a Keystore File in one of the following ways:
        - Click the link `click here to choose a file` to browse to the Keystore file.
@@ -29,7 +29,7 @@ You can restore accounts to your Lamden Vault in three ways at the first time yo
 6. Click the `NEXT` button.
 7. If you don't select "Keystore File" to restore your account in step 5, skip this step. Enter the password which was used to back up the Keystore.
     - If you entered a hint when you <u>[Created the Keystore](/docs/wallet/restore_keystore)</u> you will see it displayed.
-8. Put a checkmark next to each accout you wish to restore
+8. Put a checkmark next to each account you wish to restore
     ![image](/img/wallet/firstrun_add_wallet.png)
 9.  Click the `RESTORE ACCOUNTS` button.
 10. After the restoration is complete you may see the following messages:

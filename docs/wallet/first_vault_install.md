@@ -12,7 +12,7 @@ The Extension is created for and tested in the <u>[Chrome Browser](https://www.g
 ## Chrome Installation Steps
 1. Click <u>[HERE](https://chrome.google.com/webstore/detail/lamden-wallet-browser-ext/fhfffofbcgbjjojdnpcfompojdjjhdim)</u> to view the Lamden Vault in the Chrome Web Store.
 2. Click the `Add to Chrome` button
-3. On the broswer popup click `Add extension`
+3. On the browser popup click `Add extension`
 4. In the top right hand corner of the Chrome Browser click the `puzzle piece` icon.
 5. In the resulting popup menu click the `pin icon` next to the Lamden Vault Entry.
 6. Click the `lamden logo` to launch the wallet.

@@ -11,4 +11,4 @@ The Lamden Vault can be locked in two ways.
 1. Click `Sign Out & Lock` on the left-hand side 
 
 ### Passively
-1. Close down all instances of your broswer
+1. Close down all instances of your browser

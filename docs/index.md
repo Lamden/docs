@@ -21,4 +21,4 @@ Jump into building a Dapp with Lamden's fast and friendly chain
 
 Interested in learning all about how the Lamden Arko Nodes function?
 
-- **[Visit Arko Documentaion Site >>](https://architecture.lamden.io/intro/)**
+- **[Visit Arko Documentation Site >>](https://architecture.lamden.io/intro/)**

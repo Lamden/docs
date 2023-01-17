@@ -15,4 +15,4 @@ When you create a transaction you are specifying:
 
 #### Stamps
 Transactions on the Lamden Network are paid for in "Stamps". Stamps are converted to TAU in the system and deducted from your wallet balance.
-If you do not have a sufficent TAU balance then your Tx will either fail to be accepted by the network or fail during execution.
+If you do not have a sufficient TAU balance then your Tx will either fail to be accepted by the network or fail during execution.

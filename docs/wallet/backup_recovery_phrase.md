@@ -12,6 +12,6 @@
 5. Enter your Lamden Vault password in the `Password` box
 6. Click `CONFIRM PASSWORD`
 7. Copy the seed recovery phrase on paper or in a password manger, then click the check box.
-8. Now enter the seed recovery phrase you copied on last screen in the seperate boxes and the click the `NEXT` button.
+8. Now enter the seed recovery phrase you copied on last screen in the separate boxes and the click the `NEXT` button.
 
 **backing up your Recovery Phrase correctly and keeping it safe is YOUR RESPONSIBILITY**.

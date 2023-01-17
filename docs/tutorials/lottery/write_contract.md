@@ -205,7 +205,7 @@ def buy(ticket: str, amount: float, round_num: int):
         user_rounds[caller] = user_rounds[caller]
 ```
 
-Finally, we can claim our winnings by calling the method `claim()`. Make sure the current lottert round is ended and the player
+Finally, we can claim our winnings by calling the method `claim()`. Make sure the current lottery round is ended and the player
 is eligible for claim.
 
 ```py
@@ -313,7 +313,7 @@ Add following code to the end. This code will let the system know when to run th
 ### 4. Writing Tests
 
 In order to test whether the lottery contract works, we need to write some tests.
-Here is the entire unittest file:
+Here is the entire unit test file:
 
 ```py
 import imp

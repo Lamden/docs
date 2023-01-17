@@ -11,10 +11,10 @@
 7. Enter the password which was used to back up the Keystore.
     - If you entered a hint when you <u>[Created the Keystore](/docs/wallet/restore_keystore)</u> you will see it displayed.
 8. Click the `I Understand` checkbox and then click the `I Understand` button.
-9. Enter your password in the inputbox.
+9. Enter your password in the input box.
 10. Enter your 24-words seed recovery phrase in order, then click the `NEXT` button.
     ![image](/img/wallet/restore_enter_mem.png)
-8. Put a checkmark next to each accout you wish to restore
+8. Put a checkmark next to each account you wish to restore
     ![image](/img/wallet/firstrun_add_wallet.png)
 9.  Click the `RESTORE ACCOUNTS` button.
 10. After the restoration is complete you may see the following messages:

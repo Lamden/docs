@@ -87,9 +87,14 @@ nav:
       - Lamden Vault API: migration/lamden_vault_api.md
     - Smart Contracts:
       - Visit Lamden Contracting Site >>: https://contracting.lamden.io 
-    - Block Service API:
-      - REST: develop/blockservice/restful.md
+    - Block Service:
+      - Overview: develop/blockservice/overview.md
+      - Installation: develop/blockservice/installation.md
+      - Configuration: develop/blockservice/config.md
+      - Stamp Estimation: develop/blockservice/estimationScriptInstallation.md
+      - REST API: develop/blockservice/restful.md
       - GRAPHQL: develop/blockservice/graphql.md
+      - Chain Events: develop/blockservice/events.md
     - Javascript Package:
       - Overview: develop/lamden_js/overview.md
       - Install: develop/lamden_js/install.md

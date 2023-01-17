@@ -67,7 +67,7 @@ In this case, the <b>*new*</b> balances for both keys is returned
 ```
 
 ## Getting a Nonce and Processor
-> Nonce and processor will be retrieved from the masternode **automatcially** when `send()` is called.
+> Nonce and processor will be retrieved from the masternode **automatically** when `send()` is called.
 
 `getNonce()` can be used to set the nonce and processor before hand.
 ```javascript
@@ -100,14 +100,14 @@ tx.getNonce((res, err) => {
 - **method** (string): *txInfo.methodName*
     - The method or function that will be called on the smartcontract
 - **kwargs** (string):  *txInfo.kwargs* 
-    - The arguement values that will be sent to the method
+    - The argument values that will be sent to the method
     - default `{}`
 - **stampLimit** (string): *txInfo.stampLimit*
     - The stamps to be supplied to the transaction
     - This is the upper limit the transaction is allowed to use
     - The transaction could use less stamps
-    - The transation will fail if the processing of the transaction causes it to clock more stamps then this value.
-    - The sender's wallet must have at least the amount of TAU that would equale the stamp value, even if the transaction won't take that many stamps to complete. This means you cannot simply send `1,000,000` as the stampLimit for each transaction.
+    - The transaction will fail if the processing of the transaction causes it to clock more stamps then this value.
+    - The sender's wallet must have at least the amount of TAU that would equal the stamp value, even if the transaction won't take that many stamps to complete. This means you cannot simply send `1,000,000` as the stampLimit for each transaction.
 - **nonce** (integer): *txInfo.nonce* `if exists` || *txData.nonceResult.nonce* `if exists`
     - transaction nonce value
     - default `undefined`
@@ -173,8 +173,8 @@ Creates an instance of `TransactionBuilder`
 ### makeTransaction()
 - Sets `tx`
 - Creates `tx.metadata.signature` using `signature`
-- Creates `tx.metadata.timestamp` using current datetime in seconds
-- Createa `tx.payload` from `sortedPayload.orderedObj`
+- Creates `tx.metadata.timestamp` using current date-time in seconds
+- Creates `tx.payload` from `sortedPayload.orderedObj`
 
 ### verifySignature()
 Validates the signature of the transaction
@@ -195,7 +195,7 @@ Signs the payload of a transaction
 > **Throws** *error*: If sk has not been provided
 
 ### sortObject( __object__ )
-Sorts the keys and array values in an object recursivly.
+Sorts the keys and array values in an object recursively.
 This is required because while verifying the signature of the transaction the blockchain will sort the payload in the same way.
 
 #### Arguments
@@ -210,7 +210,7 @@ This is required because while verifying the signature of the transaction the bl
 >}
 >```
 
-### *aync* getNonce( *callback* )
+### *async* getNonce( *callback* )
 Get the current nonce and processor for the sender wallet.
 - Calls `makePayload()`
 - Sets `nonceResult`
@@ -218,7 +218,7 @@ Get the current nonce and processor for the sender wallet.
 - Sets `processor`
 - Sets `nonceMasternode`
 
-> `getNonce()` is called during the `send()` process and doesn't need to be called beforhand unless needed for some other reason.
+> `getNonce()` is called during the `send()` process and doesn't need to be called befor-hand unless needed for some other reason.
 
 #### Arguments
 - **callback**  (object): *optional* 
@@ -234,7 +234,7 @@ Get the current nonce and processor for the sender wallet.
 >}
 >```
 
-### *aync* send( *sk*, *masternode*, *callback* )
+### *async* send( *sk*, *masternode*, *callback* )
 Send a transaction.
 
 - Calls `getNonce()` *if `nonce` is undefined*
@@ -261,16 +261,16 @@ Send a transaction.
 >**or**
 >
 >```javascript
-> { errors: // Array of errors }
+> { errors: [] } // Array of errors  
 >```
 
 > **Emits** *response*: Masternode <u>[Transaction Response](/docs/develop/blockchain/masternode_api#json-response-13)</u>
 
 > **Throws** *error*: if transaction is unsigned and no sk provided
 
-> **Throws** *error*: forwards erros from all methods called while completing the transaction process
+> **Throws** *error*: forwards errors from all methods called while completing the transaction process
 
-### *aync* checkForTransactionResult( *callback* )
+### *async* checkForTransactionResult( *callback* )
 Checks the blockchain for a result to the `txHash` returned by `send()`.
 
 - Calls `API.checkTransaction()`
@@ -286,7 +286,7 @@ Checks the blockchain for a result to the `txHash` returned by `send()`.
 >**or**
 >
 >```javascript
-> { errors: // Array of errors }
+> { errors: [] } // Array of errors
 >```
 
 > **Emits** *response*: Masternode <u>[Transaction Details](/docs/develop/blockchain/masternode_api#get-transaction-details)</u>
@@ -313,14 +313,14 @@ contained a `hash` property.
 - Sets `resultInfo`
 
 > Returns *object*: 
->```javascript
->{
-    # 'Transaction Pending',
+# 'Transaction Pending'
+```javascript
+{
     subtitle: 'Your transaction was submitted and is being processed',
     message: `Tx Hash: ${this.txHash}`,
     type: 'success',
->}
->```
+}
+```
 
 ### setBlockResultInfo( __result__ )
 Parses the Masternode <u>[Transaction Details](/docs/develop/blockchain/masternode_api#get-transaction-details)</u> object for errors and creates the final version of `resultInfo` from the 

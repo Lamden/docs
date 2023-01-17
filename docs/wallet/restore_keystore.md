@@ -12,7 +12,7 @@
 5. Click the `CONFIRM KEYSTORE` button.
 6. Enter the password which was used to back up the Keystore.
     - If you entered a hint when you <u>[Created the Keystore](/docs/wallet/restore_keystore)</u> you will see it displayed.
-7. Put a checkmark next to each accout you wish to restore
+7. Put a checkmark next to each account you wish to restore
 8. Click the `RESTORE ACCOUNTS` button.
 9.  After the restoration is complete you may see the following messages:
     - (success) `Added <account name> to your wallet` - This means the account was successfully restored.

@@ -28,7 +28,7 @@ Returns a `transaction object`.
 
 From this object you can determine the following:
 - **status**: 0 for success and 1 for error
-- **result**: could be an error that arose while procesing of the transaction or in the event of a success it could be a `return value` from the function.  Default value for this is 'None'
+- **result**: could be an error that arose while processing of the transaction or in the event of a success it could be a `return value` from the function.  Default value for this is 'None'
 - **state**: The resulting state changes. This is a list of keys and their new values as a result of the transaction.
 - **stamps_used**: How many stamps this transaction used during execution.
 - **transaction**: The transaction payload that initiated this transaction.

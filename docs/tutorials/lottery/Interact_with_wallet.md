@@ -23,7 +23,7 @@ Clone the exercise [<u>**repo**</u>](https://github.com/Dapiguabc/lottery).
 git clone https://github.com/Dapiguabc/lottery.git
 ```
 
-Open the folder ——— lottery-fonted(Tutorials) in Visual Studio Code
+Open the folder ——— lottery-frontend(Tutorials) in Visual Studio Code
 
 ![image](/img/toturials/connect_vault_1.png)
 
@@ -81,7 +81,7 @@ useEffect(() => {
 }, [])
 ```
 
-When we get the response of the connectiong request, we should give feedback to users whether the connection is successful.
+When we get the response of the connecting request, we should give feedback to users whether the connection is successful.
 **If success,  we should update the wallet context.**
 
 ```js

@@ -11,7 +11,7 @@ This tutorial will make you understand how to send a transaction and allow users
 ### Buy Tickets
 
 Open the file `src\Pages\Home\Play.jsx`. Add a method called **buyTicket**.  Note that you should add a key **uid** to the message which will be sent to 
-Lamden Vault. It's useful to help you figure out which message of responese is for your transaction.
+Lamden Vault. It's useful to help you figure out which message response is for your transaction if you are sending multiple.
 
 ```js
 const buyTicket = () => {

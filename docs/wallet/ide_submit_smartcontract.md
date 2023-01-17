@@ -40,13 +40,13 @@ The owner can be a wallet address or another smart contract.  Once set it cannot
 ### Constructor Args property
 This is an advanced feature and should only be used by developers that understand its purpose.
 
-If your smart contract uses the <u>[@construct](https://contracting.lamden.io/quickstart/submit)</u> decorator to create a `constructor method` then it's possible you will need to provide that method some inital arguments.
+If your smart contract uses the <u>[@construct](https://contracting.lamden.io/quickstart/submit)</u> decorator to create a `constructor method` then it's possible you will need to provide that method some initial arguments.
 
 The `Constructor Args` property takes an object (in JSON format) that will be provided to the submission contract as part of the transaction.  The submission contract will map these values to the arguments in your `constructor method`.
 
 #### Example
 Imagine we have a token contract that we want to add to the network.  We want this contract to mint an initial supply to some wallet address that we control.
-We COULD hardcode these values, but to allow this contract to be reuseable we will instead provide these values using `Constructor Args`
+We COULD hardcode these values, but to allow this contract to be reusable we will instead provide these values using `Constructor Args`
 
 ```python
 token_balances = Hash(default_value=0)

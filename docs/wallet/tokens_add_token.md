@@ -25,7 +25,7 @@ This will add a custom account to your wallet.
 2. Click the `ACCOUNTS & TOKENS` button
 3. Select `Token` from the `What to add` dropdown
 4. Click the `ADD CUSTOM` button
-5. Enter a contract name in the `Contract Name` inputbox
+5. Enter a contract name in the `Contract Name` input box
 6. Wait until the `ADD TOKEN` button is clickable and then click it
 
 ![image](/img/wallet/gif/tokens_add_custom.gif)

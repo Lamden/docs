@@ -2,7 +2,7 @@
 # Using the Lamden Vault Controller (LWC)
 
 
-> This package should work with all javascript implementations including nodejs and vanilla javascript
+> This package should work with all javascript implementations including node.js and vanilla javascript
 
 ## What is it?
 The Lamden Vault Controller (LWC) is a helper package for interacting with the <u>[Lamden Vault API](/docs/develop/wallet_api/overview)</u> via a webpage.
@@ -38,7 +38,7 @@ import WalletController from 'lamden_wallet_controller';
 ## Create Connection Request Object
 Creating a connection request is the same as <u>[Lamden Vault API - Create a Connection](docs/develop/wallet_api/overview)</u>.
 
-Below is the mandatory information for a connection request but <u>[more customization optons](/docs/develop/wallet_api/customize_connection)</u>  are available.
+Below is the mandatory information for a connection request but <u>[more customization options](/docs/develop/wallet_api/customize_connection)</u>  are available.
 ```javascript
 const connectionRequest = {
     appName: 'My Killer dApp', // Your Dapps's name
@@ -65,8 +65,8 @@ lwc.events.on('newInfo', handleWalletInfo) // Wallet Info Events, including erro
 lwc.events.on('txStatus', handleTxResults) // Transaction Results
 ```
 
-- See informtaion returned from `newInfo` <u>[here](/docs/develop/wallet_api/get_wallet_info#request-wallet-info)</u>
-- See informtaion returned from `txStatus` <u>[here](/docs/develop/wallet_api/send_transactions#listen-for-transaction-result)</u>
+- See information returned from `newInfo` <u>[here](/docs/develop/wallet_api/get_wallet_info#request-wallet-info)</u>
+- See information returned from `txStatus` <u>[here](/docs/develop/wallet_api/send_transactions#listen-for-transaction-result)</u>
 
 ## Check if Wallet is Installed
 Calling `walletIsInstalled` will return a promise with the resolver being a boolean value as to the installed status of the wallet.
@@ -85,14 +85,14 @@ lwc.walletIsInstalled()
 So to recap, the `walletIsInstalled` method will accomplish 3 things:
 1. Reports back the installed status of the wallet.
 2. If installed is true and a connection request was provided to the constructor then it will automatically create the `lamdenWalletConnect` event and provide your connection request to the users Lamden Vault
-3. If the user has a <u>[Linked Account](/docs/wallet/accounts_linked_overview)</u> for your Dapp you will be sent the Wallet Information on the `newInfo` listener; or else the user will compelte the New Linked Account process and you will be proveded the Wallet Information at that point.
+3. If the user has a <u>[Linked Account](/docs/wallet/accounts_linked_overview)</u> for your Dapp you will be sent the Wallet Information on the `newInfo` listener; or else the user will complete the New Linked Account process and you will be provided the Wallet Information at that point.
 
 ## Send Connection Request
 > ** Not required if you have already called `walletIsInstalled`**
 
 `sendConnection` can be used if you didn't supply the connectionRequest information to the wallet previously or if you want to submit another connection request.
 
-If the user has a <u>[Linked Account](/docs/wallet/accounts_linked_overview)</u> for your Dapp you will be sent the Wallet Information on the `newInfo` listener; or else the user will compelte the New Linked Account process and you will be proveded the Wallet Information at that point.
+If the user has a <u>[Linked Account](/docs/wallet/accounts_linked_overview)</u> for your Dapp you will be sent the Wallet Information on the `newInfo` listener; or else the user will complete the New Linked Account process and you will be provided the Wallet Information at that point.
 
 ```javascript
 lwc.sendConnection(connectionRequest)  
@@ -121,4 +121,4 @@ const handleResults = (txResults) => console.log(txResults)
 lwc.sendTransaction(transaction, handleResults) // callback is optional
 ```
 
-You always get the transaction results on the `txStatus` event emitter weither a callback is defiened or not.
+You always get the transaction results on the `txStatus` event emitter even if a callback is defined or not.

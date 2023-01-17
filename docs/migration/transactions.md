@@ -4,9 +4,9 @@ There have been very few changes to to way transaction work from legacy Lamden t
 ## No Timestamp
 Transactions no long have the `timestamp` property in their metadata.
 
-If your Dapp previously used the transaction.metadata.timestamp value of a transaction it can now use this HLC timestamp interchangably by removing the `_0` from the end of the timestamp it becomes a standard ISO timestamp and reflects when your transaction was ran.
+If your Dapp previously used the transaction.metadata.timestamp value of a transaction it can now use this HLC timestamp interchangeably by removing the `_0` from the end of the timestamp it becomes a standard ISO timestamp and reflects when your transaction was ran.
 
-Previouly the transaction.metadata.timestamp value was used to set the time inside the smart contract execution environment as `now`. In Arko the `now` datetime is a representation of the `hlc_timestamp`.
+Previously the transaction.metadata.timestamp value was used to set the time inside the smart contract execution environment as `now`. In Arko the `now` date-time is a representation of the `hlc_timestamp`.
 
 If your Dapp uses the wallet to send transactions, then the wallet will take care of removing `timestamp` from the metadata.
 

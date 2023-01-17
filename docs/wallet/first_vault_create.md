@@ -16,7 +16,7 @@
 5. Copy the seed recovery phrase on paper or in a password manger, then click the check box.
     ![image](/img/wallet/firstrun_gen_memoric.png)
 6. Click the `NEXT` button.
-7. Now enter the seed recovery phrase you copied on last screen in the seperate boxes and the click the `NEXT` button.
+7. Now enter the seed recovery phrase you copied on last screen in the separate boxes and the click the `NEXT` button.
    ![image](/img/wallet/firstrun_verify_memoric.png)
 8.  Click, `I UNDERSTAND` if you understand **backing up your wallet and keeping your passwords safe is YOUR RESPONSIBILITY**.
 9.  Follow steps to <u>[Backup Lamden Vault](/docs/wallet/backup_keystore)</u>.

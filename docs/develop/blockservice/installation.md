@@ -22,7 +22,7 @@ npm run start
 ### Configure
 You can custom blockservice by creating/editing  ```.env``` file at the root of the project folder.  Click [<u>here</u>](/docs/develop/blockservice/config) to get more details.
 
-### Sync Chaindata (Optional)
+### Sync Chain Data (Optional)
 The first time you run the block service, it will take long time to sync blocks data. In order to avoid waiting for so long, you can use
 [<u>mongodump</u>](https://www.mongodb.com/docs/database-tools/mongodump/#mongodb-binary-bin.mongodump) to export data from another block service to you own block service.
 

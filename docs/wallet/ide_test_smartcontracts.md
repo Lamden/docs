@@ -25,7 +25,7 @@ If there is a value returned from the blockchain then it will be populated in th
 7. If a wallet with TAU was selected the `Stamp Limit` box will automatically populate.
 8. Validate:
     - Contract Name
-    - Funtion (method name)
+    - Function (method name)
     - All argument values are correct
 9. Click the `CONFIRM TRANSACTION` button
 10. Click `OK` when the Send Transaction popup appears.

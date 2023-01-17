@@ -29,7 +29,7 @@ The following information is contained in this request:
 1. The name of the Dapp
 2. Under the Dapp name is the URL of the website that created the popup.  You can click it to make sure that it's the same website you were on.
 3. The smart contract that this Dapp will be locked to.
-4. The network the Dapp will be allowed to operate on (Lamden Testnet or Lamden Mainet).
+4. The network the Dapp will be allowed to operate on (Lamden Testnet or Lamden Mainnet).
 
 Only Click "Next" if:
 1. You have verified that you trust the website that created the popup
@@ -48,7 +48,7 @@ On this screen you should choose an existing account to associate with the dapp.
 ![image](/img/wallet/linked_account_popup_3.png)
 On this screen you will decide if this Linked Account will be treated as a "Trusted Account" by the Lamden Vault.  Trusted Accounts enable automatic transactions; which means you will not get a popup to any transactions the Dapp submits.
 
-Note: Do not set an account as Trusted unelss you are sure you do. 
+Note: Do not set an account as Trusted unless you are sure you do. 
 
 You can always ask around in the [Lamden Telegram Group](https://t.me/lamdenchat) to see if others trust the app.
 
@@ -56,5 +56,5 @@ If you close the popup window at this point then no Linked Account will be creat
 
 Click "Create Account" to create the Linked Account in the Lamden Vault.
 
-After the Linked Account is created the Dapp will be provided the Account Address for its Linked Account everytime you visit the website.
+After the Linked Account is created the Dapp will be provided the Account Address for its Linked Account every time you visit the website.
 

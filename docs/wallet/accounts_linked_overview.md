@@ -9,4 +9,4 @@ Each website that you interact with will have its own Linked Account. This lets 
 
 ## Decentralized Applications (Dapps)
 
-Dapps are applications that have a blockchain comnponent to them.  Any application that connects to your Lamden Vault is referred to as a Dapp.
+Dapps are applications that have a blockchain component to them.  Any application that connects to your Lamden Vault is referred to as a Dapp.

@@ -1,14 +1,14 @@
 # Block Differences
 
 ## Finding transaction in a block
-Arko brings a concept of Transaction Records as opposed to blocks and this means that each block now only has 1 transaction and the accompianing state chagnes instead of the sub-block strucutre of legacy Lamden.  Most of Lamden's legacy blocks had only one transaction as it is and so it made getting and odering those transactions a bit of a pain.
+Arko brings a concept of Transaction Records as opposed to blocks and this means that each block now only has 1 transaction and the accompanying state changes instead of the sub-block structure of legacy Lamden.  Most of Lamden's legacy blocks had only one transaction as it is and so it made getting and ordering those transactions a bit of a pain.
 
-In legacy Lamden you would find yourself iterating the subblocks list, then interating each transactions list for a transaction.
+In legacy Lamden you would find yourself iterating the sub-blocks list, then integrating each transactions list for a transaction.
 
-Arko has no more list of a list type concepts and each block will contain 1 and only 1 transaction under ther `processed` property. The `processed` property contains the exact same transaction data structure that you are used to.
+Arko has no more list of a list type concepts and each block will contain 1 and only 1 transaction under there `processed` property. The `processed` property contains the exact same transaction data structure that you are used to.
 
 ## Block Numbers
-the block `number` property is now an HLC representation of nanos which end up bing a big Int and stored as a string.  If your Dapp did anything with block numbers this is a very large change. Block numbers are still canonical but no longer consequative.
+The block `number` property is now an HLC representation of nanos which end up bing a big Int and stored as a string.  If your Dapp did anything with block numbers this is a very large change. Block numbers are still canonical but no longer consecutive.
 
 ### legacy Lamden
 1, 2, 3, 4, ...

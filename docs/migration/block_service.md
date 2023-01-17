@@ -5,15 +5,15 @@ If you currently run a block service then you will be required to update to a ne
 
 The legacy Lamden Block Service can be decommissioned, including all mongo tables.
 
-The new Arko Block Service will have a dockerized instal. All genesis state will be downloaded via a file when the blockservice starts and then new block discovry will begin.
+The new Arko Block Service will have a dockerized instal. All genesis state will be downloaded via a file when the block service starts and then new block discovery will begin.
 
 
 ## Endpoint Changes
 
 ### history endpoints tx_uid
-Legacy Lamden Block Service needed to create a UID for transactions, called the `tx_uid`. This was a unique and orderable value that could be assined to each transaction that was parsed from a block. In general it was blocknumber.subblock.transaction_index
+Legacy Lamden Block Service needed to create a UID for transactions, called the `tx_uid`. This was a unique and orderable value that could be assigned to each transaction that was parsed from a block. In general it was `blocknumber.subblock.transaction_index`
 
-Arko blocks only have one transaciton allowing us to use the block number as it is both unique and orderable. 
+Arko blocks only have one transaction allowing us to use the block number as it is both unique and orderable. 
 
 In the API `tx_uid` has been replaced with the simpler `start_block_num`.
 

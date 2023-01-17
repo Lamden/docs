@@ -13,7 +13,7 @@ A new tab will be created and a blank contract will open up in the IDE
 ## Create new Example Smart Contract
 ![image](/img/wallet/gif/1.0.0_ide_create_smartcontract_example.gif)
 
-The example smart contract is meant as a quick explantion of some of the concepts of contracting.
+The example smart contract is meant as a quick explanation of some of the concepts of contracting.
 
 1. Click the `New Contract` button ![image](/img/wallet/new_smartcontract.png)
 2. Click the `EXAMPLE CONTRACT` button
