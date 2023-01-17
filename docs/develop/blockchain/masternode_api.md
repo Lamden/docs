@@ -1,9 +1,6 @@
 
 # Lamden Masternode Webserver REST API
 
-
-
-
 Lamden Masternodes run a webserver which allows anyone to easily interface with the Lamden Blockchain.  
 
 The webserver provides direct access to the network's state and is the single entry point for submitting transactions.
