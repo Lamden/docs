@@ -1,8 +1,6 @@
----
-id: current_masternodes
-title: Current Lamden Masternodes
-sidebar_label: Masternode Information
----
+
+# Current Lamden Masternodes
+
 
 ## Mainnet
 > Blockexplorer [https://mainnet.lamden.io](https://mainnet.lamden.io)

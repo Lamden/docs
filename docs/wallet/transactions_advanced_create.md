@@ -1,10 +1,8 @@
----
-id: transactions_advanced_create
-title: Create an Advanced Smart Contract Transaction
-sidebar_label: Create An Advanced Transaction
----
 
-![](/img/wallet/gif/1.0.0_transactions_create.gif)
+# Create an Advanced Smart Contract Transaction
+
+
+![image](/img/wallet/gif/1.0.0_transactions_create.gif)
 
 
 1. Click, `Accounts` on the left-hand wallet menu.
@@ -19,7 +17,7 @@ sidebar_label: Create An Advanced Transaction
     - Each argument expects a specific type of data. That type is in brackets beside the name of the argument.
 
 ## Transaction Results
-![](/img/wallet/wallet_transaction_success.png)
+![image](/img/wallet/wallet_transaction_success.png)
 After sending the transaction through the wallet you will be provided the result of the transaction and how many stamps were deducted from your account as a result of the transaction.
 
 **Stamps are deducted on the success or failure of a transaction.**

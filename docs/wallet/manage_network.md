@@ -1,14 +1,12 @@
----
-id: manage_network
-title: Manage Wallet Network
-sidebar_label: Manage Network
----
+
+# Manage Wallet Network
+
 
 You can manage(add/edit/remove) the wallet networks by clicking the `MANAGE NETWORKS` button on the `Setttings` screen.
 
 ## Add Network
 
-![](/img/wallet/gif/manage_network_add.gif)
+![image](/img/wallet/gif/manage_network_add.gif)
 
 1. Click `Settings` on the left-hand menu
 2. Click the `MANAGE NETWORKS` button from the Settings Menu.
@@ -24,7 +22,7 @@ You can manage(add/edit/remove) the wallet networks by clicking the `MANAGE NETW
 
 ## Edit Network
 
-![](/img/wallet/gif/manage_network_edit.gif)
+![image](/img/wallet/gif/manage_network_edit.gif)
 
 1. Click `Settings` on the left-hand menu
 2. Click the `MANAGE NETWORKS` button from the Settings Menu.
@@ -35,7 +33,7 @@ You can manage(add/edit/remove) the wallet networks by clicking the `MANAGE NETW
 
 ## Remove Network
 
-![](/img/wallet/gif/manage_network_remove.gif)
+![image](/img/wallet/gif/manage_network_remove.gif)
 
 1. Click `Settings` on the left-hand menu
 2. Click the `MANAGE NETWORKS` button from the Settings Menu.

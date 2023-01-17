@@ -1,8 +1,6 @@
----
-id: tokens_edit_token
-title: Edit Token
-sidebar_label: Edit Token
----
+
+# Edit Token
+
 
 You can edit/refresh the token details.
 
@@ -14,7 +12,7 @@ You can edit/refresh the token details.
 4. Now you can edit the token details
 5. Finally, click the `SAVE` button
 
-![](/img/wallet/gif/tokens_edit.gif)
+![image](/img/wallet/gif/tokens_edit.gif)
 
 ## Refresh Token Details
 
@@ -25,4 +23,4 @@ This will help you reset the token details.
 3. Click the `Refresh` button
 4. Click the `SAVE` button
 
-![](/img/wallet/gif/tokens_refresh.gif)
+![image](/img/wallet/gif/tokens_refresh.gif)

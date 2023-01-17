@@ -1,8 +1,5 @@
----
-id: wallets
-title: Create Wallets
-sidebar_label: Wallets
----
+# Create Lamden Wallets
+
 
 ## Create a Lamden Keypair
 Creates a new wallet object.

@@ -1,10 +1,5 @@
----
-id: masternode_api
-title: Lamden Masternode Webserver REST API
-sidebar_label: Masternode REST API
----
 
-
+# Lamden Masternode Webserver REST API
 
 Lamden Masternodes run a webserver which allows anyone to easily interface with the Lamden Blockchain.  
 
@@ -12,7 +7,7 @@ The webserver provides direct access to the network's state and is the single en
 
 - List of <u>[Lamden Masternodes](/docs/develop/blockchain/current_masternodes)</u>.
 
-- Webserver <u>[sorce code](https://github.com/Lamden/lamden/blob/master/lamden/nodes/masternode/webserver.py)</u>.
+- Webserver <u>[source code](https://github.com/Lamden/lamden/blob/master/lamden/nodes/masternode/webserver.py)</u>.
 
 ## General Routes
 ### check masternode status
@@ -51,7 +46,7 @@ Get the vk of a masternode
 
 Returns the `Current State` value for a key in a hash variable.
 
-- floats are retunred as `fixed objects` with a `__fixed__` key and a string value representing the float.
+- floats are returned as `fixed objects` with a `__fixed__` key and a string value representing the float.
 - all other values are returned as they are
 
 > Example
@@ -60,7 +55,7 @@ Returns the `Current State` value for a key in a hash variable.
 #### JSON response
 ```json
 {
-    "value": {"__fixed__":"272966785.977944444444444444444444443506"}}
+    "value": {"__fixed__":"272966785.977944444444444444444444443506"}
 }
 ```
 

@@ -1,8 +1,6 @@
----
-id: events
-title: Blockservice Events
-sidebar_label: Events For Blockservice
----
+
+# Blockservice Events
+
 
 Blockservice currently supports publish / subscribe using websockets notifications. This allows users to wait for events instead of polling for them.
 

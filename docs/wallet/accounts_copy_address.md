@@ -1,10 +1,6 @@
----
-id: accounts_copy_address
-title: Copy your Account Address
-sidebar_label: Copy Account Address
----
+# Copy Your Account Address
 
-![](/img/wallet/gif/1.0.0_account_copy_address.gif)
+![image](/img/wallet/gif/1.0.0_account_copy_address.gif)
 
 Each account is a representation of a cryptographic <u>[keypair](/docs/wallet/accounts_linked_overview)</u>.
 

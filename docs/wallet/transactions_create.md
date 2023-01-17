@@ -1,12 +1,10 @@
----
-id: transactions_create
-title: Create a Smart Contract Transaction
-sidebar_label: Create a Transaction
----
+
+# Create a Smart Contract Transaction
+
 
 ## Using External Account
 
-![](/img/wallet/gif/simple_transactions_create1.gif)
+![image](/img/wallet/gif/simple_transactions_create1.gif)
 
 1. Click, `Accounts` on the left-hand wallet menu.
 2. Click the account you want to send the transaction from.
@@ -21,7 +19,7 @@ sidebar_label: Create a Transaction
 
 ## Using One Of My Accounts
 
-![](/img/wallet/gif/simple_transactions_create2.gif)
+![image](/img/wallet/gif/simple_transactions_create2.gif)
 
 1. Click, `Accounts` on the left-hand wallet menu.
 2. Click the account you want to send the transaction from.
@@ -36,7 +34,7 @@ sidebar_label: Create a Transaction
 
 
 ## Transaction Results
-![](/img/wallet/wallet_transaction_success.png)
+![image](/img/wallet/wallet_transaction_success.png)
 After sending the transaction through the wallet you will be provided the result of the transaction and how many stamps were deducted from your account as a result of the transaction.
 
 **Stamps are deducted on the success or failure of a transaction.**

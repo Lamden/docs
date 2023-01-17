@@ -1,8 +1,4 @@
----
-id: restful
-title: Blockservice REST API
-sidebar_label: REST API
----
+# Blockservice REST API
 
 Blockservice currently provides many APIs to allow user easily access to the on-chain data of Lamden.
 The APIs are documented using Swagger. For details and examples, please check the documents you served at local or visit the online [<u>documents</u>](http://119.29.130.37:8999/api-docs/).
@@ -93,7 +89,7 @@ Get block information from a specific block number.
 ```
 
 ---
-### Get blocks infomation
+### Get blocks information
 **`get` `/blocks`**
 
 Get block information from a amount of blocks. Max amount is 100 and default is 10.
@@ -179,12 +175,12 @@ Get block information from a amount of blocks. Max amount is 100 and default is 
 ```
 
 ## History Endpoints
-### Get history infomation
+### Get history information
 **`get` `/all_history`**
 
 Get history information of state changes. 
 
-#### Paraments
+#### Parameters
 - limit: Specifies the number of results to return. Default is 10.
 - last_tx_uid: Last transaction unique ID. The returned elements match the condition that its uids are behind `last_tx_uid`. Default is 000000000000.00000.00000
 
@@ -255,12 +251,12 @@ Get history information of state changes.
 ```
 
 ---
-### Get history infomation by contract
+### Get history information by contract
 **`get` `/contract_history`**
 
 Get history information of state changes of specified contract. 
 
-#### Paraments
+#### Parameters
 - contract : Contract name
 - limit: Specifies the number of results to return. Default is 10.
 - last_tx_uid: Last transaction unique ID. The returned elements match the condition that its uids are behind `last_tx_uid`. Default is 000000000000.00000.00000
@@ -332,12 +328,12 @@ Get history information of state changes of specified contract.
 ```
 
 ---
-### Get history infomation by variable 
+### Get history information by variable 
 **`get` `/variable_history`**
 
 Get history information of state changes of specified variable of specified contract. 
 
-#### Paraments
+#### Parameters
 - variable: Variable name
 - contract : Contract name
 - limit: Specifies the number of results to return. Default is 10.
@@ -410,17 +406,17 @@ Get history information of state changes of specified variable of specified cont
 ```
 
 ---
-### Get history infomation by rootkey 
+### Get history information by rootkey 
 **`get` `/rootkey_history`**
 
 Get history information of state changes by specified rootkey, variable and contract. 
 
-#### Paraments
+#### Parameters
 - root_key: root key value
 - variable: Variable name
 - contract : Contract name
 - limit: Specifies the number of results to return. Default is 10.
-- last_tx_uid: Last transaction unique ID. The returned elements match the condition that its uids are behind `last_tx_uid`. Default is 000000000000.00000.00000
+- last_tx_uid: Last transaction unique ID. The returned elements match the condition that its UIDs are behind `last_tx_uid`. Default is 000000000000.00000.00000
 
 > Example
 > /rootkey_history?root_key=2341d744f11658d7f1ca1c514a1b76ff07898435c46402b1e4f8b00d4a13f5f9&contract=currency&variable=balances&limit=1&last_tx_uid=000000000000.00000.00000
@@ -495,12 +491,12 @@ Get history information of state changes by specified rootkey, variable and cont
 ```
 
 ---
-### Get transaction history infomation
+### Get transaction history information
 **`get` `/tx_history/:vk`**
 
 Get transaction history information of state changes by vk. 
 
-#### Paraments
+#### Parameters
 - vk: account address
 - limit: Specifies the number of results to return. Default is 10.
 - max_tx_uid: The Max transaction unique ID used to filter the returns. Default is 999999999999.00000.00000
@@ -578,10 +574,10 @@ Get transaction history information of state changes by vk.
 ```
 
 ## Contract Endpoints
-### Get all contracts infomation
+### Get all contracts information
 **`get` `/contracts`**
 
-Get all contracts infomation.
+Get all contracts information.
 
 > Example
 > /contracts
@@ -1124,7 +1120,7 @@ Get current state value of a specific key of variable of contract
 ```
 
 ## Transaction Endpoints
-### Get transaction infomation
+### Get transaction information
 **`get` `/tx`**
 
 Get Transaction Info by txhash/uid. If both tx hash and tx uid are provided, it will return the tx info by tx hash.
@@ -1219,7 +1215,7 @@ Get the lastest block number
 ### Get latest processed number
 **`get` `/latest_processed_block`**
 
-Get the lastest processed block number
+Get the latest processed block number
 
 > Example
 > /latest_processed_block

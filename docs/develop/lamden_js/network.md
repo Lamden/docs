@@ -1,10 +1,7 @@
----
-id: network
-title: Creating a Network Object
-sidebar_label: Network Object
----
+# Creating a Network Object
 
-Lamden-js usese a `Network Object` which tells the `Transaction Builder` and `Masternode API` information about the Lamden Network you want to use.
+
+Lamden-js uses a `Network Object` which tells the `Transaction Builder` and `Masternode API` information about the Lamden Network you want to use.
 
 ### Create new Network instance
 ```javascript
@@ -33,7 +30,7 @@ must be valid Lamden Masternodes.
     - The `Network Object` will use a random masternode from the list provided when creating <u>[`Transactions`](/docs/develop/lamden_js/transactions)</u> or calling the <u>[`Masternode API`](/docs/develop/lamden_js/masternode_api_wrapper)</u> endpoints.
     - A list of current Lamden Masternodes can be found <u>[here](/docs/develop/blockchain/current_masternodes)</u>.
 - **host** (string): *getter*
-    - a ramdom host returned from the hosts list
+    - a random host returned from the hosts list
 - **url** (string): *getter*
     - returns host
 - **events** (object): *EventEmitter*
@@ -70,11 +67,11 @@ Creates an instance using the properties of a `Network Info Object`.
 #### Arguments
 - **networkInfoObj** (object): 
     - a [Network Info Object](/docs/develop/lamden_js/overview#creating-a-network-object) as described above
-    - the `hosts` array is the only mandatory paramater
+    - the `hosts` array is the only mandatory parameter
 
 
-### vaidateProtocol(host)
-Used to validate the hosts lists contains propertly formatted url strings.
+### validateProtocol(host)
+Used to validate the hosts lists contains properly formatted url strings.
 
 #### Arguments
 - **host** (string): 
@@ -85,7 +82,7 @@ Used to validate the hosts lists contains propertly formatted url strings.
 > **Throws** *error*: is string does not include `https://` or `http://` 
 
 
-### vaidateProtocol(host)
+### validateProtocol(host)
 Used to validate a masternode url has a protocol prefixed.
 
 #### Arguments
@@ -97,7 +94,7 @@ Used to validate a masternode url has a protocol prefixed.
 > **Throws** *error*: is string does not include `https://` or `http://` 
 
 ### validateHosts(hosts)
-Calls <u>[vaidateProtocol](/docs/develop/lamden_js/overview#vaidateprotocolhost-1)</u> on an array of masternode urls.
+Calls <u>[validateProtocol](/docs/develop/lamden_js/overview#vaidateprotocolhost-1)</u> on an array of masternode urls.
 
 #### Arguments
 - **hosts** (array): 

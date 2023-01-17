@@ -1,8 +1,6 @@
----
-id: config
-title: Blockservice Config
-sidebar_label: Blockservice Config
----
+
+# Blockservice Config
+
 
 All configuration is done by an ```.env``` file which you need to create in the root of the application folder. Some variables which are not be set will use default values.  
 
@@ -38,7 +36,7 @@ All configuration is done by an ```.env``` file which you need to create in the 
 | BLOCKSERVICE_PORT   |  The port used for the webserver and websockets | 3535 |
 | BLOCKSERVICE_HOST  |  Service bind host| localhost|
 
-### Msic options
+### Misc options
 
 |  Item   | Description  | default |
 |  ----  | ----  | ---- |

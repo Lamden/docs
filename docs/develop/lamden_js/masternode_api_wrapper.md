@@ -1,8 +1,4 @@
----
-id: masternode_api_wrapper
-title: Masternode API Wrapper
-sidebar_label: Masternode API
----
+# Masternode API Wrapper
 
 ### Network API Endpoints
 All API methods return a value, Promise or callback if provided

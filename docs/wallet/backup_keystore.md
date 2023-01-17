@@ -1,10 +1,8 @@
----
-id: backup_keystore
-title: Backup Legacy Accounts
-sidebar_label: Backup Legacy Accounts
----
 
-![](/img/wallet/gif/1.0.0_backup_keystore.gif)
+# Backup Legacy Accounts
+
+
+![image](/img/wallet/gif/1.0.0_backup_keystore.gif)
 
 ### **Lamden is not responsible for lost or stolen keys or keystores**
 
@@ -35,7 +33,7 @@ A keystore file is a password encrypted file that houses all your legacy account
 Each storage suggestion has it's pros and cons.  Pick the one that works best for you or come up with your own solution.
 
 1. USB Drive
-    - Pros: Great "Offline" storeage solution that can hold multiple keystore files.
+    - Pros: Great "Offline" storage solution that can hold multiple keystore files.
     - Cons: USB drives can be prone to corruption, easily misplaced or damaged.
 2. Cloud storage
     - Pros: Redundant Storage that is automatically backed up and accessible anywhere.  Some cloud solutions, such as OneDrive's "Vault", feature include 2FA on specific folders.

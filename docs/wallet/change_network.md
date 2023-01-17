@@ -1,8 +1,6 @@
----
-id: change_network
-title: Change Wallet Network
-sidebar_label: Change Network
----
+
+# Change Wallet Network
+
 
 The Lamden Vault can connect to networks:
 

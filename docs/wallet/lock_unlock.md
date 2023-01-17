@@ -1,10 +1,8 @@
----
-id: lock_unlock
-title: Lock and Unlock Wallet
-sidebar_label: Lock and Unlock
----
 
-![](/img/wallet/gif/1.0.0_lock_unlock.gif)
+# Lock and Unlock Wallet
+
+
+![image](/img/wallet/gif/1.0.0_lock_unlock.gif)
 
 ## Lock Wallet
 The Lamden Vault can be locked in two ways.
@@ -13,4 +11,4 @@ The Lamden Vault can be locked in two ways.
 1. Click `Sign Out & Lock` on the left-hand side 
 
 ### Passively
-1. Close down all instances of your broswer
+1. Close down all instances of your browser

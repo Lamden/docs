@@ -1,11 +1,9 @@
----
-id: ide_run_smartcontracts
-title: Run State and Run Smart Contract Methods
-sidebar_label: Query and Run
----
+
+# Run State and Run Smart Contract Methods
+
 
 ## Query Smart Contract State
-![](/img/wallet/gif/1.0.0_ide_query_state.gif)
+![image](/img/wallet/gif/1.0.0_ide_query_state.gif)
 1. Open the smartcontract <u>[from the Blockchain](/docs/wallet/ide_create_smartcontracts#open-existing-contract-from-blockchain)</u>.
 2. Scroll down to the `Get Current State` section, below the IDE window.
 3. In the `Variable Name` box enter the variable or hash you want to query from the smart contract.
@@ -27,7 +25,7 @@ If there is a value returned from the blockchain then it will be populated in th
 7. If a wallet with TAU was selected the `Stamp Limit` box will automatically populate.
 8. Validate:
     - Contract Name
-    - Funtion (method name)
+    - Function (method name)
     - All argument values are correct
 9. Click the `CONFIRM TRANSACTION` button
 10. Click `OK` when the Send Transaction popup appears.

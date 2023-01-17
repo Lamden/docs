@@ -1,9 +1,7 @@
----
-id: restore_keystore
-title: Restore Accounts from a Keystore File
-sidebar_label: From Keystore
----
- ![](/img/wallet/gif/1.0.0_restore_keystore.gif)
+
+# Restore Accounts from a Keystore File
+
+ ![image](/img/wallet/gif/1.0.0_restore_keystore.gif)
 
 1. Unlock Lamden Vault
 2. From the left-hand menu, click `Settings`
@@ -14,7 +12,7 @@ sidebar_label: From Keystore
 5. Click the `CONFIRM KEYSTORE` button.
 6. Enter the password which was used to back up the Keystore.
     - If you entered a hint when you <u>[Created the Keystore](/docs/wallet/restore_keystore)</u> you will see it displayed.
-7. Put a checkmark next to each accout you wish to restore
+7. Put a checkmark next to each account you wish to restore
 8. Click the `RESTORE ACCOUNTS` button.
 9.  After the restoration is complete you may see the following messages:
     - (success) `Added <account name> to your wallet` - This means the account was successfully restored.

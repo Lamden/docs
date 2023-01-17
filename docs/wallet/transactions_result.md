@@ -1,10 +1,8 @@
----
-id: transactions_result
-title: The Result of a Transaction
-sidebar_label: Transaction Result
----
 
-![](/img/wallet/gif/1.0.0_transactions_create.gif)
+# The Result of a Transaction
+
+
+![image](/img/wallet/gif/1.0.0_transactions_create.gif)
 
 As discussed in the <u>[overview](/docs/wallet/accounts_linked_overview)</u>, smart contract transactions can do any number of things in the blockchain. 
 
@@ -30,7 +28,7 @@ Returns a `transaction object`.
 
 From this object you can determine the following:
 - **status**: 0 for success and 1 for error
-- **result**: could be an error that arose while procesing of the transaction or in the event of a success it could be a `return value` from the function.  Default value for this is 'None'
+- **result**: could be an error that arose while processing of the transaction or in the event of a success it could be a `return value` from the function.  Default value for this is 'None'
 - **state**: The resulting state changes. This is a list of keys and their new values as a result of the transaction.
 - **stamps_used**: How many stamps this transaction used during execution.
 - **transaction**: The transaction payload that initiated this transaction.

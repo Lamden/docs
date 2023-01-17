@@ -1,0 +1,15 @@
+blockquote{
+    border-left: 10px solid rgb(163, 243, 175);
+    border-radius: 5px;
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-top: 2rem;
+}
+
+.rst-content code{
+    color: rgb(172, 5, 172);
+}
+
+h2{
+    margin-top: 3rem;
+}

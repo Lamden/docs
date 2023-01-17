@@ -1,11 +1,9 @@
----
-id: overview
-title: Lamden Block Service Overview
-sidebar_label: Overview
----
+
+# Lamden Block Service Overview
+
 
 # Lamden Block Service
-A nodejs application for syncing and serving the Lamden Blockchain to a local app.
+A node.js application for syncing and serving the Lamden Blockchain to a local app.
 This application serves as starting point to be able to build an app on Lamden that requires easy access to current state and realtime updates.
 
 ### Stamp Estimation Script
@@ -16,5 +14,5 @@ Python script for `/stamps/estimation` endpoint. This script serves a socket ser
 
 <br/>
 
-![](/img/develop/blockservice/blockservice_sync.png)
+![image](/img/develop/blockservice/blockservice_sync.png)
 

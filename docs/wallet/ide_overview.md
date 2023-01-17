@@ -1,9 +1,7 @@
----
-id: ide_overview
-title: Smart Contracting IDE
-sidebar_label: Overview
----
-![](/img/wallet/ide_main_view.png)
+
+# Smart Contracting IDE
+
+![image](/img/wallet/ide_main_view.png)
 The Lamden Vault boasts a full featured IDE to allow quick creation and testing of ideas.
 
 The Smart Contract IDE allows you to:
