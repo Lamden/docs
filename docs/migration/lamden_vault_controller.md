@@ -1,9 +1,12 @@
 # Update Lamden Vault Controller
 
-1. Update the Lamden Vault Controller (AKA Lamden Wallet Controller or LWC)  to `^0.7.0` in any project you are currently using it in.
-2. Update the connection information you send to the LWC to include the networkName property with a value of `arko`.
+## Update to latest version
+Update the Lamden Vault Controller (AKA Lamden Wallet Controller or LWC)  to `^0.7.0` in any project you are currently using it in.
 
-## Legacy Lamden LWC Connection Info
+## Update LWC Connection Info
+Update the connection information you send to the LWC to include the networkName property with a value of `arko`.
+
+### Legacy Lamden LWC Connection Info
 ```javascript
 const connectionRequest = {
     appName: 'My Killer dApp',
@@ -14,7 +17,7 @@ const connectionRequest = {
 }
 ```
 
-## Arko LWC Connection Info
+### Arko LWC Connection Info
 ```javascript
 const connectionRequest = {
     appName: 'My Killer dApp',
@@ -26,9 +29,10 @@ const connectionRequest = {
 }
 ```
 
-3. Update any transactions you send to the LWC with the networkName property with a value of `arko`.
+## Update Transaction Info
+Update any transactions you send to the LWC with the networkName property with a value of `arko`.
 
-## Legacy Lamden LWC Transaction Info
+### Legacy Lamden LWC Transaction Info
 ```javascript
 const txInfo = {
     networkType: 'mainnet', 
@@ -42,7 +46,7 @@ const txInfo = {
 };
 ```
 
-## Arko LWC Transaction Info
+### Arko LWC Transaction Info
 ```javascript
 const txInfo = {
     networkType: 'mainnet', 

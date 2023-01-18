@@ -76,8 +76,6 @@ const detail = JSON.stringify({
 
 ## lamdenWalletInfo Event
 
-> If your Dapp uses the [Lamden Wallet Controller](https://docs.lamden.io/docs/develop/wallet_controller/wallet_controller_quickstart) then update to the latest version and you will be okay
-
 The [lamdenWalletInfo](https://docs.lamden.io/docs/develop/wallet_api/get_wallet_info) event sent from the Lamden Vault has an approvals property which will show which networks the user has approved your Dapp for. 
 
 The return previously was just `mainnet` and `testnet` if approvals existed. This will rename for the legacy network but to get approvals from any new network you will need to search for that specific network name.

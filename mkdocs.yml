@@ -86,6 +86,7 @@ nav:
       - Transactions: migration/transactions.md
       - Block Service: migration/block_service.md
       - Lamden Vault API: migration/lamden_vault_api.md
+      - Lamden Vault Controller: migration/lamden_vault_controller.md
     - Smart Contracts:
       - Visit Lamden Contracting Site >>: https://contracting.lamden.io 
     - Block Service:
