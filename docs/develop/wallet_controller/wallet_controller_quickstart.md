@@ -1,6 +1,13 @@
+![image](/img/develop/wallet_controller/vault_blueprint_1.png)
+
+
+# Lamden Wallet Controller Starter Template
+
+If it's easier you can clone and run this starter template to get a website up and running quickly with the LWC.
+
+[LWC Starter Template](https://github.com/Lamden/arko-svelte-template)
 
 # Using the Lamden Vault Controller (LWC)
-
 
 > This package should work with all javascript implementations including node.js and vanilla javascript
 
@@ -15,25 +22,23 @@ managing listeners and events with a more modern callback/Promise workflow.
 
 ## Install
 
-- add <u>[walletController.js](https://raw.githubusercontent.com/Lamden/lamden_wallet_controller/master/walletController.js)</u> to your project.
-- import into project
-```javascript
-import WalletController from './js/walletController';
+### NPM
 
-```
-
-### or
-
-- install via NPM
+1. Install via NPM
 ```bash
-npm install lamden_wallet_controller
+npm install lamden_wallet_contoller
 ```
-- import into your project
+2. Import into your project
 ```javascript
 import WalletController from 'lamden_wallet_controller';
-
 ```
 
+### Vanilla JS
+1. add <u>[walletController.js](https://raw.githubusercontent.com/Lamden/lamden_wallet_controller/master/walletController.js)</u> to your project.
+2. import into project
+```javascript
+import WalletController from './walletController.js'; // path to the walletController file.
+```
 
 ## Create Connection Request Object
 Creating a connection request is the same as <u>[Lamden Vault API - Create a Connection](docs/develop/wallet_api/overview)</u>.
@@ -46,6 +51,7 @@ const connectionRequest = {
     logo: 'images/logo.png', // or whatever the location of your logo
     contractName: 'con_killer_app', // Will never change
     networkType: 'testnet', // other option is 'mainnet'
+    networkName: 'arko' // If this is not included it will attempt to connect to Legacy Lamden network
 }
 ```
 
@@ -107,6 +113,7 @@ Create the transaction object as per the <u>[Lamden Vault API](/docs/develop/wal
 ```javascript
 const txInfo = {
     networkType: 'mainnet', // other option is 'testnet'
+    networkName: 'arko', // If not included tx will go to old legacy Lamden network
     methodName: 'do_something', 
     kwargs: {
         Str: 'awesome', //send a string

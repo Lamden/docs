@@ -21,6 +21,7 @@ IMPORTANT: The window object needs to be available when creating this instance a
 | connectionRequest.version | `string`  | Connection version. Older version will be over-written in the users's wallet. | &nbsp; |
 | connectionRequest.contractName | `string`  | The smart contract your Dapp will transact to | &nbsp; |
 | connectionRequest.networkType | `string`  | Which Lamden network the approval is for (mainnet or testnet) are the only options | &nbsp; |
+| connectionRequest.networkName | `string`  | Should always be 'arko' | &nbsp; |
 | connectionRequest.logo | `string`  | The relative path of an image on your webserver to use as a logo for your Lamden Vault Linked Account | &nbsp; |
 | connectionRequest.background | `string`  | The relative path of an image on your webserver to use as a background for your Lamden Vault Linked Account | *Optional* |
 | connectionRequest.charms.name | `string`  | Charm name | *Optional* |
@@ -58,6 +59,7 @@ This will fire the "newInfo" events.on event
 | connectionRequest.version | `string`  | Connection version. Older version will be over-written in the users's wallet. | &nbsp; |
 | connectionRequest.contractName | `string`  | The smart contract your dApp will transact through | &nbsp; |
 | connectionRequest.networkType | `string`  | Which Lamden network the approval is for (Mainnet or testnet) | &nbsp; |
+| connectionRequest.networkName | `string`  | Blank is Legacy Lamden, 'arko' for new Arko network | &nbsp; |
 | connectionRequest.background | `string`  | A relative path to an image to override the default Lamden Vault account background | *Optional* |
 | connectionRequest.logo | `string`  | A relative path to an image to use as a logo in the Lamden Vault | &nbsp; |
 | connectionRequest.charms.name | `string`  | Charm name | *Optional* |
@@ -80,6 +82,7 @@ This will fire the "txStatus" events.on event
 | ---- | ---- | ----------- | -------- |
 | tx | `Object`  | A connection request object | &nbsp; |
 | tx.networkType | `string`  | Which Lamden network the tx is for (Mainnet or testnet) | &nbsp; |
+| tx.networkName | `string`  | Blank is Legacy Lamden, 'arko' for new Arko network, other name for custom network | &nbsp; |
 | tx.stampLimit | `string`  | The max Stamps this tx is allowed to use. Cannot be more but can be less. | &nbsp; |
 | tx.methodName | `string`  | The method on your approved smart contract to call | &nbsp; |
 | tx.kwargs | `Object`  | A keyword object to supply arguments to your method | &nbsp; |
