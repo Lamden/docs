@@ -14,6 +14,7 @@ Once the Dapp has initiated a connection request to your Lamden Vault the proces
 Lamden is not responsible for any losses or stolen funds with regard to accepting connections to malicious Dapps.
 
 You do have some protections when creating Linked Accounts.
+
 1. Dapps will ONLY be able to interact with their specific account and have no access to other accounts in your wallet.
 2. Because a Dapp only has access to one account in your wallet, it can only use TAU in that specific account. This allows you to decide how much you want to transfer from your main account into each linked account, effectively limiting the TAU available to each Dapp.
 3. The Dapp can only create transactions to 1 smart contract and it's the smart contract that you approve in the connection request. It sends transactions AS YOU by using your Lamden Account to sign transactions to this smart contract.  To be able to send transactions, the Dapp will need a TAU balance in its linked account but this does not mean that it’s spending your TAU directly. You are merely providing stamps needed for the Dapp to function correctly.
@@ -26,12 +27,14 @@ You do have some protections when creating Linked Accounts.
 The first popup in the process tells you that you have a new request to create a Linked Account in your Lamden Vault.
 
 The following information is contained in this request:
+
 1. The name of the Dapp
 2. Under the Dapp name is the URL of the website that created the popup.  You can click it to make sure that it's the same website you were on.
 3. The smart contract that this Dapp will be locked to.
 4. The network the Dapp will be allowed to operate on (Lamden Testnet or Lamden Mainnet).
 
 Only Click "Next" if:
+
 1. You have verified that you trust the website that created the popup
 2. You trust the smart contact that the Dapp will be transacting against
 

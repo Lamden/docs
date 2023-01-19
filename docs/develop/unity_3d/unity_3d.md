@@ -31,9 +31,9 @@ I would suggest you familiarize yourself the the Lamden Contracts by going throu
 # Installation
 
 1. Download the package `Lamden-Unity.unitypackage` from [HERE](https://github.com/Lamden/lamden-Csharp/releases)
-1. In your Unity project select `Assets > Import Package > Custom Package`
-1. Select the downloaded package `Lamden-Unity.unitypackage`
-1. Ensure all items are selected and choose `Import`
+2. In your Unity project select `Assets > Import Package > Custom Package`
+3. Select the downloaded package `Lamden-Unity.unitypackage`
+4. Ensure all items are selected and choose `Import`
 
 # Usage
 Follow the installation steps above to install the `Lamden-Unity` asset package.

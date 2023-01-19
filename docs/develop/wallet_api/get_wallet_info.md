@@ -3,6 +3,7 @@
 Your Dapp can get the user's <u>[Linked Account](/docs/wallet/accounts_linked_overview)</u> information by listening for the lamdenWalletInfo event.
 
 This event is triggered when:
+
 1. You send a "lamdenWalletConnect" event
 2. You request information from the Lamden Vault by sending a "lamdenWalletGetInfo" event
 3. The user locks or unlocks the wallet 

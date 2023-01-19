@@ -5,6 +5,7 @@
 The Lamden Vault boasts a full featured IDE to allow quick creation and testing of ideas.
 
 The Smart Contract IDE allows you to:
+
 1. Create smart contract. <u> [see how](/docs/wallet/ide_create_smartcontracts)</u>
 2. Test Code. <u> [see how](/docs/wallet/ide_submit_smartcontract#lint-for-errors)</u>
 3. Submit smart contracts to the blockchain.<u> [see how](/docs/wallet/ide_submit_smartcontract#submit-smart-contract)</u> 

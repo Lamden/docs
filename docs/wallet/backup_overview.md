@@ -9,6 +9,7 @@ A backup must be created EVERY TIME a new legacy account is added to your Lamden
 
 ## Backup Options
 There are a couple of ways to backup your Lamden Vault Accounts and either will allow you restore an account later:
+
 1. View Recovery Phrase
    - A unique 24-word phrase which connected to your funds.
 2. Backup legacy accounts. This will create <u>[Keystore File](/docs/wallet/backup_keystore)</u> 

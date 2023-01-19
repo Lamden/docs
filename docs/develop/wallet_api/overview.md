@@ -6,12 +6,14 @@ The Lamden Vault **does not pass any information** to Dapps without approved Lin
 
 ## Benefits
 Connecting your Dapp to the <u>[Lamden Vault](/docs/wallet/overview)</u> will create a smoother blockchain experience for your users in the following ways:
+
 1. Sign transactions to your Dapp's smart contract AS the user.
 2. Retrieve information about the user's Lamden Vault including the [Linked Account](/docs/wallet/accounts_linked_overview) address that was created for your Dapp.
 3. Enables Automatic Transactions for <u>[Trusted Accounts](docs/wallet/accounts_linked_create#make-account-trusted)</u>; eliminating the need for the user to approve every transaction.
 
 ## Restrictions
 Connections to the Lamden Vault are defined and restricted in the following ways for the security of the user.
+
 1. All images used for customization are prefixed with the Dapps's hostname when displayed in the wallet.
 2. A Dapp can only approve ONE smartcontract for automatic transactions. Any other smart contracts interacted with will always cause a popup.
 3. The contract to be approved must exist on the network it's being approved on before trying to create a connection request.

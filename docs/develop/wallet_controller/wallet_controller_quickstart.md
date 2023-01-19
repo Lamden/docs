@@ -89,6 +89,7 @@ lwc.walletIsInstalled()
     })
 ```
 So to recap, the `walletIsInstalled` method will accomplish 3 things:
+
 1. Reports back the installed status of the wallet.
 2. If installed is true and a connection request was provided to the constructor then it will automatically create the `lamdenWalletConnect` event and provide your connection request to the users Lamden Vault
 3. If the user has a <u>[Linked Account](/docs/wallet/accounts_linked_overview)</u> for your Dapp you will be sent the Wallet Information on the `newInfo` listener; or else the user will complete the New Linked Account process and you will be provided the Wallet Information at that point.

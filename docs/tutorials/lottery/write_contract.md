@@ -124,7 +124,9 @@ def end_round(round_num: int):
 
 As you can see, we use the module random to draw a winning ticket. 
 **Note that the method `random.seed()` need to be run once per transaction. Otherwise, the transaction will fail.**
-Besides the method `seed()`, the rest of the module follows Python random 1:1. Learn more about the **random** click [<u>here</u>](https://contracting.lamden.io/concepts/randoms/).
+Besides the method `seed()`, the rest of the module follows Python random 1:
+
+1. Learn more about the **random** click [<u>here</u>](https://contracting.lamden.io/concepts/randoms/).
 
 ```py
 def calculate_rewards():

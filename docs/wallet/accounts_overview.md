@@ -20,9 +20,11 @@ It is heavily recommended that you do a <u>[BACKUP](/docs/wallet/backup_overview
 
 ## What are keypairs?
 Each account in your Lamden Vault has an associated cryptographic keypair.
+
 1. Public Key 
     - Referred to as "Account Address" in the wallet but also commonly referred to as a "public key" or "verifying key (vk)"
     - Can be "public knowledge" and you are free to share this without risking the security of your account
+    
 2. Secret Key
     - As the name suggests this **MUST BE KEPT SECRET!**
     - Used to sign transactions. Transactions signed by this key identify you on the blockchain by your Public Key.

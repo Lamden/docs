@@ -11,7 +11,7 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Arko Blockchain:
-    - Visit Arko Documentaion Site >>: https://arko.lamden.io
+    - Visit Arko Documentation Site >>: https://arko.lamden.io
 
   - Block Explorer: 
     - Visit TAU HQ >>: https://www.tauhq.com

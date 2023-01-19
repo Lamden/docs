@@ -6,7 +6,7 @@ This script is used for estimating stamps cost of a transaction and serves a soc
 Installing this script can ensure endpoint ```/stamps/estimation``` works. You can find it at [<u>here</u>](https://github.com/Lamden/stamp_estimation_script).
 
 ### Preparation
-1.[<u>Mongodb</u>(version > 4.0)](httpv://www.mongodb.com/docs/manual/installation/)
+1. [<u>Mongodb</u>(version > 4.0)](httpv://www.mongodb.com/docs/manual/installation/)
 2. [<u>python 3.6.x</u>](https://www.python.org/) (should come with UBUNTU 18.04)
 3. poetry installed. poetry is a package manager tool. More detail click [<u>here</u>](https://python-poetry.org/docs)
 ```
