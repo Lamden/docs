@@ -5,6 +5,11 @@ ul > li.toctree-l1 > button{
     margin-top: 1em;
 }
 
+.toctree-l1 a{
+    color: white;
+}
+
+
 blockquote{
     border-left: 10px solid rgb(163, 243, 175);
     border-radius: 5px;
