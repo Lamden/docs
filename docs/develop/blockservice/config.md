@@ -36,6 +36,17 @@ All configuration is done by an ```.env``` file which you need to create in the 
 | BLOCKSERVICE_PORT   |  The port used for the webserver and websockets | 3535 |
 | BLOCKSERVICE_HOST  |  Service bind host| localhost|
 
+
+### Api Rate Limit
+you can limit the number of api calls for each ip. **This feature is turned on by default.**
+
+|  Item   | Description  | default |
+|  ----  | ----  | ---- |
+| RATE_LIMIT_ENABLE | Enable:1 Disable:0 | `0`
+| RATE_LIMIT_PERIOD | Time frame for which requests are checked, defaults units is ms | `600000`
+| RATE_LIMIT_NUM  | number of api calls | `100`
+
+
 ### Misc options
 
 |  Item   | Description  | default |
