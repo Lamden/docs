@@ -25,7 +25,7 @@ sudo curl -L "https://github.com/docker/compose/releases/download/v2.2.2/docker-
 
 Clone this project
 ```
-git clone https://github.com/Dapiguabc/lamden_block_service.git
+git clone https://github.com/lamden/lamden_block_service.git
 cd lamden_block_service
 ```
 
