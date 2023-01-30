@@ -32,6 +32,24 @@ cd lamden_block_service
 ### Config Blockservice
 You can custom blockservice by creating/editing  ```.env``` file at the root of the project folder.  Click [<u>here</u>](/docs/develop/blockservice/config) to get more details.
 
+```bash
+nano .env
+```
+
+Use these values for Arko Mainnet
+
+```bash
+NETWORK=mainnet   
+MASTERNODE_URL=http://127.0.0.1:18080
+RATE_LIMIT_ENABLE=1
+RATE_LIMIT_PERIOD=5000
+RATE_LIMIT_NUM=20
+```
+
+Save file:
+- Press `CTRL + X`
+- Press `y`
+- Press `Enter`
 
 ### Build project
 
