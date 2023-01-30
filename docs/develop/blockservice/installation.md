@@ -36,7 +36,7 @@ You can custom blockservice by creating/editing  ```.env``` file at the root of 
 nano .env
 ```
 
-Use these values from Arko Mainnet
+Use these values for Arko Mainnet
 
 ```bash
 NETWORK=mainnet   
