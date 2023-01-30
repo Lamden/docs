@@ -4,7 +4,7 @@
 
 ### Preparation
 1. [<u>Mongodb</u>(version > 4.0)](httpv://www.mongodb.com/docs/manual/installation/)
-2. Python Estimation Script. Click [<u>here</u>](/docs/develop/blockservice/estimation_installation) to figure out how to install it (Optional).
+2. Python Estimation Script. Click [<u>here</u>](/develop/blockservice/estimationScriptInstallation/) to figure out how to install it (Optional).
 
 
 ### Install Docker
