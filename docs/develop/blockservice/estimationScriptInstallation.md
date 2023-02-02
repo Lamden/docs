@@ -34,14 +34,15 @@ There are two config files: ```config.ini```(for production) and ```config.dev.i
 ```
 # mongo config
 [mongo]
-conn=mongodb://user:pwd@localhost:27017 # mongo connection string.
-database=testnet-blockservice  # mongo database name.  
-collection=currentState  # Collection name.
+conn=mongodb://localhost:27017 # mongo connection string.
+database=mainnet-blockservice # mongo database name.
+collection=currentState # Collection name.
 
 # socket config
 [socket]
-host=localhost # host address
-port=3232    # port number
+host=localhost # stamp estimation host address
+port=3232 # stamp estimation port number
+
 ```
 
 ### Run
