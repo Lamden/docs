@@ -32,6 +32,8 @@ socket.on("rewards", (reward_info) => {
 });
 ```
 
+## Events
+
 ### ```latest_block```
 Only triggered on connection to the websocket
 
@@ -58,7 +60,6 @@ socket.on("latest_block", (new_block) => {
 }
 ```
 
-## Events
 ### ```new-block```
 No subscription required. Triggered when a new block is generated.
 
