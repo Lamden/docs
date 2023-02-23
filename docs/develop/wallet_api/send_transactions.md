@@ -6,12 +6,12 @@
 - The Lamden Vault will automatically supply this information to your transactions
     - contractName: what was supplied in the connection request
     - senderVk: The public key of the Linked Account
-    - network: The masternode information for the network type in the request (mainnet, testnet)
     - signature: The Lamden Vault will sign the transaction with the Linked Account keys.
 
 ## Create Transaction Detail
 ```javascript
 const detail = JSON.stringify({
+    contractName: "curency", // user will ALWAYS get a popup for any contracts that are different than the approved contract from your connection request 
     //Which Lamden Network to send this to
     //mainnet, testnet are the only acceptable values
     networkType: 'mainnet', 
