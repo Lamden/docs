@@ -11,7 +11,7 @@
 ## Create Transaction Detail
 ```javascript
 const detail = JSON.stringify({
-    contractName: "curency", // user will ALWAYS get a popup for any contracts that are different than the approved contract from your connection request 
+    contractName: "con_videos", // user will ALWAYS get a popup for any contracts that are different than the approved contract from your connection request 
     //Which Lamden Network to send this to
     //mainnet, testnet are the only acceptable values
     networkType: 'mainnet', 
