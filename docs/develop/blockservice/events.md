@@ -15,66 +15,74 @@ socket.on("connect", () => {
     socket.emit('join', "all-state-changes-by-transaction");
     socket.emit('join', "new-contracts");
 });
+
+// Get the latest block on connect
+socket.on("latest_block", (latest_block) => {
+    console.log(latest_block)
+});
+
+// Get any new blocks minted
+socket.on("new-block", (new_block) => {
+    console.log(new_block)
+});
+
+// Get the current network rewards on connect
+socket.on("rewards", (reward_info) => {
+    console.log(reward_info)
+});
 ```
 
 ## Events
-### ```new-block```
-No subscription required. Triggered when a new block is generated.
+
+### ```latest_block```
+Only triggered on connection to the websocket
+
+```javascript
+socket.on("latest_block", (new_block) => {
+    console.log(new_block)
+});
+```
 
 #### Message
 ```json
 {
-    "message": {
-        "hash": "449c7d87b4b3771fd5fef9d558928f14e65f0fe5cc2c16b8a9c56c6382790fac",
-        "number": 66895,
-        "previous": "aa89502542295d88e6b031a09df41ccd0a6bafe864b015af83d7cb7f8587a4cc",
-        "subblocks": [{
-            "input_hash": "9c8dbb83537460c0a39c17503d76752228e4de512f2d21119bf033d34c6dfca6",
-            "merkle_leaves": ["25b4264ab433ed1b074230da1539192c895a22ff8c3042b942b5edc61eedca22"],
-            "signatures": [{
-                "signature": "11f17e25c472b0d138ec5b1dd0c76399c3d170f2c4ab72d0cbbe0af057a5f7364beea6ac760e78984ed05d003af8aef8b271324540ce12ccc697b21a9bfb6c05",
-                "signer": "ee2e928015fd8433c8c6da7234504968a1bde751b0784c3efbe4bc42628d5e9b"
-            }],
-            "subblock": 0,
-            "transactions": [{
-                "hash": "74e84e4d19c885ad85b7f951a3fa3f53d8b307489d4a00a462ce852f63fadad9",
-                "result": "None",
-                "stamps_used": 19,
-                "state": [{
-                    "key": "currency.balances:b17eabddbd474bdaebfca71f654ab7dc1195510062e3cdbbdc442a028b050e41",
-                    "value": {
-                        "__fixed__": "6.0769230769230818"
-                    }
-                }, {
-                    "key": "currency.balances:2341d744f11658d7f1ca1c514a1b76ff07898435c46402b1e4f8b00d4a13f5f9",
-                    "value": {
-                        "__fixed__": "3.01538460846156221"
-                    }
-                }],
-                "status": 0,
-                "transaction": {
-                    "metadata": {
-                        "signature": "89d90c6bee3226ea04754e9a630bcc4e8bd6bcec032b125e54e3c33a78025c448f40cc94358cc112475d64b53c6b987f33cd1fa7f2299ac6a755d2f15fe0ba01",
-                        "timestamp": 1653486525
-                    },
-                    "payload": {
-                        "contract": "currency",
-                        "function": "transfer",
-                        "kwargs": {
-                            "amount": {
-                                "__fixed__": "1.0"
-                            },
-                            "to": "2341d744f11658d7f1ca1c514a1b76ff07898435c46402b1e4f8b00d4a13f5f9"
-                        },
-                        "nonce": 28,
-                        "processor": "89f67bb871351a1629d66676e4bd92bbacb23bd0649b890542ef98f1b664a497",
-                        "sender": "b17eabddbd474bdaebfca71f654ab7dc1195510062e3cdbbdc442a028b050e41",
-                        "stamps_supplied": 26
-                    }
-                }
-            }]
-        }]
-    }
+  "message": {
+    "hash": "6aed0a1339bd84fee4bb62eee272591ce70912e40bbe8a1643eee1316802726c",
+    "number": "1675383793312469504",
+    "hlc_timestamp": "2023-02-03T00:23:13.312469504Z_0",
+    "previous": "0f3de28621a8babf9502731c669e4cae4f248022d8fd0d324e06d893e2b0afdf",
+    "proofs": [...],
+    "processed": {...},
+    "rewards": [...],
+    "origin": {...},
+    "minted": {...}
+  }
+}
+```
+
+### ```new-block```
+No subscription required. Triggered when a new block is generated.
+
+```javascript
+socket.on("new-block", (new_block) => {
+    console.log(new_block)
+});
+```
+
+#### Message
+```json
+{
+  "message": {
+    "hash": "6aed0a1339bd84fee4bb62eee272591ce70912e40bbe8a1643eee1316802726c",
+    "number": "1675383793312469504",
+    "hlc_timestamp": "2023-02-03T00:23:13.312469504Z_0",
+    "previous": "0f3de28621a8babf9502731c669e4cae4f248022d8fd0d324e06d893e2b0afdf",
+    "proofs": [...],
+    "processed": {...},
+    "rewards": [...],
+    "origin": {...},
+    "minted": {...}
+  }
 }
 ```
 

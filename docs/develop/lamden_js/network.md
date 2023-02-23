@@ -4,9 +4,12 @@
 Lamden-js uses a `Network Object` which tells the `Transaction Builder` and `Masternode API` information about the Lamden Network you want to use.
 
 ### Create new Network instance
+
+> For Arko networks you MUST set `version` = 2
 ```javascript
 let testnet = new Network({
     hosts: ['https://testnet-master-1.lamden.io'] // API calls choose a random entry from this list
+    version: 2, // required for an Arko network
     name: 'Lamden Testnet', // optional
     type: 'testnet', // optional
     lamden: true,  // optional
@@ -40,6 +43,9 @@ must be valid Lamden Masternodes.
 - **online** (boolean):
     - default `false`
     - set with the result of `ping()`
+- **version** (integer):
+    - use value `2` for an Arko network
+    - default: `1`
 - **name** (string): *optional*
     - used for reference only
     - A reference name for this network
@@ -56,7 +62,7 @@ must be valid Lamden Masternodes.
     - default `TAU`
     - Gives a `token symbol` to the values returned from network's `currency contract`  
 - **blockExplorer** (string): *optional*
-    - used for reference only
+    - used to get transaction results
     - A URL for keeping track of the block explorer associated with this network.
     - default `undefined` 
 
@@ -118,7 +124,9 @@ Returns this networks information
     lamden: this.lamden,
     type: this.type,
     hosts: this.hosts,
+    blockservice_hosts: this.blockservice.hosts,
     url: this.url,
     online: this.online,
+    version: this.version
 }
 ```

@@ -1,7 +1,3 @@
-
-# Lamden Block Service Overview
-
-
 # Lamden Block Service
 A node.js application for syncing and serving the Lamden Blockchain to a local app.
 This application serves as starting point to be able to build an app on Lamden that requires easy access to current state and realtime updates.
