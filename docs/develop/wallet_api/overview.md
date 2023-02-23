@@ -10,6 +10,7 @@ Connecting your Dapp to the <u>[Lamden Vault](/docs/wallet/overview)</u> will cr
 1. Sign transactions to your Dapp's smart contract AS the user.
 2. Retrieve information about the user's Lamden Vault including the [Linked Account](/docs/wallet/accounts_linked_overview) address that was created for your Dapp.
 3. Enables Automatic Transactions for <u>[Trusted Accounts](docs/wallet/accounts_linked_create#make-account-trusted)</u>; eliminating the need for the user to approve every transaction.
+4. Use the wallet to [authenticate](/docs/develop/wallet_api/auth) users to your site.
 
 ## Restrictions
 Connections to the Lamden Vault are defined and restricted in the following ways for the security of the user.
@@ -30,7 +31,9 @@ Connections to the Lamden Vault are defined and restricted in the following ways
 | lamdenWalletConnect | CustomEvent | Send an initial connection request to have the wallet paired up with your dApp.  See below for API instructions. |
 | lamdenWalletGetInfo | CustomEvent | Ask the Wallet for the current info which includes version, installed/setup status, locked status, wallet key assigned to your dApp and which connection approvals you currently have |
 | lamdenWalletSendTx | CustomEvent | Send a transactions request to the wallet for transmission |
+| auth | CustomEvent | Send a auth request to the wallet |
 | lamdenWalletTxStatus | Event Listener | Results from your transactions request will be sent here  |
 | lamdenWalletInfo | Event Listener | Results from your Information request will be sent here.  All locking and unlocking of the user's wallet will automatically generate an event here. |
+| authReturn | Event Listener | Will return the result of the auth Event |
 
 **All event detail is passed in JSON format for security.**

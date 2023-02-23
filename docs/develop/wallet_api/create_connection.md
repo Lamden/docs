@@ -6,9 +6,10 @@ The event detail is expected to be a JSON object.  Anything other than a JSON ob
 
 This is an example of a basic connection request
 ## Basic Connection Info
+> `networkVersion` needs to be set to `2` to use the Arko network
 ```javascript
 const detail = JSON.stringify({
-    networkVersion: 2,     // if not provided, the default version is 1
+    networkVersion: 2,     // For Arko this needs to be 2
     appName: 'My Killer dApp',
     version: '1.0.0',
     logo: 'images/logo.png', //or whatever the location of your logo

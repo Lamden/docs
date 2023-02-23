@@ -75,6 +75,7 @@ nav:
         - Get User Account Info: develop/wallet_api/get_wallet_info.md
         - Submit Transactions: develop/wallet_api/send_transactions.md
         - Approval Transactions: develop/wallet_api/approval_transactions.md
+        - Authentication: develop/wallet_api/auth.md
       - Lamden Wallet Controller:
         - Quickstart: develop/wallet_controller/wallet_controller_quickstart.md
         - Controller API: develop/wallet_controller/wallet_controller_api.md
