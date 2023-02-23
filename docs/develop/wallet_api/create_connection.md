@@ -9,12 +9,12 @@ This is an example of a basic connection request
 > `networkVersion` needs to be set to `2` to use the Arko network
 ```javascript
 const detail = JSON.stringify({
-    networkVersion: 2,     // For Arko this needs to be 2
     appName: 'My Killer dApp',
     version: '1.0.0',
     logo: 'images/logo.png', //or whatever the location of your logo
     contractName: 'con_killer_app', //Will never change
     networkType: 'testnet', // other option is 'mainnet'
+    networkName: 'arko' // needed for Arko connections
 })
 ```
 

@@ -15,8 +15,8 @@ const detail = JSON.stringify({
     //Which Lamden Network to send this to
     //mainnet, testnet are the only acceptable values
     networkType: 'mainnet', 
-    // if not provided, the default version is 1
-    networkVersion: 2,
+    // if not provided, the default version is legacy. 
+    networkName: 'arko',
 
     //The method in your contract to call
     methodName: 'movePlayer', 
